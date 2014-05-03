@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title}}{% else %}{{ site.name }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- browser-specific options -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- my OpenID provider -->
+  <link rel="openid.server" href="http://pip.verisignlabs.com/server">
+  <link rel="openid.delegate" href="http://kevinyank.pip.verisignlabs.com">
+  <link rel="openid2.provider" href="http://pip.verisignlabs.com/server">
+  <link rel="openid2.local_id" href="http://kevinyank.pip.verisignlabs.com">
+  <meta http-equiv="X-XRDS-Location" content="http://pip.verisignlabs.com/user/kevinyank/yadisxrds">
+
+  <!-- my Personal Avatar: pavatar.com -->
+  <link rel="pavatar" href="http://old.kevinyank.com/pavatar.jpg">
+</head>

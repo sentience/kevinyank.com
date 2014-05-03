@@ -1,0 +1,12 @@
+name: Kevin Yank
+markdown: redcarpet
+highlighter: pygments
+description: Kevin Yank’s website
+url: http://kevinyank.com
+permalink: /posts/:title
+lang: en-AU
+exclude: 
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - Gemfile
+  - Gemfile.lock
