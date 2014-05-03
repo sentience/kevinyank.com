@@ -1,0 +1,22 @@
+---
+layout: post
+status: publish
+published: true
+title: Bikely
+author: Kev
+author_login: kyank
+author_email: thatguy@kevinyank.com
+author_url: http://old.kevinyank.com
+wordpress_id: 84
+wordpress_url: http://old.kevinyank.com/blog/archives/bikely/
+date: '2006-05-24 11:21:09 +1000'
+date_gmt: '2006-05-24 01:21:09 +1000'
+categories:
+- snippets
+- geekdom
+- JavaScript
+- tech
+tags: []
+comments: []
+---
+<p><a href="http://jules.com.au/blog/">Jules</a> has whipped up this sexy <a href="http://www.bikely.com/">Google Maps mashup for sharing bike routes</a>.</p>

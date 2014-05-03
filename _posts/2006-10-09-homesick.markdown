@@ -1,0 +1,37 @@
+---
+layout: post
+status: publish
+published: true
+title: Homesick
+author: Kev
+author_login: kyank
+author_email: thatguy@kevinyank.com
+author_url: http://old.kevinyank.com
+wordpress_id: 131
+wordpress_url: http://old.kevinyank.com/blog/archives/homesick/
+date: '2006-10-09 20:40:14 +1000'
+date_gmt: '2006-10-09 10:40:14 +1000'
+categories:
+- personal
+- snippets
+tags: []
+comments:
+- id: 1585
+  author: Molly E. Holzschlag
+  author_email: molly@molly.com
+  author_url: http://molly.com/
+  date: '2006-10-10 04:10:49 +1000'
+  date_gmt: '2006-10-09 18:10:49 +1000'
+  content: |-
+    Awww, Kev, well at least you made the flight. I'm keeping good thoughts that your return trip home has been smooth. Hopefully, you'll have a few days to sleep it off, too.
+
+    By the way, if you have a little cold and cough, don't blame me.
+- id: 1709
+  author: bonnie
+  author_email: bonnie@pond.cc
+  author_url: http://www.pond.cc
+  date: '2006-10-15 17:23:32 +1000'
+  date_gmt: '2006-10-15 07:23:32 +1000'
+  content: We miss you kev
+---
+<p>I'm in Singapore enjoying the free Internet on my way back to Melbourne. I almost didn't make my flight in London, which was overbooked, but I see I've been <a href="http://www.molly.com/2006/10/08/somewhere-outside-london/">luckier than some</a>. Sorry to hear you got stuck again, Molly!</p>
