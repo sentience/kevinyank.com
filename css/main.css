@@ -242,6 +242,10 @@ a:visited { color: #205caa; }
 
 .post pre code { border: none; }
 
+.post img {
+  max-width: 100%;
+}
+
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;
