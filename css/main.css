@@ -246,6 +246,12 @@ a:visited { color: #205caa; }
   max-width: 100%;
 }
 
+.post figcaption {
+  text-align: center;
+  font-size: 80%;
+  line-height: 1.9;
+}
+
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;
