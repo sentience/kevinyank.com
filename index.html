@@ -9,7 +9,7 @@ layout: default
   <div class="post">
 
     <header class="post-header">
-      <h1>{{ first_post.title }}</h1>
+      <h1><a class="post-link" href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
       <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}{% if first_post.author %} • {{ first_post.author }}{% endif %}{% if first_post.meta %} • {{ first_post.meta }}{% endif %}</p>
     </header>
 
