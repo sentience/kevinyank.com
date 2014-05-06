@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Orbitkey + 1Password + Hazel = ♥
-author: Kev
+author: Kevin Yank
+date: '2014-05-04 23:00:00 +1000'
 excerpt: This past week I received my Orbitkey, an alternative to your typical
   keychain that holds your keys snugly within a leather or rubber loop instead
   of allowing them to jangle around in your pocket. Included with my Orbitkey

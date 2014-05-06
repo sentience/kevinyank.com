@@ -5,7 +5,7 @@ layout: default
 
   <header class="post-header">
     <h1 class="p-name entry-title" itemprop="headline">{{ page.title }}</h1>
-    <p class="meta"><a class="u-url" href="{{ page.url }}"><time itemprop="datePublished" class="dt-published published" datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%b %-d, %Y" }}</time></a>{% if page.author %} • <span class="p-author author">{{ page.author }}</span>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="meta"><a class="u-url" href="{{ page.url }}"><time itemprop="datePublished" class="dt-published published" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time></a>{% if page.author %} • <span class="p-author author">{{ page.author }}</span>{% endif %}{% if page.categories %} • in categories: {% for cat in page.categories %}<span class="p-category category">{{ cat }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}</p>
   </header>
 
   <div class="post-content e-content entry-content" itemprop="articleBody">

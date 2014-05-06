@@ -10,7 +10,8 @@ layout: default
 
     <header class="post-header">
       <h1><a class="post-link" href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
-      <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}{% if first_post.author %} • {{ first_post.author }}{% endif %}{% if first_post.meta %} • {{ first_post.meta }}{% endif %}</p>
+      <p class="meta"><time datetime="{{ first_post.date }}">{{ first_post.date | date: "%b %-d, %Y" }}</time></a>{% if first_post.author %} • {{ first_post.author }}{% endif %}{% if first_post.categories %} • in categories: {% for cat in first_post.categories %}<span class="p-category category">{{ cat }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}</p>
+
     </header>
 
     <article class="post-content">
