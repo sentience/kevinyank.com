@@ -25,7 +25,7 @@ After crossing out a couple of lines of dialogue and adding a comment with an ar
 
 {% include figure.html src="/assets/images/blog/panay_surface_3.jpg" alt="In landscape mode, the handwritten notes have shifted position, and no longer line up with the parts of the script they refer to." caption="Take a good look." %}
 
-The handwritten notes no longer line up with the text beneath. Whether due to a bug in demo-quality software, or because Final Draft’s support for handwritten notes is simply more limited than Panay would like to have us believe, this moment highlighted to me the fact that Microsoft’s software still can’t offer the polished experiences of its rival’s. (That said, Apple is [having trouble living up to its own standards][itunes-podcasts-bad-design] these days.)
+The handwritten notes no longer line up with the text beneath. Whether due to a bug in demo-quality software, or because Final Draft’s support for handwritten notes is simply more limited than Panay would like to have us believe, this moment highlighted to me the fact that Microsoft’s platform still can’t offer the polished experiences of its rival’s. (That said, Apple is [having trouble living up to its own standards][itunes-podcasts-bad-design] these days.)
 
 Yes, software is hard.
 
