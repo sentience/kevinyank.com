@@ -62,7 +62,7 @@ Here, to me, is a clear instance of Panay focusing too much on the presentation,
 
 {% include figure.html src="/assets/images/blog/panay_surface_6.jpg" alt="Panos Panay grimaces with his hand on his forehead as he crosses the stage." caption="What’s on his mind?" %}
 
-This is just a bizarre mix of jargon (“design points”), obvious lines from the script (“what can be digital will be digital”), and the scattered remains of a dramatic device (“it feels like a piece of paper”). What is entirely lost is what Panay was actually trying to say. When I hear a word jumble like this, it’s clear to me that the presenter is completely disconnected from his message, and is just trying to hit all the points of reference his stressed brain can remember from rehearsal.
+This is just a bizarre mix of jargon (“design points”), obvious lines from the script (“what can be digital will be digital”), and the scattered remains of a dramatic device (“it’s as simple as a piece of paper”). What is entirely lost is what Panay was actually trying to say. When I hear a word jumble like this, it’s clear to me that the presenter is completely disconnected from his message, and is just trying to hit all the points of reference his stressed brain can remember from rehearsal.
 
 Conversely, when Panay spoke near the start of the show about taking away the conflict that consumers face when deciding to buy a tablet or a laptop, it was clear to me that his message was on his mind. He spoke loosely but clearly, reinforcing his point with every remark, rather than muddling it. This was the high point of his presentation.
 
