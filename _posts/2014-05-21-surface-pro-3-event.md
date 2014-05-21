@@ -37,7 +37,7 @@ The second thing that stood out for me was presenter Panos Panay’s tendency to
 
 {% include figure.html src="/assets/images/blog/panay_surface_4.jpg" alt="Panos Panay clicks the keyboard cover onto the front of the Surface Pro 3 to increase stability." caption="The “lapability” demo" %}
 
-You can get his meaning—mostly—from the context, but half of what he’s saying make no sense. In an almost subliminal way, this makes the audience feel that the presenter doesn’t really care about what he’s saying, because he isn’t bothering to say it clearly. It comes off as stream-of-consciousness blather—verbal diarrhoea.
+You can get his meaning—mostly—from the context, but half of what he’s saying makes no sense. In an almost subliminal way, this makes the audience feel that the presenter doesn’t really care about what he’s saying, because he isn’t bothering to say it clearly. It comes off as stream-of-consciousness blather—verbal diarrhoea.
 
 As a seasoned presenter myself, I know the irony is this can happen because you care *too much* about doing a good job conveying your message. There may be two causes for this:
 
