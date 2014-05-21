@@ -33,7 +33,7 @@ Yes, software is hard.
 
 The second thing that stood out for me was presenter Panos Panay’s tendency to slip in and out of what my high school English teacher used to call **verbal diarrhoea**. Here’s a relatively mild example, where Panay is demonstrating how the Surface Pro 3 achieves improved stability when using it on your lap:
 
-> “And the reason is because you get this looseness in your hinge. And when you’re typing you kind of have to feel like “where should I put my—” and there’s too many thoughts. And when you put too many thoughts in a customer’s head, or a person who’s using it’s head, you really do find a place where they get stuck. And when you’re thinking too much when it should be that simple, it doesn’t work. It’s one of the beauties of tablets. It’s one of the beauties of laptops.”
+> “And the reason is because you get this looseness in your hinge. And when you’re typing you kind of have to feel like “where should I put my—” and there’s too many thoughts. And when you put too many thoughts in a customer’s head, or a person who’s using its head, you really do find a place where they get stuck. And when you’re thinking too much when it should be that simple, it doesn’t work. It’s one of the beauties of tablets. It’s one of the beauties of laptops.”
 
 {% include figure.html src="/assets/images/blog/panay_surface_4.jpg" alt="Panos Panay clicks the keyboard cover onto the front of the Surface Pro 3 to increase stability." caption="The “lapability” demo" %}
 
