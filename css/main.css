@@ -259,6 +259,14 @@ li.bio {
 .post pre code { border: none; }
 
 .post img {
+  float: right;
+  margin-left: 2.35765%;
+  max-width: 33.33%;
+}
+
+.post figure img {
+  float: none;
+  margin: 0;
   max-width: 100%;
 }
 

@@ -3,7 +3,7 @@ layout: post
 title: Verbal Diarrhoea at Microsoft Surface Pro 3 Event
 author: Kevin Yank
 date: '2014-05-21 00:00:00 +1000'
-excerpt:
+excerpt: Yesterday’s Microsoft Surface Pro 3 launch event showed off what I think is a fairly compelling product. But apart from the product itself, two things really struck me when I watched the event video. The first was the tell-tale signs of sloppy software. The second thing that stood out for me was presenter Panos Panay’s tendency to slip in and out of what my high school English teacher used to call verbal diarrhoea.
 categories:
 - tech
 - speaking
