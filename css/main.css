@@ -264,6 +264,10 @@ li.bio {
   max-width: 33.33%;
 }
 
+.post figure {
+  text-align: center;
+}
+
 .post figure img {
   float: none;
   margin: 0;
@@ -271,7 +275,6 @@ li.bio {
 }
 
 .post figcaption {
-  text-align: center;
   font-size: 80%;
   line-height: 1.9;
 }

@@ -17,7 +17,7 @@ wordpress_url: http://old.kevinyank.com/blog/?p=260
 date: '2013-04-22 22:43:51 +1000'
 date_gmt: '2013-04-22 12:43:51 +1000'
 categories:
-- tech
+- training
 tags: []
 comments: []
 ---
