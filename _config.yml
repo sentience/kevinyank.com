@@ -1,5 +1,5 @@
 name: Kevin Yank
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 description: Kevin Yank’s website
 url: http://kevinyank.com
@@ -7,7 +7,7 @@ permalink: /posts/:title
 paginate: 5
 paginate_path: /blog/page/:num
 lang: en-AU
-exclude: 
+exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - Gemfile
