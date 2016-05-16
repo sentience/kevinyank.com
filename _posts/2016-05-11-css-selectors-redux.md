@@ -25,7 +25,7 @@ They’re the things in pink. Selectors are the part of CSS that lets us point a
 
 {% include figure.html src="/assets/images/blog/css-selectors-redux/slide.005.png" alt="slide: what’s new; why there’s nothing new; how to be MacGyver" caption="What we’ll be covering" %}
 
-In this talk, I’ll be covering: what’s new in CSS selectors. I’ll then move swiftly along to *why* there’s nothing new in CSS selectors. And then we’ll finish strong with how to be MacGyver.
+In this talk, I’ll be covering what’s new in CSS selectors. I’ll then move swiftly along to *why* there’s nothing new in CSS selectors. And then we’ll finish strong with how to be MacGyver.
 
 ## What’s New
 
