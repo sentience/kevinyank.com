@@ -2,7 +2,7 @@
 layout: post
 title: CSS Selectors Redux
 author: Kevin Yank
-date: '2015-05-17 00:05:00 +1100'
+date: '2016-05-17 00:05:00 +1100'
 excerpt: "Last month in Sydney and Melbourne I was honoured to speak at Respond 2016, the third Web Directions conference at which I’ve had the privilege of speaking after Web Essentials 2006 and Web Directions South 2009. John Allsopp assigned me a great topic that would never have occurred to me otherwise: CSS selectors."
 categories:
   - development
@@ -127,7 +127,7 @@ Boring!
 
 {% include figure.html src="/assets/images/blog/css-selectors-redux/slide.039.png" alt="slide: why there’s nothing new" caption="" %}
 
-So, why isn’t there nothing new? I think it’s because we’re not asking for them, because we’re all doing things like this:
+So, why are there no new CSS Selectors worth talking about? I think it’s because we’re not asking for them, because we’re all doing things like this:
 
 {% include figure.html src="/assets/images/blog/css-selectors-redux/slide.040.png" alt="slide: Bootstrap A search form is styled entirely by adding class attributes that apply ready-made styles to HTML elements" caption="You can create a perfectly serviceable search form using Bootstrap classes" %}
 
@@ -185,7 +185,7 @@ I’ve been wanting this for years. In the first example, `a[href]:has(> img)` m
 
 The second example, `section:not(:has(h1, h2, h3))` matches any `section` that does *not* contain any headings. It’d take a gnarly bit of template logic to get your CMS to add a class for this to the right `section`s automatically.
 
-But as with many htings in life, you need to read the fine print:
+But as with many things in life, you need to read the fine print:
 
 {% include figure.html src="/assets/images/blog/css-selectors-redux/slide.059.png" alt="slide: Dynamic profile: “…appropriate in any context, including dynamic browser CSS selector matching. Includes every selector … except for: the :has() pseudo-class” Static profile: “…appropriate for contexts which aren’t extremely performance sensitive [such as] a static document tree. For example, the querySelector() method.”" caption="The :has() pseudo-class is the only selector relegated to the ‘static profile’" %}
 
@@ -198,7 +198,7 @@ Because we’re all just settling for class selectors, there’s a voice missing
 In my nearly 20 years as a professional developer, I’ve lost count of the number of times I’ve told my boss something was impossible, but once I was given a push I found a way to make it happen. Browser vendors may well be right; it could be impossible to implement full support for `:has()` in a performant way, but I think we should give them that push.
 
 {% include figure.html src="/assets/images/blog/css-selectors-redux/slide.060.png" alt="slide: a power drill with a gleaming assortment of sharp bits" caption="As developers, we want power tools…" %}
-    
+
 {% include figure.html src="/assets/images/blog/css-selectors-redux/slide.061.png" alt="slide: two bulldog clips and a rubber band" caption="…but what we’re getting amounts to little more than paper clips and rubber bands" %}
 
 Incidentally, this is the most depressing piece of stock photography I’ve ever paid money for, and I blame all of you for it.
