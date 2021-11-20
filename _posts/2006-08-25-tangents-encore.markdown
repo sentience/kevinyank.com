@@ -6,7 +6,7 @@ title: Tangents Encore!
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 114
 wordpress_url: http://old.kevinyank.com/blog/archives/tangents-encore/
 date: '2006-08-25 13:55:42 +1000'

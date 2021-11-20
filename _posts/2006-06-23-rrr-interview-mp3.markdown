@@ -6,7 +6,7 @@ title: RRR Interview MP3
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 93
 wordpress_url: http://old.kevinyank.com/blog/archives/rrr-interview-mp3/
 date: '2006-06-23 18:02:14 +1000'

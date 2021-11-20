@@ -6,7 +6,7 @@ title: Bah, Humbug
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 123
 wordpress_url: http://old.kevinyank.com/blog/archives/bah-humbug/
 date: '2006-09-21 22:35:22 +1000'

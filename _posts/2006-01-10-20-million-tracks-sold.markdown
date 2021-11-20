@@ -6,7 +6,7 @@ title: 20 Million Tracks Sold
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 10
 wordpress_url: http://old.kevinyank.com/blog/archives/20-million-tracks-sold/
 date: '2006-01-10 18:01:31 +1100'

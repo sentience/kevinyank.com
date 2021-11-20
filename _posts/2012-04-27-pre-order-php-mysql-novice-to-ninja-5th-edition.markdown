@@ -6,7 +6,7 @@ title: 'Pre-order PHP & MySQL: Novice To Ninja, 5th Edition'
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: 'At parties, one of the things I tell people I do for a living is write books
   that teach people how to build websites. It might be more accurate, however, to
   say I write *a* book: I’ve just written it five times!'
@@ -32,7 +32,7 @@ comments:
 - id: 498211
   author: Kevin Yank
   author_email: thatguy@kevinyank.com
-  author_url: http://old.kevinyank.com/
+  author_url: https://kevinyank.com/
   date: '2012-08-17 15:09:45 +1000'
   date_gmt: '2012-08-17 05:09:45 +1000'
   content: "Hi Bob,\r\n\r\nIf you request a xxx.tpl file from a PHP-enabled web server,
@@ -41,7 +41,7 @@ comments:
     guarantee the PHP code they contain will be processed by your web server even
     if someone nasty tries to request them directly."
 ---
-<p><a href="http://www.sitepoint.com/books/phpmysql5/"><img src="http://old.kevinyank.com/blog/wp-content/uploads/2012/04/phpmysql5-cover.jpg" alt="phpmysql5-cover.jpg" title="phpmysql5-cover.jpg" border="0" width="200" height="267" style="float:right;" /></a></p>
+<p><a href="http://www.sitepoint.com/books/phpmysql5/"><img src="/assets/wp-content/uploads/2012/04/phpmysql5-cover.jpg" alt="phpmysql5-cover.jpg" title="phpmysql5-cover.jpg" border="0" width="200" height="267" style="float:right;" /></a></p>
 <p>At parties, one of the things I tell people I do for a living is write books that teach people how to build websites. It might be more accurate, however, to say I write <em>a</em> book: I’ve just written it five times! There’s a special place it my heart for collaborations like <a href="http://www.sitepoint.com/books/javascript1">Simply JavaScript</a> and <a href="http://www.sitepoint.com/books/csswrong1">Everything You Know About CSS Is Wrong!</a>, but <a href="http://www.sitepoint.com/books/phpmysql5/">PHP &amp; MySQL: Novice to Ninja</a> (titled “Build Your Own Database Driven Website Using PHP &amp; MySQL” in previous editions) will always be the one I made all by myself.</p>
 <p>Approaching the 5th edition was honestly a little daunting; PHP and MySQL haven’t changed much in the three years since I wrote the 4th edition. Of course, the programming language that powers sites like Facebook hasn’t sat <em>stagnant</em> in that time. There are plenty of new frameworks, open source libraries, and development tools to keep an experienced PHP developer occupied, but the basics—the things you learn in a beginner’s book—haven’t changed much at all.</p>
 <p>I had a mental of list things that <em>needed</em> to change—some pretty great ideas, actually. So great were they in fact, that when I sat down to start writing I discovered to my dismay that they were all the ideas I’d put into the 4th edition! No wonder I’d liked them so much.</p>

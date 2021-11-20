@@ -6,7 +6,7 @@ title: Canadian Musician's Voluntary Payment Scheme
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 75
 wordpress_url: http://old.kevinyank.com/blog/archives/canadian-musicians-voluntary-payment-scheme/
 date: '2006-05-04 10:25:32 +1000'

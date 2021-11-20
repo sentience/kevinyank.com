@@ -6,7 +6,7 @@ title: White 'n Nerdy
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 122
 wordpress_url: http://old.kevinyank.com/blog/archives/white-n-nerdy/
 date: '2006-09-21 10:09:08 +1000'

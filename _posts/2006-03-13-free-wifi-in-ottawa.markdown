@@ -6,7 +6,7 @@ title: Free WiFi in Ottawa?
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 53
 wordpress_url: http://old.kevinyank.com/blog/archives/free-wifi-in-ottawa/
 date: '2006-03-13 15:41:28 +1100'

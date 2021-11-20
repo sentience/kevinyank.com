@@ -6,7 +6,7 @@ title: Lost Out Back
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 68
 wordpress_url: http://old.kevinyank.com/blog/archives/lost-out-back/
 date: '2006-04-14 13:28:00 +1000'

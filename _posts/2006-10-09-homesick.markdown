@@ -6,7 +6,7 @@ title: Homesick
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 131
 wordpress_url: http://old.kevinyank.com/blog/archives/homesick/
 date: '2006-10-09 20:40:14 +1000'

@@ -6,7 +6,7 @@ title: Chuck Norris Knows The Facts
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "<a href=\"http://www.chucknorris.com/\">Chuck Norris</a> has <a href=\"http://www.chucknorris.com/html/events.aspx\">responded</a>
   to all the <a href=\"http://selfgratification.org/archives/2006/01/11/more-chuck/\">facts
   about him</a> (and <a href=\"http://www.4q.cc/chuck/index.php\">more</a>) going

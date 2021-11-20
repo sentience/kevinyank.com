@@ -6,7 +6,7 @@ title: 'Photos: Rubicon Valley Horse Riding'
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 169
 wordpress_url: http://old.kevinyank.com/blog/archives/photos-rubicon-valley-horse-riding
 date: '2007-10-07 00:26:32 +1000'

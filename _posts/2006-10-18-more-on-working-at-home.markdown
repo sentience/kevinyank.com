@@ -6,7 +6,7 @@ title: More on Working at Home
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 133
 wordpress_url: http://old.kevinyank.com/blog/archives/more-on-working-at-home/
 date: '2006-10-18 17:36:10 +1000'
@@ -31,4 +31,4 @@ comments:
 
     But hey, working at home is the Uni student lifestyle. If we wanted to be productive, we'd get a job already.
 ---
-<p>Further to <a title="Working at Home" href="http://old.kevinyank.com/blog/archives/working-at-home/">my post on this subject</a>, here's <a title="Working from home... at The Business of Software" href="http://discuss.joelonsoftware.com/default.asp?biz.5.402425">an excellent forum discussion</a> about the challenges of working from home. Sadly, there is no way to subscribe to it.</p>
+<p>Further to <a title="Working at Home" href="https://kevinyank.com/posts/working-at-home/">my post on this subject</a>, here's <a title="Working from home... at The Business of Software" href="http://discuss.joelonsoftware.com/default.asp?biz.5.402425">an excellent forum discussion</a> about the challenges of working from home. Sadly, there is no way to subscribe to it.</p>

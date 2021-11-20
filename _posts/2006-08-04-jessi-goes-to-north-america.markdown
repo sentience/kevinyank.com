@@ -6,7 +6,7 @@ title: Jessi Goes To North America
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 109
 wordpress_url: http://old.kevinyank.com/blog/archives/jessi-goes-to-north-america/
 date: '2006-08-04 10:50:46 +1000'

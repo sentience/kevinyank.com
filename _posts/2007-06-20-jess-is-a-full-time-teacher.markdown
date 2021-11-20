@@ -6,7 +6,7 @@ title: Jess is a Full-time Teacher
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 160
 wordpress_url: http://old.kevinyank.com/blog/archives/jess-is-a-full-time-teacher
 date: '2007-06-20 21:16:00 +1000'

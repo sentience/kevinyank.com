@@ -6,7 +6,7 @@ title: SitePoint's Christmas Party Makes The Age
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 145
 wordpress_url: http://old.kevinyank.com/blog/archives/sitepoints-christmas-party-makes-the-age
 date: '2007-02-06 09:57:31 +1100'

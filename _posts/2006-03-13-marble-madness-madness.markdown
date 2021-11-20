@@ -6,9 +6,9 @@ title: Marble Madness Madness
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "<img align=\"right\" title=\"Rolling Madness Screenshot\" id=\"image50\"
-  alt=\"Rolling Madness Screenshot\" src=\"http://old.kevinyank.com/blog/wp-content/uploads/2006/03/mmadness.png\"
+  alt=\"Rolling Madness Screenshot\" src=\"/assets/wp-content/uploads/2006/03/mmadness.png\"
   /><a href=\"http://en.wikipedia.org/wiki/Marble_Madness\"><cite>Marble Madness</cite></a>
   is a game that has been on my mind a lot over the years, considering I have never
   actually played it.\r\n\r\nThough it was first released in 1984 and was ported to
@@ -45,7 +45,7 @@ comments:
     I've never actually heard of the game but I was totally into Secret City when I was about 12.  I had 10 episodes on tape but they were taped over.  I wonder if you can get the old ones anywhere.  I spent a hell of a lot of time drawing cities and spaceships because of that show.  That mural was awesome!
     Thanks for the memories.
 ---
-<p><img align="right" title="Rolling Madness Screenshot" id="image50" alt="Rolling Madness Screenshot" src="http://old.kevinyank.com/blog/wp-content/uploads/2006/03/mmadness.png" /><a href="http://en.wikipedia.org/wiki/Marble_Madness"><cite>Marble Madness</cite></a> is a game that has been on my mind a lot over the years, considering I have never actually played it.</p>
+<p><img align="right" title="Rolling Madness Screenshot" id="image50" alt="Rolling Madness Screenshot" src="/assets/wp-content/uploads/2006/03/mmadness.png" /><a href="http://en.wikipedia.org/wiki/Marble_Madness"><cite>Marble Madness</cite></a> is a game that has been on my mind a lot over the years, considering I have never actually played it.</p>
 <p>Though it was first released in 1984 and was ported to the <a href="http://en.wikipedia.org/wiki/Apple_II_family">Apple IIe</a> (my first computer) two years later, I first saw the game when it came to the <a href="http://en.wikipedia.org/wiki/Nintendo_Entertainment_System">Nintendo Entertainment System</a> (NES) in 1989. I've been wanting to play it ever since. A just-released free remake called <a href="http://www.lucaelia.com/games.php"><cite>Rolling Madness</cite></a> might allow me to do just that... if I ever get it working.</p>
 <p><a id="more"></a><a id="more-51"></a>I think what attracted me most to the game was its ability to convey a rich, three dimensional world with relatively simple graphics. As a kid, one of my favourite TV shows was <cite>Secret City</cite>, in which <a href="http://www.markkistler.com/about.html">Commander Mark</a> led a cast of spacefaring adventurers who, inexplicably, spent all their time drawing. Each episode would introduce some new 3D drawing technique (<a href="http://en.wikipedia.org/wiki/Hatching">cross-hatching</a> was my favourite), and would end with Commander Mark adding some element to a large mural of a futuristic city. The mural would develop week-to-week, with each addition making use of the technique introduced in that episode. I'd love to see the finished product, if indeed it was ever finished.</p>
 <p>Inspired by <cite>Secret City</cite>, I spent many classroom hours doodling heavily cross-hatched, futuristic suburbs in my excercise books. And when <cite>Marble Madness</cite> came along, it seemed as if those worlds had come to life.</p>

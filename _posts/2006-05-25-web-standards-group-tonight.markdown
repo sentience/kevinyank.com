@@ -6,7 +6,7 @@ title: Web Standards Group tonight
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 85
 wordpress_url: http://old.kevinyank.com/blog/archives/web-standards-group-tonight/
 date: '2006-05-25 11:12:09 +1000'

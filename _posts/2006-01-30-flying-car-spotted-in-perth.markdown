@@ -6,7 +6,7 @@ title: Flying Car Spotted in Perth
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 34
 wordpress_url: http://old.kevinyank.com/blog/archives/flying-car-spotted-in-perth/
 date: '2006-01-30 17:09:24 +1100'

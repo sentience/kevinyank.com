@@ -6,7 +6,7 @@ title: Apple Service Rating Harms Customer Service
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: |+
   <a href="http://www.streetwise.com.au/">Streetwise</a> is my local Apple retailer. It's where I bought my MacBook laptop and my Epson printer, and it's where I was planning to buy a lot of other computery things in the near future.
 
@@ -48,7 +48,7 @@ comments:
   author: Streetwise Will Throw Away Your Macâ€™s Serial Number at Yes, I&#8217;m
     Canadian
   author_email: ''
-  author_url: http://old.kevinyank.com/blog/archives/streetwise-will-throw-away-your-mace28099s-serial-number
+  author_url: https://kevinyank.com/blog/archives/streetwise-will-throw-away-your-mace28099s-serial-number
   date: '2008-03-20 10:18:03 +1100'
   date_gmt: '2008-03-20 00:18:03 +1100'
   content: "[...] I have previously written about Streetwise, an Apple Authorised
@@ -80,5 +80,5 @@ Here's the note I just sent to Streetwise.</p>
 <p>Sincerely,</p>
 <p>--<br />
 Kevin Yank<br />
-http://old.kevinyank.com/</p></blockquote>
-<p><strong>Update:</strong> <a href="http://old.kevinyank.com/blog/archives/apple-service-rating-update">Streetwise replied to my message.</a></p>
+http://kevinyank.com/</p></blockquote>
+<p><strong>Update:</strong> <a href="https://kevinyank.com/posts/apple-service-rating-update">Streetwise replied to my message.</a></p>

@@ -6,7 +6,7 @@ title: Tag! You're it!
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "Okay, okay, Lliam tagged me <a href=\"http://lliamamor.blogspot.com/2006/02/tag-youre-it.html\"><em>ages</em>
   ago</a> (those are Internet ages) and I've ignored it as long as I could. Let's
   get this over with...\r\n<h4>Four jobs I've had</h4>\r\n<ul>\r\n\t<li>junk mail

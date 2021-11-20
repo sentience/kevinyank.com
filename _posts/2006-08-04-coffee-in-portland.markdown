@@ -6,7 +6,7 @@ title: Coffee in Portland
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 108
 wordpress_url: http://old.kevinyank.com/blog/archives/coffee-in-portland/
 date: '2006-08-04 10:48:36 +1000'

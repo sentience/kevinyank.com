@@ -6,7 +6,7 @@ title: Happy Birthday to Me
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 67
 wordpress_url: http://old.kevinyank.com/blog/archives/happy-birthday-to-me/
 date: '2006-04-12 14:11:46 +1000'

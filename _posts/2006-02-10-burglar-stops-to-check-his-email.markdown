@@ -6,7 +6,7 @@ title: Burglar Stops to Check his Email
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 38
 wordpress_url: http://old.kevinyank.com/blog/archives/burglar-stops-to-check-his-email/
 date: '2006-02-10 12:28:54 +1100'

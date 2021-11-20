@@ -6,7 +6,7 @@ title: Post Tangential
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "Though <a href=\"/blog/archives/tangents/\">Tangents</a> continues for at
   least two more weeks, Jess and I are off on a trip overseas in just a few days,
   which means my final show for the run was last Sunday.\r\n\r\nAnd what a final show

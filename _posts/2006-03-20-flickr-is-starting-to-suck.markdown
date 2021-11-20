@@ -6,7 +6,7 @@ title: Flickr is starting to suck
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "I'll admit I haven't jumped whole hog into the whole <a href=\"http://flickr.com/\">Flickr</a>
   thing. I <em>do</em> have a Pro <a href=\"http://flickr.com/photos/sentience/\">account</a>,
   and yet most of my photos are still in my private <a href=\"/gallery/\">gallery</a>.\r\n\r\nOne

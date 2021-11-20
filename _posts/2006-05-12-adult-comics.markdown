@@ -6,7 +6,7 @@ title: Adult Comics
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 78
 wordpress_url: http://old.kevinyank.com/blog/archives/adult-comics/
 date: '2006-05-12 13:09:19 +1000'

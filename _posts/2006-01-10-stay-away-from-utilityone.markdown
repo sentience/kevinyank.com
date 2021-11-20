@@ -6,9 +6,9 @@ title: Stay Away From UtilityOne
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: <img align="right" alt="UtilityOne Logo" id="image8" title="UtilityOne Logo"
-  src="http://old.kevinyank.com/blog/wp-content/uploads/2006/01/utilityone-logo.thumbnail.gif"
+  src="/assets/wp-content/uploads/2006/01/utilityone-logo.thumbnail.gif"
   />If you're moving within Australia, do yourself a favour and avoid <a href="http://www.utilityone.com.au/">UtilityOne</a>,
   a company that offers to handle all your utility connections and disconnections
   for free. After giving it a go, I found the service overpriced.
@@ -168,7 +168,7 @@ comments:
     fee of $55 !\r\n\r\nNot so lucky with Origin, however, when I pleaded the loyalty
     card. But moving my gas and electricity using their online system was simple."
 ---
-<p><img align="right" alt="UtilityOne Logo" id="image8" title="UtilityOne Logo" src="http://old.kevinyank.com/blog/wp-content/uploads/2006/01/utilityone-logo.thumbnail.gif" />If you're moving within Australia, do yourself a favour and avoid <a href="http://www.utilityone.com.au/">UtilityOne</a>, a company that offers to handle all your utility connections and disconnections for free. After giving it a go, I found the service overpriced.<a id="more"></a><a id="more-7"></a></p>
+<p><img align="right" alt="UtilityOne Logo" id="image8" title="UtilityOne Logo" src="/assets/wp-content/uploads/2006/01/utilityone-logo.thumbnail.gif" />If you're moving within Australia, do yourself a favour and avoid <a href="http://www.utilityone.com.au/">UtilityOne</a>, a company that offers to handle all your utility connections and disconnections for free. After giving it a go, I found the service overpriced.<a id="more"></a><a id="more-7"></a></p>
 <p>It all begins with a box on your lease application. "Tick here and UtilityOne will contact you to arrange your utility disconnections. This is a free service." I'd allowed my skepticism to rule in past moves, but this time I decided to give it a shot. Within a few days of lodging my application, UtilityOne called me on my mobile phone to get all the details.</p>
 <p>The phone call was friendly and straightforward, and basically consisted of confirming my details and then asking me if I'd like them to handle the migration of each of my utilities in turn: electricity, gas, telephone and water.</p>
 <p>Though the company bills itself as an expert in dealing with utilities, that expertise doesn't mean it can deal with lots of different companies. For each utility (electricity, gas, water, telephone), it has selected one or two providers that it works with. If you want to use someone else, UtilityOne can't help you.</p>

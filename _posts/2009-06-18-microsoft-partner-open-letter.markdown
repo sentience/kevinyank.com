@@ -6,7 +6,7 @@ title: An Open Letter to the Microsoft Partner Program
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: I continue to be amazed by how horrible a job your web team does. Why would
   we ever take marketing advice from Microsoft?
 wordpress_id: 184

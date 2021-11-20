@@ -6,7 +6,7 @@ title: Cancer Cured
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 76
 wordpress_url: http://old.kevinyank.com/blog/archives/cancer-cured/
 date: '2006-05-09 17:36:11 +1000'

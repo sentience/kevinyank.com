@@ -6,7 +6,7 @@ title: Apple Service Rating Update
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 172
 wordpress_url: http://old.kevinyank.com/blog/archives/apple-service-rating-update
 date: '2008-02-03 10:50:38 +1100'
@@ -20,7 +20,7 @@ comments:
 - id: 76180
   author: Apple Service Rating Harms Customer Service at Yes, I&#8217;m Canadian
   author_email: ''
-  author_url: http://old.kevinyank.com/blog/archives/streetwises-service-rating-harms-customer-service
+  author_url: https://kevinyank.com/blog/archives/streetwises-service-rating-harms-customer-service
   date: '2008-02-03 11:18:15 +1100'
   date_gmt: '2008-02-03 01:18:15 +1100'
   content: "[...] Register        &laquo; Workaround: Mac OS X Leopard Docked Folder
@@ -43,8 +43,8 @@ comments:
     costs must be reduced because the profit margin and the stock price are more important
     than customer satisfaction."
 ---
-<p>For those who’ve asked, here’s an update on the <a href="http://old.kevinyank.com/blog/archives/streetwises-service-rating-harms-customer-service">situation</a> with <a href="http://www.streetwise.com.au/">Streetwise</a> and the Apple Service Rating that I wrote about in <a href="http://old.kevinyank.com/blog/archives/streetwises-service-rating-harms-customer-service">my last post</a>.</p>
-<p>Streetwise replied almost immediately to my <a href="http://old.kevinyank.com/blog/archives/streetwises-service-rating-harms-customer-service">email complaint</a>:</p>
+<p>For those who’ve asked, here’s an update on the <a href="https://kevinyank.com/posts/streetwises-service-rating-harms-customer-service">situation</a> with <a href="http://www.streetwise.com.au/">Streetwise</a> and the Apple Service Rating that I wrote about in <a href="https://kevinyank.com/posts/streetwises-service-rating-harms-customer-service">my last post</a>.</p>
+<p>Streetwise replied almost immediately to my <a href="https://kevinyank.com/posts/streetwises-service-rating-harms-customer-service">email complaint</a>:</p>
 <blockquote><p>
 Hi Kevin,</p>
 <p>I'm not sure why the technician on Saturday would have told you that - perhaps there was some sort of misunderstanding.<br />
@@ -70,7 +70,7 @@ Thanks. Will do!</p>
 <p>Has any explanation for the original mixup been forthcoming?</p>
 <p>--<br />
 Kevin Yank<br />
-http://old.kevinyank.com/
+http://kevinyank.com/
 </p></blockquote>
 <p>Streetwise’s reply was about as vague as can be, but reading between the lines I believe my complaint was taken to heart:</p>
 <blockquote><p>No worries Kevin - I've spoken to the tech and he said there was a small mixup - but I hope that's been cleared up.</p>

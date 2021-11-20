@@ -6,9 +6,9 @@ title: Simply JavaScript
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "<div><img width=\"350\" height=\"286\" border=\"0\" align=\"right\" alt=\"Simply
-  JavaScript.jpg\" src=\"http://old.kevinyank.com/blog/wp-content/uploads/2007/06//Simply%20JavaScript.jpg\"
+  JavaScript.jpg\" src=\"/assets/wp-content/uploads/2007/06//Simply%20JavaScript.jpg\"
   /></div>\r\nIt’s aliiiiiiiiiive! The first copies of <a href=\"http://www.sitepoint.com/launch/cf0b72\">Simply
   JavaScript</a>—SitePoint’s latest book, co-written by me and <a href=\"http://themaninblue.com/\">Cameron
   Adams</a>—have arrived! And if you’ll forgive my obvious bias, it looks awesome.\r\n\r\n"
@@ -102,7 +102,7 @@ comments:
     in action and it will make a lot more sense then just reading something on the
     page."
 ---
-<div><img width="350" height="286" border="0" align="right" alt="Simply JavaScript.jpg" src="http://old.kevinyank.com/blog/wp-content/uploads/2007/06//Simply%20JavaScript.jpg" /></div>
+<div><img width="350" height="286" border="0" align="right" alt="Simply JavaScript.jpg" src="/assets/wp-content/uploads/2007/06//Simply%20JavaScript.jpg" /></div>
 <p>It’s aliiiiiiiiiive! The first copies of <a href="http://www.sitepoint.com/launch/cf0b72">Simply JavaScript</a>—SitePoint’s latest book, co-written by me and <a href="http://themaninblue.com/">Cameron Adams</a>—have arrived! And if you’ll forgive my obvious bias, it looks awesome.</p>
 <p><a id="more"></a><a id="more-161"></a>I’m so proud of what Cameron and I have achieved with this book. We knew from the beginning that it wasn’t worthwhile writing another beginner’s JavaScript book unless we could produce something really special, and we definitely have.</p>
 <p>Simply JavaScript teaches the technology with unprecedented clarity, featuring loads of colour illustrations and advice on how to use JavaScript the right way in the real world.</p>

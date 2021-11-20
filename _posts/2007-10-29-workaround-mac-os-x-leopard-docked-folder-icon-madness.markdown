@@ -6,7 +6,7 @@ title: 'Workaround: Mac OS X Leopard Docked Folder Icon Madness'
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "My copy of the newly-released Mac OS X Leopard arrived on my desk on launch
   day before I even got to work. I resisted installing it until I could update my
   system back-up that night, but at this point I've been using the new operating system
@@ -268,10 +268,10 @@ comments:
 <p>My copy of the newly-released Mac OS X Leopard arrived on my desk on launch day before I even got to work. I resisted installing it until I could update my system back-up that night, but at this point I've been using the new operating system for a full 48 hours. Aside from a couple of apps needing updates, the upgrade has been a blissfully uneventful experience.</p>
 <p>Thanks to the pervasive tweaks to the user experience in Leopard, using my Mac is a more uniformly pleasant experience … with one major exception: the display of docked folders (now called "Stacks"). Thankfully, I've found a work-around.</p>
 <p><a id="more"></a><a id="more-170"></a>As <a href="http://arstechnica.com/reviews/os/mac-os-x-10-5.ars/13">explained in detail</a> in <a href="http://arstechnica.com/">Ars Technica</a>'s excellent <a href="http://arstechnica.com/reviews/os/mac-os-x-10-5.ars">review of Leopard</a>, folders placed on Leopard's Dock will only display their icon when they are empty. For folders with files in them, the icons of the folders’ <span style="font-style: italic">contents</span> are stacked one on top of the other to produce, in the vast majority of cases, a completely useless result.</p>
-<p><img title="A typical dock in Leopard, the docked folders are impossible to identify" alt="A typical dock in Leopard, the docked folders are impossible to identify" src="http://old.kevinyank.com/blog/wp-content/uploads/2007/10/typical-dock.jpg" /></p>
+<p><img title="A typical dock in Leopard, the docked folders are impossible to identify" alt="A typical dock in Leopard, the docked folders are impossible to identify" src="/assets/wp-content/uploads/2007/10/typical-dock.jpg" /></p>
 <p>In the above screenshot from the Ars Technica review, the folder on the far left is the user's Home directory. What is displayed is a stack of folder icons, with the front-most icon that of the Desktop folder. At a glance, then, the Home folder looks like the Desktop folder when placed on the dock. The other folders that you would typically expect to find on the dock are similarly difficult to identify.</p>
 <p>The most convincing example from the article is the following screenshot, which shows the Downloads folder (containing a disk image) sitting next to an actual disk image on the Dock. Can you tell which is which?</p>
-<p><img title="The Downloads folder and a docked disk image are virtually indistinguishable" alt="The Downloads folder and a docked disk image are virtually indistinguishable" src="http://old.kevinyank.com/blog/wp-content/uploads/2007/10/docked-folder-and-dmg.jpg" /></p>
+<p><img title="The Downloads folder and a docked disk image are virtually indistinguishable" alt="The Downloads folder and a docked disk image are virtually indistinguishable" src="/assets/wp-content/uploads/2007/10/docked-folder-and-dmg.jpg" /></p>
 <p>And of course, there is no preference (hidden or otherwise) to control this icon insanity.</p>
 <p>Thankfully, after dealing with this horrendous situation for 48 hours, I've found a work-around that restores (mostly) the pre-Leopard behaviour of docked folders. Instead of placing the folder itself in the Dock, create an alias to the folder, and place <span style="font-style: italic">that</span> on the Dock.</p>
 <p>Here's the procedure in detail:</p>
@@ -282,6 +282,6 @@ comments:
 <li>One at a time, drag each of the folders you want to your Dock.</li>
 </ol>
 <p>Here's what you'll end up with:</p>
-<p><img title="The docked aliases display the icons of their corresponding folders, not their contents." alt="The docked aliases display the icons of their corresponding folders, not their contents." src="http://old.kevinyank.com/blog/wp-content/uploads/2007/10/docked-aliases.jpg" /></p>
+<p><img title="The docked aliases display the icons of their corresponding folders, not their contents." alt="The docked aliases display the icons of their corresponding folders, not their contents." src="/assets/wp-content/uploads/2007/10/docked-aliases.jpg" /></p>
 <p>Clicking on any of these docked aliases will open the corresponding folder in a Finder window. The only thing missing from the pre-Leopard behaviour is the ability to browse through the folders by right-clicking them.</p>
 <p>Ideally, one could choose to benefit from the Fan and Grid views provided by stacks without having to live with the horrendous Dock icons, but at least this work-around gives you one more choice than Apple saw fit to provide!</p>

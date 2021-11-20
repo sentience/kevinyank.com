@@ -6,7 +6,7 @@ title: Keeping Up is for Suckers
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 72
 wordpress_url: http://old.kevinyank.com/blog/archives/keeping-up-is-for-suckers/
 date: '2006-05-03 14:45:01 +1000'

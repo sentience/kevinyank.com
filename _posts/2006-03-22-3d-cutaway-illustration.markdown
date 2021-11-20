@@ -6,7 +6,7 @@ title: 3D Cutaway Illustration
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 59
 wordpress_url: http://old.kevinyank.com/blog/archives/3d-cutaway-illustration/
 date: '2006-03-22 16:52:54 +1100'

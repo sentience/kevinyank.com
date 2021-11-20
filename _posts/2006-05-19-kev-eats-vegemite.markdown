@@ -6,7 +6,7 @@ title: Kev Eats Vegemite
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 82
 wordpress_url: http://old.kevinyank.com/blog/archives/kev-eats-vegemite/
 date: '2006-05-19 18:06:45 +1000'

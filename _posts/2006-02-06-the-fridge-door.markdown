@@ -6,9 +6,9 @@ title: The Fridge Door
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "<img align=\"right\" title=\"Fridge Door \" id=\"image37\" alt=\"Fridge
-  Door \" src=\"http://old.kevinyank.com/blog/wp-content/uploads/2006/02/fridge-door-pull.jpg\"
+  Door \" src=\"/assets/wp-content/uploads/2006/02/fridge-door-pull.jpg\"
   />I can feel my brain being reprogrammed every time I open the fridge door.\r\n\r\nNo,
   this isn't some kind of rant against EM radiation from home appliances or garishly
   promotional food packaging. We have simply reconfigured our fridge door from right-hand
@@ -54,7 +54,7 @@ comments:
   content: Just the type of humour to perk us up as we prepare to move back to Canada.  Lots
     of love, Mom and Dad
 ---
-<p><img align="right" title="Fridge Door " id="image37" alt="Fridge Door " src="http://old.kevinyank.com/blog/wp-content/uploads/2006/02/fridge-door-pull.jpg" />I can feel my brain being reprogrammed every time I open the fridge door.</p>
+<p><img align="right" title="Fridge Door " id="image37" alt="Fridge Door " src="/assets/wp-content/uploads/2006/02/fridge-door-pull.jpg" />I can feel my brain being reprogrammed every time I open the fridge door.</p>
 <p>No, this isn't some kind of rant against EM radiation from home appliances or garishly promotional food packaging. We have simply reconfigured our fridge door from right-hand opening to left-hand opening, and I swear it's giving me brain tumours!</p>
 <p>Though you may not know it, a handy feature of most modern "freezer-on-top" refrigerators (unless you have one of those Internet fridges, in which case you have bigger problems, my friend) is that you can move the hinges from one side of the appliance to the other. Jess and I got home from shopping yesterday, and I very casually declared, fresh tub of melting ice cream in hand, "I think I'll switch over the door on the fridge."<a id="more"></a><a id="more-35"></a></p>
 <p>Given the layout of our kitchen, this is a perfectly logical change to make. But boy are those two pages of simplistic-looking instructions in the refrigerator manual misleading. (Yes, I read manuals.)</p>

@@ -6,7 +6,7 @@ title: Irresponsible Technology Blogging
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "Though it has been a long time since I received anything truly worthwhile
   from them, I have somehow managed to remain subscribed to the <a href=\"http://nl.com.com/view_online_newsletter.jsp?list_id=e055\">Web
   Development Zone newsletter</a> of <a href=\"http://techrepublic.com/\">TechRepublic.com</a>.

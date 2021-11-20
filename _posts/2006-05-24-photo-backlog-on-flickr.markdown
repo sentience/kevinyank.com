@@ -6,7 +6,7 @@ title: Don't Look Now
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 83
 wordpress_url: http://old.kevinyank.com/blog/archives/photo-backlog-on-flickr/
 date: '2006-05-24 00:22:08 +1000'

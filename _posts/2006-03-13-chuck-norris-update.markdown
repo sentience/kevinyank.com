@@ -6,7 +6,7 @@ title: Chuck Norris Update
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 52
 wordpress_url: http://old.kevinyank.com/blog/archives/chuck-norris-update/
 date: '2006-03-13 13:57:59 +1100'

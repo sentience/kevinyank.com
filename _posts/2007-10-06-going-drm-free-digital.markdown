@@ -6,7 +6,7 @@ title: Going DRM-Free Digital
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "<img align=\"right\" alt=\"Matchbox Twenty’s ‘Exile on Mainstream’ album
   art\" src=\"http://ec1.images-amazon.com/images/I/313WChAka3L._AA160_.jpg\" />\r\n\r\nHaving
   one too many dusty CDs taking up shelf space, I’ve decided not to buy music in physical

@@ -6,7 +6,7 @@ title: 'Spam Subject Line #84'
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 62
 wordpress_url: http://old.kevinyank.com/blog/archives/spam-subject-line-84/
 date: '2006-03-27 11:29:06 +1100'

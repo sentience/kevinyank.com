@@ -6,7 +6,7 @@ title: 'My New Gig: CTO at Avalanche Technology Group'
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: After ten years (!) at the SitePoint Group, I started a new job in January.
   For the first time in a decade, I feel like I have everything to learn and more
   than a little to prove, which is both incredibly exciting and a wee bit scary.
@@ -33,7 +33,7 @@ comments:
 - id: 495667
   author: Kev
   author_email: thatguy@kevinyank.com
-  author_url: http://old.kevinyank.com/
+  author_url: https://kevinyank.com/
   date: '2012-04-13 14:52:08 +1000'
   date_gmt: '2012-04-13 04:52:08 +1000'
   content: |-

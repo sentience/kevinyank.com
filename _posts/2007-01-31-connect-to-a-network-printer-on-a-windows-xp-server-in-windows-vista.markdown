@@ -6,7 +6,7 @@ title: Connect to a Network Printer on a Windows XP Server in Windows Vista
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "For better or worse, <a href=\"http://www.microsoft.com/windows/products/windowsvista/\">Windows
   Vista</a> is out today and I'll shortly be moving to it as the primary operating
   system on both my work and home PCs. Aside from compatibility glitches in certain
@@ -409,7 +409,7 @@ comments:
 - id: 21168
   author: Kev
   author_email: thatguy@kevinyank.com
-  author_url: http://old.kevinyank.com/
+  author_url: https://kevinyank.com/
   date: '2007-04-24 22:03:05 +1000'
   date_gmt: '2007-04-24 12:03:05 +1000'
   content: |-

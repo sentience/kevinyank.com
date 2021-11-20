@@ -6,7 +6,7 @@ title: Cat Lovers Avoid
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 11
 wordpress_url: http://old.kevinyank.com/blog/archives/cat-lovers-avoid/
 date: '2006-01-10 18:10:05 +1100'

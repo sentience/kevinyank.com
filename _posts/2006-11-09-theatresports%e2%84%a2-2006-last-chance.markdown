@@ -6,7 +6,7 @@ title: 'Theatresports™ 2006: Last Chance'
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 134
 wordpress_url: http://old.kevinyank.com/blog/archives/theatresports%e2%84%a2-2006-last-chance/
 date: '2006-11-09 21:43:21 +1100'

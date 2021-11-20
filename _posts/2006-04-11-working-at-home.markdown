@@ -6,7 +6,7 @@ title: Working at Home
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "I worked from my bedroom for nearly a year while awaiting the visa that
   would allow me to move to Australia in 2002. Though the prospect of the two-second
   commute certainly has its appeal, being 10 hours out of sync with my coworkers and
@@ -28,7 +28,7 @@ comments:
 - id: 1755
   author: More on Working at Home at Yes, I&#8217;m Canadian
   author_email: ''
-  author_url: http://old.kevinyank.com/blog/archives/more-on-working-at-home/
+  author_url: https://kevinyank.com/blog/archives/more-on-working-at-home/
   date: '2006-10-18 17:36:20 +1000'
   date_gmt: '2006-10-18 07:36:20 +1000'
   content: "[...] More on Working at Home   Published October 18th, 2006    Further

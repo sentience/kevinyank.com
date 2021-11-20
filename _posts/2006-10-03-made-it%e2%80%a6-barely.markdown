@@ -6,7 +6,7 @@ title: Made It… Barely
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 128
 wordpress_url: http://old.kevinyank.com/blog/archives/made-it%e2%80%a6-barely/
 date: '2006-10-03 01:53:42 +1000'

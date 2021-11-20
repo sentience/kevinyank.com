@@ -6,7 +6,7 @@ title: A Quiet Night with Harold at the Abbotsford Convent
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "<a href=\"http://flickr.com/photos/sentience/497860866/\"><img align=\"right\"
   title=\"Abbotsford Courtyard\" alt=\"Abbotsford Courtyard\" src=\"http://farm1.static.flickr.com/226/497860866_6644972b03_m.jpg\"
   /></a>After the hectic week-and-a-half that has been <a href=\"/blog/archives/impro-a-go-go\">Unforeseen

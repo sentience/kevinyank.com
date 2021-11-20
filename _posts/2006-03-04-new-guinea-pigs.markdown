@@ -6,9 +6,9 @@ title: The Cutest Shall Prevail
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "In the battle for guinea pig supremacy... only one can win.\r\n\r\n<img
-  title=\"Sunny vs Toffee\" id=\"image45\" alt=\"Sunny vs Toffee\" src=\"http://old.kevinyank.com/blog/wp-content/uploads/2006/03/piggie-fight.jpg\"
+  title=\"Sunny vs Toffee\" id=\"image45\" alt=\"Sunny vs Toffee\" src=\"/assets/wp-content/uploads/2006/03/piggie-fight.jpg\"
   />\r\n\r\nGrowing up in Montreal, our family had a series of guinea pigs. First
   there was Ginny, who came home from the pet store already pregnant (I've since learned
   this is a sign of a really irresponsible establishment). One traumatic evening while
@@ -32,7 +32,7 @@ comments:
 - id: 15
   author: Suspicion at Yes, I&#8217;m Canadian
   author_email: ''
-  author_url: http://old.kevinyank.com/blog/archives/sunny-mayo/
+  author_url: https://kevinyank.com/blog/archives/sunny-mayo/
   date: '2006-03-11 13:32:23 +1100'
   date_gmt: '2006-03-11 02:32:23 +1100'
   content: "[...] I accidentally got mayonnaise on Sunny while eating lunch yesterday.
@@ -109,7 +109,7 @@ comments:
   content: very cute but no compitition against my gunea pigz
 ---
 <p>In the battle for guinea pig supremacy... only one can win.</p>
-<p><img title="Sunny vs Toffee" id="image45" alt="Sunny vs Toffee" src="http://old.kevinyank.com/blog/wp-content/uploads/2006/03/piggie-fight.jpg" /></p>
+<p><img title="Sunny vs Toffee" id="image45" alt="Sunny vs Toffee" src="/assets/wp-content/uploads/2006/03/piggie-fight.jpg" /></p>
 <p>Growing up in Montreal, our family had a series of guinea pigs. First there was Ginny, who came home from the pet store already pregnant (I've since learned this is a sign of a really irresponsible establishment). One traumatic evening while the parents were out, our babysitter rushed us to our bedrooms when we shouted in alarm, "There's something coming out of Ginny!" By the time mom and dad got home, there were three new baby piggies: Popcorn, Raspberry and Patches. We found good homes for Popcorn and Raspberry and kept Patches to keep Ginny company. Eventually Ginny left us, and Frisky joined the family.</p>
 <p>When we moved to Australia in 1993 we left them all behind, and I've been wanting guinea pigs again ever since. Meet Sunny and Toffee, the two newest additions to the family. They are both very cute, but they don't always get along so well.</p>
 <p><a id="more"></a><a id="more-46"></a>We picked up these two fellas on January 29th. They're brothers, and we're guessing they were 6 weeks old at the time, which makes their birthday December 18th.</p>

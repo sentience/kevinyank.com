@@ -6,7 +6,7 @@ title: Jack Handey Rules
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 20
 wordpress_url: http://old.kevinyank.com/blog/archives/jack-handey-rules/
 date: '2006-01-12 11:08:54 +1100'

@@ -6,7 +6,7 @@ title: Lucky I Made It In Early
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 13
 wordpress_url: http://old.kevinyank.com/blog/archives/lucky-i-made-it-in-early/
 date: '2006-01-10 18:27:59 +1100'

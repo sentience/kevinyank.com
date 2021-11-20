@@ -6,7 +6,7 @@ title: 'Impro: Heaven or Hell'
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "This Saturday, May 13th, I'm performing in <cite>Heaven or Hell</cite>,
   part of <a href=\"http://www.impromelbourne.com.au/\">Impro Melbourne</a>'s <a href=\"http://www.impromelbourne.com.au/Feature.php?page=Shows&Category=All&ContentID=90\"><cite>Unforeseen
   Stories</cite></a>, a series of long-form improvised theatre performances. <cite>Heaven

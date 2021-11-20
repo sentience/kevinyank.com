@@ -6,7 +6,7 @@ title: It's Impro Season Again!
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 90
 wordpress_url: http://old.kevinyank.com/blog/archives/its-impro-season-again/
 date: '2006-06-15 13:34:33 +1000'
@@ -33,7 +33,7 @@ comments:
     I am reading kevins blog and he says there are some impro melbourne gigs there.
     I love impro melbourne what a coincidence [...]"
 ---
-<p><img align="right" title="The Impro Cave logo" id="image89" alt="The Impro Cave logo" src="http://old.kevinyank.com/blog/wp-content/uploads/2006/06/cave_logo_front.gif" />After the long summer hiatus, Melbourne's improvised comedy season is back in full swing! <a href="http://www.impromelbourne.com.au/Feature.php?page=Shows&Category=All&ContentID=78"><cite>The Impro Cave</cite></a> starts up this Sunday, June 18th at 7:30PM and runs every Sunday night through August.</p>
+<p><img align="right" title="The Impro Cave logo" id="image89" alt="The Impro Cave logo" src="/assets/wp-content/uploads/2006/06/cave_logo_front.gif" />After the long summer hiatus, Melbourne's improvised comedy season is back in full swing! <a href="http://www.impromelbourne.com.au/Feature.php?page=Shows&Category=All&ContentID=78"><cite>The Impro Cave</cite></a> starts up this Sunday, June 18th at 7:30PM and runs every Sunday night through August.</p>
 <p>If you want to come and see me, you'll need to get off your butt because I won't be around for much of the season! I'm playing this Sunday at 7:30PM in <cite>More Or Less</cite>, a fast-paced format where players take turns directing scenes and the audience controls how long each scene goes on. Come and see me make mayhem!</p>
 <p>Starting July 2nd, <cite>The Impro Cave</cite> starts earlier at 6:30PM with a brand new format called <cite>Tangents</cite> created by the up-and-comers within the Impro Melbourne company, including yours truly! More on this closer to opening night...</p>
 <p><strong>The Impro Cave</strong><br />

@@ -6,7 +6,7 @@ title: A Blog From The Dark
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 110
 wordpress_url: http://old.kevinyank.com/blog/archives/a-blog-from-the-dark/
 date: '2006-08-04 11:07:00 +1000'

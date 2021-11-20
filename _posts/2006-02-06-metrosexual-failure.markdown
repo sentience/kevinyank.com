@@ -6,7 +6,7 @@ title: Metrosexual Failure
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "For a number of years, I have gotten used to people assigning me the badge
   of <a href=\"http://en.wikipedia.org/wiki/Metrosexual\">metrosexual</a>. I've even
   come to take some small amount of pride in the label—if only because they didn't

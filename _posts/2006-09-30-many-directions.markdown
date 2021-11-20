@@ -6,7 +6,7 @@ title: Many Directions
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 126
 wordpress_url: http://old.kevinyank.com/blog/archives/many-directions/
 date: '2006-09-30 03:19:08 +1000'

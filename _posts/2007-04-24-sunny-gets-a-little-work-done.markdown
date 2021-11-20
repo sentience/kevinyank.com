@@ -6,7 +6,7 @@ title: Sunny Gets a Little Work Done
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 154
 wordpress_url: http://old.kevinyank.com/blog/archives/sunny-gets-a-little-work-done
 date: '2007-04-24 13:07:58 +1000'
@@ -51,6 +51,6 @@ comments:
   content: Your RSS feed is only working half the time, i'm on a macbook running google
     reader if that helps
 ---
-<p><a href="http://flickr.com/photos/sentience/343876701/"><img align="right" title="Sunny" id="image153" alt="Sunny" src="http://old.kevinyank.com/blog/wp-content/uploads/2007/04/sunny.jpg" /></a>After a week on antibiotics, our guinea pig Sunny is at the vet today having a conspicuous growth removed from his abdomen. The bump is mysterious, but we expect him to be fine.</p>
+<p><a href="http://flickr.com/photos/sentience/343876701/"><img align="right" title="Sunny" id="image153" alt="Sunny" src="/assets/wp-content/uploads/2007/04/sunny.jpg" /></a>After a week on antibiotics, our guinea pig Sunny is at the vet today having a conspicuous growth removed from his abdomen. The bump is mysterious, but we expect him to be fine.</p>
 <p>At home with Jess, Toffee seems lost without his big brother. The pair haven't been apart for more than an hour in their entire lives!</p>
 <p><ins><strong>Update:</strong> Sunny's home and doing fine. He'll have a cool scar to show the ladies.</ins></p>

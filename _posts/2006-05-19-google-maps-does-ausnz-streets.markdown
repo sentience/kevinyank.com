@@ -6,7 +6,7 @@ title: Google Maps does Aus/NZ streets
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 81
 wordpress_url: http://old.kevinyank.com/blog/archives/google-maps-does-ausnz-streets/
 date: '2006-05-19 16:27:00 +1000'

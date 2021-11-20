@@ -6,7 +6,7 @@ title: Travel Travails
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "<a href=\"http://www.flickr.com/photos/sentience/198055692/\"><img align=\"right\"
   alt=\"Melbourne to Sydney\" title=\"Melbourne to Sydney\" src=\"http://static.flickr.com/66/198055692_571f8da869_m.jpg\"
   /></a>Spending the night in <a href=\"http://www.ci.olympia.wa.us/\">Olympia</a>

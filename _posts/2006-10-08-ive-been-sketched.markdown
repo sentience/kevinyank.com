@@ -6,7 +6,7 @@ title: I've been sketched!
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 129
 wordpress_url: http://old.kevinyank.com/blog/archives/ive-been-sketched/
 date: '2006-10-08 04:31:37 +1000'

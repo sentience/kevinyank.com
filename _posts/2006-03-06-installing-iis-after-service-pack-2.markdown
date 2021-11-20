@@ -6,7 +6,7 @@ title: Installing IIS after Service Pack 2
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "I'm preparing to record one in <a href=\"http://www.sitepoint.com/blogs/2006/02/24/screencast-photoshop-starburst-effect/\">a
   series of video tutorials</a> for <a href=\"http://www.sitepoint.com/\">SitePoint</a>,
   for which I'll need a copy of Microsoft <a href=\"http://www.microsoft.com/WindowsServer2003/iis/\">Internet
@@ -17,7 +17,7 @@ excerpt: "I'm preparing to record one in <a href=\"http://www.sitepoint.com/blog
   But if, like me, you're working with a copy of Windows that has been updated to
   <a href=\"http://www.microsoft.com/windowsxp/sp2/\">Service Pack 2</a>, you'll just
   get this error:\r\n\r\n<img title=\"Copy Error: Setup cannot copy the file staxmem.dll.\"
-  id=\"image47\" alt=\"Copy Error: Setup cannot copy the file staxmem.dll.\" src=\"http://old.kevinyank.com/blog/wp-content/uploads/2006/03/staxmem.png\"
+  id=\"image47\" alt=\"Copy Error: Setup cannot copy the file staxmem.dll.\" src=\"/assets/wp-content/uploads/2006/03/staxmem.png\"
   />\r\n\r\nMicrosoft helpfully offers <a href=\"http://support.microsoft.com/?kbid=894351\">a
   solution to this</a> in its online knowledge base. Problem is, the solution (which
   will most often require \"Method 2\" in that article) requires you to have a Service
@@ -276,7 +276,7 @@ comments:
 - id: 8012
   author: Durai
   author_email: duraiblacky@yahoo.com
-  author_url: http://old.kevinyank.com/blog/archives/installing-iis-after-service-pack-2
+  author_url: https://kevinyank.com/blog/archives/installing-iis-after-service-pack-2
   date: '2007-02-23 22:50:50 +1100'
   date_gmt: '2007-02-23 12:50:50 +1100'
   content: "Hei,\r\n\r\nThx a lot howl.\r\nIts working like what u said\r\nesentutl
@@ -628,7 +628,7 @@ comments:
 ---
 <p>I'm preparing to record one in <a href="http://www.sitepoint.com/blogs/2006/02/24/screencast-photoshop-starburst-effect/">a series of video tutorials</a> for <a href="http://www.sitepoint.com/">SitePoint</a>, for which I'll need a copy of Microsoft <a href="http://www.microsoft.com/WindowsServer2003/iis/">Internet Information Services</a> (IIS), the web server that comes with Windows XP Professional, installed on my home computer for the first time since I installed Windows.</p>
 <p>The usual way to do this is to launch Add or Remove Programs from the Control Panel, click Add/Remove Windows Components, pick IIS from the list and then go from there. But if, like me, you're working with a copy of Windows that has been updated to <a href="http://www.microsoft.com/windowsxp/sp2/">Service Pack 2</a>, you'll just get this error:</p>
-<p><img title="Copy Error: Setup cannot copy the file staxmem.dll." id="image47" alt="Copy Error: Setup cannot copy the file staxmem.dll." src="http://old.kevinyank.com/blog/wp-content/uploads/2006/03/staxmem.png" /></p>
+<p><img title="Copy Error: Setup cannot copy the file staxmem.dll." id="image47" alt="Copy Error: Setup cannot copy the file staxmem.dll." src="/assets/wp-content/uploads/2006/03/staxmem.png" /></p>
 <p>Microsoft helpfully offers <a href="http://support.microsoft.com/?kbid=894351">a solution to this</a> in its online knowledge base. Problem is, the solution (which will most often require "Method 2" in that article) requires you to have a Service Pack 2 CD on hand, and Microsoft's web site does everything it can to talk you <span style="font-style: italic">out</span> of getting a copy of that CD.</p>
 <p><a id="more"></a><a id="more-48"></a>After searching all over the site for a way to get the CD without having to pay (and wait) for Microsoft to ship it to me, I finally gave up and submitted a support request to Microsoft explaining my dilemma (you get two such requests for free).</p>
 <p>In the end, I was able to find the answer myself. <a href="http://www.winsupersite.com/showcase/windowsxp_sp2_slipstream.asp">Via Paul Thurrott</a>, I was able to find <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=049C9DBE-3B8E-4F30-8245-9E368D3CDB5A&displaylang=en">the full download of Service Pack 2</a>, labelled "Windows XP Service Pack 2 Network Installation Package for IT Professionals and Developers" to scare off the plebs.</p>

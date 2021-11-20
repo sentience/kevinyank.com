@@ -6,7 +6,7 @@ title: Drink Klutz
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 107
 wordpress_url: http://old.kevinyank.com/blog/archives/drink-klutz/
 date: '2006-07-26 15:50:30 +1000'

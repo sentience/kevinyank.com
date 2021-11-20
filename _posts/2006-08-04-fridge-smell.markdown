@@ -6,7 +6,7 @@ title: Fridge Smell
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 111
 wordpress_url: http://old.kevinyank.com/blog/archives/fridge-smell/
 date: '2006-08-04 11:27:56 +1000'

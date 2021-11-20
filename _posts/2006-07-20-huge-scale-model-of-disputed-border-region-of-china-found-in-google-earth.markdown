@@ -6,7 +6,7 @@ title: Scale Model of Disputed Border Region Found
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 103
 wordpress_url: http://old.kevinyank.com/blog/archives/huge-scale-model-of-disputed-border-region-of-china-found-in-google-earth/
 date: '2006-07-20 23:26:05 +1000'

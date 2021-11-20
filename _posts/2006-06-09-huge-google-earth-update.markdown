@@ -6,7 +6,7 @@ title: Huge Google Earth Update
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 87
 wordpress_url: http://old.kevinyank.com/blog/archives/huge-google-earth-update/
 date: '2006-06-09 18:12:54 +1000'

@@ -6,7 +6,7 @@ title: Goodbye, Grandma
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: Monique Yank passed peacefully yesterday. I loved her a lot, and I'm one
   of many who will miss her.
 wordpress_id: 24
@@ -28,5 +28,5 @@ comments:
 ---
 <p>Monique Yank passed peacefully yesterday. I loved her a lot, and I'm one of many who will miss her.<a id="more"></a><a id="more-24"></a></p>
 <p>I got the news as people were arriving for our housewarming party, leaving me pretty scatter-brained in my role as host. It was nice to have sausages to turn and people to talk to, though. Thanks to everyone who came—your company was more appreciated than you could have known.</p>
-<p><img id="image27" alt="Monique Yank (English)" title="Monique Yank (English)" src="http://old.kevinyank.com/blog/wp-content/uploads/2006/01/monique-yank-en.jpg" /></p>
-<p><img id="image28" alt="Monique Yank (French)" title="Monique Yank (French)" src="http://old.kevinyank.com/blog/wp-content/uploads/2006/01/monique-yank-fr.jpg" /></p>
+<p><img id="image27" alt="Monique Yank (English)" title="Monique Yank (English)" src="/assets/wp-content/uploads/2006/01/monique-yank-en.jpg" /></p>
+<p><img id="image28" alt="Monique Yank (French)" title="Monique Yank (French)" src="/assets/wp-content/uploads/2006/01/monique-yank-fr.jpg" /></p>

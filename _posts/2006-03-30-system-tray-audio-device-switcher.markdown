@@ -6,7 +6,7 @@ title: System Tray Audio Device Switcher
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "I actively use both a Bluetooth headset (a <a href=\"http://www.logitech.com/index.cfm/products/details/AU/EN,CRID=1628,CONTENTID=9473\">Logitech®
   Mobile Pro™</a>) and a <a href=\"http://www.tweakheadz.com/review_of_the_rode_nt1.htm\">Rode
   NT1 microphone</a> on my computer. The headset I use for making and taking Skype

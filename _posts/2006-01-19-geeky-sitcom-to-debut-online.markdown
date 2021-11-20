@@ -6,7 +6,7 @@ title: Geeky Sitcom To Debut Online
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 30
 wordpress_url: http://old.kevinyank.com/blog/archives/geeky-sitcom-to-debut-online/
 date: '2006-01-19 11:13:01 +1100'

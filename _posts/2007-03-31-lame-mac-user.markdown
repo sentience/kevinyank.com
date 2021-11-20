@@ -6,7 +6,7 @@ title: Lame Mac User
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 146
 wordpress_url: http://old.kevinyank.com/blog/archives/lame-mac-user
 date: '2007-03-31 21:25:12 +1000'

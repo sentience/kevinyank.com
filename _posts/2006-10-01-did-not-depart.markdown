@@ -6,7 +6,7 @@ title: Did Not Depart
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "\"DID NOT DEPART\", read the stamp on my arrival card as I handed it to
   the customs officer and stepped out into the cool Sydney night. This was not Spain.
   It was not even London. I had spent ten hours in transit with nothing to show for

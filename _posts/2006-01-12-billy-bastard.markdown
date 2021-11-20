@@ -6,7 +6,7 @@ title: I Want To Love It But I Think I Hate It
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 19
 wordpress_url: http://old.kevinyank.com/blog/archives/i-want-to-love-it-but-i-think-i-hate-it/
 date: '2006-01-12 10:50:23 +1100'

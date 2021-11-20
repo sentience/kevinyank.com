@@ -6,7 +6,7 @@ title: Suspicion
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 49
 wordpress_url: http://old.kevinyank.com/blog/archives/sunny-mayo/
 date: '2006-03-11 13:32:18 +1100'
@@ -24,5 +24,5 @@ comments:
   date_gmt: '2006-03-12 11:20:11 +1100'
   content: I have to ask, how did you possibly manage that? :)
 ---
-<p>I accidentally got mayonnaise on <a href="http://old.kevinyank.com/blog/archives/new-guinea-pigs/">Sunny</a> while eating lunch yesterday.</p>
+<p>I accidentally got mayonnaise on <a href="https://kevinyank.com/posts/new-guinea-pigs/">Sunny</a> while eating lunch yesterday.</p>
 <p>I don't think he trusts me anymore.</p>

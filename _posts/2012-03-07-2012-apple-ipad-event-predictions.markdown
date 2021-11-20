@@ -6,7 +6,7 @@ title: 2012 Apple iPad Event Predictions (Updated)
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: Like clockwork, Apple is hours away from announcing the third generation
   iPad. I’m sure I won’t be the only Australia-based Apple watcher getting up at 5AM
   to take in the news. Since people keep asking me, I thought I might as well break

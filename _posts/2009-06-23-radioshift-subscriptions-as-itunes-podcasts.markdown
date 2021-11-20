@@ -6,7 +6,7 @@ title: Radioshift Subscriptions as iTunes Podcasts
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: |-
   <p>Like many displaced Canadians, I like to listen to <a href="http://radio3.cbc.ca/">CBC Radio 3</a> at work to keep me feeling culturally connected to my home country. But the shows I enjoy tend to be on at inconvenient times here in Australia. Thanks to Radioshift, that isn’t a problem!</p>
 
@@ -168,7 +168,7 @@ comments:
 - id: 498222
   author: Kevin Yank
   author_email: thatguy@kevinyank.com
-  author_url: http://old.kevinyank.com/
+  author_url: https://kevinyank.com/
   date: '2012-09-24 10:12:55 +1000'
   date_gmt: '2012-09-24 00:12:55 +1000'
   content: "@Dominic Jones: Iâ€™ve re-created the missing screenshot."
@@ -181,7 +181,7 @@ comments:
 <p>These new features were enough to make me get off my butt and do a little work.</p>
 <h2>Step 1: Generate A Podcast Feed</h2>
 <p>Technically, a podcast is just a text file that points to the MP3/M4A files that iTunes should download and store in its library. I whipped up a Python script that will generate a podcast file (podcast.xml) given a directory full of MP3/M4A files (such as those contained in the ~/Music/Radioshift folder after Radioshift does its thing).</p>
-<p>To install this script on your own Mac, download <a href="http://old.kevinyank.com/blog/wp-content/uploads/2009/06/podcastFromFolder.zip">this ZIP file</a> containing three Python files:</p>
+<p>To install this script on your own Mac, download <a href="/assets/wp-content/uploads/2009/06/podcastFromFolder.zip">this ZIP file</a> containing three Python files:</p>
 <ul>
 <li>podcastFromFolder.py</li>
 <li>PyPodcastGen.py</li>
@@ -202,7 +202,7 @@ Computer:My Show kyank$ <strong>~/podcastFromFolder.py</strong></code></pre>
 <p>Unfortunately, iTunes is picky about where it gets its podcast feeds. You can’t simply point it at a file on your hard disk (believe me, I’ve tried!). iTunes will only accept a podcast feed that it retrieves from the Web.</p>
 <p>Fortunately, the Mac comes with everything you need to make your computer look like part of the Web.</p>
 <p>Open System Preferences, and click Sharing. Select Web Sharing from the menu on the left, and make sure the On checkbox next to Web Sharing is checked.</p>
-<p><a href='http://old.kevinyank.com/blog/wp-content/uploads/2009/06/web-sharing-on-2.png'><img src="http://old.kevinyank.com/blog/wp-content/uploads/2009/06/web-sharing-on-2-300x245.png" width="300" height="245" class="attachment-medium" alt="Screenshot showing Web Sharing switched on" /></a></p>
+<p><a href='/assets/wp-content/uploads/2009/06/web-sharing-on-2.png'><img src="/assets/wp-content/uploads/2009/06/web-sharing-on-2-300x245.png" width="300" height="245" class="attachment-medium" alt="Screenshot showing Web Sharing switched on" /></a></p>
 <p>This enables the Apache 2 web server built into Mac OS X. Next, we need to make your Radioshift recordings folder available to the Web. Pop open Terminal and follow along:</p>
 <pre><code>Computer:My Show kyank$ <strong>cd ~/Sites/</strong>
 Computer:Sites kyank$ <strong>ln -s "~/Music/Radioshift/<em>My Show</em>" "<em>MyShow</em>"</strong></code></pre>
@@ -257,7 +257,7 @@ http://localhost/~kyank/GrantLawrence/</strong></code></pre>
 <p>Rather, I recommend you grab yourself a copy of <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> from <a href="http://www.noodlesoft.com/">Noodlesoft</a>, which is a System Preferences panel that will monitor folders for files matching the criteria you specify, and then do whatever you like to them.</p>
 <p>With Hazel installed, open System Preferences and choose Hazel. In the Folder list on the left, add the folder containing your show’s Radioshift recordings. Then, on the right, click the + button to add a new rule.</p>
 <p>Copy the settings for the rule from this screenshot:</p>
-<p><a href="http://old.kevinyank.com/blog/wp-content/uploads/2009/08/hazel-podcast-from-folder-contents.png"><img src="http://old.kevinyank.com/blog/wp-content/uploads/2012/09/Snapshot-240912-1006-AM-2.png" alt="Set up a Hazel rule to run a shell script on all files with extension is not 'xml'. The shell script to run is: /Users/kyank/bin/podcastFromFolder.py . 'Grant Lawrence on CBC Radio 3' http://radio3.cbc.ca/ http://localhost/~kyank/Grant%20Lawrence/" title="Hazel podcast from folder contents" width="305" height="240" class="size-medium wp-image-199" /></a></p>
+<p><a href="/assets/wp-content/uploads/2009/08/hazel-podcast-from-folder-contents.png"><img src="/assets/wp-content/uploads/2012/09/Snapshot-240912-1006-AM-2.png" alt="Set up a Hazel rule to run a shell script on all files with extension is not 'xml'. The shell script to run is: /Users/kyank/bin/podcastFromFolder.py . 'Grant Lawrence on CBC Radio 3' http://radio3.cbc.ca/ http://localhost/~kyank/Grant%20Lawrence/" title="Hazel podcast from folder contents" width="305" height="240" class="size-medium wp-image-199" /></a></p>
 <p>Make sure to adjust the path to podcastFromFolder.py, and the arguments passed to the script to match those you used when manually invoking it above.</p>
 <p>With the rule in place, Hazel should generate an updated podcast.xml file each time Radioshift finishes a new recording, which will enable iTunes to add the recording to your library as a new episode of the podcast.</p>
 <p>Note that, while iTunes copies the recordings into your library, the original recordings remain in your Radioshift recordings folder. To save disk space, you will want to periodically open Radioshift and delete all the old recordings. Better yet, you can use another Hazel rule to automatically delete recordings from the recordings folder after a week or so—the copies will remain in your iTunes library, and the corresponding entries will be purged from the podcast feed the next time Radioshift downloads a new recording.</p>

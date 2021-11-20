@@ -6,7 +6,7 @@ title: Tangents
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 98
 wordpress_url: http://old.kevinyank.com/blog/archives/tangents/
 date: '2006-07-09 12:02:45 +1000'
@@ -17,7 +17,7 @@ categories:
 tags: []
 comments: []
 ---
-<p><img alt="Tangents Flyer" id="image97" src="http://old.kevinyank.com/blog/wp-content/uploads/2006/07/tangents_flyer.jpg" /></p>
+<p><img alt="Tangents Flyer" id="image97" src="/assets/wp-content/uploads/2006/07/tangents_flyer.jpg" /></p>
 <p>Although the show started last weekend, the first one I'm in is tonight, so I have selfishly waited until now to announce it.</p>
 <p><cite>Tangents</cite> is a show I helped develop over the past few months at Impro Melbourne, and it's very exciting to finally get to show it to the masses.</p>
 <p>Two strangers meet at a party and strike up a conversation. The show follows the swirling, weaving, and intersecting paths of that conversation, conjuring scenes out of the subtext to reveal what these strangers might <em>really</em> be thinking.</p>

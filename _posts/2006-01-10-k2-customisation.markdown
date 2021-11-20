@@ -6,7 +6,7 @@ title: K2 Customisation
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "Just finished a first wave of customisation of the design of this blog.
   I'm using beta 2 of <a href=\"http://binarybonsai.com/wordpress/k2/\">the K2 theme</a>,
   which is quite a nice add-on for <a href=\"http://wordpress.org/\">WordPress 2</a>.\r\n\r\n"

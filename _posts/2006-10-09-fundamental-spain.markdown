@@ -6,7 +6,7 @@ title: Fundamental Spain
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "<a title=\"Kevin on Flickr\" href=\"http://www.flickr.com/photos/mezzoblue/260519565/\"><img
   align=\"right\" alt=\"Kevin presents at Fundamentos Web 2006\" title=\"Kevin presents
   at Fundamentos Web 2006\" src=\"http://static.flickr.com/102/260519565_99e74609dc_m.jpg\"
@@ -56,7 +56,7 @@ comments:
 - id: 3383
   author: Fundamental Audio at Yes, I&#8217;m Canadian
   author_email: ''
-  author_url: http://old.kevinyank.com/blog/archives/fundamental-audio/
+  author_url: https://kevinyank.com/blog/archives/fundamental-audio/
   date: '2006-12-20 11:15:16 +1100'
   date_gmt: '2006-12-20 01:15:16 +1100'
   content: "[...] Fundamental Audio   Published December 20th, 2006    The audio and

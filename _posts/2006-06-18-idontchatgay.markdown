@@ -6,7 +6,7 @@ title: iDon'tChatGay
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "I have received an alarming number of instant messages from bumpy, tanned
   men interested in \"cam fun\" over the past few days. What at first seemed like
   an increasingly improbable coincidence has at last been explained: someone has posted

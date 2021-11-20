@@ -6,8 +6,8 @@ title: Need some cuteness in your life?
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
-excerpt: "<img id=\"image95\" alt=\"Guinea pigs packed and ready to go\" src=\"http://old.kevinyank.com/blog/wp-content/uploads/2006/06/DSC03300.JPG\"
+author_url: https://kevinyank.com
+excerpt: "<img id=\"image95\" alt=\"Guinea pigs packed and ready to go\" src=\"/assets/wp-content/uploads/2006/06/DSC03300.JPG\"
   />\r\n\r\nSunny and Toffee will be homeless for four weeks in July and August, while
   Jess and I are away on holiday. Would you like to have them stay with you for some
   or all of that time? We will check them into a guinea pig hotel if necessary, but
@@ -54,7 +54,7 @@ comments:
   date_gmt: '2007-11-20 00:38:59 +1100'
   content: GUINEA PIGS ARE ADORABLE.
 ---
-<p><img id="image95" alt="Guinea pigs packed and ready to go" src="http://old.kevinyank.com/blog/wp-content/uploads/2006/06/DSC03300.JPG" /></p>
+<p><img id="image95" alt="Guinea pigs packed and ready to go" src="/assets/wp-content/uploads/2006/06/DSC03300.JPG" /></p>
 <p>Sunny and Toffee will be homeless for four weeks in July and August, while Jess and I are away on holiday. Would you like to have them stay with you for some or all of that time? We will check them into a guinea pig hotel if necessary, but we'd much rather them stay with someone who could show them some love and affection, not just feed them.</p>
 <p><a id="more"></a><a id="more-96"></a>Sunny and Toffee come with their own cage (to be kept indoors), water bottle and food bowl, as well as plenty of food, hay, wood pellets and newspaper for bedding and soap to clean their cage. All you'd need to provide is a steady stream of fresh veggies (about a handful each morning and then again in the evening), clean water and a daily dose of attention and cuddles.</p>
 <p>Leave a comment or ask me in person if you're interested!</p>

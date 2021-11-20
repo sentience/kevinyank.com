@@ -6,7 +6,7 @@ title: 'Dateline: LAX'
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "Contrary to the impression that you might have from the deafening silence
   here over the past week, Jess and I have made it home in one piece, though not without
   another series of dramas at the one airport to rule them all, LAX.\r\n\r\n"

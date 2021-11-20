@@ -6,7 +6,7 @@ title: Boo Hoyts, Yay Hoyts!
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "Jess and I went to see <cite>Mission: Impossible III</cite> a couple of
   weeks ago. <strong>(Some spoilers indicated below.)</strong> To beat the crowds,
   we picked a Monday evening and avoided the city centre theatres, heading out to

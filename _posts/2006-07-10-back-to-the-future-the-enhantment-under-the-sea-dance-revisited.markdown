@@ -6,7 +6,7 @@ title: 'Back To The Future: The Enhantment Under the Sea Dance Revisited'
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 99
 wordpress_url: http://old.kevinyank.com/blog/archives/back-to-the-future-the-enhantment-under-the-sea-dance-revisited/
 date: '2006-07-10 17:09:20 +1000'

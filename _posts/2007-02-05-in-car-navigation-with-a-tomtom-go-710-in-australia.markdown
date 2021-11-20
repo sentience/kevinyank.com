@@ -6,9 +6,9 @@ title: In-Car Navigation with a TomTom GO 710 in Australia
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "<a href=\"http://www.tomtom.com/products/product.php?ID=211\"><img id=\"image140\"
-  src=\"http://old.kevinyank.com/blog/wp-content/uploads/2007/01/ttg710.jpg\" align=\"right\"
+  src=\"/assets/wp-content/uploads/2007/01/ttg710.jpg\" align=\"right\"
   alt=\"TomTom GO 710\" title=\"TomTom GO 710\" /></a>In <a href=\"/blog/archives/navigation-geocaching-and-more-with-a-tomtom-go-710/\">my
   last post</a>, I introduced the TomTom GO 710 GPS receiver (GPSr). I recently bought
   this device for car navigation but have since found it to be a surprisingly versatile
@@ -47,7 +47,7 @@ comments:
 - id: 29486
   author: Kev
   author_email: thatguy@kevinyank.com
-  author_url: http://old.kevinyank.com/
+  author_url: https://kevinyank.com/
   date: '2007-05-29 20:15:04 +1000'
   date_gmt: '2007-05-29 10:15:04 +1000'
   content: |-
@@ -83,7 +83,7 @@ comments:
     it on. Apparantly there is a common fault with the software so I sold it for spares
     and repairs. Get a Garmin.
 ---
-<p><a href="http://www.tomtom.com/products/product.php?ID=211"><img id="image140" src="http://old.kevinyank.com/blog/wp-content/uploads/2007/01/ttg710.jpg" align="right" alt="TomTom GO 710" title="TomTom GO 710" /></a>In <a href="/blog/archives/navigation-geocaching-and-more-with-a-tomtom-go-710/">my last post</a>, I introduced the TomTom GO 710 GPS receiver (GPSr). I recently bought this device for car navigation but have since found it to be a surprisingly versatile gadget! With the right collection of tweaks and add-ons, it can become a great device for <a href="http://www.geocaching.com/">geocaching</a>, and a lot more besides.</p>
+<p><a href="http://www.tomtom.com/products/product.php?ID=211"><img id="image140" src="/assets/wp-content/uploads/2007/01/ttg710.jpg" align="right" alt="TomTom GO 710" title="TomTom GO 710" /></a>In <a href="/blog/archives/navigation-geocaching-and-more-with-a-tomtom-go-710/">my last post</a>, I introduced the TomTom GO 710 GPS receiver (GPSr). I recently bought this device for car navigation but have since found it to be a surprisingly versatile gadget! With the right collection of tweaks and add-ons, it can become a great device for <a href="http://www.geocaching.com/">geocaching</a>, and a lot more besides.</p>
 <p>In this post, I'll describe the TomTom GO 710's on-road navigation features, and offer some useful tips on how to make them better!</p>
 <p><a id="more"></a><a id="more-143"></a></p>
 <h4>Strengths</h4>
@@ -113,7 +113,7 @@ comments:
 <p>After two weeks of driving around, I'm pretty happy with the device as an in-car navigator. There are, of course, a few things that could be better, though:</p>
 <ul>
 <li><strong>Australian map accuracy</strong>
-<p><img id="image144" src="http://old.kevinyank.com/blog/wp-content/uploads/2007/02/uturn.png" alt="Illegal U-turn" align="right" />There is a major intersection near my home that is bristling with “no U-turn” signs. The Australian maps supplied with the TomTom GO 710 (provided by <a href="http://poweredby.whereis.com/In-car-GPS-Navigation.html">WhereIs</a>) must not reflect this, because whenever I approach home from the north, I’m directed to make a very dangerous, very illegal U-turn. On a couple of occasions, I’ve also been directed to drive through an alley that turns out to be for pedestrian use only. Thankfully, as with most GPS car navigators, you can simply disregard the instructions and the device will calculate a new route for you when you stray from the path it has suggested. Being able to blacklist certain roads or turns in advance for all future navigation is a nice feature that some competitors offer, and apparently TomTom devices once did this too. Bring it back, I say!</p>
+<p><img id="image144" src="/assets/wp-content/uploads/2007/02/uturn.png" alt="Illegal U-turn" align="right" />There is a major intersection near my home that is bristling with “no U-turn” signs. The Australian maps supplied with the TomTom GO 710 (provided by <a href="http://poweredby.whereis.com/In-car-GPS-Navigation.html">WhereIs</a>) must not reflect this, because whenever I approach home from the north, I’m directed to make a very dangerous, very illegal U-turn. On a couple of occasions, I’ve also been directed to drive through an alley that turns out to be for pedestrian use only. Thankfully, as with most GPS car navigators, you can simply disregard the instructions and the device will calculate a new route for you when you stray from the path it has suggested. Being able to blacklist certain roads or turns in advance for all future navigation is a nice feature that some competitors offer, and apparently TomTom devices once did this too. Bring it back, I say!</p>
 <p>Additionally, the Australian maps don't seem to contain any speed limit information (although you do get alerted when passing a speed camera). The device makes a best guess based on the size of the road, but these are rarely realistic, which definitely hobbles the unit's ability to plan the speediest route and estimate an accurate arrival time.</p>
 <p>TomTom has wrestled with map accuracy in the US, having responded to critics by releasing a free update to its US maps at the start of the year. Hopefully its Australian maps will receive a similar treatment.</p>
 </li>

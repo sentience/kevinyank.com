@@ -6,7 +6,7 @@ title: Windows Vista Beta 2 64-bit Installation Attempt Failed
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "Like a good nerd, I spent my Saturday installing the latest <a href=\"http://microsoft.com/windowsvista/getready/\">pre-release
   operating system</a> on my computer. Having bought a 64-bit processor several years
   ago, now, I figured it was about time to try running a 64-bit operating system on
@@ -43,7 +43,7 @@ comments:
 - id: 108
   author: Kev
   author_email: thatguy@kevinyank.com
-  author_url: http://old.kevinyank.com/
+  author_url: https://kevinyank.com/
   date: '2006-06-16 14:46:32 +1000'
   date_gmt: '2006-06-16 04:46:32 +1000'
   content: Chaos, I was able to get the adapter working with the 32-bit version. Linksys's
@@ -69,7 +69,7 @@ comments:
 - id: 128
   author: Kev
   author_email: thatguy@kevinyank.com
-  author_url: http://old.kevinyank.com/
+  author_url: https://kevinyank.com/
   date: '2006-06-19 09:21:11 +1000'
   date_gmt: '2006-06-18 23:21:11 +1000'
   content: |-

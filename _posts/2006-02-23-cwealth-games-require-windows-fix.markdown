@@ -6,7 +6,7 @@ title: C'wealth Games Require Windows Fix
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 42
 wordpress_url: http://old.kevinyank.com/blog/archives/cwealth-games-require-windows-fix/
 date: '2006-02-23 13:09:21 +1100'

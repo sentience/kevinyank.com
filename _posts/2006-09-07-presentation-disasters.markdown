@@ -6,7 +6,7 @@ title: Presentation Disasters
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 115
 wordpress_url: http://old.kevinyank.com/blog/archives/presentation-disasters/
 date: '2006-09-07 17:13:20 +1000'

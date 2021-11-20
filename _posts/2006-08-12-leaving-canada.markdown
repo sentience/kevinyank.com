@@ -6,7 +6,7 @@ title: Leaving Canada
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 excerpt: "<a href=\"http://www.flickr.com/photos/sentience/212877847/\"><img align=\"right\"
   src=\"http://static.flickr.com/61/212877847_65b3bc6015_m.jpg\" /></a>After a week
   in Montreal shopping, touring, catching up with friends, and standing in line at

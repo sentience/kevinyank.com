@@ -6,7 +6,7 @@ title: Krispy Kreme Giveaway
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 44
 wordpress_url: http://old.kevinyank.com/blog/archives/krispy-kreme-giveaway/
 date: '2006-03-01 15:31:38 +1100'

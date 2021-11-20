@@ -6,7 +6,7 @@ title: Talkin' AJAX on RRR
 author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
-author_url: http://old.kevinyank.com
+author_url: https://kevinyank.com
 wordpress_id: 92
 wordpress_url: http://old.kevinyank.com/blog/archives/talkin-ajax-on-rrr/
 date: '2006-06-21 08:59:36 +1000'
