@@ -11,8 +11,6 @@ exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - "*.code-workspace"
-  - Gemfile
-  - Gemfile.lock
-  - bin
+  - "bin/"
 plugins:
   - jekyll-paginate
