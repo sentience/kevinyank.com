@@ -35,7 +35,7 @@ Safe to say, our front end engineers today build a lot of UIs – new and old, r
 
 Did I say codebases? I meant blueberry muffins.
 
-## A shopping list of ingredients
+## The shopping list
 
 To articulate a strategy for the practice, I had to start with where we are. For five years and counting, Culture Amp has had a group of engineers devoted to the health and scalability of front end engineering. Here's what they've built so far:
 
