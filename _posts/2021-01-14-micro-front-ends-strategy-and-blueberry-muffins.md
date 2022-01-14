@@ -73,7 +73,7 @@ Quoting from my final strategy document:
 
 **Kaizen components are blueberries** because they're the colourful morsels that festoon the surface of our "muffins". When you decide to bake a blueberry muffin, you _definitely_ don't have time to plant a blueberry bush and wait for it to grow, so you need a reliable source of high-quality blueberries. Likewise, no one wants to build a date picker from scratch for their new app.
 
-**Frontend-ops is the paper cup** because it's the easily-overlooked conveyance device that speeds the muffin on its journey from oven to mouth. Most ~~engineers~~ bakers couldn't make one from scratch even if they wanted to – it's not even food!
+**Frontend-ops is the paper cup** because it's the easily-overlooked conveyance device that speeds the muffin on its journey from oven to mouth. Most ~~UI engineers~~ bakers couldn't make one from scratch even if they wanted to – it's not even food!
 
 **The app framework is the batter** because it's not the _point_ of the muffin – it's the blueberries that make your mouth water, not the cake – but it holds it all together. Without it, you'd just have a pile of blueberries. One bowl of batter makes an entire batch of muffins: you don't make new batter for each muffin!
 
