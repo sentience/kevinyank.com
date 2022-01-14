@@ -65,7 +65,7 @@ Rather than a shopping list of necessary ingredients for the success of our prac
 
 So yes, a blueberry muffin.
 
-{% include figure.html src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/blueberry-muffin-metaphor.jpeg" alt="Close-up photo of a blueberry muffin surrounded by others like it. The blueberries are labelled &quot;Kaizen components&quot; and the paper wrapper is labelled &quot;frontend-ops&quot;; both are highlighted in green with the annotation &quot;Leverage these&quot;. The cake of the muffin, however, is labelled with three question marks and highlighted in red, with the annotation &quot;Invest in this&quot;." caption="Photo borrowed from <a href='https://www.biggerbolderbaking.com/lemon-blueberry-muffins/'>Gemma's Bigger Bolder Baking</a>." %}
+{% include figure.html src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/blueberry-muffin-metaphor.jpeg" alt="Close-up photo of a blueberry muffin surrounded by others like it. The blueberries are labelled &quot;Kaizen components&quot; and the paper wrapper is labelled &quot;frontend-ops&quot;; both are highlighted in green with the annotation &quot;Leverage these&quot;. The cake of the muffin, however, is labelled with three question marks and highlighted in red, with the annotation &quot;Invest in this&quot;." caption="A very delicious muffin, despite appearances!<br>Photo borrowed from <a href='https://www.biggerbolderbaking.com/lemon-blueberry-muffins/'>Gemma's Bigger Bolder Baking</a>." %}
 
 Quoting from my final strategy document:
 
