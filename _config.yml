@@ -2,7 +2,7 @@ name: Kevin Yank
 markdown: kramdown
 highlighter: pygments
 description: Kevin Yank’s website
-url: http://kevinyank.com
+url: https://kevinyank.com
 permalink: /posts/:title
 paginate: 5
 paginate_path: /blog/page/:num
