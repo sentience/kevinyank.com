@@ -16,4 +16,4 @@ categories:
 tags: []
 comments: []
 ---
-<p>Jess and I are away for four weeks starting today, with stops planned in Portland (Oregon), Ottawa, Montreal and Tahoe. Watch <a href="http://flickr.com/photos/sentience/">my Flickr stream</a> for snaps from the road, and this blog for updates.</p>
+<p>Jess and I are away for four weeks starting today, with stops planned in Portland (Oregon), Ottawa, Montreal and Tahoe. Watch <a href="https://flickr.com/photos/sentience/">my Flickr stream</a> for snaps from the road, and this blog for updates.</p>

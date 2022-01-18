@@ -76,7 +76,7 @@ comments:
     rel="nofollow">nike Factory online</a> cvrfjd  <a href="http://nikefactorystore-online.com"
     rel="nofollow">http://nikefactorystore-online.com</a>
 ---
-<div><a href="http://www.flickr.com/photos/sentience/sets/72157602289450365/" title="View ‘Rubicon Valley Horse Riding’ set on Flickr"><img src="http://farm3.static.flickr.com/2084/1497400602_2d3d3abd51_m.jpg" width="240" height="180" alt="Rubicon Valley Horse Ride 8" align="right" /></a></div>
+<div><a href="https://www.flickr.com/photos/sentience/sets/72157602289450365/" title="View ‘Rubicon Valley Horse Riding’ set on Flickr"><img src="https://farm3.static.flickr.com/2084/1497400602_2d3d3abd51_m.jpg" width="240" height="180" alt="Rubicon Valley Horse Ride 8" align="right" /></a></div>
 <p>For the main event for our three-day getaway in and around Marysville, Jess and I went horse riding in Rubicon Valley on a perfect morning. We lucked out and got a guide all to ourselves, so we got to learn a lot more about riding than we had done on our previous ride.</p>
 <p>Jess’s horse Bounty must have been having an off day, because she made several attempts to bite my horse, Apache (Yes geeks, <em>Apache</em>. Believe me, I was geeking out about it all the way!). Otherwise, the ride went smoothly, with lots of high-speed cantering that had Jess calling me “the geekiest cowboy around”.</p>
-<p><a href="http://www.flickr.com/photos/sentience/sets/72157602289450365/">View ‘Rubicon Valley Horse Riding’ set on Flickr</a></p>
+<p><a href="https://www.flickr.com/photos/sentience/sets/72157602289450365/">View ‘Rubicon Valley Horse Riding’ set on Flickr</a></p>

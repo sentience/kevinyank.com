@@ -7,10 +7,10 @@ author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
 author_url: https://kevinyank.com
-excerpt: "<a href=\"http://www.flickr.com/photos/sentience/356634245\"><img align=\"right\"
-  src=\"http://farm1.static.flickr.com/161/356634245_71c19a7117_m.jpg\" alt=\"Kevin
+excerpt: "<a href=\"https://www.flickr.com/photos/sentience/356634245\"><img align=\"right\"
+  src=\"https://farm1.static.flickr.com/161/356634245_71c19a7117_m.jpg\" alt=\"Kevin
   holds up the Penny Bridge geocache and smiles\" /></a>If you’ve been watching <a
-  href=\"http://flickr.com/photos/sentience/\">my Flickr photos</a> lately, you’ll
+  href=\"https://flickr.com/photos/sentience/\">my Flickr photos</a> lately, you’ll
   have noticed that Jess and I are getting into <a href=\"http://www.geocaching.com/\">geocaching</a>,
   the world-wide treasure hunt where participants follow GPS coordinates to the locations
   of hidden caches of goodies.\r\n\r\nThe one essential tool for geocaching is a GPS
@@ -82,7 +82,7 @@ comments:
   content: I found that garmin product is of high quality albeit the price is also
     a bit high but it's worth paying.
 ---
-<p><a href="http://www.flickr.com/photos/sentience/356634245"><img align="right" src="http://farm1.static.flickr.com/161/356634245_71c19a7117_m.jpg" alt="Kevin holds up the Penny Bridge geocache and smiles" /></a>If you’ve been watching <a href="http://flickr.com/photos/sentience/">my Flickr photos</a> lately, you’ll have noticed that Jess and I are getting into <a href="http://www.geocaching.com/">geocaching</a>, the world-wide treasure hunt where participants follow GPS coordinates to the locations of hidden caches of goodies.</p>
+<p><a href="https://www.flickr.com/photos/sentience/356634245"><img align="right" src="https://farm1.static.flickr.com/161/356634245_71c19a7117_m.jpg" alt="Kevin holds up the Penny Bridge geocache and smiles" /></a>If you’ve been watching <a href="http://flickr.com/photos/sentience/">my Flickr photos</a> lately, you’ll have noticed that Jess and I are getting into <a href="http://www.geocaching.com/">geocaching</a>, the world-wide treasure hunt where participants follow GPS coordinates to the locations of hidden caches of goodies.</p>
 <p>The one essential tool for geocaching is a GPS receiver (GPSr), which gave me the perfect excuse to add this long-coveted piece of technology to my car. But finding a unit that would make a good on-road navigator (with good maps, nice screen, useful routing features, and an extensive Points of Interest (POI) database) as well as a good tool for geocaching (offering accurate coordinates and useful off-road navigation features) would prove to be a challenge.</p>
 <p><a id="more"></a><a id="more-141"></a><a href="http://www.tomtom.com/products/product.php?ID=211"><img align="left" title="TomTom GO 710" alt="TomTom GO 710" id="image140" src="/assets/wp-content/uploads/2007/01/ttg710.jpg" /></a>The conventional wisdom seemed to be that the combination of a Pocket PC or other Personal Digital Assistant (PDA) and a Bluetooth GPSr would provide the most flexible solution, allowing me to use different software and maps for each type of navigation. But despite my rampant geekiness and confessed addiction to gadgets, I just didn’t need another computer in my life. I wanted a purpose-built gadget that I could rely on while driving, and that Jess and I could pass back and forth while out hunting for a geocache.</p>
 <p>Also on my wish list was a device that could record position tracks that I could later use to automatically geocode photos (embedding position information into the file) that I took while out and about. Since none of the sub-$1,000 in-car GPSr units on the market offered this feature (you have to either spend a lot of money, or get a GPSr designed for hiking), it seemed like I'd have to shell out another $200 or so for a device like the <a href="http://www.sony.com.au/dis/dis/catalog/product.jsp?id=GPSCS1">Sony GPSCS1</a> built specifically for this purpose.</p>

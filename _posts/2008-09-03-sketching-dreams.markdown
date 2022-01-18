@@ -35,7 +35,7 @@ comments:
     hope to see you writing more often).
 ---
 <p>I feel like I may have some things to write about again soon.</p>
-<p>Before you ask, I’m not being cagey, here. Mostly this is just a vague feeling, perhaps brought on by my recent <a href="http://flickr.com/photos/sentience/sets/72157606724922524/">visit home to Canada</a>—a reminder that there are people I care about with whom I don’t communicate much (no, Facebook doesn’t count).</p>
+<p>Before you ask, I’m not being cagey, here. Mostly this is just a vague feeling, perhaps brought on by my recent <a href="https://flickr.com/photos/sentience/sets/72157606724922524/">visit home to Canada</a>—a reminder that there are people I care about with whom I don’t communicate much (no, Facebook doesn’t count).</p>
 <p>I dreamed up a fresh (but simple!) site design last night, so I broke out the Wacom to see if it worked in two dimensions. If I can keep it balanced, I think it might.</p>
 <p><a href="/assets/wp-content/uploads/2008/09/redesignsketch.png"><img src="/assets/wp-content/uploads/2008/09/redesignsketch-small.png" alt="redesignsketch_small.png" border="0" width="400" height="279" /></a></p>
 <p><strong>Note to self:</strong> ask Lox if he minds me recycling his old comic book header idea.</p>

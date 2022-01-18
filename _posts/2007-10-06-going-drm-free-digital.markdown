@@ -7,8 +7,7 @@ author: Kev
 author_login: kyank
 author_email: thatguy@kevinyank.com
 author_url: https://kevinyank.com
-excerpt: "<img align=\"right\" alt=\"Matchbox Twenty’s ‘Exile on Mainstream’ album
-  art\" src=\"http://ec1.images-amazon.com/images/I/313WChAka3L._AA160_.jpg\" />\r\n\r\nHaving
+excerpt: "Having
   one too many dusty CDs taking up shelf space, I’ve decided not to buy music in physical
   form any more. I don’t care how many exclusive, special edition DVDs and fancy-pants
   packaging they dangle out there—it’s time to move past the physical disc.\r\n\r\n"
@@ -34,7 +33,7 @@ comments:
 
     I'm in complete agreement with you on this, I won't buy anything that ties me to a particular technology. I might miss out on some stuff, but I absolutely resent it.
 ---
-<p><img align="right" alt="Matchbox Twenty’s ‘Exile on Mainstream’ album art" src="http://ec1.images-amazon.com/images/I/313WChAka3L._AA160_.jpg" /></p>
+<p><img align="right" alt="Matchbox Twenty’s ‘Exile on Mainstream’ album art" src="/assets/images/blog/going-drm-free-digital/exile-on-mainstream-album-art.jpg" /></p>
 <p>Having one too many dusty CDs taking up shelf space, I’ve decided not to buy music in physical form any more. I don’t care how many exclusive, special edition DVDs and fancy-pants packaging they dangle out there—it’s time to move past the physical disc.</p>
 <p><a id="more"></a><a id="more-168"></a>By itself, that’s easy enough to do. There are plenty of places to purchase digital music out there, not least of which is the iTunes Music Store. Unfortunately, I refuse to buy music crippled by DRM that restricts the devices I use to listen to the music I have purchased.</p>
 <p>The iTunes Music Store recently launched its iTunes Plus DRM-free music offering, but due to resistance from most of the music labels, it’s only able to offer this format for a small subset of the music it has for sale. Amazon.com’s MP3 Downloads section provides even better quality and value for money, but it’s only available in the US for now.</p>

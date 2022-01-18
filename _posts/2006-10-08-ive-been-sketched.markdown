@@ -27,4 +27,4 @@ comments:
   content: Hi Kevin, this is Silvia. I'm so glad you like my 'Teatrillo de Ponentes'
     (Little Theater of Panelists) I loved your talk too.
 ---
-<p>This is so cool. Someone who attended the <a href="http://www.fundamentosweb.org/2006/">Fundamentos Web 2006</a> day two panel <a title="teatrillo de ponentes on Flickr" href="http://www.flickr.com/photos/35642369@N00/262598709/">sketched us</a>! See if you can guess which one I am before mousing over the image. You can also check out <a title="Panel: The Current Web an Beyond on Flickr" href="http://www.flickr.com/photos/acebal/260917817/">a photo of the actual event</a>.</p>
+<p>This is so cool. Someone who attended the <a href="https://www.fundamentosweb.org/2006/">Fundamentos Web 2006</a> day two panel <a title="teatrillo de ponentes on Flickr" href="http://www.flickr.com/photos/35642369@N00/262598709/">sketched us</a>! See if you can guess which one I am before mousing over the image. You can also check out <a title="Panel: The Current Web an Beyond on Flickr" href="http://www.flickr.com/photos/acebal/260917817/">a photo of the actual event</a>.</p>

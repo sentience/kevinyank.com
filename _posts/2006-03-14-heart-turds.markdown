@@ -41,6 +41,6 @@ comments:
   content: I thought it was funny! I always wondered what would happen if you only
     ate candy hearts for a week strait. Would you poop come out rainbow colored??
 ---
-<p><a href="http://www.flickr.com/photos/tonguetyed/99692974/"><img align="right" title="Candy Hearts" id="image55" alt="Candy Hearts" src="/assets/wp-content/uploads/2006/03/candyhearts.jpg" /></a>I found a candy heart left over from Valentine's Day on the floor today. It used to say "HEART THROB", but the ravages of time have had their way.</p>
+<p><a href="https://www.flickr.com/photos/tonguetyed/99692974/"><img align="right" title="Candy Hearts" id="image55" alt="Candy Hearts" src="/assets/wp-content/uploads/2006/03/candyhearts.jpg" /></a>I found a candy heart left over from Valentine's Day on the floor today. It used to say "HEART THROB", but the ravages of time have had their way.</p>
 <p>How quickly true love turns to "HEART TURDS".</p>
-<p><cite><a href="http://www.flickr.com/photos/tonguetyed/99692974/">Photo</a> by <a href="http://www.flickr.com/photos/tonguetyed/">Tongue Tyed</a>.</cite></p>
+<p><cite><a href="https://www.flickr.com/photos/tonguetyed/99692974/">Photo</a> by <a href="http://www.flickr.com/photos/tonguetyed/">Tongue Tyed</a>.</cite></p>

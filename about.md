@@ -17,13 +17,13 @@ I have also spoken at a number of industry events and conferences over the years
 
 I geek out on Macs.
 
-[im]: http://www.impromelbourne.com.au/
-[csswrong]: http://www.sitepoint.com/store/everything-you-know-about-css-is-wrong/
-[wds]: http://www.webdirections.org
-[sitepoint]: http://www.sitepoint.com/
-[lyndast2]: http://www.lynda.com/Sublime-Text-tutorials/Up-Running-Sublime-Text-2/114325-2.html
+[im]: https://www.impromelbourne.com.au/
+[csswrong]: https://www.sitepoint.com/store/everything-you-know-about-css-is-wrong/
+[wds]: https://www.webdirections.org
+[sitepoint]: https://www.sitepoint.com/
+[lyndast2]: https://www.lynda.com/Sublime-Text-tutorials/Up-Running-Sublime-Text-2/114325-2.html
 [fundamentos]: http://www.fundamentosweb.org/
-[sppodcast]: http://www.sitepoint.com/podcast/
-[phpmysqlbook]: http://www.sitepoint.com/store/php-mysql-novice-to-ninja/
-[jsbook]: http://www.sitepoint.com/store/simply-javascript/
+[sppodcast]: https://www.sitepoint.com/podcast/
+[phpmysqlbook]: https://www.sitepoint.com/store/php-mysql-novice-to-ninja/
+[jsbook]: https://www.sitepoint.com/store/simply-javascript/
 [eotw]: http://eotw.com.au

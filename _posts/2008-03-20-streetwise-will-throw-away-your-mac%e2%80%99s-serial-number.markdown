@@ -13,9 +13,9 @@ excerpt: "Over the past week, I have decided once and for all to keep my compute
   written</a> about Streetwise, an Apple Authorised Service Centre, and its policy
   of holding onto computers while they wait days for replacement parts to arrive so
   that they can maintain a high Apple Service Rating.\r\n<div><a title=\"View 'Missing
-  Serial Number' on Flickr.com\" href=\"http://www.flickr.com/photos/60889911@N00/2345832057\"><img
+  Serial Number' on Flickr.com\" href=\"https://www.flickr.com/photos/60889911@N00/2345832057\"><img
   width=\"240\" height=\"180\" border=\"0\" alt=\"Missing Serial Number\" style=\"float:
-  right; margin-left: 1em\" src=\"http://farm3.static.flickr.com/2150/2345832057_f28006d981_m.jpg\"
+  right; margin-left: 1em\" src=\"https://farm3.static.flickr.com/2150/2345832057_f28006d981_m.jpg\"
   /></a></div>\r\nThat original post came about when I had to get the palm rest of
   my MacBook replaced under warranty, and in the past week another shocking outcome
   of that repair has come to light: <strong>when the Streetwise technician replaced
@@ -82,7 +82,7 @@ comments:
 ---
 <p>Over the past week, I have decided once and for all to keep my computer out of the hands of <a href="http://www.streetwise.com.au/">Streetwise</a>, a popular Apple retailer here in Melbourne.</p>
 <p>I have <a href="https://kevinyank.com/posts/streetwises-service-rating-harms-customer-service">previously written</a> about Streetwise, an Apple Authorised Service Centre, and its policy of holding onto computers while they wait days for replacement parts to arrive so that they can maintain a high Apple Service Rating.</p>
-<div><a title="View 'Missing Serial Number' on Flickr.com" href="http://www.flickr.com/photos/60889911@N00/2345832057"><img width="240" height="180" border="0" alt="Missing Serial Number" style="float: right; margin-left: 1em" src="http://farm3.static.flickr.com/2150/2345832057_f28006d981_m.jpg" /></a></div>
+<div><a title="View 'Missing Serial Number' on Flickr.com" href="https://www.flickr.com/photos/60889911@N00/2345832057"><img width="240" height="180" border="0" alt="Missing Serial Number" style="float: right; margin-left: 1em" src="https://farm3.static.flickr.com/2150/2345832057_f28006d981_m.jpg" /></a></div>
 <p>That original post came about when I had to get the palm rest of my MacBook replaced under warranty, and in the past week another shocking outcome of that repair has come to light: <strong>when the Streetwise technician replaced my palm rest, he did not transfer my MacBook’s serial number sticker</strong> (which is attached to the underside of the palm rest—inside the battery compartment).</p>
 <p>When I contacted Streetwise about this last week, service manager Jedda Wignall was appropriately contrite. “It is incredibly unfortunate that you have been hit with this inconvenience, as could have been put in a precarious situation as a result,” he wrote (sic.). “The technician who performed the work is no longer with the company, and I would like to think that this situation would not arise again.”</p>
 <p><a id="more"></a><a id="more-173"></a>The precarious situation to which he refers would occur if damage or malfunction left me unable to turn on my computer to look up the serial number in the operating system. In effect, I would be unable to prove the identity of my computer, and thus unable to obtain warranty service.</p>
