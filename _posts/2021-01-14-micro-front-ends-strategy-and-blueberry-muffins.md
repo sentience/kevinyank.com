@@ -112,3 +112,11 @@ There are probably even some non-food-related metaphors to consider; I'm just a 
 This, like so many things, is an opportunity to create culture. Have some fun with it!
 
 As you might imagine, we think of this kind of thing a lot at Culture Amp. If you like thinking of engineering problems through a lens of company culture, [please apply!](https://www.cultureamp.com/company/careers)
+
+## A Conversation with Jason O'Neil
+
+The delivery lead of Culture Amp's Front End Ops team, [Jason O'Neil] sat down with me for a brief chat about his career, and how it intersects with the subject of this blog post:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/p2G5oFWjZsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Jason O'Neil]: https://jasono.co
