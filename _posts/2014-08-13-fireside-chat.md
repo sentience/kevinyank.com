@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Melbourne Web Developers Fireside Chat
 author: Kevin Yank
-date: '2014-08-13 18:30:00 +1000'
+date: '2014-08-13T18:30:00+1000'
 excerpt: This Thursday, August 14th, I’ll be speaking at the Melbourne Web Developers meetup in a “fireside chat” with event organiser James Gallichio from General Assembly. The theme of the night is “show me something amazing” (no pressure), so I’m bringing along a few examples of web development that has inspired me lately.
 categories:
 - development

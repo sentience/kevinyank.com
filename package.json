@@ -1,0 +1,24 @@
+{
+  "name": "kevinyank.com",
+  "version": "1.0.0",
+  "description": "Kevin Yank's personal website",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "clean": "rm -rf _site",
+    "debug": "eleventy",
+    "start": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sentience/kevinyank.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "homepage": "https://kevinyank.com/",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
