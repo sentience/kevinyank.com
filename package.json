@@ -19,6 +19,7 @@
   "license": "UNLICENSED",
   "homepage": "https://kevinyank.com/",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "eleventy-xml-plugin": "github:sentience/eleventy-xml-plugin#dist"
   }
 }

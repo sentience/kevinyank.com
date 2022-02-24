@@ -5,6 +5,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("css");
 
+  eleventyConfig.addPlugin(require("eleventy-xml-plugin"));
+
   return {
     dir: {
       layouts: "_layouts",
