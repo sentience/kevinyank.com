@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Shrink Videos With ffmpeg On Your Mac
 author: Kevin Yank
-date: '2020-04-06 21:00:00 +1000'
+date: '2020-04-06T21:00:00+1000'
 excerpt: "There is a free tool called ffmpeg that makes it easy to convert an original video file into something much smaller (as little as 10% the size, in some cases!) but still very high quality. Installing and running it on your Mac can be a little bit of a hassle, especially if you’ve never used the command line in Terminal before, but I’ve written up these detailed instructions to get you started."
 categories:
   - macOS
