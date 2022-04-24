@@ -17,18 +17,18 @@ the option best suited to my needs and tastes.
 Fastmail was it: an Australian indie success story
 that offers an excellent user experience
 built on a foundation of data privacy
-and solid engineering.
-
-Honestly, I've been thinking of switching to Fastmail since
+and solid engineering. Honestly, I've been thinking of switching to Fastmail since
 [Neil Jenkins presented at Web Directions Code 2019]
 on the custom data compression it does to optimise its web app.
 The list of alternative email hosts is actually pretty short,
 with [Protonmail] and [iCloud+] the only others that seemed viable to me.
-But I do love me a good deep-dive into competing tech solutions,
-so the time I saved on shopping for email hosts I decided to spend on
-a fresh look at email clients for my Apple-ecosystem devices.
 
-These are the ones that made my shortlist:
+But I do love a good deep-dive into competing software,
+so with the time I saved on shopping for email hosts
+I decided to take a fresh look at
+email clients for my Apple-ecosystem devices. If you're in a hurry, feel free to [skip to the end](#section-the-end) to see what I chose. Otherwise, strap in for some obsessive comparison-shopping!
+
+These are the apps that made my shortlist:
 
 * **[Apple Mail]** (Mac, iPhone, iPad, Apple Watch) – AKA Mail.app. Despite a patchy record of quality in the past decade, which has included some almost unusably buggy releases, Apple's bundled app remains more of a robust all-rounder than almost any competitor (mostly just because of how long it's been around). The fact that it's included for free with Apple's operating systems is probably what makes it so hard for alternatives to make an honest buck, and why a cottage industry of add-ons and extensions exists for it.
 
@@ -38,7 +38,7 @@ These are the ones that made my shortlist:
 
 * **[Newton]** (Mac, iPhone, iPad, Apple Watch) – Also for Android and Windows. Billed as "supercharged emailing", Newton is a true attempt to rethink the user experience of email to minimise distractions and promote productivity and focus, but in this I've found its reach sometimes exceeds its grasp. Newton has had two public brushes with death over the years, but has been [under new ownership][Newton under new ownership] since early 2020. At $50/year, the full feature set is not cheap but is one I'm happy to pay for if it delivers on its promise.
 
-* **[Spark]** (Mac, iPhone, iPad, Apple Watch) – Seemingly the most polished option, with plenty of custom UI touches and integrations with other popular apps in the Apple ecosystem, Spark is from [Readdle], purveyors of several attractively-designed productivity apps that I've happily pair for over the years before seeing them [sherlocked] by Apple's built-in features ([Documents], [Scanner Pro]) or overtaken by a more actively-developed competitor ([Calendars]). I worry that Spark's paid features are all for team-based email workflows. Is there really a market for that?
+* **[Spark]** (Mac, iPhone, iPad, Apple Watch) – Seemingly the most polished option, with plenty of custom UI touches and integrations with other popular apps in the Apple ecosystem, Spark is from [Readdle], purveyors of several attractively-designed productivity apps that I've happily paid for over the years before seeing them [sherlocked] by Apple's built-in features ([Documents], [Scanner Pro]) or overtaken by a more actively-developed competitor ([Calendars]). I worry that Spark's paid features are all for team-based email workflows. Is there really a big enough market for that?
 
 And here are a bunch more that I discarded after a first look:
 
@@ -75,13 +75,13 @@ I really wish it would [support IMAP][Mimestream IMAP].
 If you're still on Google for your email and you haven't tried Mimestream,
 do yourself a favour!
 
-Oh, and you might be wonder why not use [Fastmail's own apps][Fastmail app]!
+Oh, and you might be wonder why I don't just use [Fastmail's own apps][Fastmail app]!
 I certainly applaud Fastmail for shipping
 well-made, full-featured mobile apps,
 but the reality is they are merely very nice wrappers for
 their (also excellent) web app experience.
 If you live happily in Gmail's web app,
-then Fastmail's equivalent is probably just the equivalent you're looking for.
+then Fastmail's equivalent is probably just what you're looking for.
 But I'm after a native app that runs as a first-class citizen on macOS,
 and leverages the native UI and system integration features of iOS and iPadOS.
 I _do_ keep the Fastmail app installed on my mobile devices,
@@ -268,12 +268,13 @@ Spark offers some of the same server-dependent features as Newton, notably the "
 * Newton: **Bad**
 * Spark: **OK**
 
-## The best email app(s) for me
+## <a name="section-the-end">The best email app(s) for me</a>
 
-If one thing should be clear from the above wall of text, it's that there is no perfect email app. But for me at least, seeing the scores all together really makes the decision easier to reason about:
+If one thing should be clear from the above wall of text, it's that there is no perfect email app. But for me at least, seeing the scores all together really makes my choice easier to reason about:
 
 <div class="table-scroll">
   <table class="scores" style="min-width: 42em">
+    <caption>Bad = 0, OK = 1, Good = 2, Excellent = 3</caption>
     <thead>
       <tr>
         <th>Criteria</th>
@@ -339,7 +340,7 @@ If one thing should be clear from the above wall of text, it's that there is no 
   </table>
 </div>
 
-Newton's sadly a non-starter, which is a sad thing to see in numbers. The team behind it is obviously working their butts off to build a sustainable business by "supercharging email", and the features they're coming up with are truly innovative and exciting, but the product quality just isn't there right now to justify the $50/year subscription, let alone the risk of exposing your email to their servers.
+Newton's sadly a non-starter, which is a bummer to see in numbers. The team behind it is obviously working their butts off to build a sustainable business by "supercharging email", and the features they're coming up with are truly innovative and exciting, but the product quality just isn't there right now to justify the $50/year subscription, let alone the risk of exposing your email to their servers.
 
 Canary Mail is a heart-breaker. It's come a very long way from "the ugly email app that does PGP", but its world-class privacy and security don't make up for "bad" keyboard navigation, as well as triage workflows and integrations that are just "OK". If this app continues to grow as it has in recent years, though, I could see it winning me over yet!
 

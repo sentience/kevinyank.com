@@ -279,6 +279,7 @@ li.bio {
   border: 1px solid currentColor;
   border-collapse: separate;
   border-spacing: 0;
+  caption-side: bottom;
 }
 
 .post table.scores td {
