@@ -1,9 +1,10 @@
 ---
-title: Email apps on Mac, iPhone, iPad and Apple Watch compared
+title: Email apps on Mac, iPhone, iPad compared
 author: Kevin Yank
 date: 2022-03-08T20:05+1100
 excerpt: TODO
 categories:
+  - Apple
   - tech
 ---
 
