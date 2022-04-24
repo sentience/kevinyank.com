@@ -19,9 +19,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
-a         { color: #2a7ae2; text-decoration: none; }
-a:hover   { color: #000; text-decoration: underline; }
-a:visited { color: #205caa; }
+a[href]       { color: #2a7ae2; text-decoration: none; }
+a[href]:hover { color: #000; text-decoration: underline; }
+a:visited     { color: #205caa; }
 
 /* Utility */
 
@@ -235,6 +235,9 @@ li.bio {
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
+.post-content ul > li > p,
+.post-content ol > li > p { margin: 20px 0; }
+
 .post pre,
 .post code {
   border: 1px solid #d5d5e9;
@@ -270,6 +273,48 @@ li.bio {
 .post figcaption {
   font-size: 80%;
   line-height: 1.9;
+}
+
+.post table {
+  border: 1px solid currentColor;
+  border-collapse: separate;
+  border-spacing: 0;
+  caption-side: bottom;
+}
+
+.post table.scores td {
+  text-align: center;
+}
+
+.post table.scores tbody th {
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.post table.scores th:first-child {
+  text-align: end;
+}
+
+.post .table-scroll {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+
+.post .table-scroll table {
+  width: 100%;
+}
+
+.post .table-scroll tr *:first-child {
+  position: sticky;
+  left: 0;
+}
+
+.post td,
+.post th {
+  background: #fff;
+  border: 1px solid currentColor;
+  padding: 0 0.2em;
 }
 
 /* terminal */
