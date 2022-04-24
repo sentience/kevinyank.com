@@ -32,13 +32,23 @@ These are the apps that made my shortlist:
 
 * **[Apple Mail]** (Mac, iPhone, iPad, Apple Watch) – AKA Mail.app. Despite a patchy record of quality in the past decade, which has included some almost unusably buggy releases, Apple's bundled app remains more of a robust all-rounder than almost any competitor (mostly just because of how long it's been around). The fact that it's included for free with Apple's operating systems is probably what makes it so hard for alternatives to make an honest buck, and why a cottage industry of add-ons and extensions exists for it.
 
+  {% include figure.html src="/assets/images/blog/email-apps/apple-mail-macos.png" alt="screenshot" caption="Apple Mail on macOS 12 Monterey (Apple)" %}
+
 * **[Canary Mail]** (Mac, iPhone, iPad, Apple Watch) – Also for Android and Windows. A security- and privacy-forward choice, Canary Mail proves that securing your data needn't come at the expense of a polished user experience. Despite supporting almost every platform under the sun, Canary Mail ships native apps for all of them.
+
+  {% include figure.html src="/assets/images/blog/email-apps/canary-mail-macos.png" alt="screenshot" caption="Canary Mail for macOS" %}
 
 * **[MailMate]** (Mac) – By the numbers, this artisanal [Mac-assed Mac app] built by a solo developer, positively festooned with low-level power user customisation features advertised as "experimental" or "proof-of-concept" in the [web-based manual][MailMate manual], should be right up my alley. But it's _really_ hard to get past the antiquated UI layout; in particular, there's no widescreen-friendly multi-line message list. Also worrying, the "recommended" version of the app to download has been a sporadically-updated beta for nearly two years now, makes it hard to bet on as a daily driver, or justify its $50 price tag.
 
+  {% include figure.html src="/assets/images/blog/email-apps/mailmate.png" alt="screenshot" caption="MailMate, using its clever Distortion Mode to obscure my email contents" %}
+
 * **[Newton]** (Mac, iPhone, iPad, Apple Watch) – Also for Android and Windows. Billed as "supercharged emailing", Newton is a true attempt to rethink the user experience of email to minimise distractions and promote productivity and focus, but in this I've found its reach sometimes exceeds its grasp. Newton has had two public brushes with death over the years, but has been [under new ownership][Newton under new ownership] since early 2020. At $50/year, the full feature set is not cheap but is one I'm happy to pay for if it delivers on its promise.
 
+  {% include figure.html src="/assets/images/blog/email-apps/newton-macos.png" alt="screenshot" caption="Newton's typically spartan message viewer" %}
+
 * **[Spark]** (Mac, iPhone, iPad, Apple Watch) – Seemingly the most polished option, with plenty of custom UI touches and integrations with other popular apps in the Apple ecosystem, Spark is from [Readdle], purveyors of several attractively-designed productivity apps that I've happily paid for over the years before seeing them [sherlocked] by Apple's built-in features ([Documents], [Scanner Pro]) or overtaken by a more actively-developed competitor ([Calendars]). I worry that Spark's paid features are all for team-based email workflows. Is there really a big enough market for that?
+
+  {% include figure.html src="/assets/images/blog/email-apps/spark-macos.png" alt="screenshot" caption="Spark for macOS" %}
 
 And here are a bunch more that I discarded after a first look:
 
@@ -108,11 +118,17 @@ with so many subtle differences between them,
 that I need to lay out the pros and cons for myself
 to make a rational decision!
 
-I therefore spent a month or so juggling the five options on my shortlist,
+I've therefore spent the past two months juggling the five options on my shortlist,
 to get a good feel for how they compare beyond first impressions.
 In the sections that follow,
 I'll lay out the elements that make a winning email client _for me personally_,
 and describe how the contenders stack up for each.
+
+1. [Rapid triage](#section-rapid-triage)
+2. [Keyboard navigation](#section-keyboard-navigation)
+3. [Deep integrations](#section-deep-integrations)
+4. [Beautiful native UI](#section-beautiful-native-ui)
+5. [Privacy and security](#section-privacy-and-security)
 
 ### 1. <a name="section-rapid-triage">Rapid triage</a>
 
@@ -146,7 +162,7 @@ As for triggering app integrations I use during triage, like creating a task in 
 * Newton: **OK**
 * Spark: **Excellent**
 
-### 2. Keyboard navigation
+### 2. <a name="section-keyboard-navigation">Keyboard navigation</a>
 
 While I'll glance at email on the go, I do most of my email (especially that daily-ish triage to zero) on my Mac. As a coder, the keyboard is my highest-bandwidth means of interacting with my Mac. Reaching for the mouse or trackpad is something I prefer to do by exception; for everything I do frequently, I want to do it without my hands leaving the keyboard. The most important of these workflows I covered in [the previous section on rapid triage](#section-rapid-triage), but there are others.
 
@@ -168,7 +184,7 @@ As for Spark, I was all ready to damn it with the faint praise that it _does_ su
 * Newton: **OK**
 * Spark: **OK**
 
-### 3. Deep integrations
+### 3. <a name="section-deep-integrations">Deep integrations</a>
 
 One of the most attractive features of the Apple ecosystem is how well apps link together to create rich workflows. A great Mac or iPhone app is not an island, but includes integrations with other popular apps, and hooks into which other apps can integrate.
 
@@ -202,7 +218,7 @@ For my money, MailMate comes out on top here. Its integrations are custom-built,
 * Newton: **Bad**
 * Spark: **Good**
 
-### 4. Beautiful native UI
+### 4. <a name="section-beautiful-native-ui">Beautiful native UI</a>
 
 Beauty is subjective, but I use macOS, iOS and iPadOS because I enjoy their look and feel – and those of the best apps for these platforms. Of course, apps frequently diverge from Apple's [guidelines][HIG] to push the boundaries of modern UI design. That's all great, as long as that boundary-pushing UI remains connected to the core frameworks and foundations that power the basic features of the operating system.
 
@@ -242,7 +258,7 @@ With all those little gripes on the table, I still have to hand it to Spark: it 
 * Newton: **Bad**
 * Spark: **Excellent**
 
-### 5. Privacy and security
+### 5. <a name="section-privacy-and-security">Privacy and security</a>
 
 In their haste to build differentiating features on top of the basics of email – message snoozing, inbox screening, delayed sending, push notifications, message classification, follow-up reminders and more – many modern email apps are much more than the app you install on your computer or phone: they include a server-side component that the maker of the app uses to download all of your email into their database to analyse it and power these "smart" features. Google's Gmail got a bad reputation for scanning the emails of free users in order to show them more targeted advertisements all over the Web. It [stopped doing this in 2017][Gmail stopped scanning], but the sour taste remains to this day for those of us who prefer to avoid handing a psychological profile to advertisers. While I acknowledge the difficulty in making money this way, I value developers who go the extra mile to minimise the amount of my personal data they need to hold, while still providing me innovative features for my email. It's something I'm eager to pay for.
 
