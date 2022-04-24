@@ -2,7 +2,7 @@
 title: Email apps on Mac, iPhone and iPad compared
 author: Kevin Yank
 date: 2022-03-08T20:05+1100
-excerpt: TODO
+excerpt: I love a good deep-dive into competing software, so with the time I saved recently on shopping for email hosts I decided to take a fresh look at email clients for my Apple-ecosystem devices. Strap in for some obsessive comparison-shopping!
 categories:
   - Apple
   - tech
