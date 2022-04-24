@@ -39,7 +39,7 @@ These are the apps that made my shortlist:
 
   {% include figure.html src="/assets/images/blog/email-apps/canary-mail-macos.png" alt="screenshot" caption="Canary Mail for macOS" %}
 
-* **[MailMate]** (Mac) – By the numbers, this artisanal [Mac-assed Mac app] built by a solo developer, positively festooned with low-level power user customisation features advertised as "experimental" or "proof-of-concept" in the [web-based manual][MailMate manual], should be right up my alley. But it's _really_ hard to get past the antiquated UI layout; in particular, there's no widescreen-friendly multi-line message list. Also worrying, the "recommended" version of the app to download has been a sporadically-updated beta for nearly two years now, makes it hard to bet on as a daily driver, or justify its $50 price tag.
+* **[MailMate]** (Mac) – By the numbers, this artisanal [Mac-assed Mac app] built by a solo developer, positively festooned with low-level power user customisation features advertised as "experimental" or "proof-of-concept" in the [web-based manual][MailMate manual], should be right up my alley. But it's _really_ hard to get past the antiquated UI layout; in particular, there's no widescreen-friendly multi-line message list. Also worrying, the "recommended" version of the app to download has been a sporadically-updated beta for nearly two years now, which makes it hard to bet on as a daily driver, or justify its $50 price tag.
 
   {% include figure.html src="/assets/images/blog/email-apps/mailmate.png" alt="screenshot" caption="MailMate, using its clever Distortion Mode to obscure my email contents" %}
 
