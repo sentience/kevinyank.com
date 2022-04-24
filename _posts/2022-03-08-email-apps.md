@@ -1,5 +1,5 @@
 ---
-title: Email apps on Mac, iPhone, iPad compared
+title: Email apps on Mac, iPhone and iPad compared
 author: Kevin Yank
 date: 2022-03-08T20:05+1100
 excerpt: TODO
