@@ -6,6 +6,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("css");
 
   eleventyConfig.addPlugin(require("eleventy-xml-plugin"));
+  eleventyConfig.addPlugin(
+    require("@mightyplow/eleventy-plugin-cache-buster")({})
+  );
 
   return {
     dir: {
