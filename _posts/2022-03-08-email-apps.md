@@ -33,7 +33,7 @@ These are the apps that made my shortlist:
 
 * **[Apple Mail]** (Mac, iPhone, iPad, Apple Watch) – AKA Mail.app. Despite a patchy record of quality in the past decade, which has included some almost unusably buggy releases, Apple's bundled app remains more of a robust all-rounder than almost any competitor (mostly just because of how long it's been around). The fact that it's included for free with Apple's operating systems is probably what makes it so hard for alternatives to make an honest buck, and why a cottage industry of add-ons and extensions exists for it.
 
-  {% include figure.html src="/assets/images/blog/email-apps/apple-mail-macos.png" alt="screenshot" caption="Apple Mail on macOS 12 Monterey (Apple)" %}
+  {% include figure.html src="/assets/images/blog/email-apps/apple-mail-macos.png" alt="screenshot" caption="Apple Mail on macOS 12 Monterey" %}
 
 * **[Canary Mail]** (Mac, iPhone, iPad, Apple Watch) – Also for Android and Windows. A security- and privacy-forward choice, Canary Mail proves that securing your data needn't come at the expense of a polished user experience. Despite supporting almost every platform under the sun, Canary Mail ships native apps for all of them.
 
@@ -173,7 +173,7 @@ Getting to the search field and performing a search is certainly doable in all t
 
 If a full keyboard-optimised search-and-read workflow isn't on offer, I'll settle for **keyboard scrolling**. Whether I'm browsing search results or triaging my inbox, I will often find an email thread that I want to read (or just skim), and I want to do that without losing my keyboard focus in the message list. If you're a 25-year email veteran like me, you might know there is a longstanding convention that the Spacebar pages through displayed email threads without losing focus on the message list. Apple Mail and MailMate both support this superpower, and my fondness/nostalgia for this makes me want to choose one of these apps even if there's a better choice for my needs in every other respect.
 
-Canary Mail does quite poorly on this test. I was able to get a displayed message to scroll using the page up and down keys (but not the arrow keys) if I hit Tab twice to move keyboard focus from the message list through one invisible focus stop and into another. Once in that keyboard-scrollable state, I'd expect Shift-Tab twice to return me to the message list, but instead I have to tab back through every toolbar button in the app's toolbar on my way there. With "focus traps" like this lying around, it's clear that keybaord navigability is not a priority for the Canary Mail team.
+Canary Mail does quite poorly on this test. I was able to get a displayed message to scroll using the page up and down keys (but not the arrow keys) if I hit Tab twice to move keyboard focus from the message list through one invisible focus stop and into another. Once in that keyboard-scrollable state, I'd expect Shift-Tab twice to return me to the message list, but instead I have to tab back through every toolbar button in the app's toolbar on my way there. With "focus traps" like this lying around, it's clear that keyboard navigability is not a priority for the Canary Mail team.
 
 As for Spark, I was all ready to damn it with the faint praise that it _does_ support spacebar-scrolling, but only if you tab to the message pane first. But it seems that someone at Readdle finally got around to implementing the feature request I sent them way back in 2017! Spark will indeed page up and down the currently-displayed message thread from the message list using Spacebar and Shift-Spacebar, respectively! It doesn't let you move between email threads this way, but that's a relatively small gripe since you can do this with the arrow keys. That said, I'd be remiss not to point out that Spark also has some Canary-Mail-like keyboard focus traps in its UI if you try to get around it with the Tab key.
 
@@ -429,3 +429,4 @@ If you've made it this far, thanks for reading! Hit me up on [Twitter][@sentienc
 [Zenbox]: https://blog.newtonhq.com/introducing-zenbox-universal-search-unified-folders-pinned-folders-and-more-530dd28e2261
 [Spark privacy]: https://sparkmailapp.com/blog/privacy-explained
 [@sentience]: https://twitter.com/sentience
+[OmniFocus]: https://www.omnigroup.com/omnifocus/
