@@ -469,7 +469,8 @@ li.bio {
   .site-footer .column {
     float: none;
     clear: both;
-    width: auto;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0 0 15px; }
 
 }
