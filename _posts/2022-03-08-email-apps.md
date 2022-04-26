@@ -86,7 +86,7 @@ I really wish it would [support IMAP][Mimestream IMAP].
 If you're still on Google for your email and you haven't tried Mimestream,
 do yourself a favour!
 
-Oh, and you might be wonder why I don't just use [Fastmail's own apps][Fastmail app]!
+Oh, and you might wonder why I don't just use [Fastmail's own apps][Fastmail app]!
 I certainly applaud Fastmail for shipping
 well-made, full-featured mobile apps,
 but the reality is they are merely very nice wrappers for
