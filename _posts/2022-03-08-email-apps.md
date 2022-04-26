@@ -102,7 +102,7 @@ when I need to.
 
 ## Going deep on the things that matter (to me)
 
-While not quite the [UI design playground] that 3rd party Twitter apps were at their peek
+While not quite the [UI design playground] that 3rd party Twitter apps were at their peak
 ([TweetBot] is still a steal at twice the price, by the way),
 email is a stable and open enough platform
 that there continues to be a steady stream of attempts to reinvent it.
