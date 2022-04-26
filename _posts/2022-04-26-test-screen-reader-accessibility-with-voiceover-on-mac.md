@@ -14,7 +14,7 @@ If you prefer a video, this is a recording of a brown bag session I gave at [Cul
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/38qQzmkXGS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Note:** Culture Amp's survey experience no longer relies on a "basic capture" mode to accommodate screen reader users. In 2020, we shipped updates to the main survey experience that fixed all the screen reader issues we (and our auditor, Intopia) could find. This is a _far_ preferable user experience for users of assistive technologies.
+**Note:** Culture Amp's survey experience no longer relies on a "basic capture" mode to accommodate screen reader users. In 2020, we shipped updates to the main survey experience that fixed all the screen reader issues we (and our auditor, [Intopia]) could find. This is a _far_ preferable user experience for users of assistive technologies.
 
 ## Getting started
 
@@ -136,3 +136,4 @@ The WebAIM website has [a guide very similar to this one][WebAIM guide], that co
 [Learning VoiceOver Basics]: https://help.apple.com/voiceover/info/guide/10.9/English.lproj/_1198.html
 [Browsing the Internet]: https://help.apple.com/voiceover/info/guide/10.9/English.lproj/_1205.html
 [WebAIM guide]: https://webaim.org/articles/voiceover/
+[Intopia]: https://intopia.digital
