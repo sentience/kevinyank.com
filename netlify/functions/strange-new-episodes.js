@@ -5,10 +5,10 @@ const Redis = require("ioredis");
 const Push = require("pushover-notifications");
 const { isDeepStrictEqual } = require("util");
 
-// https://crontab.guru/#*_18-23,0-3_*_*_WED-THU
-// Wish we could say 6PM WED-3AM THU, but Cron doesn't support that, so this
-// also checks 0-3AM WED and 6PM-midnight THU. :P
-module.exports.handler = schedule("* 18-23,0-3 * * WED-THU", handler);
+// https://crontab.guru/#*_21-23,0-3_*_*_WED-THU
+// Wish we could say 9PM WED-3AM THU, but Cron doesn't support that, so this
+// also checks 0-3AM WED and 9PM-midnight THU. :P
+module.exports.handler = schedule("* * * * *", handler);
 
 async function handler(event, context) {
   console.log("Checking for new episodes.");
