@@ -67,7 +67,7 @@ async function getCurrentEpisodes() {
     ({ episode_number, label, url, airdate }) => ({
       episode: episode_number,
       title: label,
-      url,
+      url: `https://paramountplus.com${url}`,
       airdate,
     })
   );
