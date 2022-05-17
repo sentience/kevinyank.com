@@ -8,7 +8,7 @@ const { isDeepStrictEqual } = require("util");
 // https://crontab.guru/#*_21-23,0-3_*_*_WED-THU
 // Wish we could say 9PM WED-3AM THU, but Cron doesn't support that, so this
 // also checks 0-3AM WED and 9PM-midnight THU. :P
-module.exports.handler = schedule("* * * * *", handler);
+module.exports.handler = schedule("* 21-23,0-3 * * WED-THU", handler);
 
 async function handler(event, context) {
   console.log("Checking for new episodes.");
