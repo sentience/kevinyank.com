@@ -35,9 +35,13 @@ async function notifyNewEpisodes(newEpisodes) {
       token: process.env.SNE_PUSHOVER_TOKEN,
     });
 
-    newEpisodes.forEach(async ({ episode, title, airdate }) => {
+    newEpisodes.forEach(async ({ episode, title, url, airdate }) => {
+      const episodeNumber = `S1E${episode.padStart(2, "0")}`;
       await p.send({
-        message: `Episode ${episode} of Star Trek: Strange New Worlds is live: “${title}”`,
+        title: "Star Trek: Strange New Worlds",
+        message: `${episodeNumber}: “${title}” is now available`,
+        url: url,
+        url_title: "Watch on Paramount+",
       });
     });
   }
@@ -45,9 +49,13 @@ async function notifyNewEpisodes(newEpisodes) {
   if (process.env.SNE_SLACK_WEBHOOK_URL) {
     const webhook = new IncomingWebhook(process.env.SNE_SLACK_WEBHOOK_URL);
 
-    newEpisodes.forEach(async ({ episode, title, airdate }) => {
+    newEpisodes.forEach(async ({ episode, title, url, airdate }) => {
+      const episodeNumber = `S1E${episode.padStart(2, "0")}`;
       await webhook.send({
-        text: `Episode ${episode} of Star Trek: Strange New Worlds is live: “${title}”`,
+        text:
+          `:enterprise: *Star Trek: Strange New Worlds*\n` +
+          `${episodeNumber}: _${title}_ is now available\n` +
+          `<${url}|Watch on Paramount+>`,
       });
     });
   }
@@ -56,9 +64,10 @@ async function notifyNewEpisodes(newEpisodes) {
 async function getCurrentEpisodes() {
   const response = await fetch(STRANGE_NEW_WORLDS_SEASON_1_URL);
   const episodes = (await response.json()).result.data.map(
-    ({ episode_number, label, airdate }) => ({
+    ({ episode_number, label, url, airdate }) => ({
       episode: episode_number,
       title: label,
+      url,
       airdate,
     })
   );
