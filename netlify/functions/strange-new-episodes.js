@@ -45,8 +45,10 @@ async function notifyNewEpisodes(newEpisodes) {
   if (process.env.SNE_SLACK_WEBHOOK_URL) {
     const webhook = new IncomingWebhook(process.env.SNE_SLACK_WEBHOOK_URL);
 
-    await webhook.send({
-      text: `Episode ${episode} of Star Trek: Strange New Worlds is live: “${title}”`,
+    newEpisodes.forEach(async ({ episode, title, airdate }) => {
+      await webhook.send({
+        text: `Episode ${episode} of Star Trek: Strange New Worlds is live: “${title}”`,
+      });
     });
   }
 }
