@@ -54,6 +54,7 @@ async function notifyNewEpisodes(newEpisodes) {
           `:enterprise: *Star Trek: Strange New Worlds*\n` +
           `${episodeNumber}: _${title}_ is now available\n` +
           `<${url}|Watch on Paramount+>`,
+        unfurl_links: true,
       });
     });
   }
