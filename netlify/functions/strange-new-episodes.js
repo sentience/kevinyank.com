@@ -11,14 +11,14 @@ module.exports.handler = schedule("* 1-7 * * THU", handler);
 async function handler(event, context) {
   console.log("Checking for new episodes.");
 
-  const episodes = await getCurrentEpisodes();
+  const currentEpisodes = await getCurrentEpisodes();
   const knownEpisodes = await getKnownEpisodes();
-  const newEpisodes = difference(episodes, knownEpisodes);
+  const newEpisodes = getNewEpisodes(currentEpisodes, knownEpisodes);
   console.debug("New episodes:", JSON.stringify(newEpisodes));
 
   if (newEpisodes.length > 0) {
     notifyNewEpisodes(newEpisodes);
-    setKnownEpisodes(episodes);
+    setKnownEpisodes(currentEpisodes);
   }
 
   return {
@@ -84,9 +84,10 @@ async function setKnownEpisodes(episodes) {
   console.debug("Updated known episodes:", JSON.stringify(episodes));
 }
 
-function difference(array1, array2) {
-  return array1.filter(
-    (item1) => !array2.find((item2) => isDeepStrictEqual(item1, item2))
+function getNewEpisodes(current, known) {
+  return current.filter(
+    (currentEp) =>
+      !known.find((knownEp) => currentEp.episode === knownEp.episode)
   );
 }
 
