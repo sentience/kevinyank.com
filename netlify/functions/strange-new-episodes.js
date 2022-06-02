@@ -17,8 +17,8 @@ async function handler(event, context) {
   console.debug("New episodes:", JSON.stringify(newEpisodes));
 
   if (newEpisodes.length > 0) {
-    notifyNewEpisodes(newEpisodes);
-    setKnownEpisodes(currentEpisodes);
+    await notifyNewEpisodes(newEpisodes);
+    await setKnownEpisodes(currentEpisodes);
   }
 
   return {
@@ -41,6 +41,7 @@ async function notifyNewEpisodes(newEpisodes) {
         url: url,
         url_title: "Watch on Paramount+",
       });
+      console.debug("Sent Pushover notification");
     });
   }
 
@@ -56,6 +57,7 @@ async function notifyNewEpisodes(newEpisodes) {
           `<${url}|Watch on Paramount+>`,
         unfurl_links: true,
       });
+      console.debug("Sent Slack notification");
     });
   }
 }
