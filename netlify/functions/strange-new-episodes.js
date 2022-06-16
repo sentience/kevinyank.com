@@ -35,7 +35,7 @@ async function getCurrentEpisodes() {
       url: `https://paramountplus.com${url}`,
       airdate,
     }))
-    .filter(({ episode_number }) => episode_number > 0);
+    .filter(({ episode }) => episode > 0);
   console.debug("Current episodes:", JSON.stringify(episodes));
   return episodes;
 }
