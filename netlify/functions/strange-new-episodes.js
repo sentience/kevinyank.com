@@ -28,14 +28,14 @@ async function handler(event, context) {
 
 async function getCurrentEpisodes() {
   const json = await (await fetch(STRANGE_NEW_WORLDS_SEASON_1_URL)).json();
-  const episodes = json.result.data.map(
-    ({ episode_number, label, url, airdate }) => ({
+  const episodes = json.result.data
+    .map(({ episode_number, label, url, airdate }) => ({
       episode: episode_number,
       title: label,
       url: `https://paramountplus.com${url}`,
       airdate,
-    })
-  );
+    }))
+    .filter(({ episode_number }) => episode_number > 0);
   console.debug("Current episodes:", JSON.stringify(episodes));
   return episodes;
 }
