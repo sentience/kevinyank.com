@@ -9,39 +9,42 @@ const { isDeepStrictEqual } = require("util");
 module.exports.handler = schedule("* 1-7 * * THU", handler);
 
 async function handler(event, context) {
-  console.log("Checking for new episodes.");
-
-  const current = getCurrentEpisodes();
-  const known = getKnownEpisodes();
-  const newEpisodes = getNewEpisodes(await current, await known);
-  console.debug("New episodes:", JSON.stringify(newEpisodes));
-
-  if (newEpisodes.length > 0) {
-    await notifyNewEpisodes(newEpisodes);
-    await setKnownEpisodes(await current);
-  }
+  await Promise.all(SHOWS.map(processShow));
 
   return {
     statusCode: 200,
   };
 }
 
-async function getCurrentEpisodes() {
-  const json = await (await fetch(STRANGE_NEW_WORLDS_SEASON_1_URL)).json();
+async function processShow(show) {
+  console.debug(`Checking for new episodes of ${show.name}.`);
+  const current = getCurrentEpisodes(show);
+  const known = getKnownEpisodes(show);
+  const newEpisodes = getNewEpisodes(await current, await known);
+  console.debug("New episodes:", JSON.stringify(newEpisodes));
+
+  if (newEpisodes.length > 0) {
+    await notifyNewEpisodes(show, newEpisodes);
+    await setKnownEpisodes(show, await current);
+  }
+}
+
+async function getCurrentEpisodes(show) {
+  const json = await (await fetch(show.season_json)).json();
   const episodes = json.result.data
+    .filter(({ type }) => type === "Full Episode")
     .map(({ episode_number, label, url, airdate }) => ({
       episode: episode_number,
       title: label,
       url: `https://paramountplus.com${url}`,
       airdate,
-    }))
-    .filter(({ episode }) => episode > 0);
+    }));
   console.debug("Current episodes:", JSON.stringify(episodes));
   return episodes;
 }
 
-async function getKnownEpisodes() {
-  const episodes = JSON.parse((await redis.get(SNE_REDIS_KEY)) ?? "[]");
+async function getKnownEpisodes(show) {
+  const episodes = JSON.parse((await redis.get(show.redis_key)) ?? "[]");
   console.debug("Known episodes:", JSON.stringify(episodes));
   return episodes;
 }
@@ -53,11 +56,13 @@ function getNewEpisodes(current, known) {
   );
 }
 
-async function notifyNewEpisodes(newEpisodes) {
+async function notifyNewEpisodes(show, newEpisodes) {
+  if (!show.notifications) return;
+
   const notifiers = getNotifiers();
   return await Promise.allSettled(
     newEpisodes.flatMap((newEpisode) =>
-      notifiers.map((notifier) => notifier(newEpisode))
+      notifiers.map((notifier) => notifier(show, newEpisode))
     )
   );
 }
@@ -73,12 +78,15 @@ function getPushoverNotifier() {
       token: process.env.SNE_PUSHOVER_TOKEN,
     });
 
-    return ({ episode, title, url, airdate }) => {
-      const episodeNumber = `S1E${episode.padStart(2, "0")}`;
+    return (show, { episode, title, url, airdate }) => {
+      const episodeNumber = `S${show.current_season}E${episode.padStart(
+        2,
+        "0"
+      )}`;
       return new Promise(function (resolve, reject) {
         p.send(
           {
-            title: "Star Trek: Strange New Worlds",
+            title: show.name,
             message: `${episodeNumber}: “${title}” is now available`,
             url: url,
             url_title: "Watch on Paramount+",
@@ -103,12 +111,15 @@ function getSlackNotifier() {
   if (process.env.SNE_SLACK_WEBHOOK_URL) {
     const webhook = new IncomingWebhook(process.env.SNE_SLACK_WEBHOOK_URL);
 
-    return ({ episode, title, url, airdate }) => {
-      const episodeNumber = `S1E${episode.padStart(2, "0")}`;
+    return (show, { episode, title, url, airdate }) => {
+      const episodeNumber = `S${show.current_season}E${episode.padStart(
+        2,
+        "0"
+      )}`;
       return webhook
         .send({
           text:
-            `:enterprise: *Star Trek: Strange New Worlds*\n` +
+            `:enterprise: *${show.name}*\n` +
             `${episodeNumber}: _${title}_ is now available\n` +
             `<${url}|Watch on Paramount+>`,
           unfurl_links: true,
@@ -128,8 +139,23 @@ async function setKnownEpisodes(episodes) {
   console.debug("Updated known episodes:", JSON.stringify(episodes));
 }
 
-const STRANGE_NEW_WORLDS_SEASON_1_URL =
-  "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/xhr/episodes/page/0/size/18/xs/0/season/1/";
-const SNE_REDIS_KEY = process.env.SNE_REDIS_KEY ?? "strange-new-episodes";
+const SHOWS = [
+  {
+    name: "Star Trek: Strange New Worlds",
+    current_season: 1,
+    season_json:
+      "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/xhr/episodes/page/0/size/18/xs/0/season/1/",
+    redis_key: "strange-new-episodes",
+    notifications: true,
+  },
+  {
+    name: "Star Trek: Lower Decks",
+    current_season: 3,
+    season_json:
+      "https://www.paramountplus.com/shows/star-trek-lower-decks/xhr/episodes/page/0/size/18/xs/0/season/3/",
+    redis_key: "lower-decks-episodes",
+    notifications: true,
+  },
+];
 
 const redis = new Redis(process.env.SNE_REDIS_URL);
