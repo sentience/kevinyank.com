@@ -134,8 +134,8 @@ function getSlackNotifier() {
   }
 }
 
-async function setKnownEpisodes(episodes) {
-  await redis.set(SNE_REDIS_KEY, JSON.stringify(episodes));
+async function setKnownEpisodes(show, episodes) {
+  await redis.set(show.redis_key, JSON.stringify(episodes));
   console.debug("Updated known episodes:", JSON.stringify(episodes));
 }
 
