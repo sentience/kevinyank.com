@@ -146,7 +146,7 @@ const SHOWS = [
     season_json:
       "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/xhr/episodes/page/0/size/18/xs/0/season/1/",
     redis_key: "strange-new-episodes",
-    notifications: true,
+    notifications: false,
   },
   {
     name: "Star Trek: Lower Decks",
@@ -154,7 +154,7 @@ const SHOWS = [
     season_json:
       "https://www.paramountplus.com/shows/star-trek-lower-decks/xhr/episodes/page/0/size/18/xs/0/season/3/",
     redis_key: "lower-decks-episodes",
-    notifications: true,
+    notifications: false,
   },
 ];
 
