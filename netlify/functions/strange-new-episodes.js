@@ -156,6 +156,14 @@ const SHOWS = [
     redis_key: "lower-decks-episodes",
     notifications: true,
   },
+  {
+    name: "Star Trek: Prodigy",
+    current_season: 1,
+    season_json:
+      "https://www.paramountplus.com/shows/star-trek-prodigy/xhr/episodes/page/0/size/18/xs/0/season/1/",
+    redis_key: "prodigy-episodes",
+    notifications: true,
+  },
 ];
 
 const redis = new Redis(process.env.SNE_REDIS_URL);
