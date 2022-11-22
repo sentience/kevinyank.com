@@ -27,7 +27,7 @@
     "@netlify/functions": "^1.0.0",
     "@slack/webhook": "^6.1.0",
     "ioredis": "^5.0.4",
-    "node-fetch": "^3.2.4",
+    "node-fetch": "^3.2.10",
     "pushover-notifications": "^1.2.2"
   }
 }
