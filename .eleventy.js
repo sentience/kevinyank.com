@@ -2,6 +2,7 @@ module.exports = (eleventyConfig) => {
   setUpLiquid(eleventyConfig);
   setUpMarkdown(eleventyConfig);
 
+  eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("css");
 
