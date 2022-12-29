@@ -1,6 +1,7 @@
 module.exports = (eleventyConfig) => {
   setUpLiquid(eleventyConfig);
   setUpMarkdown(eleventyConfig);
+  setUpCollections(eleventyConfig);
 
   eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy("_redirects");
@@ -57,4 +58,26 @@ function setUpMarkdown(eleventyConfig) {
     typographer: true,
   };
   eleventyConfig.setLibrary("md", markdownIt(options));
+}
+
+function setUpCollections(eleventyConfig) {
+  addFilteredCollection(eleventyConfig, "post");
+  addFilteredCollection(eleventyConfig, "note");
+}
+
+function addFilteredCollection(eleventyConfig, tag) {
+  eleventyConfig.addCollection(tag, (collections) => {
+    return (
+      collections
+        .getFilteredByTag(tag)
+        // exclude deleted
+        .filter((item) => !Boolean(item.data.deleted))
+        // exclude draft in production
+        .filter(
+          (item) =>
+            process.env.ELEVENTY_ENV !== "production" ||
+            (item.data.published !== false && !item.data.draft)
+        )
+    );
+  });
 }
