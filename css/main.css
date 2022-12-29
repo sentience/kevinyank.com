@@ -149,7 +149,7 @@ li.bio {
 /* Home styles */
 /* ----------------------------------------------------------*/
 
-.home h1 { margin-bottom: 25px; }
+.home h1 { margin-bottom: 0; }
 
 .posts { list-style-type: none; }
 
@@ -167,6 +167,57 @@ li.bio {
   color: #818181;
 }
 
+/* Note styles */
+/* ----------------------------------------------------------*/
+
+.note {
+  --note-bg-color: #e8e8e8;
+  --note-arrow-size: 1em;
+  max-width: 50%;
+  position: relative;
+  top: calc(-1.5 * var(--note-arrow-size));
+  width: fit-content;
+}
+
+a.note-link[href] {
+  color: inherit;
+}
+
+a.note-link[href]:hover {
+  text-decoration: none;
+}
+
+a.note-link[href]:hover .note-content {
+  --note-bg-color: #e8e8ff;
+}
+
+a.note-link[href]:hover + .meta a[href] {
+  color: #000;
+  text-decoration: underline;
+}
+
+.note-content {
+  background-color: var(--note-bg-color);
+  border-radius: 0.5em;
+  margin-top: var(--note-arrow-size);
+  overflow: visible;
+  padding: 0.6em 0.75em 0.4em;
+}
+
+.note-content::before {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--note-arrow-size));
+  border-bottom: var(--note-arrow-size) solid var(--note-bg-color);
+  border-right: calc(0.5 * var(--note-arrow-size)) solid transparent;
+  border-left: calc(0.25 * var(--note-arrow-size)) solid transparent;
+}
+
+.note .meta {
+  font-size: 12px;
+  color: #818181;
+  margin-top: 5px;
+}
 
 /* Post styles */
 /* ----------------------------------------------------------*/

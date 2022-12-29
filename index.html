@@ -13,9 +13,14 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
   {% if pagination.pageNumber == 0 %}
   {% assign firstNote = collections.note[0] %}
   {% if firstNote %}
-  <div class="note">
-    {{ firstNote.templateContent }}
-  </div>
+  <article class="note">
+    <a href="{{ firstNote.url }}" class="note-link">
+      <div class="note-content">
+        {{ firstNote.templateContent }}
+      </div>
+    </a>
+    <p class="meta"><a href="{{ firstNote.url }}"><time datetime="{{ firstNote.date }}">{{ firstNote.date | date: "%b %-d, %Y" }}</time></a>{% if firstNote.data.author %} • {{ firstNote.data.author }}{% endif %}{% if firstNote.data.categories %} • in categories: {% for cat in firstNote.data.categories %}<span class="p-category category">{{ cat }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}</p>
+  </article>
   {% endif %}
 
   {% assign firstPost = pagination.items[0] %}
