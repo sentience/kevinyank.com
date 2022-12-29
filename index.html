@@ -11,6 +11,13 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
 <div class="home">
 
   {% if pagination.pageNumber == 0 %}
+  {% assign firstNote = collections.note[0] %}
+  {% if firstNote %}
+  <div class="note">
+    {{ firstNote.templateContent }}
+  </div>
+  {% endif %}
+
   {% assign firstPost = pagination.items[0] %}
   <div class="post">
 
