@@ -1,17 +1,31 @@
-<header class="flex justify-between items-start md:items-baseline">
-  <h1 class="text-2xl font-extrabold">
-    <a
-      href="/"
-      {% if page.url == '/' %}
-      aria-current="true"
-      class="text-inherit"
-      {% endif %}>
-      {{ site.name }}
-    </a>
-  </h1>
+<header class="relative flex justify-between items-start md:items-baseline md:min-h-14">
+  <div>
+    <h1 class="text-2xl font-extrabold mis-14 pis-2">
+      <a
+        href="/"
+        {% if page.url == '/' %}
+        aria-current="true"
+        class="text-inherit visited:text-inherit no-underline"
+        {% endif %}>
+        {{ site.name }}
+      </a>
+    </h1>
+    <img
+      class="absolute block-start-0 inline-start-0 w-14 h-14"
+      src="/assets/images/avatar_320.jpg"
+      alt="">
+    <ul class="flex gap-3 text-sm mis-14 pis-2">
+      <li>
+        <a href="mailto:hello@kevinyank.com">email</a>
+      </li>
+      <li>
+        <a href="/feed.xml">RSS</a>
+      </li>
+    </ul>
+  </div>
 
-  <nav class="bg-white rounded-md border border-gray-200">
-    <a href="#" class="block w-9 h-9 text-2xl text-center flex justify-center items-center">
+  <nav class="absolute md:static inline-end-0 bg-white md:bg-transparent rounded-md border md:border-0 border-gray-200">
+    <a href="#" class="no-underline md:hidden peer mis-auto mie-0 w-9 h-9 text-2xl text-center flex justify-center items-center">
       <svg
         class="h-4 w-[1.125rem]"
         version="1.1"
@@ -27,8 +41,8 @@
         <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
       </svg>
     </a>
-    <div class="trigger hidden">
-      <a class="page-link" href="/about">About</a>
+    <div class="hidden md:block peer-hover:block space-y-1">
+      <a class="block text-end px-2 md:inline md:mis-10 md:px-0" href="/about">About</a>
     </div>
   </nav>
 

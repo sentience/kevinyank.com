@@ -4,14 +4,9 @@
 
 @layer components {
   /* Default link styles */
-  :link {
-    @apply text-accent-700;
-  }
-  :visited {
-    @apply text-accent-900;
-  }
-  :any-link:hover {
-    @apply underline;
+  :any-link {
+    @apply underline decoration-from-font rounded text-accent-700  dark:text-accent-500 visited:text-accent-900 visited:dark:text-accent-300 focus:text-black focus:bg-accent-100 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-accent-600
+    hover:text-black hover:bg-accent-100;
   }
 }
 
@@ -613,39 +608,6 @@ a.note-link[href]:hover + .meta a[href] {
 }
 
 @media screen and (max-width: 600px) {
-  .site-nav .menu-icon {
-    display: block;
-    font-size: 24px;
-    color: #505050;
-    float: right;
-    width: 36px;
-    text-align: center;
-    line-height: 36px;
-  }
-
-  .site-nav .menu-icon svg {
-    width: 18px;
-    height: 16px;
-  }
-
-  .site-nav .trigger {
-    clear: both;
-    margin-bottom: 5px;
-    display: none;
-  }
-
-  .site-nav:hover .trigger {
-    display: block;
-  }
-
-  .site-nav .page-link {
-    display: block;
-    text-align: right;
-    line-height: 1.25;
-    padding: 5px 10px;
-    margin: 0;
-  }
-
   .post-header h1 {
     font-size: 36px;
   }

@@ -14,7 +14,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
   {% assign firstNote = collections.note | last %}
   {% if firstNote %}
   <article class="note">
-    <a href="{{ firstNote.url }}" class="note-link">
+    <a href="{{ firstNote.url }}" class="note-link no-underline">
       <div class="note-content">
         {{ firstNote.templateContent }}
       </div>
