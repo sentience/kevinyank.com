@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<article class="h-entry hentry max-is-prose xl:mli-auto" itemprop="articleBody">
+  <header class="post-header">
+    <h1 class="p-name entry-title" itemprop="headline">
+      {{ title }}
+      {% if published == false %}
+        (draft)
+      {% endif %}
+    </h1>
+    <p class="meta">
+      <a class="u-url" href="{{ page.url }}"
+        ><time itemprop="datePublished" class="dt-published published" datetime="{{ date }}">
+          {{- date | date: '%b %-d, %Y' -}}
+        </time></a
+      >
+      {%- if author %}
+        • <span class="p-author author">{{ author }}</span>
+      {%- endif -%}
+      {%- if categories %}
+        • in categories:
+        {% for cat in categories -%}
+          <span class="p-category category">{{ cat }}</span>
+          {%- unless forloop.last %}, {% endunless -%}
+        {%- endfor -%}
+      {%- endif %}
+    </p>
+  </header>
+
+  <div class="post-content e-content entry-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>
