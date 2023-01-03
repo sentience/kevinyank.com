@@ -32,7 +32,6 @@ class MenuButtonLinks {
     for (var i = 0; i < nodes.length; i++) {
       var menuitem = nodes[i];
       this.menuitemNodes.push(menuitem);
-      menuitem.tabIndex = -1;
       this.firstChars.push(menuitem.textContent.trim()[0].toLowerCase());
 
       menuitem.addEventListener("keydown", this.onMenuitemKeydown.bind(this));
@@ -151,12 +150,14 @@ class MenuButtonLinks {
   openPopup() {
     this.menuNode.classList.remove("hidden");
     this.buttonNode.setAttribute("aria-expanded", "true");
+    this.menuitemNodes.forEach((menuitem) => (menuitem.tabIndex = -1));
   }
 
   closePopup() {
     if (this.isOpen()) {
       this.buttonNode.removeAttribute("aria-expanded");
       this.menuNode.classList.add("hidden");
+      this.menuitemNodes.forEach((menuitem) => (menuitem.tabIndex = 0));
     }
   }
 
@@ -226,6 +227,8 @@ class MenuButtonLinks {
   }
 
   onMenuitemKeydown(event) {
+    if (!this.isOpen()) return;
+
     var tgt = event.currentTarget,
       key = event.key,
       flag = false;
@@ -306,8 +309,10 @@ class MenuButtonLinks {
   }
 
   onMenuitemMouseover(event) {
-    var tgt = event.currentTarget;
-    tgt.focus();
+    if (this.isOpen()) {
+      var tgt = event.currentTarget;
+      tgt.focus();
+    }
   }
 
   onBackgroundMousedown(event) {
