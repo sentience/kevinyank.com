@@ -162,7 +162,10 @@ class MenuButtonLinks {
   }
 
   isOpen() {
-    return this.buttonNode.getAttribute("aria-expanded") === "true";
+    return (
+      getComputedStyle(this.buttonNode).display !== "none" &&
+      this.buttonNode.getAttribute("aria-expanded") === "true"
+    );
   }
 
   // Menu event handlers
