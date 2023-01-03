@@ -21,7 +21,6 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
           <a href="{{ firstNote.url }}"
             ><time datetime="{{ firstNote.date }}">{{ firstNote.date | date: '%b %-d, %Y' }}</time></a
           >
-          {%- if firstNote.data.author %} • {{ firstNote.data.author }}{% endif -%}
           {%- if firstNote.data.categories %}
             • in categories:
             {% for cat in firstNote.data.categories -%}
