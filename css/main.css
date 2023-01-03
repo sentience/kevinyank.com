@@ -5,8 +5,11 @@
 @layer components {
   /* Default link styles */
   :any-link {
-    @apply underline decoration-from-font rounded text-accent-700  dark:text-accent-500 visited:text-accent-900 visited:dark:text-accent-300 focus:text-black focus:bg-accent-100 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-accent-600
-    hover:text-black hover:bg-accent-100;
+    @apply underline decoration-from-font
+    text-accent-700 visited:text-accent-900 dark:text-accent-500 dark:visited:text-accent-300
+    focus:text-black focus:bg-accent-100 dark:focus:text-white dark:focus:bg-accent-900
+    hover:text-black hover:bg-accent-100 dark:hover:text-white dark:hover:bg-accent-900
+    rounded focus:outline-none focus:ring focus:ring-offset-2 ring-offset-white dark:ring-offset-slate-900 focus:ring-accent-600;
   }
 }
 
