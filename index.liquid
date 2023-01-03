@@ -11,13 +11,19 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
   {% if pagination.pageNumber == 0 %}
     {% assign firstNote = collections.note | last %}
     {% if firstNote %}
-      <article class="note">
-        <a href="{{ firstNote.url }}" class="note-link no-underline">
-          <div class="note-content">
+      <article class="is-fit max-is-lg relative -block-start-6">
+        <a href="{{ firstNote.url }}" class="block [&:any-link]:text-inherit no-underline group">
+          <div
+            class="
+              bg-gray-200 dark:bg-gray-800 group-hover:bg-accent-200 dark:group-hover:bg-accent-900  group-focus:bg-accent-200 dark:group-focus:bg-accent-900 rounded-lg mbs-4 overflow-visible plb-2 pli-3
+              {% #arrow %}
+              before:absolute before:-block-start-4 before:border-transparent before:border-be-gray-200 dark:before:border-be-gray-800 group-hover:before:border-be-accent-200 dark:group-hover:before:border-be-accent-900 group-focus:before:border-be-accent-200 dark:group-focus:before:border-be-accent-900 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem]
+            "
+          >
             {{ firstNote.templateContent }}
           </div>
         </a>
-        <p class="meta">
+        <p class="text-xs text-gray-500 mbs-1">
           <a href="{{ firstNote.url }}"
             ><time datetime="{{ firstNote.date }}">{{ firstNote.date | date: '%b %-d, %Y' }}</time></a
           >
