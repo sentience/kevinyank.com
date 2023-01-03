@@ -9,6 +9,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("css");
 
+  eleventyConfig.addPlugin(require("eleventy-plugin-postcss"));
   eleventyConfig.addPlugin(require("eleventy-xml-plugin"));
   eleventyConfig.addPlugin(
     require("@mightyplow/eleventy-plugin-cache-buster")({})

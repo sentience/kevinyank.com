@@ -1,0 +1,69 @@
+<header class="relative flex justify-between items-start md:items-baseline md:min-h-14">
+  <div>
+    <h1 class="text-2xl font-extrabold mis-14 pis-2">
+      <a
+        href="/"
+        {% if page.url == '/' %}
+          aria-current="true"
+          class="text-inherit visited:text-inherit no-underline"
+        {% endif %}
+      >
+        {{ site.name }}
+      </a>
+    </h1>
+    <img
+      class="absolute block-start-0 inline-start-0 w-14 h-14"
+      src="/assets/images/avatar_320.jpg"
+      alt=""
+    >
+    <ul class="flex gap-3 text-sm mis-14 pis-2">
+      <li>
+        <a href="mailto:hello@kevinyank.com">email</a>
+      </li>
+      <li>
+        <a href="/feed.xml">RSS</a>
+      </li>
+    </ul>
+  </div>
+
+  <nav class="menu-button-links absolute md:static inline-end-0 bg-white dark:bg-slate-800 md:bg-transparent rounded-md border md:border-0 border-gray-200 dark:border-gray-700">
+    <button
+      id="nav-menu-button"
+      aria-haspopup="true"
+      aria-controls="nav-menu"
+      class="no-underline md:hidden mis-auto mie-0 w-9 h-9 text-2xl text-center flex justify-center items-center rounded-md focus:outline-none focus:ring focus:ring-offset-2 ring-offset-white dark:ring-offset-slate-900 focus:ring-accent-600 focus:bg-accent-900"
+    >
+      <svg
+        class="h-4 w-[1.125rem]"
+        version="1.1"
+        xmlns="https://www.w3.org/2000/svg"
+        xmlns:xlink="https://www.w3.org/1999/xlink"
+        x="0"
+        y="0"
+        viewBox="0 0 18 15"
+        enable-background="new 0 0 18 15"
+        xml:space="preserve"
+      >
+        <title>Navigation links</title>
+        <path fill="currentColor" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
+        <path fill="currentColor" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
+        <path fill="currentColor" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
+      </svg>
+    </button>
+    <ul
+      id="nav-menu"
+      role="menu"
+      aria-labelledby="nav-menu-button"
+      class="hidden md:block md:tracking-tight space-y-1"
+    >
+      <li role="none">
+        <a
+          role="menuitem"
+          href="/about"
+          class="block text-end px-2 md:inline md:mis-10 md:px-0"
+          >About</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -1,20 +1,34 @@
 <head>
   <meta charset="utf-8">
-  <title>{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}</title>
+  <title>{{ title | default: site.name }}</title>
   <meta name="description" content="{{ site.description }}">
-  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <link
+    rel="canonical"
+    href="{{ site.url }}{{ page.url | replace:'index.html','' }}"
+  >
   <link rel="stylesheet" href="/css/main.css">
 
   <!-- browser-specific options -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#dc2626">
 
-  <link rel="alternate" type="application/rss+xml" title="Kevin Yank posts feed" href="{{ site.url }}/feed.xml">
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="Kevin Yank posts feed"
+    href="/feed.xml"
+  >
 
   <!-- my Personal Avatar: pavatar.com -->
   <link rel="pavatar" href="https://kevinyank.com/assets/images/pavatar.jpg">
 
-  <link rel="authorization_endpoint" href="https://indiekit.kevinyank.com/auth">
+  <link
+    rel="authorization_endpoint"
+    href="https://indiekit.kevinyank.com/auth"
+  >
   <link rel="token_endpoint" href="https://indiekit.kevinyank.com/auth/token">
   <link rel="micropub" href="https://indiekit.kevinyank.com/micropub">
+
+  <script defer src="/assets/scripts/nav-menu.js"></script>
 </head>
