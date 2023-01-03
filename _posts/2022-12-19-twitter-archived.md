@@ -8,4 +8,4 @@ categories:
   - tech
 ---
 
-A propos of nothing, my Twitter archive is now hosted [on this site](/twitter/), thanks to [Zach Leatherman](https://www.zachleat.com)'s [Tweetback project](https://github.com/tweetback/tweetback).
+Apropos of nothing, my Twitter archive is now hosted [on this site](/twitter/), thanks to [Zach Leatherman](https://www.zachleat.com)'s [Tweetback project](https://github.com/tweetback/tweetback).
