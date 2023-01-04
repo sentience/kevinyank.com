@@ -10,6 +10,8 @@
     focus:text-black focus:bg-accent-100 dark:focus:text-white dark:focus:bg-accent-900
     hover:text-black hover:bg-accent-100 dark:hover:text-white dark:hover:bg-accent-900
     rounded focus:outline-none focus:ring focus:ring-offset-2 ring-offset-white dark:ring-offset-slate-900 focus:ring-accent-600;
+    /* Fix Safari box-shadow render artifacts: https://bugs.webkit.org/show_bug.cgi?id=250059 */
+    @apply focus:outline-8;
   }
 }
 
