@@ -8,10 +8,20 @@ pagination:
 permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumber | plus: 1 }}{% endif %}/"
 ---
 {% if pagination.pageNumber == 0 %}
-  <div class="-mbs-4 pbs-4 -mli-12 overflow-x-auto [scrollbar-width:0] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden snap-x snap-mandatory scroll-pl-12">
-    <div class="flex gap-4 pli-12">
-      {% for note in collections.note reversed %}
-        <article class="box-content flex-none is-fit max-is-lg snap-start last:pie-12">
+  <div
+    class="
+      page-inset-padding flex
+      {% #arrow overlaps preceding margin %}
+      -mbs-4 pbs-4
+      {% #invisible horizontal scrollbar %}
+      overflow-x-scroll [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+      {% #scroll snapping %}
+      snap-x snap-mandatory scroll-pl-4 sm:scroll-pl-12
+    "
+  >
+    {% for note in collections.note reversed %}
+      {% if forloop.index <= 5 %}
+        <article class="flex-none max-is-xs sm:max-is-lg snap-start pie-4 last:pie-0 pbe-4 border-be">
           <div
             class="
               bg-gray-200 dark:bg-gray-800 rounded-lg overflow-visible plb-2 pli-3
@@ -35,12 +45,17 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
             {%- endif %}
           </p>
         </article>
-      {% endfor %}
-    </div>
+      {% endif %}
+      {% if forloop.index == 5 and forloop.length > 5 %}
+        <div class="flex-none is-full snap-start pbe-4 border-be">
+          → <a href="/notes#{{ note.fileSlug }}">View more notes</a>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 
   {% assign firstPost = pagination.items[0] %}
-  <div class="post">
+  <div class="post page-inset-margin my-8">
     <header class="post-header">
       <h1>
         <a class="post-link" href="{{ firstPost.url }}">{{ firstPost.data.title }}</a>
@@ -64,14 +79,14 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
   </div>
 {% endif %}
 
-<h1>
+<h1 class="page-inset-margin my-8">
   {% if pagination.pageNumber == 0 %}Other {% endif %}Recent Posts
   {% if pagination.pageNumber > 0 -%}
     (page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }})
   {%- endif %}
 </h1>
 
-<ul class="posts">
+<ul class="posts page-inset-margin my-8">
   {% for post in pagination.items %}
     {% if post != firstPost %}
       <li>
@@ -89,7 +104,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
   {% endfor %}
 </ul>
 
-<div class="pagination">
+<div class="pagination page-inset-margin my-8">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}" class="previous">previous</a>
   {% else %}

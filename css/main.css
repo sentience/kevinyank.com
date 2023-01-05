@@ -13,6 +13,14 @@
     /* Fix Safari box-shadow render artifacts: https://bugs.webkit.org/show_bug.cgi?id=250059 */
     @apply focus:outline-8;
   }
+
+  .page-inset-margin {
+    @apply mli-4 sm:mli-12;
+  }
+
+  .page-inset-padding {
+    @apply pli-4 sm:pli-12;
+  }
 }
 
 /* Site footer */
