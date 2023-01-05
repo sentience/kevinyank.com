@@ -45,8 +45,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
             {%- endif %}
           </p>
         </article>
-      {% endif %}
-      {% if forloop.index == 5 and forloop.length > 5 %}
+      {% elsif forloop.index == 6 %}
         <div class="flex-none is-full snap-start pbe-4 border-be">
           → <a href="/notes#{{ note.fileSlug }}">View more notes</a>
         </div>

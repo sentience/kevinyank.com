@@ -11,7 +11,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/notes/page/{{ pagination.pageNumb
 
 <div class="page-inset-margin flex flex-wrap gap-4 justify-items-stretch">
   {% for note in notes %}
-    <article class="flex-auto [flex-basis:25%] min-is-[32ch] max-is-max pbe-4">
+    <article id="{{ note.fileSlug }}" class="flex-auto [flex-basis:25%] min-is-[32ch] max-is-max pbe-4">
       <div
         class="
           bg-gray-200 dark:bg-gray-800 rounded-lg overflow-visible plb-2 pli-3
