@@ -9,9 +9,28 @@
     text-accent-700 visited:text-accent-900 dark:text-accent-500 dark:visited:text-accent-300
     focus:text-black focus:bg-accent-100 dark:focus:text-white dark:focus:bg-accent-900
     hover:text-black hover:bg-accent-100 dark:hover:text-white dark:hover:bg-accent-900
-    rounded focus:outline-none focus:ring focus:ring-offset-2 ring-offset-white dark:ring-offset-slate-900 focus:ring-accent-600;
+    rounded focus:outline-none focus:ring focus:ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-accent-600;
     /* Fix Safari box-shadow render artifacts: https://bugs.webkit.org/show_bug.cgi?id=250059 */
     @apply focus:outline-8;
+  }
+
+  /* Page gutters */
+  .page-inset-margin {
+    @apply mli-4 sm:mli-12;
+  }
+  .page-inset-padding {
+    @apply pli-4 sm:pli-12;
+  }
+
+  /* Dark mode default border colour for all border classes */
+  .border,
+  .border-be,
+  .border-bs,
+  .border-ie,
+  .border-is,
+  .border-lb,
+  .border-li {
+    @apply dark:border-gray-600;
   }
 }
 

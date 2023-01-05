@@ -1,0 +1,53 @@
+---
+layout: default
+pagination:
+  data: collections.note
+  reverse: true
+  size: 25
+  alias: notes
+permalink: "{% if pagination.pageNumber > 0 %}/notes/page/{{ pagination.pageNumber | plus: 1 }}{%else%}/notes{% endif %}/"
+---
+<h1 class="page-inset-margin my-8">Recent Notes</h1>
+
+<div class="page-inset-margin flex flex-wrap gap-4 justify-items-stretch">
+  {% for note in notes %}
+    <article id="{{ note.fileSlug }}" class="flex-auto [flex-basis:25%] min-is-[32ch] max-is-max pbe-4">
+      <div
+        class="
+          bg-gray-200 dark:bg-gray-800 rounded-lg overflow-visible plb-2 pli-3
+          {% #arrow %}
+          relative
+          before:absolute before:-block-start-4 before:border-transparent before:border-be-gray-200 dark:before:border-be-gray-800 group-hover:before:border-be-accent-200 dark:group-hover:before:border-be-accent-900 group-focus:before:border-be-accent-200 dark:group-focus:before:border-be-accent-900 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem]
+        "
+      >
+        {{ note.templateContent }}
+      </div>
+      <p class="text-xs text-gray-500 mbs-1">
+        <a href="{{ note.url }}"
+          ><time datetime="{{ note.date }}">{{ note.date | date: '%b %-d, %Y' }}</time></a
+        >
+        {%- if note.data.categories %}
+          • in categories:
+          {% for cat in note.data.categories -%}
+            <span class="p-category category">{{ cat }}</span>
+            {%- unless forloop.last %}, {% endunless -%}
+          {%- endfor -%}
+        {%- endif %}
+      </p>
+    </article>
+  {% endfor %}
+</div>
+
+<div class="pagination page-inset-margin my-8">
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="previous">previous</a>
+  {% else %}
+    previous
+  {% endif %}
+  <span class="page_number">page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }}</span>
+  {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="next">next</a>
+  {% else %}
+    next
+  {% endif %}
+</div>

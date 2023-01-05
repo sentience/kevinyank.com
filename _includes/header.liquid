@@ -1,4 +1,4 @@
-<header class="relative flex justify-between items-start md:items-baseline md:min-h-14">
+<header class="page-inset-margin relative flex justify-between items-start md:items-baseline md:min-h-14">
   <div>
     <h1 class="text-2xl font-extrabold mis-14 pis-2">
       <a
@@ -26,12 +26,12 @@
     </ul>
   </div>
 
-  <nav class="menu-button-links absolute md:static inline-end-0 bg-white dark:bg-slate-800 md:bg-transparent rounded-md border md:border-0 border-gray-200 dark:border-gray-700">
+  <nav class="menu-button-links absolute md:static inline-end-0 bg-white dark:bg-gray-800 md:bg-transparent rounded-md border md:border-0 border-gray-200 dark:border-gray-700">
     <button
       id="nav-menu-button"
       aria-haspopup="true"
       aria-controls="nav-menu"
-      class="no-underline md:hidden mis-auto mie-0 w-9 h-9 text-2xl text-center flex justify-center items-center rounded-md focus:outline-none focus:ring focus:ring-offset-2 ring-offset-white dark:ring-offset-slate-900 focus:ring-accent-600 focus:bg-accent-100 dark:focus:bg-accent-900"
+      class="no-underline md:hidden mis-auto mie-0 w-9 h-9 text-2xl text-center flex justify-center items-center rounded-md focus:outline-none focus:ring focus:ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-accent-600 focus:bg-accent-100 dark:focus:bg-accent-900"
     >
       <svg
         class="h-4 w-[1.125rem]"
@@ -54,12 +54,20 @@
       id="nav-menu"
       role="menu"
       aria-labelledby="nav-menu-button"
-      class="hidden md:block md:tracking-tight space-y-1"
+      class="hidden md:flex md:tracking-tight space-y-1 md:space-y-0"
     >
       <li role="none">
         <a
           role="menuitem"
-          href="/about"
+          href="/notes/"
+          class="block text-end px-2 md:inline md:mis-10 md:px-0"
+          >Notes</a
+        >
+      </li>
+      <li role="none">
+        <a
+          role="menuitem"
+          href="/about/"
           class="block text-end px-2 md:inline md:mis-10 md:px-0"
           >About</a
         >
