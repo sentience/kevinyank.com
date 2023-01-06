@@ -9,6 +9,9 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
 ---
 {% if pagination.pageNumber == 0 %}
   <div
+    tabindex="0"
+    role="region"
+    aria-label="recent notes"
     class="
       page-inset-padding flex
       {% #arrow overlaps preceding margin %}
@@ -17,6 +20,8 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
       overflow-x-scroll [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
       {% #scroll snapping %}
       snap-x snap-mandatory scroll-pl-4 sm:scroll-pl-12
+      {% #focus ring %}
+      focus-visible:bg-accent-100 focus-visible:outline-none
     "
   >
     {% for note in collections.note reversed %}
