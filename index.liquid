@@ -21,13 +21,13 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
   >
     {% for note in collections.note reversed %}
       {% if forloop.index <= 5 %}
-        <article class="flex-none max-is-xs sm:max-is-lg snap-start pie-4 last:pie-0 pbe-4 border-be">
+        <article class="flex-none snap-start max-is-xs pie-4 pbe-4 border-be last:pie-0 sm:max-is-lg">
           <div
             class="
               bg-gray-200 dark:bg-gray-800 rounded-lg overflow-visible plb-2 pli-3
               {% #arrow %}
               relative
-              before:absolute before:-block-start-4 before:border-transparent before:border-be-gray-200 dark:before:border-be-gray-800 group-hover:before:border-be-accent-200 dark:group-hover:before:border-be-accent-900 group-focus:before:border-be-accent-200 dark:group-focus:before:border-be-accent-900 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem]
+              before:absolute before:border-transparent before:-block-start-4 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem] before:border-be-gray-200 group-hover:before:border-be-accent-200 group-focus:before:border-be-accent-200 dark:before:border-be-gray-800 dark:group-hover:before:border-be-accent-900 dark:group-focus:before:border-be-accent-900
             "
           >
             {{ note.templateContent }}
@@ -46,7 +46,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
           </p>
         </article>
       {% elsif forloop.index == 6 %}
-        <div class="flex-none is-full snap-start pbe-4 border-be">
+        <div class="flex-none snap-start is-full pbe-4 border-be">
           → <a href="/notes#{{ note.fileSlug }}">View more notes</a>
         </div>
       {% endif %}

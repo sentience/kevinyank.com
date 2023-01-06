@@ -9,15 +9,15 @@ permalink: "{% if pagination.pageNumber > 0 %}/notes/page/{{ pagination.pageNumb
 ---
 <h1 class="page-inset-margin my-8">Recent Notes</h1>
 
-<div class="page-inset-margin flex flex-wrap gap-4 justify-items-stretch">
+<div class="page-inset-margin flex flex-wrap justify-items-stretch gap-4">
   {% for note in notes %}
-    <article id="{{ note.fileSlug }}" class="flex-auto [flex-basis:25%] min-is-[32ch] max-is-max pbe-4">
+    <article id="{{ note.fileSlug }}" class="flex-auto min-is-[32ch] max-is-max pbe-4 [flex-basis:25%]">
       <div
         class="
           bg-gray-200 dark:bg-gray-800 rounded-lg overflow-visible plb-2 pli-3
           {% #arrow %}
           relative
-          before:absolute before:-block-start-4 before:border-transparent before:border-be-gray-200 dark:before:border-be-gray-800 group-hover:before:border-be-accent-200 dark:group-hover:before:border-be-accent-900 group-focus:before:border-be-accent-200 dark:group-focus:before:border-be-accent-900 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem]
+          before:absolute before:border-transparent before:-block-start-4 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem] before:border-be-gray-200 group-hover:before:border-be-accent-200 group-focus:before:border-be-accent-200 dark:before:border-be-gray-800 dark:group-hover:before:border-be-accent-900 dark:group-focus:before:border-be-accent-900
         "
       >
         {{ note.templateContent }}

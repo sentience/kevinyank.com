@@ -1,18 +1,18 @@
-<header class="page-inset-margin relative flex justify-between items-start md:items-baseline md:min-h-14">
+<header class="page-inset-margin relative flex items-start justify-between md:min-h-14 md:items-baseline">
   <div>
     <h1 class="text-2xl font-extrabold mis-14 pis-2">
       <a
         href="/"
         {% if page.url == '/' %}
           aria-current="true"
-          class="text-inherit visited:text-inherit no-underline"
+          class="text-inherit no-underline visited:text-inherit"
         {% endif %}
       >
         {{ site.name }}
       </a>
     </h1>
     <img
-      class="absolute block-start-0 inline-start-0 w-14 h-14"
+      class="absolute h-14 w-14 block-start-0 inline-start-0"
       src="/assets/images/avatar_320.jpg"
       alt=""
     >
@@ -26,12 +26,12 @@
     </ul>
   </div>
 
-  <nav class="menu-button-links absolute md:static inline-end-0 bg-white dark:bg-gray-800 md:bg-transparent rounded-md border md:border-0 border-gray-200 dark:border-gray-700">
+  <nav class="menu-button-links absolute rounded-md border border-gray-200 bg-white inline-end-0 dark:border-gray-700 dark:bg-gray-800 md:static md:border-0 md:bg-transparent">
     <button
       id="nav-menu-button"
       aria-haspopup="true"
       aria-controls="nav-menu"
-      class="no-underline md:hidden mis-auto mie-0 w-9 h-9 text-2xl text-center flex justify-center items-center rounded-md focus:outline-none focus:ring focus:ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-accent-600 focus:bg-accent-100 dark:focus:bg-accent-900"
+      class="flex h-9 w-9 items-center justify-center rounded-md text-center text-2xl no-underline ring-offset-white mis-auto mie-0 focus:bg-accent-100 focus:outline-none focus:ring focus:ring-accent-600 focus:ring-offset-2 dark:ring-offset-gray-900 dark:focus:bg-accent-900 md:hidden"
     >
       <svg
         class="h-4 w-[1.125rem]"
@@ -54,13 +54,13 @@
       id="nav-menu"
       role="menu"
       aria-labelledby="nav-menu-button"
-      class="hidden md:flex md:tracking-tight space-y-1 md:space-y-0"
+      class="hidden space-y-1 md:flex md:space-y-0 md:tracking-tight"
     >
       <li role="none">
         <a
           role="menuitem"
           href="/notes/"
-          class="block text-end px-2 md:inline md:mis-10 md:px-0"
+          class="block px-2 text-end md:inline md:px-0 md:mis-10"
           >Notes</a
         >
       </li>
@@ -68,7 +68,7 @@
         <a
           role="menuitem"
           href="/about/"
-          class="block text-end px-2 md:inline md:mis-10 md:px-0"
+          class="block px-2 text-end md:inline md:px-0 md:mis-10"
           >About</a
         >
       </li>
