@@ -10,7 +10,7 @@ categories:
 
 I’ve missed producing video training since I left [Learnable][l] in 2012, and published my _[Up and Running with Sublime Text 2][lyndasublime]_ course in 2013. To scratch this itch, I’ve just launched **[Screencast a Week][saw]**, a series of short, weekly videos that show off power user tips and tricks for the Mac, iPhone, iPad, and whatever else I come up with.
 
-{% include youtube.html video="G5LdSpIL180" caption="Excited to be back in front of the microphone" %}
+{% include youtube video="G5LdSpIL180" caption="Excited to be back in front of the microphone" %}
 
 To support this project, [I’m asking for help on Patreon][sawpatreon], a site that lets you pledge a small amount of money for each video that I publish. In return, you get early access to new episodes, high-quality video downloads, and more!
 

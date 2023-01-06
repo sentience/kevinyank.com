@@ -22,11 +22,11 @@ We build a set of web-based products that together we call an employee experienc
 
 When I joined Culture Amp in 2015 I was employee number 26, we had a single engineering team, and we had yet to land our 200th client.
 
-{% include figure.html src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/culture-amp-insight-2015.png" alt="screenshot" caption="How it started: Culture Amp Insight report circa 2015" %}
+{% include figure src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/culture-amp-insight-2015.png" alt="screenshot" caption="How it started: Culture Amp Insight report circa 2015" %}
 
 Seven years later, over 5,000 companies around the world now use our products, which are built and maintained by over 100 engineers across a dozen or so different teams.
 
-{% include figure.html src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/culture-amp-insight-2021.png" alt="screenshot" caption="How it's going: the same screen in 2022 – with fake data, of course" %}
+{% include figure src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/culture-amp-insight-2021.png" alt="screenshot" caption="How it's going: the same screen in 2022 – with fake data, of course" %}
 
 Safe to say, our front end engineers today build a lot of UIs – new and old, routine and novel – all at once. From that comes our biggest challenge. For it to go well (by which I mean we build user interfaces (UIs) affordably, sustainably, and producing a product our customers love) we must empower those engineers to work in separate codebases, but embrace every opportunity we have to **leverage consistency across those codebases**.
 
@@ -38,11 +38,11 @@ To articulate a strategy for the practice, I had to start with where we are. For
 
 Back in 2017, we began with [our design system: Kaizen](https://cultureamp.design). A set of design guidelines, atomic values (design tokens), and more than 50 reusable components (with many more to come!), Kaizen defines the consistent look and feel of our product. There's always more to do, but Kaizen is already in wide and successful use in all our UI code bases today.
 
-{% include figure.html src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/kaizen-home.png" alt="screenshot of the Kaizen home page" caption="<a href='https://cultureamp.design/'>The Kaizen website</a>" %}
+{% include figure src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/kaizen-home.png" alt="screenshot of the Kaizen home page" caption="<a href='https://cultureamp.design/'>The Kaizen website</a>" %}
 
 Kicking off a couple of years later in 2019, Culture Amp's standard development, continuous integration, and serverless infrastructure deployment tooling for UIs is called frontend-ops. It's still an internal project at this stage so I can't link to it, but here's a peek at some of its features:
 
-{% include figure.html src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/frontend-template-readme.png" alt="screenshot listing yarn commands to run a local development server, create a static build, deploy to production, run a Storybook server, and run tools like TypeScript, eslint, Jest, Prettier and Playwright" caption="From the README of Culture Amp's front end app template" %}
+{% include figure src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/frontend-template-readme.png" alt="screenshot listing yarn commands to run a local development server, create a static build, deploy to production, run a Storybook server, and run tools like TypeScript, eslint, Jest, Prettier and Playwright" caption="From the README of Culture Amp's front end app template" %}
 
 So what's missing?
 
@@ -62,7 +62,7 @@ Rather than a shopping list of necessary ingredients for the success of our prac
 
 So yes, a blueberry muffin.
 
-{% include figure.html src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/blueberry-muffin-metaphor.jpeg" alt="Close-up photo of a blueberry muffin surrounded by others like it. The blueberries are labelled &quot;Kaizen components&quot; and the paper wrapper is labelled &quot;frontend-ops&quot;; both are highlighted in green with the annotation &quot;Leverage these&quot;. The cake of the muffin, however, is labelled with three question marks and highlighted in red, with the annotation &quot;Invest in this&quot;." caption="A very delicious muffin, despite appearances!<br>Photo borrowed from <a href='https://www.biggerbolderbaking.com/lemon-blueberry-muffins/'>Gemma's Bigger Bolder Baking</a>." %}
+{% include figure src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/blueberry-muffin-metaphor.jpeg" alt="Close-up photo of a blueberry muffin surrounded by others like it. The blueberries are labelled &quot;Kaizen components&quot; and the paper wrapper is labelled &quot;frontend-ops&quot;; both are highlighted in green with the annotation &quot;Leverage these&quot;. The cake of the muffin, however, is labelled with three question marks and highlighted in red, with the annotation &quot;Invest in this&quot;." caption="A very delicious muffin, despite appearances!<br>Photo borrowed from <a href='https://www.biggerbolderbaking.com/lemon-blueberry-muffins/'>Gemma's Bigger Bolder Baking</a>." %}
 
 Quoting from my final strategy document:
 
@@ -106,7 +106,7 @@ But if you need to pull together a lot of threads into something memorable, do l
 
 There are probably even some non-food-related metaphors to consider; I'm just a little hungry right now. Honestly, I started with chocolate chip cookies until I realised that those aren't baked in a tray of identical cups!
 
-{% include figure.html alt="A Slack conversation between Kevin Yank and Louis Quinnell. Kevin writes &quot;Just realised chocolate chip cookies are baked on a flat sheet, not in cupcake-like tins I was imagining. FML. 😆&quot; The thread continues, considering images of muffins placed sideways in a baking tray. Louis suggests &quot;I that this represents the need for docs…&quot;" src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/slack-thread.png" caption="Working out the kinks with Louis Quinnell, the tech lead for frontend-ops" %}
+{% include figure alt="A Slack conversation between Kevin Yank and Louis Quinnell. Kevin writes &quot;Just realised chocolate chip cookies are baked on a flat sheet, not in cupcake-like tins I was imagining. FML. 😆&quot; The thread continues, considering images of muffins placed sideways in a baking tray. Louis suggests &quot;I that this represents the need for docs…&quot;" src="/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/slack-thread.png" caption="Working out the kinks with Louis Quinnell, the tech lead for frontend-ops" %}
 
 This, like so many things, is an opportunity to create culture. Have some fun with it!
 

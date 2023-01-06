@@ -13,7 +13,7 @@ categories:
 
 This past week I received my [Orbitkey][orbitkey], a local [Kickstarter success story][orbitkeyks] recommended to me by my pal [Matt Magain][mattymcg]. It’s an alternative to your typical keychain that holds your keys snugly within a leather or rubber loop instead of allowing them to jangle around in your pocket. When you need a key, it’s always in the same place and you just fold it out for use.
 
-{% include figure.html src="/assets/images/blog/orbitkey.jpg" alt="photo of an Orbitkey on a wooden surface with keys and other accessories attached" caption="My Orbitkey with my keys and 32GB USB flash drive folded out for access" %}
+{% include figure src="/assets/images/blog/orbitkey.jpg" alt="photo of an Orbitkey on a wooden surface with keys and other accessories attached" caption="My Orbitkey with my keys and 32GB USB flash drive folded out for access" %}
 
 Included with my Orbitkey was the optional extra 32GB USB flash drive (you can add in a bottle opener too). The moment I saw that key-shaped drive I knew what I wanted to store on it.
 
@@ -23,7 +23,7 @@ I store all my web logins, server logins, credit cards, software licences, SSH a
 
 But what if I need some of my secure data on a computer without 1Password installed? Let’s say I’m fixing a friend’s PC and I need to grab the licence key for a disk repair utility I bought some time ago. 1Password has a neat solution to this called [1Password Anywhere][1pwanywhere]. As long as you can access a copy of your 1Password data files, you can open the 1Password.html file included within them in a web browser and enter your master password into that web page to gain access to your secure data. So if I find myself in this position, I just surf over to dropbox.com, log into my account, and open up the 1Password.html file I have stored there. No copy of 1Password required!
 
-{% include figure.html src="/assets/images/blog/1password-anywhere.png" alt="the 1Password Anywhere master password prompt" caption="1Password Anywhere opened in Safari" %}
+{% include figure src="/assets/images/blog/1password-anywhere.png" alt="the 1Password Anywhere master password prompt" caption="1Password Anywhere opened in Safari" %}
 
 But wait, did you spot the problem? I had to log into Dropbox to get at that file. First of all, that means I need to memorise not only my 1Password master password (to unlock my 1Password data), but also my Dropbox account password (to access my locked data at all). Secondly, I have my Dropbox account protected with [2-factor authentication][dropox2factorauth] (you should too!), so if my phone isn’t to hand (or has run out of charge), I won’t have a Dropbox login token, and I won’t be able to access my files online at all!
 
@@ -41,7 +41,7 @@ OS X has the tools to set this up built in. A combination of [Folder Actions][os
 
 Here’s the rule I’ve set up in Hazel for my Dropbox folder. It watches the 1PasswordSync subfolder (which contains my 1Password data) to see if it has been changed since the last time this rule was triggered, and if it was it syncs the latest changes to its contents to my Orbitkey flash drive.
 
-{% include figure.html src="/assets/images/blog/hazel-1password-orbitkey-sync.png" alt="Hazel is configured with a rule to monitor my Dropbox folder for files where Kind is Folder, Name is 1PasswordSync, and any of the following conditions are met for the current file or folder: Date Last Modified is after Date Last Matched, or any of the following conditions are met for any of its subfiles or subfolders: Date Last Modified is after Date Last Matched. The rule action is set to Sync into folder: Orbitkey" caption="To create condition groups, hold down the Option (⌥) key when you click the button to add a condition" %}
+{% include figure src="/assets/images/blog/hazel-1password-orbitkey-sync.png" alt="Hazel is configured with a rule to monitor my Dropbox folder for files where Kind is Folder, Name is 1PasswordSync, and any of the following conditions are met for the current file or folder: Date Last Modified is after Date Last Matched, or any of the following conditions are met for any of its subfiles or subfolders: Date Last Modified is after Date Last Matched. The rule action is set to Sync into folder: Orbitkey" caption="To create condition groups, hold down the Option (⌥) key when you click the button to add a condition" %}
 
 Hazel is smart enough to hold off on running this rule until it notices the Orbitkey drive is connected and available; therefore, whenever I connect the drive, any recent changes to my 1Password data files are almost immediately synced to it. Perfect!
 

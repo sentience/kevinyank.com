@@ -10,7 +10,7 @@ categories:
 
 Yesterday’s [Microsoft Surface Pro 3 launch event][event] showed off what I think is a fairly compelling product. If what I really wanted was a single device that could replace the more specialised devices I have in my MacBook Pro and iPad Air, and if I thought I’d enjoy using Windows 8, then the Surface Pro 3 would be a very tempting way to go. Personally I don’t and I wouldn’t, so I won’t, but you might feel differently.
 
-{% include figure.html src="/assets/images/blog/panay_surface_1.jpg" alt="Panos Panay holds the device edge-on for the audience to see how thin it is." caption="Panos Panay shows off the Surface Pro 3" %}
+{% include figure src="/assets/images/blog/panay_surface_1.jpg" alt="Panos Panay holds the device edge-on for the audience to see how thin it is." caption="Panos Panay shows off the Surface Pro 3" %}
 
 But apart from the product itself, two things really struck me when I watched the [event video][event].
 
@@ -18,11 +18,11 @@ But apart from the product itself, two things really struck me when I watched th
 
 The first was the tell-tale signs of sloppy software. Much as Microsoft works to reinvent Windows to match the design pedigree of its chief rival Apple, no amount of visual polish can mask the fact that software is hard. Take the Final Draft demo, in which Panay demonstrated scribbling handwritten notes on a screenplay.
 
-{% include figure.html src="/assets/images/blog/panay_surface_2.jpg" alt="Two lines in the script have red crosses drawn over them, and a box with an arrow encloses a comment on a specific passage." caption="These handwritten notes clearly correspond to the portions of the script beneth them" %}
+{% include figure src="/assets/images/blog/panay_surface_2.jpg" alt="Two lines in the script have red crosses drawn over them, and a box with an arrow encloses a comment on a specific passage." caption="These handwritten notes clearly correspond to the portions of the script beneth them" %}
 
 After crossing out a couple of lines of dialogue and adding a comment with an arrow pointing at the relevant portion of the text, Panay then made a show of turning the device into landscape mode to show off the display. Unfortunately, this highlighted a flaw in the preceding demo—a flaw that was plainly visible to everyone watching for many long seconds while he spoke about the quality of the image. Can you spot it?
 
-{% include figure.html src="/assets/images/blog/panay_surface_3.jpg" alt="In landscape mode, the handwritten notes have shifted position, and no longer line up with the parts of the script they refer to." caption="Take a good look." %}
+{% include figure src="/assets/images/blog/panay_surface_3.jpg" alt="In landscape mode, the handwritten notes have shifted position, and no longer line up with the parts of the script they refer to." caption="Take a good look." %}
 
 The handwritten notes no longer line up with the text beneath. Whether due to a bug in demo-quality software, or because Final Draft’s support for handwritten notes is simply more limited than Panay would like to have us believe, this moment highlighted to me the fact that Microsoft’s platform still can’t offer the polished experiences of its rival’s. (That said, Apple is [having trouble living up to its own standards][itunes-podcasts-bad-design] these days.)
 
@@ -34,7 +34,7 @@ The second thing that stood out for me was presenter Panos Panay’s tendency to
 
 > “And the reason is because you get this looseness in your hinge. And when you’re typing you kind of have to feel like “where should I put my—” and there’s too many thoughts. And when you put too many thoughts in a customer’s head, or a person who’s using its head, you really do find a place where they get stuck. And when you’re thinking too much when it should be that simple, it doesn’t work. It’s one of the beauties of tablets. It’s one of the beauties of laptops.”
 
-{% include figure.html src="/assets/images/blog/panay_surface_4.jpg" alt="Panos Panay clicks the keyboard cover onto the front of the Surface Pro 3 to increase stability." caption="The “lapability” demo" %}
+{% include figure src="/assets/images/blog/panay_surface_4.jpg" alt="Panos Panay clicks the keyboard cover onto the front of the Surface Pro 3 to increase stability." caption="The “lapability” demo" %}
 
 You can get his meaning—mostly—from the context, but half of what he’s saying makes no sense. In an almost subliminal way, this makes the audience feel that the presenter doesn’t really care about what he’s saying, because he isn’t bothering to say it clearly. It comes off as stream-of-consciousness blather—verbal diarrhoea.
 
@@ -47,7 +47,7 @@ Here’s another example, from when Panay demonstrates how the New York Times Cr
 
 > “And watch how I personally write it in. This is *my* handwriting, as I write it. Now watch how it transfers itself to actual digital content; did you see that? That’s important. We took nothing personal away in showing this app. Yet we’ve gone from an analogue to a digital place, which is so critical in making that feel seamless. Pretty cool.”
 
-{% include figure.html src="/assets/images/blog/panay_surface_5.jpg" alt="Panos Panay writes the letter ‘A’ into a box on a crossword." caption="That ‘A’ is just so personal in a digital place!" %}
+{% include figure src="/assets/images/blog/panay_surface_5.jpg" alt="Panos Panay writes the letter ‘A’ into a box on a crossword." caption="That ‘A’ is just so personal in a digital place!" %}
 
 Panay was trying to make a subtle point, here. I’m sure it had something to do with an experience based around my own handwriting creating greater intimacy than other input modes can offer, and the unobtrusive handwriting recognition not interfering with that. I’m sure there was a script written to convey that idea with just the right words, but either through nerves or over-rehearsal, Panay made something up on the fly that was mostly nonsense punctuated by meaningless fluff like “That’s important.” and “Pretty cool.”
 
@@ -59,7 +59,7 @@ Here, to me, is a clear instance of Panay focusing too much on the presentation,
 
 > “If the design point is something as simple as “we believe what can be digital will be digital”, you have to start removing barriers of technology very quickly. A piece of paper and a pen is as analogue as it gets. It is as natural as it gets. The design points through the device shine through. When you lay it down it feels like a piece of paper; you can write on it at any given time. You can move it and use it to replace your 13" laptops very quickly, yet then you can obviously use it as a tablet any time. But ultimately, removing that barrier of technology is critical to make it feel great. Critical. But how?”
 
-{% include figure.html src="/assets/images/blog/panay_surface_6.jpg" alt="Panos Panay grimaces with his hand on his forehead as he crosses the stage." caption="What’s on his mind?" %}
+{% include figure src="/assets/images/blog/panay_surface_6.jpg" alt="Panos Panay grimaces with his hand on his forehead as he crosses the stage." caption="What’s on his mind?" %}
 
 This is just a bizarre mix of jargon (“design points”), obvious lines from the script (“what can be digital will be digital”), and the scattered remains of a dramatic device (“it’s as simple as a piece of paper”). What is entirely lost is what Panay was actually trying to say. When I hear a word jumble like this, it’s clear to me that the presenter is completely disconnected from his message, and is just trying to hit all the points of reference his stressed brain can remember from rehearsal.
 
