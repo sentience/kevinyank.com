@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  button {
+    cursor: default;
+  }
+}
+
 @layer components {
   /* Default link styles */
   :any-link {

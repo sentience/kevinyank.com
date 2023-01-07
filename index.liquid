@@ -8,6 +8,7 @@ pagination:
 permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumber | plus: 1 }}{% endif %}/"
 ---
 {% if pagination.pageNumber == 0 %}
+  <script defer src="/assets/scripts/scroll-to-note.js"></script>
   <div id="recent-notes" class="relative pbe-6">
     <div
       tabindex="0"
@@ -64,18 +65,38 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
         </div>
       {% endif %}
     </div>
-    <div class="absolute flex gap-1 block-end-0 inline-start-4 sm:inline-start-12">
+    <div class="absolute flex gap-2 block-end-0 inline-start-4 sm:inline-start-12">
       <button
         tabindex="-1"
-        class="scroll-to-note-previous text-gray-300 hover:text-black focus-visible:text-black active:text-black disabled:text-red-600"
+        class="scroll-to-note-previous text-accent-900 hover:text-accent-700 active:text-black disabled:text-gray-300"
       >
-        ◀
+        <svg
+          viewBox="0 0 2 2"
+          version="1.1"
+          xmlns="https://www.w3.org/2000/svg"
+          xmlns:xlink="https://www.w3.org/1999/xlink"
+          class="bs-3 is-3"
+          fill="currentColor"
+        >
+          <title>scroll left</title>
+          <polygon points="2,0 0,1 2,2">
+        </svg>
       </button>
       <button
         tabindex="-1"
-        class="scroll-to-note-next  text-gray-300 hover:text-black focus-visible:text-black active:text-black disabled:text-red-600"
+        class="scroll-to-note-next text-accent-900 hover:text-accent-700 active:text-black disabled:text-gray-300"
       >
-        ▶
+        <svg
+          viewBox="0 0 2 2"
+          version="1.1"
+          xmlns="https://www.w3.org/2000/svg"
+          xmlns:xlink="https://www.w3.org/1999/xlink"
+          class="bs-3 is-3"
+          fill="currentColor"
+        >
+          <title>scroll right</title>
+          <polygon points="0,0 2,1 0,2">
+        </svg>
       </button>
     </div>
   </div>

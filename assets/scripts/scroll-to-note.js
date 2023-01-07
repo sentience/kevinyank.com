@@ -50,9 +50,20 @@ class ScrollToNotes {
     const scrollPadding = parseInt(
       getComputedStyle(this.notes[0].parentNode).paddingInlineStart
     );
-    return Array.from(this.notes).findIndex(
-      (note) => note.offsetLeft >= note.parentNode.scrollLeft - scrollPadding
-    );
+    // Return the index of the smallest absolute difference between left offset
+    // and left scroll
+    return Array.from(this.notes)
+      .map((note, index) => ({
+        index,
+        value: Math.abs(
+          note.offsetLeft - (note.parentNode.scrollLeft - scrollPadding)
+        ),
+      }))
+      .sort((a, b) => {
+        if (a.value > b.value) return 1;
+        if (a.value < b.value) return -1;
+        return 0;
+      })[0].index;
   }
 }
 
