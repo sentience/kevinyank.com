@@ -27,6 +27,7 @@ function setUpLiquid(eleventyConfig) {
   eleventyConfig.setLiquidOptions({
     dynamicPartials: false,
     jekyllInclude: true,
+    orderedFilterParameters: true,
   });
 
   // Implement Jekyll's post_url tag

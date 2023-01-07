@@ -8,25 +8,29 @@ pagination:
 permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumber | plus: 1 }}{% endif %}/"
 ---
 {% if pagination.pageNumber == 0 %}
-  <div
-    tabindex="0"
-    role="region"
-    aria-label="recent notes"
-    class="
-      page-inset-padding flex
-      {% #arrow overlaps preceding margin %}
-      -mbs-4 pbs-4
-      {% #invisible horizontal scrollbar %}
-      overflow-x-scroll [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
-      {% #scroll snapping %}
-      snap-x snap-mandatory scroll-pl-4 sm:scroll-pl-12
-      {% #focus ring %}
-      focus-visible:bg-accent-100 focus-visible:outline-none
-    "
-  >
-    {% for note in collections.note reversed %}
-      {% if forloop.index <= 5 %}
-        <article class="flex-none snap-start max-is-xs pie-4 pbe-4 border-be last:pie-0 sm:max-is-lg">
+  <div id="recent-notes" class="relative pbe-6">
+    <div
+      tabindex="0"
+      role="region"
+      aria-label="recent notes"
+      class="
+        page-inset-padding flex relative
+        {% #arrow overlaps preceding margin %}
+        -mbs-4 pbs-4
+        {% #invisible horizontal scrollbar %}
+        overflow-x-scroll [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+        {% #scroll snapping %}
+        snap-x snap-mandatory scroll-pl-4 sm:scroll-pl-12
+        {% #focus ring %}
+        focus-visible:bg-accent-100 focus-visible:outline-none
+      "
+    >
+      {% assign note_limit = 5 %}
+      {% for note in collections.note reversed limit: note_limit %}
+        <article
+          id="note-{{ note.fileSlug }}"
+          class="flex-none snap-start max-is-xs pie-4 pbe-4 border-be last:pie-0 sm:max-is-lg"
+        >
           <div
             class="
               bg-gray-200 dark:bg-gray-800 rounded-lg overflow-visible plb-2 pli-3
@@ -50,12 +54,41 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
             {%- endif %}
           </p>
         </article>
-      {% elsif forloop.index == 6 %}
-        <div class="flex-none snap-start is-full pbe-4 border-be">
-          → <a href="/notes#{{ note.fileSlug }}">View more notes</a>
+      {% endfor %}
+      {% assign nextNoteIndex = note_limit | times: -1 | minus: 1 %}
+      {% assign nextNote = collections.note[nextNoteIndex] %}
+      {% if nextNote %}
+        <div
+          id="note-{{ nextNote.fileSlug }}"
+          class="flex-none snap-start is-full pbe-4 border-be"
+        >
+          → <a href="/notes#{{ nextNote.fileSlug }}">View more notes</a>
         </div>
       {% endif %}
-    {% endfor %}
+    </div>
+    <div class="absolute flex gap-1 block-end-0 inline-start-4 sm:inline-start-12">
+      <button
+        tabindex="-1"
+        class="scroll-to-note-prev text-gray-300 hover:text-black focus-visible:text-black active:text-black"
+      >
+        ◀
+      </button>
+      {% for note in collections.note reversed limit: 6 %}
+        <button
+          tabindex="-1"
+          class="scroll-to-note text-xs text-gray-300 hover:text-black focus-visible:text-black active:text-black"
+          id="scroll-to-note-{{ note.fileSlug }}"
+        >
+          ●
+        </button>
+      {% endfor %}
+      <button
+        tabindex="-1"
+        class="scroll-to-note-next  text-gray-300 hover:text-black focus-visible:text-black active:text-black"
+      >
+        ▶
+      </button>
+    </div>
   </div>
 
   {% assign firstPost = pagination.items[0] %}
