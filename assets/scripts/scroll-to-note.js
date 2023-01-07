@@ -16,8 +16,6 @@ class ScrollToNotes {
     (this.scrollToPreviousButton = domNode.querySelector(
       ".scroll-to-note-previous"
     )).addEventListener("click", () => this.scrollToPrevious());
-
-    this.updateButtonStates();
   }
 
   scrollToNext() {
@@ -36,12 +34,6 @@ class ScrollToNotes {
       block: "nearest",
       inline: "start",
     });
-    this.updateButtonStates(index);
-  }
-
-  updateButtonStates(index = this.getCurrentScrollIndex()) {
-    this.scrollToNextButton.disabled = index + 1 >= this.notes.length;
-    this.scrollToPreviousButton.disabled = index <= 0;
   }
 
   getCurrentScrollIndex() {
