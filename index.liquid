@@ -28,8 +28,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
       {% assign note_limit = 5 %}
       {% for note in collections.note reversed limit: note_limit %}
         <article
-          id="note-{{ note.fileSlug }}"
-          class="flex-none snap-start max-is-xs pie-4 pbe-4 border-be last:pie-0 sm:max-is-lg"
+          class="scroll-to-note flex-none snap-start max-is-xs pie-4 pbe-4 border-be last:pie-0 sm:max-is-lg"
         >
           <div
             class="
@@ -59,8 +58,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
       {% assign nextNote = collections.note[nextNoteIndex] %}
       {% if nextNote %}
         <div
-          id="note-{{ nextNote.fileSlug }}"
-          class="flex-none snap-start is-full pbe-4 border-be"
+          class="scroll-to-note flex-none snap-start is-full pbe-4 border-be"
         >
           → <a href="/notes#{{ nextNote.fileSlug }}">View more notes</a>
         </div>
@@ -69,22 +67,13 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
     <div class="absolute flex gap-1 block-end-0 inline-start-4 sm:inline-start-12">
       <button
         tabindex="-1"
-        class="scroll-to-note-prev text-gray-300 hover:text-black focus-visible:text-black active:text-black"
+        class="scroll-to-note-previous text-gray-300 hover:text-black focus-visible:text-black active:text-black disabled:text-red-600"
       >
         ◀
       </button>
-      {% for note in collections.note reversed limit: 6 %}
-        <button
-          tabindex="-1"
-          class="scroll-to-note text-xs text-gray-300 hover:text-black focus-visible:text-black active:text-black"
-          id="scroll-to-note-{{ note.fileSlug }}"
-        >
-          ●
-        </button>
-      {% endfor %}
       <button
         tabindex="-1"
-        class="scroll-to-note-next  text-gray-300 hover:text-black focus-visible:text-black active:text-black"
+        class="scroll-to-note-next  text-gray-300 hover:text-black focus-visible:text-black active:text-black disabled:text-red-600"
       >
         ▶
       </button>
