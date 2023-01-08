@@ -8,7 +8,8 @@ pagination:
 permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumber | plus: 1 }}{% endif %}/"
 ---
 {% if pagination.pageNumber == 0 %}
-  {% render index/notes, notes: collections.note %}
+  {% capture notes %}{% render index/notes, notes: collections.note %}{% endcapture %}
+  {% render index/scroll-region, content: notes %}
 
   {% assign firstPost = pagination.items[0] %}
   <div class="post page-inset-margin my-8">
