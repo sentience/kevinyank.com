@@ -15,9 +15,9 @@
     underline decoration-from-font ring-offset-white visited:text-accent-900
     hover:bg-accent-100 hover:text-black focus-visible:bg-accent-100 focus-visible:text-black
     focus-visible:outline-none focus-visible:ring focus-visible:ring-accent-600 focus-visible:ring-offset-2
-    dark:text-accent-500 dark:ring-offset-gray-900 dark:visited:text-accent-300 dark:hover:bg-accent-900 dark:hover:text-white dark:focus:bg-accent-900 dark:focus:text-white;
+    dark:text-accent-500 dark:ring-offset-gray-900 dark:visited:text-accent-300 dark:hover:bg-accent-900 dark:hover:text-white dark:focus-visible:bg-accent-900 dark:focus-visible:text-white;
     /* Fix Safari box-shadow render artifacts: https://bugs.webkit.org/show_bug.cgi?id=250059 */
-    @apply focus:outline-8;
+    @apply focus-visible:outline-8;
   }
 
   /* Page gutters */
