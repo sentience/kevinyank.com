@@ -15,33 +15,33 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
       role="region"
       aria-label="recent notes"
       class="
-        page-inset-padding flex relative
+        page-inset-padding flex relative group
         {% #arrow overlaps preceding margin %}
-        -mbs-4
+        -mbs-6 pbs-2
         {% #invisible horizontal scrollbar %}
         overflow-x-scroll [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
         {% #scroll snapping %}
         snap-x snap-mandatory scroll-pl-4 sm:scroll-pl-12
         {% #focus ring %}
-        focus-visible:bg-accent-100 focus-visible:outline-none
+        focus-visible:bg-accent-200 focus-visible:outline-none dark:focus-visible:bg-accent-900
       "
     >
       {% assign note_limit = 5 %}
       {% for note in collections.note reversed limit: note_limit %}
         <article
           class="
-            scroll-to-note flex-none snap-start max-is-xs pie-4 pbe-4 border-be last:pie-0 sm:max-is-lg
+            scroll-to-note flex-none snap-start max-is-xs pie-4 pbe-4 border-be group-focus-visible:border-be-transparent last:pie-0 sm:max-is-lg
             {% #arrow %}
-            before:sticky before:block before:border-transparent before:bs-0 before:is-0 before:mli-3 before:inline-start-6 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem] before:border-be-gray-200 dark:before:border-be-gray-700
+            before:sticky before:block before:border-transparent before:bs-0 before:is-0 before:mli-3 before:inline-start-6 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem] before:border-be-gray-200 group-focus-visible:before:border-be-gray-100 dark:before:border-be-gray-700 dark:group-focus-visible:before:border-be-gray-800
           "
         >
           <div
-            class="              overflow-visible rounded-lg bg-gray-200 plb-2 pli-3 dark:bg-gray-700"
+            class="              overflow-visible rounded-lg bg-gray-200 plb-2 pli-3 group-focus-visible:bg-gray-100 dark:bg-gray-700 dark:group-focus-visible:bg-gray-800"
           >
             {{ note.templateContent }}
           </div>
           <p class="text-xs text-gray-500 mbs-1">
-            <a href="{{ note.url }}"
+            <a href="{{ note.url }}" class="group-focus-visible:text-black dark:group-focus-visible:text-white"
               ><time datetime="{{ note.date }}">{{ note.date | date: '%b %-d, %Y' }}</time></a
             >
             {%- if note.data.categories %}
@@ -58,7 +58,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
       {% assign nextNote = collections.note[nextNoteIndex] %}
       {% if nextNote %}
         <div
-          class="scroll-to-note flex-none snap-start is-full pbe-4 border-be"
+          class="scroll-to-note flex-none snap-start is-full plb-6 border-be"
         >
           → <a href="/notes#{{ nextNote.fileSlug }}">View more notes</a>
         </div>
