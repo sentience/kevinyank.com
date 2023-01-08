@@ -17,7 +17,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
       class="
         page-inset-padding flex relative
         {% #arrow overlaps preceding margin %}
-        -mbs-4 pbs-4
+        -mbs-4
         {% #invisible horizontal scrollbar %}
         overflow-x-scroll [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
         {% #scroll snapping %}
@@ -29,15 +29,14 @@ permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumbe
       {% assign note_limit = 5 %}
       {% for note in collections.note reversed limit: note_limit %}
         <article
-          class="scroll-to-note flex-none snap-start max-is-xs pie-4 pbe-4 border-be last:pie-0 sm:max-is-lg"
+          class="
+            scroll-to-note flex-none snap-start max-is-xs pie-4 pbe-4 border-be last:pie-0 sm:max-is-lg
+            {% #arrow %}
+            before:sticky before:block before:border-transparent before:bs-0 before:is-0 before:mli-3 before:inline-start-6 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem] before:border-be-gray-200 dark:before:border-be-gray-700
+          "
         >
           <div
-            class="
-              bg-gray-200 dark:bg-gray-800 rounded-lg overflow-visible plb-2 pli-3
-              {% #arrow %}
-              relative
-              before:absolute before:border-transparent before:-block-start-4 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem] before:border-be-gray-200 group-hover:before:border-be-accent-200 group-focus:before:border-be-accent-200 dark:before:border-be-gray-800 dark:group-hover:before:border-be-accent-900 dark:group-focus:before:border-be-accent-900
-            "
+            class="              overflow-visible rounded-lg bg-gray-200 plb-2 pli-3 dark:bg-gray-700"
           >
             {{ note.templateContent }}
           </div>
