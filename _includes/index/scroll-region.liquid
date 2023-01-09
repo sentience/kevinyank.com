@@ -1,15 +1,13 @@
-<script defer src="/assets/scripts/scroll-to-note.js"></script>
-<div id="recent-notes" class="relative pbe-6">
+<section class="scroll-region pbe-6">
   <div
     tabindex="0"
     role="region"
-    aria-label="recent notes"
+    aria-label="scrollable region"
     class="
       page-inset-padding flex relative group
-      {% #arrow overlaps preceding margin %}
-      -mbs-6 pbs-2
+      {{ extra_styles }}
       {% #invisible horizontal scrollbar %}
-      overflow-x-scroll [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+      overflow-x-scroll overflow-y-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
       {% #scroll snapping %}
       snap-x snap-mandatory scroll-pl-4 sm:scroll-pl-12
       {% #focus ring %}
@@ -18,10 +16,10 @@
   >
     {{ content }}
   </div>
-  <div class="absolute flex gap-2 block-end-0 inline-start-4 sm:inline-start-12">
+  <div class="page-inset-padding flex gap-2 bs-6">
     <button
       tabindex="-1"
-      class="scroll-to-note-previous text-accent-900 hover:text-accent-700 active:text-black dark:active:text-white"
+      class="scroll-region__previous text-accent-900 hover:text-accent-700 active:text-black dark:active:text-white"
     >
       <svg
         viewBox="0 0 2 2"
@@ -37,7 +35,7 @@
     </button>
     <button
       tabindex="-1"
-      class="scroll-to-note-next text-accent-900 hover:text-accent-700 active:text-black dark:active:text-white"
+      class="scroll-region__next text-accent-900 hover:text-accent-700 active:text-black dark:active:text-white"
     >
       <svg
         viewBox="0 0 2 2"
@@ -52,4 +50,4 @@
       </svg>
     </button>
   </div>
-</div>
+</section>

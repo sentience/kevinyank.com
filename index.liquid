@@ -1,76 +1,44 @@
 ---
 layout: default
-pagination:
-  data: collections.post
-  reverse: true
-  size: 5
-  alias: posts
-permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumber | plus: 1 }}{% endif %}/"
+permalink: "/"
 ---
-{% if pagination.pageNumber == 0 %}
-  {% capture notes %}{% render index/notes, notes: collections.note %}{% endcapture %}
-  {% render index/scroll-region, content: notes %}
+<script defer src="/assets/scripts/scroll-region.js"></script>
+{% liquid
+  capture notes
+    render index/notes, notes: collections.note
+  endcapture
 
-  {% assign firstPost = pagination.items[0] %}
-  <div class="post page-inset-margin my-8">
-    <header class="post-header">
-      <h1>
-        <a class="post-link" href="{{ firstPost.url }}">{{ firstPost.data.title }}</a>
-      </h1>
-      <p class="meta">
-        <time datetime="{{ firstPost.date }}">{{ firstPost.date | date: '%b %-d, %Y' }}</time>
-        {%- if firstPost.data.author %} • {{ firstPost.data.author }}{% endif -%}
-        {%- if firstPost.data.categories %}
-          • in categories:
-          {% for cat in firstPost.data.categories -%}
-            <span class="p-category category">{{ cat }}</span>
-            {%- unless forloop.last %}, {% endunless -%}
-          {%- endfor -%}
-        {%- endif %}
-      </p>
-    </header>
+  render index/scroll-region, content: notes, extra_styles : '-mbs-6 pbs-2' # arrow overlaps preceding margin
+%}
 
-    <article class="post-content">
-      {{ firstPost.templateContent }}
-    </article>
-  </div>
-{% endif %}
+{% liquid
+  capture web-dev
+    render index/articles, articles: collections.post
+  endcapture
 
-<h1 class="page-inset-margin my-8">
-  {% if pagination.pageNumber == 0 %}Other {% endif %}Recent Posts
-  {% if pagination.pageNumber > 0 -%}
-    (page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }})
-  {%- endif %}
-</h1>
+  render index/scroll-region, content: web-dev
+%}
 
-<ul class="posts page-inset-margin my-8">
-  {% for post in pagination.items %}
-    {% if post != firstPost %}
-      <li>
-        <span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>
-        <a class="post-link" href="{{ post.url }}">{{ post.data.title }}</a>
-        <p>
-          {% if post.data.excerpt %}
-            {{ post.data.excerpt | remove: '<p>' | remove: '</p>' }}
-          {% else %}
-            {{ post.templateContent | remove: '<p>' | remove: '</p>' }}
-          {% endif %}
-        </p>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% assign firstPost = collections.post | reverse | first %}
+<div class="post page-inset-margin my-8">
+  <header class="post-header">
+    <h1>
+      <a class="post-link" href="{{ firstPost.url }}">{{ firstPost.data.title }}</a>
+    </h1>
+    <p class="meta">
+      <time datetime="{{ firstPost.date }}">{{ firstPost.date | date: '%b %-d, %Y' }}</time>
+      {%- if firstPost.data.author %} • {{ firstPost.data.author }}{% endif -%}
+      {%- if firstPost.data.categories %}
+        • in categories:
+        {% for cat in firstPost.data.categories -%}
+          <span class="p-category category">{{ cat }}</span>
+          {%- unless forloop.last %}, {% endunless -%}
+        {%- endfor -%}
+      {%- endif %}
+    </p>
+  </header>
 
-<div class="pagination page-inset-margin my-8">
-  {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}" class="previous">previous</a>
-  {% else %}
-    previous
-  {% endif %}
-  <span class="page_number">page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }}</span>
-  {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}" class="next">next</a>
-  {% else %}
-    next
-  {% endif %}
+  <article class="post-content">
+    {{ firstPost.templateContent }}
+  </article>
 </div>

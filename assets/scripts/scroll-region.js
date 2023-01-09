@@ -1,35 +1,38 @@
 "use strict";
 
 defer(() => {
-  new ScrollToNotes(document.getElementById("recent-notes"));
+  Array.from(document.getElementsByClassName("scroll-region")).map(
+    (node) => new ScrollRegion(node)
+  );
 });
 
-class ScrollToNotes {
+class ScrollRegion {
   constructor(domNode) {
     this.domNode = domNode;
-    this.notes = domNode.querySelectorAll(".scroll-to-note");
+    this.scrollNode = domNode.children[0];
+    this.items = domNode.querySelectorAll(".scroll-region__item");
 
     (this.scrollToNextButton = domNode.querySelector(
-      ".scroll-to-note-next"
+      ".scroll-region__next"
     )).addEventListener("click", () => this.scrollToNext());
 
     (this.scrollToPreviousButton = domNode.querySelector(
-      ".scroll-to-note-previous"
+      ".scroll-region__previous"
     )).addEventListener("click", () => this.scrollToPrevious());
   }
 
   scrollToNext() {
     const index = this.getCurrentScrollIndex() + 1;
-    if (this.notes[index]) this.scrollToIndex(index);
+    if (this.items[index]) this.scrollToIndex(index);
   }
 
   scrollToPrevious() {
     const index = this.getCurrentScrollIndex() - 1;
-    if (this.notes[index]) this.scrollToIndex(index);
+    if (this.items[index]) this.scrollToIndex(index);
   }
 
   scrollToIndex(index) {
-    this.notes[index].scrollIntoView({
+    this.items[index].scrollIntoView({
       behavior: "smooth",
       block: "nearest",
       inline: "start",
@@ -40,15 +43,15 @@ class ScrollToNotes {
     // NOTE: this doesn't yet support RTL, where scrollX is negative as
     // scrolling occurs, and we should consult offsetRight, not offsetLeft.
     const scrollPadding = parseInt(
-      getComputedStyle(this.notes[0].parentNode).paddingInlineStart
+      getComputedStyle(this.items[0].parentNode).paddingInlineStart
     );
     // Return the index of the smallest absolute difference between left offset
     // and left scroll
-    return Array.from(this.notes)
+    return Array.from(this.items)
       .map((note, index) => ({
         index,
         value: Math.abs(
-          note.offsetLeft - (note.parentNode.scrollLeft - scrollPadding)
+          note.offsetLeft - (this.scrollNode.scrollLeft - scrollPadding)
         ),
       }))
       .sort((a, b) => {
