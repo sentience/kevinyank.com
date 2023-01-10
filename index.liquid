@@ -38,7 +38,7 @@ permalink: "/"
 {% liquid
   capture otherPosts
     assign collection = collections.post | whereExcludes: 'data.tags', 'web development' | whereExcludes: 'data.tags', 'tech'
-    assign title = 'Everything else'
+    assign title = 'The rest'
     assign tagLine = 'Personal stuff. Highs and lows.'
     render index/articles, title: title, tagLine: tagLine, articles: collection
   endcapture
