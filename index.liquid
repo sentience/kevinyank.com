@@ -18,27 +18,3 @@ permalink: "/"
 
   render index/scroll-region, content: web-dev
 %}
-
-{% assign firstPost = collections.post | reverse | first %}
-<div class="post page-inset-margin my-8">
-  <header class="post-header">
-    <h1>
-      <a class="post-link" href="{{ firstPost.url }}">{{ firstPost.data.title }}</a>
-    </h1>
-    <p class="meta">
-      <time datetime="{{ firstPost.date }}">{{ firstPost.date | date: '%b %-d, %Y' }}</time>
-      {%- if firstPost.data.author %} • {{ firstPost.data.author }}{% endif -%}
-      {%- if firstPost.data.categories %}
-        • in categories:
-        {% for cat in firstPost.data.categories -%}
-          <span class="p-category category">{{ cat }}</span>
-          {%- unless forloop.last %}, {% endunless -%}
-        {%- endfor -%}
-      {%- endif %}
-    </p>
-  </header>
-
-  <article class="post-content">
-    {{ firstPost.templateContent }}
-  </article>
-</div>
