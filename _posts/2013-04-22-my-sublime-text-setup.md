@@ -17,6 +17,7 @@ date: '2013-04-22T22:43:51+1000'
 date_gmt: '2013-04-22 12:43:51 +1000'
 categories:
 - training
+- web development
 tags: []
 comments: []
 ---

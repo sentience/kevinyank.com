@@ -16,4 +16,4 @@ categories:
 tags: []
 comments: []
 ---
-<p><a href="http://www.dvorak.org/blog/?p=3836">Good thing I'm not annoying.</a></p>
+<p><a href="http://www.dvorak.org/blog/2006/01/09/web-anonymity-is-now-illegal/">Good thing I'm not annoying.</a></p>

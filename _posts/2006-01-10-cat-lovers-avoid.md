@@ -17,4 +17,4 @@ categories:
 tags: []
 comments: []
 ---
-<p>I sure hope Jess doesn't see <a href="http://digg.com/science/Cyclops_kitten_only_lives_one_day..._PHOTO_">this</a>...</p>
+<p>I sure hope Jess doesn't see <a href="https://www.dailymail.co.uk/news/article-2216319/Cyclops-kitten-dies-One-eyed-kitten-Cleyed-Cyclops-born-shocked-vets-owner.html">this</a>...</p>

@@ -5,7 +5,7 @@ date: 2022-05-10T10:40+1000
 excerpt: These are the live notes I took from Day 2 of the Web Directions Hover 2022 conference for our team internally at Culture Amp.
 categories:
   - Culture Amp
-  - front end engineering
+  - web development
 ---
 
 These are the live notes I took from Day 2 of the [Web Directions Hover 2022](https://webdirections.org/hover/) conference for our team internally at Culture Amp.

@@ -8,6 +8,7 @@ categories:
   - design systems
   - leadership
   - react
+  - web development
 ---
 
 As the director of Culture Amp's large-and-growing front end engineering practice, my biggest challenge in the past year was to communicate a coherent strategy that those 60+ engineers could understand and get behind.

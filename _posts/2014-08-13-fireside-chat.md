@@ -6,6 +6,7 @@ excerpt: This Thursday, August 14th, I’ll be speaking at the Melbourne Web Dev
 categories:
 - development
 - speaking
+- web development
 ---
 
 [![Melbourne Web Developers logo](/assets/images/blog/melbourne_web_developers.png)][meetup]

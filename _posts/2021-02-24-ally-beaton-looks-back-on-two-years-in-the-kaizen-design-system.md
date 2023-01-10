@@ -9,6 +9,7 @@ categories:
   - Culture Amp
   - design systems
   - react
+  - web development
 ---
 
 On her second-last day as [Culture Amp]'s tech lead for the

@@ -6,7 +6,7 @@ excerpt: Every Mac has a screen reader built in, called VoiceOver. This article 
 categories:
   - Apple
   - Culture Amp
-  - front end engineering
+  - web development
 featured: true
 featureImg: /assets/images/blog/test-screen-reader-accessibility-with-voiceover-on-mac/voiceover-utility.png
 featureImgAlt: screenshot of VoiceOver Utility

@@ -18,7 +18,7 @@ tags: []
 comments:
 - id: 5
   author: Mom
-  author_email: cheryl.yank@gmai.com
+  author_email: cheryl.yank@gmail.com
   author_url: ''
   date: '2006-01-19T13:33:10+1100'
   date_gmt: '2006-01-19 02:33:10 +1100'

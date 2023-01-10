@@ -92,7 +92,7 @@
     Latest articles
   </h1>
   <ol class="table">
-    {% for article in articles reversed %}
+    {% for article in articles reversed limit: 10 %}
       <li class="table-row">
         <time
           class="table-cell whitespace-nowrap text-sm font-light text-end pie-2"
@@ -100,10 +100,11 @@
         >
           {{- article.date | date: '%b %-d, %Y' -}}
         </time>
-        <span class="table-cell{% if article.data.featured %} font-semibold{% endif %}"
+        <span class="table-cell pbe-2{% if article.data.featured %} font-semibold{% endif %}"
           ><a href="{{ article.url }}">{{ article.data.title }}</a></span
         >
       </li>
     {% endfor %}
   </ol>
+  <div class="text-end">→ <a href="/todo">All articles</a></div>
 </div>

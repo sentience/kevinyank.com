@@ -14,7 +14,8 @@ categories:
 - personal
 - snippets
 - tech
+- web development
 tags: []
 comments: []
 ---
-<p>The <a href="http://www.fundamentosweb.org/2006/Media/#ponencias">audio and slides</a> from <a href="https://kevinyank.com/posts/fundamental-spain/">my talk at Fundamentos Web 2006</a>, as well as the panel discussion in which I participated, are now available on the conference web site.</p>
+<p>The <a href="http://www.fundamentosweb.org/2006/Media/#ponencias">audio</a> and <a href="/assets/files/blog/fundamental-audio/kevin-yank-coping-with-the-new-web-on-the-server-side-fundamentos-web-2006.pdf">slides</a> from <a href="https://kevinyank.com/posts/fundamental-spain/">my talk at Fundamentos Web 2006</a>, as well as the panel discussion in which I participated, are now available on the conference web site.</p>

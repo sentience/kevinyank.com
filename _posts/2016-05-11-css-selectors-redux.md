@@ -6,6 +6,7 @@ excerpt: "Last month in Sydney and Melbourne I was honoured to speak at Respond 
 categories:
   - development
   - speaking
+  - web development
 ---
 
 Last month in Sydney and Melbourne I was honoured to speak at [Respond 2016][respond16], the third Web Directions conference at which I’ve had the privilege of speaking after [Web Essentials 2006]({% post_url 2006-09-30-many-directions %}) and [Web Directions South 2010][web-directions-south-2009]. John Allsopp assigned me a great topic that would never have occurred to me otherwise: CSS selectors.
