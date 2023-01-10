@@ -16,10 +16,15 @@
   >
     {{ content }}
   </div>
-  <div class="page-inset-padding flex gap-2 bs-6">
+  <div
+    class="
+      page-inset-padding flex gap-2 text-accent-700 bs-6 dark:text-accent-500 [&>:hover]:text-accent-500 dark:[&>:hover]:text-accent-300
+      [&>:active]:text-black dark:[&>:active]:text-white
+    "
+  >
     <button
       tabindex="-1"
-      class="scroll-region__previous text-accent-900 hover:text-accent-700 active:text-black dark:active:text-white"
+      class="scroll-region__previous"
     >
       <svg
         viewBox="0 0 2 2"
@@ -35,7 +40,7 @@
     </button>
     <button
       tabindex="-1"
-      class="scroll-region__next text-accent-900 hover:text-accent-700 active:text-black dark:active:text-white"
+      class="scroll-region__next"
     >
       <svg
         viewBox="0 0 2 2"
