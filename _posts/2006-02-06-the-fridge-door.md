@@ -22,9 +22,8 @@ wordpress_id: 35
 wordpress_url: http://old.kevinyank.com/blog/archives/the-fridge-door/
 date: '2006-02-06T13:04:35+1100'
 date_gmt: '2006-02-06 02:04:35 +1100'
-categories:
+tags:
 - household
-tags: []
 comments:
 - id: 6
   author: Lachlan Donald

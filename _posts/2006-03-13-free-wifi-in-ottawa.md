@@ -10,10 +10,9 @@ wordpress_id: 53
 wordpress_url: http://old.kevinyank.com/blog/archives/free-wifi-in-ottawa/
 date: '2006-03-13T15:41:28+1100'
 date_gmt: '2006-03-13 04:41:28 +1100'
-categories:
+tags:
 - Canada
 - tech
-tags: []
 comments:
 - id: 167
   author: OniOid

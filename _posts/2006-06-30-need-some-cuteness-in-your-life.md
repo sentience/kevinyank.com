@@ -16,10 +16,9 @@ wordpress_id: 96
 wordpress_url: http://old.kevinyank.com/blog/archives/need-some-cuteness-in-your-life/
 date: '2006-06-30T00:09:02+1000'
 date_gmt: '2006-06-29 14:09:02 +1000'
-categories:
+tags:
 - personal
 - cute
-tags: []
 comments:
 - id: 1801
   author: Joel

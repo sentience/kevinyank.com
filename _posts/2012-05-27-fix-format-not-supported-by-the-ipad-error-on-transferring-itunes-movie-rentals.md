@@ -14,10 +14,9 @@ wordpress_id: 240
 wordpress_url: http://old.kevinyank.com/blog/?p=240
 date: '2012-05-27T17:23:12+1000'
 date_gmt: '2012-05-27 07:23:12 +1000'
-categories:
+tags:
 - tech
 - Apple
-tags: []
 comments:
 - id: 497970
   author: Mike

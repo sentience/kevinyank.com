@@ -10,10 +10,9 @@ wordpress_id: 110
 wordpress_url: http://old.kevinyank.com/blog/archives/a-blog-from-the-dark/
 date: '2006-08-04T11:07:00+1000'
 date_gmt: '2006-08-04 01:07:00 +1000'
-categories:
+tags:
 - personal
 - Canada
-tags: []
 comments: []
 ---
 <p><a href="https://www.flickr.com/photos/sentience/206115078/"><img align="right" title="Twizzlers in the dark" alt="Twizzlers in the dark" src="https://static.flickr.com/88/206115078_317b795f3b_m.jpg" /></a>This entry comes to you from the failing battery of my laptop in a cottage that has been without electricity for over two days---</p>

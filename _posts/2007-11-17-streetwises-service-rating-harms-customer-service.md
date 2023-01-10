@@ -18,11 +18,10 @@ wordpress_id: 171
 wordpress_url: http://old.kevinyank.com/blog/archives/streetwises-service-rating-harms-customer-service
 date: '2007-11-17T17:30:20+1100'
 date_gmt: '2007-11-17 07:30:20 +1100'
-categories:
+tags:
 - rants
 - geekdom
 - tech
-tags: []
 comments:
 - id: 65602
   author: Lisa

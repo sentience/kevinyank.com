@@ -10,10 +10,9 @@ wordpress_id: 133
 wordpress_url: http://old.kevinyank.com/blog/archives/more-on-working-at-home/
 date: '2006-10-18T17:36:10+1000'
 date_gmt: '2006-10-18 07:36:10 +1000'
-categories:
+tags:
 - personal
 - snippets
-tags: []
 comments:
 - id: 1756
   author: Jessica

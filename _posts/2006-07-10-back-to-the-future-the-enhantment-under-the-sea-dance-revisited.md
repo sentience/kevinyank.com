@@ -10,10 +10,9 @@ wordpress_id: 99
 wordpress_url: http://old.kevinyank.com/blog/archives/back-to-the-future-the-enhantment-under-the-sea-dance-revisited/
 date: '2006-07-10T17:09:20+1000'
 date_gmt: '2006-07-10 07:09:20 +1000'
-categories:
+tags:
 - snippets
 - geekdom
-tags: []
 comments:
 - id: 5332
   author: Back to the Future

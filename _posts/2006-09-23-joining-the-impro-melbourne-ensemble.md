@@ -10,10 +10,9 @@ wordpress_id: 125
 wordpress_url: http://old.kevinyank.com/blog/archives/joining-the-impro-melbourne-ensemble/
 date: '2006-09-23T23:21:42+1000'
 date_gmt: '2006-09-23 13:21:42 +1000'
-categories:
+tags:
 - personal
 - impro
-tags: []
 comments:
 - id: 1252
   author: Simon Mackie

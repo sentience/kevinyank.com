@@ -21,10 +21,9 @@ wordpress_id: 127
 wordpress_url: http://old.kevinyank.com/blog/archives/did-not-depart/
 date: '2006-10-01T01:25:06+1000'
 date_gmt: '2006-09-30 15:25:06 +1000'
-categories:
+tags:
 - personal
 - rants
-tags: []
 comments:
 - id: 1363
   author: molly.com &raquo; The Fastest Way to Get to Australia . . .

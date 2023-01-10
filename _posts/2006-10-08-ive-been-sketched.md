@@ -10,12 +10,11 @@ wordpress_id: 129
 wordpress_url: http://old.kevinyank.com/blog/archives/ive-been-sketched/
 date: '2006-10-08T04:31:37+1000'
 date_gmt: '2006-10-07 18:31:37 +1000'
-categories:
+tags:
 - personal
 - snippets
 - geekdom
 - cute
-tags: []
 comments:
 - id: 1520
   author: Pixer

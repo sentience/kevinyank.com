@@ -10,10 +10,9 @@ wordpress_id: 33
 wordpress_url: http://old.kevinyank.com/blog/archives/music-work/
 date: '2006-01-30T12:57:15+1100'
 date_gmt: '2006-01-30 01:57:15 +1100'
-categories:
+tags:
 - music
 - Canada
-tags: []
 comments: []
 ---
 <p><a rel="attachment" id="p32" href="http://radio3.cbc.ca/"><img align="right" alt="CBC Radio 3 Logo" id="image32" title="CBC Radio 3 Logo" src="/assets/wp-content/uploads/2006/01/r3_logo.gif" /></a>Listening to the excellent <a href="http://radio3.cbc.ca/">CBC Radio 3 podcast</a> while at work these days. Aside from the occasional offensive hip-hop track (<em>really</em> not my thing), I'm loving most of the stuff they play.</p>

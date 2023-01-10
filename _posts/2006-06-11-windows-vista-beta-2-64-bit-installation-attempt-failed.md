@@ -14,9 +14,8 @@ wordpress_id: 88
 wordpress_url: http://old.kevinyank.com/blog/archives/windows-vista-beta-2-64-bit-installation-attempt-failed/
 date: '2006-06-11T10:30:33+1000'
 date_gmt: '2006-06-11 00:30:33 +1000'
-categories:
+tags:
 - tech
-tags: []
 comments:
 - id: 82
   author: Kev.veK

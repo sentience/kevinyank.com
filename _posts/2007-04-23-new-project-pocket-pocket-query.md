@@ -20,10 +20,9 @@ wordpress_id: 151
 wordpress_url: http://old.kevinyank.com/blog/archives/new-project-pocket-pocket-query
 date: '2007-04-23T17:24:29+1000'
 date_gmt: '2007-04-23 07:24:29 +1000'
-categories:
+tags:
 - tech
 - geocaching
-tags: []
 comments:
 - id: 51677
   author: Comment

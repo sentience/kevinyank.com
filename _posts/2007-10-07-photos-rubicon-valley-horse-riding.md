@@ -10,10 +10,9 @@ wordpress_id: 169
 wordpress_url: http://old.kevinyank.com/blog/archives/photos-rubicon-valley-horse-riding
 date: '2007-10-07T00:26:32+1000'
 date_gmt: '2007-10-06 14:26:32 +1000'
-categories:
+tags:
 - personal
 - geekdom
-tags: []
 comments:
 - id: 78079
   author: Lesley

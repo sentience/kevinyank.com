@@ -10,10 +10,9 @@ wordpress_id: 74
 wordpress_url: http://old.kevinyank.com/blog/archives/music-copyright-laid-bare/
 date: '2006-05-04T10:01:23+1000'
 date_gmt: '2006-05-04 00:01:23 +1000'
-categories:
+tags:
 - music
 - Canada
-tags: []
 comments:
 - id: 644
   author: Getting All Barenaked at Yes, I&#8217;m Canadian

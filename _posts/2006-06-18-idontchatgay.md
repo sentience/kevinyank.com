@@ -15,10 +15,9 @@ wordpress_id: 91
 wordpress_url: http://old.kevinyank.com/blog/archives/idontchatgay/
 date: '2006-06-18T13:48:25+1000'
 date_gmt: '2006-06-18 03:48:25 +1000'
-categories:
+tags:
 - personal
 - funny
-tags: []
 comments: []
 ---
 <p>I have received an alarming number of instant messages from bumpy, tanned men interested in "cam fun" over the past few days. What at first seemed like an increasingly improbable coincidence has at last been explained: someone has posted my AOL Instant Messenger screen name on a gay chat web site, <a href="http://www.ichatgay.com/">iChatGay.com</a> (<acronym title="not safe for work">NSFW</acronym>).</p>

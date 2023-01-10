@@ -10,10 +10,9 @@ wordpress_id: 122
 wordpress_url: http://old.kevinyank.com/blog/archives/white-n-nerdy/
 date: '2006-09-21T10:09:08+1000'
 date_gmt: '2006-09-21 00:09:08 +1000'
-categories:
+tags:
 - snippets
 - funny
-tags: []
 comments: []
 ---
 <p>It's scary how much I <a title="Video: "White and Nerdy", Wierd Al Yankovic" href="http://video.google.com/videoplay?docid=7939447080926152362">relate to this</a>. Wierd Al, how do you skirt the pit of lameness so closely but never fall in?</p>

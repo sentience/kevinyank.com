@@ -16,10 +16,9 @@ wordpress_id: 36
 wordpress_url: http://old.kevinyank.com/blog/archives/metrosexual-failure/
 date: '2006-02-06T18:31:17+1100'
 date_gmt: '2006-02-06 07:31:17 +1100'
-categories:
+tags:
 - personal
 - household
-tags: []
 comments:
 - id: 10
   author: Lucas Chan

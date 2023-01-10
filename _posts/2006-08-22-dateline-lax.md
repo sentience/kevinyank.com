@@ -13,9 +13,8 @@ wordpress_id: 113
 wordpress_url: http://old.kevinyank.com/blog/archives/dateline-lax/
 date: '2006-08-22T22:18:30+1000'
 date_gmt: '2006-08-22 12:18:30 +1000'
-categories:
+tags:
 - personal
-tags: []
 comments: []
 ---
 <p>Contrary to the impression that you might have from the deafening silence here over the past week, Jess and I have made it home in one piece, though not without another series of dramas at the one airport to rule them all, LAX.</p>

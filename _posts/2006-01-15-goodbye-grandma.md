@@ -12,9 +12,8 @@ wordpress_id: 24
 wordpress_url: http://old.kevinyank.com/blog/archives/goodbye-grandma/
 date: '2006-01-15T01:28:54+1100'
 date_gmt: '2006-01-14 14:28:54 +1100'
-categories:
+tags:
 - personal
-tags: []
 comments:
 - id: 5
   author: Mom

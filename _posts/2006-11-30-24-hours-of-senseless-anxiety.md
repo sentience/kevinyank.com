@@ -10,10 +10,9 @@ wordpress_id: 136
 wordpress_url: http://old.kevinyank.com/blog/archives/24-hours-of-senseless-anxiety/
 date: '2006-11-30T15:04:20+1100'
 date_gmt: '2006-11-30 05:04:20 +1100'
-categories:
+tags:
 - personal
 - rants
-tags: []
 comments: []
 ---
 <p>All I'm going to say is this: Nurses who give out test results over the phone should make sure not to mix up the names of common ailments with those of dangerous sexually transmitted diseases.</p>

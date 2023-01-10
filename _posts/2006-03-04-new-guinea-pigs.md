@@ -23,10 +23,9 @@ wordpress_id: 46
 wordpress_url: http://old.kevinyank.com/blog/archives/new-guinea-pigs/
 date: '2006-03-04T09:48:41+1100'
 date_gmt: '2006-03-03 22:48:41 +1100'
-categories:
+tags:
 - cute
 - household
-tags: []
 comments:
 - id: 15
   author: Suspicion at Yes, I&#8217;m Canadian

@@ -22,11 +22,10 @@ wordpress_id: 141
 wordpress_url: http://old.kevinyank.com/blog/archives/navigation-geocaching-and-more-with-a-tomtom-go-710/
 date: '2007-02-04T22:55:46+1100'
 date_gmt: '2007-02-04 12:55:46 +1100'
-categories:
+tags:
 - reviews
 - geekdom
 - tech
-tags: []
 comments:
 - id: 66118
   author: shug

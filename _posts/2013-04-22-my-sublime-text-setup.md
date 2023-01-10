@@ -15,10 +15,9 @@ wordpress_id: 260
 wordpress_url: http://old.kevinyank.com/blog/?p=260
 date: '2013-04-22T22:43:51+1000'
 date_gmt: '2013-04-22 12:43:51 +1000'
-categories:
+tags:
 - training
 - web development
-tags: []
 comments: []
 ---
 <p>A couple of months ago I produced a video course for lynda.com about the <a href="http://www.sublimetext.com/">Sublime Text</a> programmer’s editor, <a href="http://www.lynda.com/Sublime-Text-tutorials/Up-Running-Sublime-Text-2/114325-2.html">“Up and Running with Sublime Text 2”</a>—sample videos below! One of the best things about producing a course or writing a book is that you get to know your subject <em>really</em> well, so after a couple of friends asked me today what I recommend when setting up Sublime Text for the first time, I thought I’d write it up here.</p>

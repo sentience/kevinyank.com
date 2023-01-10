@@ -20,11 +20,10 @@ wordpress_id: 57
 wordpress_url: http://old.kevinyank.com/blog/archives/flickr-is-starting-to-suck/
 date: '2006-03-20T01:00:06+1100'
 date_gmt: '2006-03-19 14:00:06 +1100'
-categories:
+tags:
 - rants
 - geekdom
 - tech
-tags: []
 comments:
 - id: 20
   author: Cheryl

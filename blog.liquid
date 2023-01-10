@@ -8,29 +8,27 @@ pagination:
 permalink: "/blog/{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
 ---
 <h1 class="page-inset-margin my-8">
-  Recent Articles
+  Recent articles
   {% if pagination.hrefs.length > 0 %}
     (page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }})
   {% endif %}
 </h1>
 
-<ul class="posts page-inset-margin my-8">
+<ol class="posts page-inset-margin my-8">
   {% for post in pagination.items %}
-    {% if post != firstPost %}
-      <li>
-        <span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>
-        <a class="post-link" href="{{ post.url }}">{{ post.data.title }}</a>
-        <p>
-          {% if post.data.excerpt %}
-            {{ post.data.excerpt | remove: '<p>' | remove: '</p>' }}
-          {% else %}
-            {{ post.templateContent | remove: '<p>' | remove: '</p>' }}
-          {% endif %}
-        </p>
-      </li>
-    {% endif %}
+    <li>
+      <span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>
+      <a class="post-link" href="{{ post.url }}">{{ post.data.title }}</a>
+      <p>
+        {% if post.data.excerpt %}
+          {{ post.data.excerpt | remove: '<p>' | remove: '</p>' }}
+        {% else %}
+          {{ post.templateContent | remove: '<p>' | remove: '</p>' }}
+        {% endif %}
+      </p>
+    </li>
   {% endfor %}
-</ul>
+</ol>
 
 <div class="pagination page-inset-margin my-8">
   {% if pagination.href.previous %}

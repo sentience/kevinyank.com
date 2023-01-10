@@ -20,9 +20,8 @@ wordpress_id: 64
 wordpress_url: http://old.kevinyank.com/blog/archives/working-at-home/
 date: '2006-04-11T19:09:53+1000'
 date_gmt: '2006-04-11 09:09:53 +1000'
-categories:
+tags:
 - personal
-tags: []
 comments:
 - id: 1755
   author: More on Working at Home at Yes, I&#8217;m Canadian

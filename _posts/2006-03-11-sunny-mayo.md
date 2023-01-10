@@ -10,10 +10,9 @@ wordpress_id: 49
 wordpress_url: http://old.kevinyank.com/blog/archives/sunny-mayo/
 date: '2006-03-11T13:32:18+1100'
 date_gmt: '2006-03-11 02:32:18 +1100'
-categories:
+tags:
 - household
 - funny
-tags: []
 comments:
 - id: 16
   author: Lachlan Donald

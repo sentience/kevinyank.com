@@ -26,11 +26,10 @@ wordpress_id: 48
 wordpress_url: http://old.kevinyank.com/blog/archives/installing-iis-after-service-pack-2/
 date: '2006-03-06T22:01:54+1100'
 date_gmt: '2006-03-06 11:01:54 +1100'
-categories:
+tags:
 - rants
 - tech
 - web development
-tags: []
 comments:
 - id: 71
   author: Deepa Reddy

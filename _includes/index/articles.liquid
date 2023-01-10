@@ -1,3 +1,4 @@
+{% assign articles = collections[tag] %}
 <header
   class="
     scroll-region__item flex-none snap-start
@@ -106,5 +107,7 @@
       </li>
     {% endfor %}
   </ol>
-  <div class="text-end">→ <a href="/todo">All articles</a></div>
+  <div class="text-end">
+    → <a href="/tags/{{ tag | slugify }}/">All articles in {{ tag }}</a>
+  </div>
 </div>

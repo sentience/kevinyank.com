@@ -20,11 +20,10 @@ wordpress_id: 130
 wordpress_url: http://old.kevinyank.com/blog/archives/fundamental-spain/
 date: '2006-10-09T20:23:39+1000'
 date_gmt: '2006-10-09 10:23:39 +1000'
-categories:
+tags:
 - personal
 - tech
 - web development
-tags: []
 comments:
 - id: 1573
   author: Luis Villa

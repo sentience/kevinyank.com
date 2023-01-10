@@ -16,11 +16,10 @@ wordpress_id: 162
 wordpress_url: http://old.kevinyank.com/blog/archives/irresponsible-technology-blogging
 date: '2007-06-26T18:21:42+1000'
 date_gmt: '2007-06-26 08:21:42 +1000'
-categories:
+tags:
 - rants
 - tech
 - web development
-tags: []
 comments:
 - id: 33120
   author: Tony Patton

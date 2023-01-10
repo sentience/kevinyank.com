@@ -14,9 +14,8 @@ wordpress_id: 119
 wordpress_url: http://old.kevinyank.com/blog/archives/delicious-max-notes-length-greasemonkey-script/
 date: '2006-09-18T15:09:35+1000'
 date_gmt: '2006-09-18 05:09:35 +1000'
-categories:
+tags:
 - tech
-tags: []
 comments:
 - id: 6354
   author: drew

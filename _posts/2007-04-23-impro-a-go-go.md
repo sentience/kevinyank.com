@@ -20,10 +20,9 @@ wordpress_id: 148
 wordpress_url: http://old.kevinyank.com/blog/archives/impro-a-go-go
 date: '2007-04-23T16:18:08+1000'
 date_gmt: '2007-04-23 06:18:08 +1000'
-categories:
+tags:
 - personal
 - impro
-tags: []
 comments:
 - id: 22668
   author: Jak

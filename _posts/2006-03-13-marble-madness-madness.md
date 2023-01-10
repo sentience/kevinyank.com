@@ -20,10 +20,9 @@ wordpress_id: 51
 wordpress_url: http://old.kevinyank.com/blog/archives/marble-madness-madness/
 date: '2006-03-13T13:42:11+1100'
 date_gmt: '2006-03-13 02:42:11 +1100'
-categories:
+tags:
 - personal
 - geekdom
-tags: []
 comments:
 - id: 948
   author: OzzieSong

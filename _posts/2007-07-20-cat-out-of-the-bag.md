@@ -10,11 +10,10 @@ wordpress_id: 167
 wordpress_url: http://old.kevinyank.com/blog/archives/cat-out-of-the-bag
 date: '2007-07-20T17:19:19+1000'
 date_gmt: '2007-07-20 07:19:19 +1000'
-categories:
+tags:
 - snippets
 - tech
 - geocaching
-tags: []
 comments:
 - id: 39513
   author: Rosemary

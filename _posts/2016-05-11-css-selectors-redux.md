@@ -3,7 +3,7 @@ title: CSS Selectors Redux
 author: Kevin Yank
 date: '2016-05-17T00:05:00+1100'
 excerpt: "Last month in Sydney and Melbourne I was honoured to speak at Respond 2016, the third Web Directions conference at which I’ve had the privilege of speaking after Web Essentials 2006 and Web Directions South 2009. John Allsopp assigned me a great topic that would never have occurred to me otherwise: CSS selectors."
-categories:
+tags:
   - development
   - speaking
   - web development

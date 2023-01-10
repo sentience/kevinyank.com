@@ -12,10 +12,8 @@ permalink: "/"
 %}
 
 {% liquid
-  assign webDevArticles = collections.post | whereIncludes: 'data.categories', 'web development'
-
   capture web-dev
-    render index/articles, articles: webDevArticles
+    render index/articles, collections: collections, tag: 'web development'
   endcapture
 
   render index/scroll-region, content: web-dev

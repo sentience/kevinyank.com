@@ -10,10 +10,9 @@ wordpress_id: 128
 wordpress_url: http://old.kevinyank.com/blog/archives/made-it%e2%80%a6-barely/
 date: '2006-10-03T01:53:42+1000'
 date_gmt: '2006-10-02 15:53:42 +1000'
-categories:
+tags:
 - personal
 - snippets
-tags: []
 comments:
 - id: 1422
   author: Chezza

@@ -10,10 +10,9 @@ wordpress_id: 111
 wordpress_url: http://old.kevinyank.com/blog/archives/fridge-smell/
 date: '2006-08-04T11:27:56+1000'
 date_gmt: '2006-08-04 01:27:56 +1000'
-categories:
+tags:
 - personal
 - sick
-tags: []
 comments:
 - id: 829
   author: Mom

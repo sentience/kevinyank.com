@@ -10,9 +10,8 @@ wordpress_id: 107
 wordpress_url: http://old.kevinyank.com/blog/archives/drink-klutz/
 date: '2006-07-26T15:50:30+1000'
 date_gmt: '2006-07-26 05:50:30 +1000'
-categories:
+tags:
 - personal
-tags: []
 comments:
 - id: 779
   author: andy

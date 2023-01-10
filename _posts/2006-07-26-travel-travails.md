@@ -19,9 +19,8 @@ wordpress_id: 106
 wordpress_url: http://old.kevinyank.com/blog/archives/travel-travails/
 date: '2006-07-26T01:54:42+1000'
 date_gmt: '2006-07-25 15:54:42 +1000'
-categories:
+tags:
 - personal
-tags: []
 comments:
 - id: 754
   author: Mom

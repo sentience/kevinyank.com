@@ -10,11 +10,10 @@ wordpress_id: 139
 wordpress_url: http://old.kevinyank.com/blog/archives/spam-subject-line-85/
 date: '2006-12-22T10:09:06+1100'
 date_gmt: '2006-12-22 00:09:06 +1100'
-categories:
+tags:
 - snippets
 - geekdom
 - funny
-tags: []
 comments:
 - id: 6171
   author: dave&#8217;s not here &raquo; Blog Archive &raquo; choice spam subject lines

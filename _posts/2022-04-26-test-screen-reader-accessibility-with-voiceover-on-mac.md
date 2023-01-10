@@ -3,7 +3,7 @@ title: How to test for screen reader accessibility with VoiceOver on your Mac
 author: Kevin Yank
 date: 2022-04-26T20:20+1000
 excerpt: Every Mac has a screen reader built in, called VoiceOver. This article describes how you can use it to test the web application user interfaces you build!
-categories:
+tags:
   - Apple
   - Culture Amp
   - web development

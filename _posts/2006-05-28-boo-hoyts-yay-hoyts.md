@@ -28,10 +28,9 @@ wordpress_id: 86
 wordpress_url: http://old.kevinyank.com/blog/archives/boo-hoyts-yay-hoyts/
 date: '2006-05-28T22:14:15+1000'
 date_gmt: '2006-05-28 12:14:15 +1000'
-categories:
+tags:
 - Australia
 - rants
-tags: []
 comments:
 - id: 60
   author: Prij

@@ -10,9 +10,8 @@ wordpress_id: 109
 wordpress_url: http://old.kevinyank.com/blog/archives/jessi-goes-to-north-america/
 date: '2006-08-04T10:50:46+1000'
 date_gmt: '2006-08-04 00:50:46 +1000'
-categories:
+tags:
 - personal
-tags: []
 comments: []
 ---
 <p><a href="http://jessi-goes-to-north-america.blogspot.com/">Jess is blogging our trip!</a> 100% more detail and Kev-bashing than this blog.</p>

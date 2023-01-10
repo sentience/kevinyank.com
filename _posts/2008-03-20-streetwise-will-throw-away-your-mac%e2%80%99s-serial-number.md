@@ -29,11 +29,10 @@ wordpress_id: 173
 wordpress_url: http://old.kevinyank.com/blog/archives/streetwise-will-throw-away-your-mac%e2%80%99s-serial-number
 date: '2008-03-20T10:17:58+1100'
 date_gmt: '2008-03-20 00:17:58 +1100'
-categories:
+tags:
 - rants
 - geekdom
 - tech
-tags: []
 comments:
 - id: 82648
   author: Gary Barber

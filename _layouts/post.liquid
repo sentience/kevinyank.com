@@ -18,10 +18,11 @@ layout: default
       {%- if author %}
         • <span class="p-author author">{{ author }}</span>
       {%- endif -%}
-      {%- if categories %}
+      {% assign visibleTags = tags | exclude: 'post' %}
+      {%- if visibleTags %}
         • in categories:
-        {% for cat in categories -%}
-          <span class="p-category category">{{ cat }}</span>
+        {% for cat in visibleTags -%}
+          <a href="/tags/{{ cat | slugify }}/" class="p-category category">{{ cat }}</a>
           {%- unless forloop.last %}, {% endunless -%}
         {%- endfor -%}
       {%- endif %}

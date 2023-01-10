@@ -14,9 +14,8 @@ wordpress_id: 190
 wordpress_url: http://old.kevinyank.com/blog/?p=190
 date: '2009-06-23T21:47:14+1000'
 date_gmt: '2009-06-23 11:47:14 +1000'
-categories:
+tags:
 - tech
-tags: []
 comments:
 - id: 210677
   author: Mike

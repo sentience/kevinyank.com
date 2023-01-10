@@ -16,9 +16,8 @@ wordpress_id: 26
 wordpress_url: http://old.kevinyank.com/blog/archives/mrs-henderson-presents/
 date: '2006-01-15T23:32:23+1100'
 date_gmt: '2006-01-15 12:32:23 +1100'
-categories:
+tags:
 - reviews
-tags: []
 comments: []
 ---
 <p><img align="right" title="Mrs. Henderson Presents" id="image25" alt="Mrs. Henderson Presents" src="/assets/wp-content/uploads/2006/01/mrs-henderson.jpg" />Jess and I went to see <a href="http://www.mrshendersonthemovie.com/"><cite>Mrs. Henderson Presents</cite></a> last night. It was the first time in a long time I got to laugh out loud along with a hundred other people at the movies, and has (at least temporarily) restored my faith in going out to the movies.<a id="more"></a><a id="more-26"></a></p>

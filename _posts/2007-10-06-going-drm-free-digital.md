@@ -14,10 +14,9 @@ wordpress_id: 168
 wordpress_url: http://old.kevinyank.com/blog/archives/going-drm-free-digital
 date: '2007-10-06T17:42:55+1000'
 date_gmt: '2007-10-06 07:42:55 +1000'
-categories:
+tags:
 - personal
 - music
-tags: []
 comments:
 - id: 56821
   author: lisa

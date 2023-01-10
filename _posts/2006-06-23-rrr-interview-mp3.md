@@ -10,11 +10,10 @@ wordpress_id: 93
 wordpress_url: http://old.kevinyank.com/blog/archives/rrr-interview-mp3/
 date: '2006-06-23T18:02:14+1000'
 date_gmt: '2006-06-23 08:02:14 +1000'
-categories:
+tags:
 - personal
 - tech
 - web development
-tags: []
 comments: []
 ---
 <p>My interview about SitePoint and our new AJAX book is available for the next four weeks in MP3 format on the <a href="http://rrr.org.au/onair.php?pid=24"><cite>Byte Into It</cite> web site</a>.</p>

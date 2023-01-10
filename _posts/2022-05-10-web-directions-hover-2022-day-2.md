@@ -3,7 +3,7 @@ title: Web Directions Hover 2022 Day 2 notes
 author: Kevin Yank
 date: 2022-05-10T10:40+1000
 excerpt: These are the live notes I took from Day 2 of the Web Directions Hover 2022 conference for our team internally at Culture Amp.
-categories:
+tags:
   - Culture Amp
   - web development
 ---

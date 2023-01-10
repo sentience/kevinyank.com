@@ -18,10 +18,9 @@ wordpress_id: 112
 wordpress_url: http://old.kevinyank.com/blog/archives/leaving-canada/
 date: '2006-08-12T12:29:38+1000'
 date_gmt: '2006-08-12 02:29:38 +1000'
-categories:
+tags:
 - personal
 - Canada
-tags: []
 comments: []
 ---
 <p><a href="https://www.flickr.com/photos/sentience/212877847/"><img align="right" src="https://static.flickr.com/61/212877847_65b3bc6015_m.jpg" /></a>After a week in Montreal shopping, touring, catching up with friends, and standing in line at <a href="http://www.laronde.com/">La Ronde</a>, Jess and I hop on the first of four planes that will take us to Lake Tahoe tomorrow morning, where we'll spend the last week of our overseas holiday vacationing with my mom's side of the family.</p>
