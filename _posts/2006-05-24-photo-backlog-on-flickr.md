@@ -10,9 +10,8 @@ wordpress_id: 83
 wordpress_url: http://old.kevinyank.com/blog/archives/photo-backlog-on-flickr/
 date: '2006-05-24T00:22:08+1000'
 date_gmt: '2006-05-23 14:22:08 +1000'
-categories:
+tags:
 - personal
-tags: []
 comments:
 - id: 53
   author: Bonnie

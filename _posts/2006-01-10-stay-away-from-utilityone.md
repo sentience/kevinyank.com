@@ -15,11 +15,10 @@ wordpress_id: 7
 wordpress_url: http://old.kevinyank.com/blog/archives/stay-away-from-utilityone/
 date: '2006-01-10T16:10:56+1100'
 date_gmt: '2006-01-10 05:10:56 +1100'
-categories:
+tags:
 - Australia
 - rants
 - reviews
-tags: []
 comments:
 - id: 6301
   author: Rohan

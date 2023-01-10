@@ -10,11 +10,10 @@ wordpress_id: 82
 wordpress_url: http://old.kevinyank.com/blog/archives/kev-eats-vegemite/
 date: '2006-05-19T18:06:45+1000'
 date_gmt: '2006-05-19 08:06:45 +1000'
-categories:
+tags:
 - personal
 - Australia
 - funny
-tags: []
 comments:
 - id: 52
   author: Bonnie

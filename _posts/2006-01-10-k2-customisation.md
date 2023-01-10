@@ -13,11 +13,11 @@ wordpress_id: 6
 wordpress_url: http://old.kevinyank.com/blog/archives/k2-customisation/
 date: '2006-01-10T15:43:41+1100'
 date_gmt: '2006-01-10 04:43:41 +1100'
-categories:
+tags:
 - PHP
 - CSS
 - HTML
-tags: []
+- web development
 comments: []
 ---
 <p>Just finished a first wave of customisation of the design of this blog. I'm using beta 2 of <a href="http://binarybonsai.com/wordpress/k2/">the K2 theme</a>, which is quite a nice add-on for <a href="http://wordpress.org/">WordPress 2</a>.</p>

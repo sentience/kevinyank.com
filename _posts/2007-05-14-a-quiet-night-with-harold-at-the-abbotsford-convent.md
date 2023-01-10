@@ -22,10 +22,9 @@ wordpress_id: 156
 wordpress_url: http://old.kevinyank.com/blog/archives/a-quiet-night-with-harold-at-the-abbotsford-convent
 date: '2007-05-14T23:13:49+1000'
 date_gmt: '2007-05-14 13:13:49 +1000'
-categories:
+tags:
 - impro
 - geocaching
-tags: []
 comments:
 - id: 30087
   author: Nathan Allan

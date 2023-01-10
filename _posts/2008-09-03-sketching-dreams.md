@@ -10,9 +10,8 @@ wordpress_id: 178
 wordpress_url: http://old.kevinyank.com/blog/?p=178
 date: '2008-09-03T22:52:39+1000'
 date_gmt: '2008-09-03 12:52:39 +1000'
-categories:
+tags:
 - personal
-tags: []
 comments:
 - id: 101253
   author: Cheryl

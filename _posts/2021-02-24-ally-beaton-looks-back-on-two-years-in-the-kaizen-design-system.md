@@ -5,10 +5,11 @@ date: '2021-02-22T20:15:00+1100'
 excerpt: On her second-last day as Culture Amp's tech lead for the Kaizen design
   system, Ally Beaton joined me to look back on two years of progress in our
   React component library.
-categories:
+tags:
   - Culture Amp
   - design systems
   - react
+  - web development
 ---
 
 On her second-last day as [Culture Amp]'s tech lead for the

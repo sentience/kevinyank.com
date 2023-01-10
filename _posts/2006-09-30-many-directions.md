@@ -10,10 +10,10 @@ wordpress_id: 126
 wordpress_url: http://old.kevinyank.com/blog/archives/many-directions/
 date: '2006-09-30T03:19:08+1000'
 date_gmt: '2006-09-29 17:19:08 +1000'
-categories:
+tags:
 - personal
 - tech
-tags: []
+- web development
 comments:
 - id: 1353
   author: Mountain/\Ash

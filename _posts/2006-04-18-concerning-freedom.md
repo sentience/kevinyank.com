@@ -10,10 +10,9 @@ wordpress_id: 71
 wordpress_url: http://old.kevinyank.com/blog/archives/concerning-freedom/
 date: '2006-04-18T22:27:38+1000'
 date_gmt: '2006-04-18 12:27:38 +1000'
-categories:
+tags:
 - personal
 - geekdom
-tags: []
 comments: []
 ---
 <p>Went with <a href="http://www.ljd.cc/">Lox</a> and Tom (and, it turned out, <a href="http://johncorry.blogspot.com/">John</a>) to see a <a href="http://www.popcorntaxi.com.au/Events.asp?Event_ID=443">lecture</a> by <a href="http://www.craphound.com/">Cory Doctorow</a> of <a href="http://www.boingboing.net/">BoingBoing</a> fame tonight. He's an extremely talented speaker, captivating a full house for over 90 minutes without budging from his lectern or throwing up a single visual aid. With a couple of high-profile speaking engagements looming large in my calendar later this year, this approach gave me definite food for thought.</p>

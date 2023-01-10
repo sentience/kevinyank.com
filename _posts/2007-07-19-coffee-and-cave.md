@@ -10,10 +10,9 @@ wordpress_id: 165
 wordpress_url: http://old.kevinyank.com/blog/archives/coffee-and-cave
 date: '2007-07-19T12:35:14+1000'
 date_gmt: '2007-07-19 02:35:14 +1000'
-categories:
+tags:
 - personal
 - impro
-tags: []
 comments:
 - id: 38614
   author: Mark

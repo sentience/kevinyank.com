@@ -12,10 +12,9 @@ wordpress_id: 184
 wordpress_url: http://old.kevinyank.com/blog/?p=184
 date: '2009-06-18T14:02:16+1000'
 date_gmt: '2009-06-18 04:02:16 +1000'
-categories:
+tags:
 - rants
 - tech
-tags: []
 comments:
 - id: 177051
   author: Tom Tetlaw

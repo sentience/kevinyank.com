@@ -12,13 +12,12 @@ wordpress_id: 24
 wordpress_url: http://old.kevinyank.com/blog/archives/goodbye-grandma/
 date: '2006-01-15T01:28:54+1100'
 date_gmt: '2006-01-14 14:28:54 +1100'
-categories:
+tags:
 - personal
-tags: []
 comments:
 - id: 5
   author: Mom
-  author_email: cheryl.yank@gmai.com
+  author_email: cheryl.yank@gmail.com
   author_url: ''
   date: '2006-01-19T13:33:10+1100'
   date_gmt: '2006-01-19 02:33:10 +1100'

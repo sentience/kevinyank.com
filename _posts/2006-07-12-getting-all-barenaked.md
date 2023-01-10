@@ -10,10 +10,9 @@ wordpress_id: 100
 wordpress_url: http://old.kevinyank.com/blog/archives/getting-all-barenaked/
 date: '2006-07-12T16:29:27+1000'
 date_gmt: '2006-07-12 06:29:27 +1000'
-categories:
+tags:
 - rants
 - music
-tags: []
 comments: []
 ---
 <p>I'm a big fan of <a href="http://www.bnlmusic.com/">Barenaked Ladies</a>. Not only do they make music I dig, but they've got an <a href="https://kevinyank.com/posts/music-copyright-laid-bare/">enlightened approach</a> to user rights, and there is a geeky vein through all of the work they do (I refer you to their <a href="http://www.bnlblog.com/">blog</a> and <a href="http://bnlmusic.com/">podcast</a>).</p>

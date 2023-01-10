@@ -1,0 +1,45 @@
+---
+layout: default
+pagination:
+  data: collections.post
+  reverse: true
+  size: 5
+  alias: posts
+permalink: "/blog/{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
+---
+<h1 class="page-inset-margin my-8">
+  Recent articles
+  {% if pagination.hrefs.length > 0 %}
+    (page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }})
+  {% endif %}
+</h1>
+
+<ol class="posts page-inset-margin my-8">
+  {% for post in pagination.items %}
+    <li>
+      <span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>
+      <a class="post-link" href="{{ post.url }}">{{ post.data.title }}</a>
+      <p>
+        {% if post.data.excerpt %}
+          {{ post.data.excerpt | remove: '<p>' | remove: '</p>' }}
+        {% else %}
+          {{ post.templateContent | remove: '<p>' | remove: '</p>' }}
+        {% endif %}
+      </p>
+    </li>
+  {% endfor %}
+</ol>
+
+<div class="pagination page-inset-margin my-8">
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="previous">previous</a>
+  {% else %}
+    previous
+  {% endif %}
+  <span class="page_number">page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }}</span>
+  {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="next">next</a>
+  {% else %}
+    next
+  {% endif %}
+</div>

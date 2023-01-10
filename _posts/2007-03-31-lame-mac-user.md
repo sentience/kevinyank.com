@@ -10,11 +10,10 @@ wordpress_id: 146
 wordpress_url: http://old.kevinyank.com/blog/archives/lame-mac-user
 date: '2007-03-31T21:25:12+1000'
 date_gmt: '2007-03-31 11:25:12 +1000'
-categories:
+tags:
 - snippets
 - geekdom
 - tech
-tags: []
 comments:
 - id: 14569
   author: Gary Barber

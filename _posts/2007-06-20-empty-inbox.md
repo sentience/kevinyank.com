@@ -16,10 +16,9 @@ wordpress_id: 159
 wordpress_url: http://old.kevinyank.com/blog/archives/empty-inbox
 date: '2007-06-20T14:28:00+1000'
 date_gmt: '2007-06-20 04:28:00 +1000'
-categories:
+tags:
 - personal
 - tech
-tags: []
 comments:
 - id: 58609
   author: T. J. Jay

@@ -16,9 +16,9 @@ wordpress_id: 228
 wordpress_url: http://old.kevinyank.com/blog/?p=228
 date: '2012-05-24T10:27:56+1000'
 date_gmt: '2012-05-24 00:27:56 +1000'
-categories:
+tags:
 - tech
-tags: []
+- web development
 comments:
 - id: 497880
   author: David

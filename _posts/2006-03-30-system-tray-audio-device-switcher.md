@@ -23,10 +23,9 @@ wordpress_id: 63
 wordpress_url: http://old.kevinyank.com/blog/archives/system-tray-audio-device-switcher/
 date: '2006-03-30T17:22:23+1100'
 date_gmt: '2006-03-30 06:22:23 +1100'
-categories:
+tags:
 - reviews
 - tech
-tags: []
 comments:
 - id: 153
   author: jak

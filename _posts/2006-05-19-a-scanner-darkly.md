@@ -10,9 +10,8 @@ wordpress_id: 80
 wordpress_url: http://old.kevinyank.com/blog/archives/a-scanner-darkly/
 date: '2006-05-19T13:41:00+1000'
 date_gmt: '2006-05-19 03:41:00 +1000'
-categories:
+tags:
 - geekdom
-tags: []
 comments: []
 ---
 <p>While I wait for the rest of the trailer to download, I thought I'd post about just how jaw-droppingly awesome the upcoming film <a href="http://wip.warnerbros.com/ascannerdarkly/"><cite>A Scanner Darkly</cite></a> looks.</p>

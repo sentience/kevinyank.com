@@ -18,10 +18,9 @@ wordpress_id: 170
 wordpress_url: http://old.kevinyank.com/blog/archives/workaround-mac-os-x-leopard-docked-folder-icon-madness
 date: '2007-10-29T20:47:49+1100'
 date_gmt: '2007-10-29 10:47:49 +1100'
-categories:
+tags:
 - rants
 - tech
-tags: []
 comments:
 - id: 60441
   author: drow

@@ -15,10 +15,9 @@ wordpress_id: 77
 wordpress_url: http://old.kevinyank.com/blog/archives/impro-heaven-or-hell/
 date: '2006-05-09T18:16:48+1000'
 date_gmt: '2006-05-09 08:16:48 +1000'
-categories:
+tags:
 - personal
 - impro
-tags: []
 comments:
 - id: 41
   author: Cheryl

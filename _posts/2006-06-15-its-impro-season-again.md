@@ -10,9 +10,8 @@ wordpress_id: 90
 wordpress_url: http://old.kevinyank.com/blog/archives/its-impro-season-again/
 date: '2006-06-15T13:34:33+1000'
 date_gmt: '2006-06-15 03:34:33 +1000'
-categories:
+tags:
 - impro
-tags: []
 comments:
 - id: 97
   author: Bonnie

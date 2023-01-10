@@ -15,10 +15,10 @@ wordpress_id: 161
 wordpress_url: http://old.kevinyank.com/blog/archives/simply-javascript
 date: '2007-06-22T19:10:45+1000'
 date_gmt: '2007-06-22 09:10:45 +1000'
-categories:
+tags:
 - personal
 - tech
-tags: []
+- web development
 comments:
 - id: 32614
   author: Gary Barber

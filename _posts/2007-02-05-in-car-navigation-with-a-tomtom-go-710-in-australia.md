@@ -19,11 +19,10 @@ wordpress_id: 143
 wordpress_url: http://old.kevinyank.com/blog/archives/in-car-navigation-with-a-tomtom-go-710-in-australia/
 date: '2007-02-05T00:14:04+1100'
 date_gmt: '2007-02-04 14:14:04 +1100'
-categories:
+tags:
 - Australia
 - reviews
 - tech
-tags: []
 comments:
 - id: 7566
   author: ses5909

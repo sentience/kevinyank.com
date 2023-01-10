@@ -10,11 +10,10 @@ wordpress_id: 108
 wordpress_url: http://old.kevinyank.com/blog/archives/coffee-in-portland/
 date: '2006-08-04T10:48:36+1000'
 date_gmt: '2006-08-04 00:48:36 +1000'
-categories:
+tags:
 - Australia
 - rants
 - funny
-tags: []
 comments: []
 ---
 <p>The difference between Australia and the United States can be concisely stated by citing the espresso menu at The Coffee People, Portland Airport, Oregon:</p>

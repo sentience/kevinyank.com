@@ -10,10 +10,9 @@ wordpress_id: 160
 wordpress_url: http://old.kevinyank.com/blog/archives/jess-is-a-full-time-teacher
 date: '2007-06-20T21:16:00+1000'
 date_gmt: '2007-06-20 11:16:00 +1000'
-categories:
+tags:
 - personal
 - snippets
-tags: []
 comments:
 - id: 32393
   author: Cheryl

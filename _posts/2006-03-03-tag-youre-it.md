@@ -15,9 +15,8 @@ wordpress_id: 43
 wordpress_url: http://old.kevinyank.com/blog/archives/tag-youre-it/
 date: '2006-03-03T22:40:47+1100'
 date_gmt: '2006-03-03 11:40:47 +1100'
-categories:
+tags:
 - personal
-tags: []
 comments:
 - id: 14
   author: Lox&#8217;s Blog &raquo; Blog Archive &raquo; Argh, Tagged :)

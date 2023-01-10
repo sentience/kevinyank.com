@@ -17,9 +17,8 @@ wordpress_id: 142
 wordpress_url: http://old.kevinyank.com/blog/archives/connect-to-a-network-printer-on-a-windows-xp-server-in-windows-vista/
 date: '2007-01-31T11:11:15+1100'
 date_gmt: '2007-01-31 01:11:15 +1100'
-categories:
+tags:
 - tech
-tags: []
 comments:
 - id: 6105
   author: Tuna

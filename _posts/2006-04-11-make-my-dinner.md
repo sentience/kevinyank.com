@@ -17,10 +17,9 @@ wordpress_id: 66
 wordpress_url: http://old.kevinyank.com/blog/archives/make-my-dinner/
 date: '2006-04-11T21:28:07+1000'
 date_gmt: '2006-04-11 11:28:07 +1000'
-categories:
+tags:
 - personal
 - household
-tags: []
 comments:
 - id: 21
   author: Lliam

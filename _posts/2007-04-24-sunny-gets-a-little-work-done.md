@@ -10,10 +10,9 @@ wordpress_id: 154
 wordpress_url: http://old.kevinyank.com/blog/archives/sunny-gets-a-little-work-done
 date: '2007-04-24T13:07:58+1000'
 date_gmt: '2007-04-24 03:07:58 +1000'
-categories:
+tags:
 - personal
 - cute
-tags: []
 comments:
 - id: 21125
   author: Rosemary

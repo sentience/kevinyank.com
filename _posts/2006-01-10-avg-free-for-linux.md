@@ -10,10 +10,9 @@ wordpress_id: 12
 wordpress_url: http://old.kevinyank.com/blog/archives/avg-free-for-linux/
 date: '2006-01-10T18:24:17+1100'
 date_gmt: '2006-01-10 07:24:17 +1100'
-categories:
+tags:
 - snippets
 - geekdom
-tags: []
 comments: []
 ---
 <p>This free (for personal use), commercial-grade anti-virus tool is <a href="http://free.grisoft.com/doc/4040/lng/us/tpl/v5">now available for Linux</a>.</p>

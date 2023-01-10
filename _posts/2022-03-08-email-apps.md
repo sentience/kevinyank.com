@@ -3,9 +3,12 @@ title: Email apps on Mac, iPhone and iPad compared
 author: Kevin Yank
 date: 2022-04-24T20:00+1000
 excerpt: I love a good deep-dive into competing software, so with the time I saved recently on shopping for email hosts I decided to take a fresh look at email clients for my Apple-ecosystem devices. Strap in for some obsessive comparison-shopping!
-categories:
+tags:
   - Apple
   - tech
+featured: true
+featureImg: /assets/images/blog/email-apps/spark-macos.png
+featureImgAlt: screenshot of Spark Mail for macOS
 ---
 
 I recently shifted to [Fastmail]

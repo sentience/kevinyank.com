@@ -1,0 +1,116 @@
+<header
+  class="
+    scroll-region__item flex-none snap-start
+    is-80 sm:is-96 plb-2 pie-10 sm:pie-20 pis-2
+    bg-accent-700 text-white
+
+    {% #reversed links %}
+    [&_:any-link]:text-white hover:[&_:any-link]:bg-accent-500 hover:[&_:any-link]:text-white focus-visible:[&_:any-link]:bg-accent-500 focus-visible:[&_:any-link]:text-white focus-visible:[&_:any-link]:ring-accent-200 focus-visible:[&_:any-link]:ring-offset-accent-700
+  "
+>
+  <div class="flex flex-col bs-full">
+    <h1 class="text-6xl font-black -mie-10">{{ title }}</h1>
+    <p class="font-serif text-lg italic leading-tight mbe-auto">
+      {{ tagLine }}
+    </p>
+    {% if blurb %}
+      <p class="text-sm font-light mbs-8 mbe-0 before:block before:border-white before:bs-2 before:is-14 before:border-bs-2">
+        {{ blurb }}
+      </p>
+    {% endif %}
+  </div>
+</header>
+<div class="sticky flex-none bg-accent-700 is-2 -inline-start-4 sm:is-4 sm:-inline-start-12"></div>
+
+{% assign latestFeatured = articles | where: 'data.featured' | last %}
+{% if latestFeatured %}
+  <div class="flex flex-none -scroll-m-12 items-start gap-4 pli-12 plb-2 border-be border-ie group-focus-visible:border-be-transparent sm:gap-10">
+    <a
+      href="{{ latestFeatured.url }}"
+      class="scroll-region__item group/link block snap-start no-underline is-80 hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 sm:is-96 [&:any-link]:text-inherit"
+    >
+      <div
+        class="
+          text-sm font-light uppercase text-accent-700
+          dark:text-accent-500 dark:group-focus-visible:text-accent-300
+        "
+      >
+        Featured article
+      </div>
+      <h1 class="inline text-2xl font-bold mie-1">
+        {{- latestFeatured.data.title -}}
+      </h1>
+      <time
+        class="whitespace-nowrap text-sm font-light text-accent-700 dark:text-accent-500 dark:group-focus-visible:text-accent-300"
+        datetime="{{ latestFeatured.date }}"
+      >
+        {{- latestFeatured.date | date: '%b %-d, %Y' -}}
+      </time>
+      <p class="font-serif text-lg leading-tight mbs-4">
+        {{ latestFeatured.data.excerpt | remove: '<p>' | remove: '</p>' }}
+      </p>
+      <div class="flex justify-between border-black font-light mbs-4 border-bs group-hover/link:bg-accent-600 group-hover/link:text-white group-hover/link:-mli-1 group-hover/link:pli-1 group-focus-visible/link:bg-accent-600 group-focus-visible/link:text-white group-focus-visible/link:-mli-1 group-focus-visible/link:pli-1 group-[&:has(+:hover)]/link:bg-accent-600 group-[&:has(+:hover)]/link:text-white group-[&:has(+:hover)]/link:-mli-1 group-[&:has(+:hover)]/link:pli-1 dark:border-white">
+        <span>
+          {{- latestFeatured.templateContent | timeToRead -}}
+        </span>
+        <span
+          >→
+          <span
+            class="
+              text-accent-700 underline group-visited/link:text-accent-900 group-hover/link:text-white group-focus-visible:text-black  group-focus-visible/link:text-white group-[&:has(+:hover)]/link:text-white
+              dark:text-accent-500 dark:group-visited/link:text-accent-300 dark:group-hover/link:text-white dark:group-focus-visible/link:text-white
+            "
+            >Read now</span
+          ></span
+        >
+      </div>
+    </a>
+    <a
+      href="{{ latestFeatured.url }}"
+      class="scroll-region__item block flex-1 snap-start no-underline is-80 hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 sm:is-96"
+      tabindex="-1"
+    >
+      <img
+        src="{{ latestFeatured.data.featureImg }}"
+        alt="{{ latestFeatured.data.featureImgAlt }}"
+      >
+    </a>
+  </div>
+{% endif %}
+<div
+  class="
+    scroll-region__item
+    box-content flex-none snap-start -scroll-m-4 max-is-full plb-2 pis-4 border-be group-focus-visible:border-be-transparent sm:-scroll-m-12 sm:max-is-xl sm:pis-12
+  "
+>
+  <h1
+    class="
+      text-sm font-light uppercase text-accent-700
+      dark:text-accent-500 dark:group-focus-visible:text-accent-300
+    "
+  >
+    Latest articles
+  </h1>
+  <ol class="table">
+    {% for article in articles reversed limit: 10 %}
+      <li class="table-row">
+        <time
+          class="table-cell whitespace-nowrap text-sm font-light text-end pie-2"
+          datetime="{{ article.date }}"
+        >
+          {{- article.date | date: '%b %-d, %Y' -}}
+        </time>
+        <span class="table-cell pbe-2{% if article.data.featured %} font-semibold{% endif %}"
+          ><a href="{{ article.url }}">{{ article.data.title }}</a></span
+        >
+      </li>
+    {% endfor %}
+  </ol>
+  <div class="text-end">
+    {% if tag %}
+      → <a href="/tags/{{ tag | slugify }}/">All articles in {{ tag }}</a>
+    {% else %}
+      → <a href="/blog/">All blog articles</a>
+    {% endif %}
+  </div>
+</div>

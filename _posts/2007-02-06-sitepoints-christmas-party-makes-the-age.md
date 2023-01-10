@@ -10,9 +10,8 @@ wordpress_id: 145
 wordpress_url: http://old.kevinyank.com/blog/archives/sitepoints-christmas-party-makes-the-age
 date: '2007-02-06T09:57:31+1100'
 date_gmt: '2007-02-05 23:57:31 +1100'
-categories:
+tags:
 - snippets
-tags: []
 comments:
 - id: 6546
   author: Tuna

@@ -7,7 +7,7 @@ excerpt: This past week I received my Orbitkey, an alternative to your typical
   of allowing them to jangle around in your pocket. Included with my Orbitkey
   was the optional extra 32GB USB flash drive. The moment I saw that key-shaped
   drive I knew what I wanted to store on it.
-categories:
+tags:
 - tech
 ---
 

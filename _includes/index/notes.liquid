@@ -1,0 +1,42 @@
+{% assign note_limit = 5 %}
+{% for note in notes reversed limit: note_limit %}
+  <article
+    class="
+      scroll-region__item flex-none snap-start max-is-xs pie-4 pbe-4 border-be group-focus-visible:border-be-transparent last:pie-0 sm:max-is-lg
+      {% #arrow %}
+      before:sticky before:block before:border-transparent before:bs-0 before:is-0 before:mli-3 before:inline-start-6 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem] before:border-be-gray-200 group-focus-visible:before:border-be-gray-100 dark:before:border-be-gray-700 dark:group-focus-visible:before:border-be-gray-800
+    "
+  >
+    <div
+      class="
+        overflow-visible rounded-lg bg-gray-200 plb-2 pli-3 group-focus-visible:bg-gray-100 dark:bg-gray-700 dark:group-focus-visible:bg-gray-800
+
+        {% #reversed links %}
+        dark:focus-visible:[&_:any-link]:ring-offset-gray-700
+      "
+    >
+      {{ note.templateContent }}
+    </div>
+    <p class="text-xs text-gray-500 mbs-1">
+      <a href="{{ note.url }}" class="group-focus-visible:text-black dark:group-focus-visible:text-white"
+        ><time datetime="{{ note.date }}">{{ note.date | date: '%b %-d, %Y' }}</time></a
+      >
+      {%- if note.data.categories %}
+        • in categories:
+        {% for cat in note.data.categories -%}
+          <span class="p-category category">{{ cat }}</span>
+          {%- unless forloop.last %}, {% endunless -%}
+        {%- endfor -%}
+      {%- endif %}
+    </p>
+  </article>
+{% endfor %}
+{% assign nextNoteIndex = note_limit | times: -1 | minus: 1 %}
+{% assign nextNote = notes[nextNoteIndex] %}
+{% if nextNote %}
+  <div
+    class="scroll-region__item flex-none snap-start is-full plb-6 border-be"
+  >
+    → <a href="/notes#{{ nextNote.fileSlug }}">View more notes</a>
+  </div>
+{% endif %}

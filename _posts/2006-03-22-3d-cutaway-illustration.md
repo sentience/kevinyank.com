@@ -10,10 +10,9 @@ wordpress_id: 59
 wordpress_url: http://old.kevinyank.com/blog/archives/3d-cutaway-illustration/
 date: '2006-03-22T16:52:54+1100'
 date_gmt: '2006-03-22 05:52:54 +1100'
-categories:
+tags:
 - snippets
 - tech
-tags: []
 comments:
 - id: 18
   author: Bonnie

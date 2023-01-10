@@ -10,11 +10,10 @@ wordpress_id: 14
 wordpress_url: http://old.kevinyank.com/blog/archives/geeky-baby-wear/
 date: '2006-01-10T18:35:06+1100'
 date_gmt: '2006-01-10 07:35:06 +1100'
-categories:
+tags:
 - snippets
 - geekdom
 - cute
-tags: []
 comments:
 - id: 2
   author: World Wide Wood

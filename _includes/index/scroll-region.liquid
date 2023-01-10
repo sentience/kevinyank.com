@@ -1,0 +1,58 @@
+<section class="scroll-region pbe-6">
+  <div
+    tabindex="0"
+    role="region"
+    aria-label="scrollable region"
+    class="
+      page-inset-padding flex relative group
+      {{ extra_styles }}
+      {% #invisible horizontal scrollbar %}
+      overflow-x-scroll overflow-y-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+      {% #scroll snapping %}
+      snap-x snap-mandatory scroll-pl-4 sm:scroll-pl-12
+      {% #focus ring %}
+      focus-visible:bg-accent-200 focus-visible:outline-none dark:focus-visible:bg-accent-900
+    "
+  >
+    {{ content }}
+  </div>
+  <div
+    class="
+      page-inset-padding flex gap-2 text-accent-700 bs-6 dark:text-accent-500 [&>:hover]:text-accent-500 dark:[&>:hover]:text-accent-300
+      [&>:active]:text-black dark:[&>:active]:text-white
+    "
+  >
+    <button
+      tabindex="-1"
+      class="scroll-region__previous"
+    >
+      <svg
+        viewBox="0 0 2 2"
+        version="1.1"
+        xmlns="https://www.w3.org/2000/svg"
+        xmlns:xlink="https://www.w3.org/1999/xlink"
+        class="bs-3 is-3"
+        fill="currentColor"
+      >
+        <title>scroll left</title>
+        <polygon points="2,0 0,1 2,2">
+      </svg>
+    </button>
+    <button
+      tabindex="-1"
+      class="scroll-region__next"
+    >
+      <svg
+        viewBox="0 0 2 2"
+        version="1.1"
+        xmlns="https://www.w3.org/2000/svg"
+        xmlns:xlink="https://www.w3.org/1999/xlink"
+        class="bs-3 is-3"
+        fill="currentColor"
+      >
+        <title>scroll right</title>
+        <polygon points="0,0 2,1 0,2">
+      </svg>
+    </button>
+  </div>
+</section>

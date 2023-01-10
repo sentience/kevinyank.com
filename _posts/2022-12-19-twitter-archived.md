@@ -3,7 +3,7 @@ title: Twitter Archived
 author: Kevin Yank
 date: 2022-12-19T19:50+1100
 excerpt: My posts on Twitter are now archived here.
-categories:
+tags:
   - indieweb
   - tech
 ---

@@ -17,10 +17,9 @@ wordpress_id: 41
 wordpress_url: http://old.kevinyank.com/blog/archives/the-amen-break/
 date: '2006-02-22T13:10:41+1100'
 date_gmt: '2006-02-22 02:10:41 +1100'
-categories:
+tags:
 - music
 - geekdom
-tags: []
 comments:
 - id: 656
   author: Richard Spencer

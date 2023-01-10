@@ -10,11 +10,10 @@ wordpress_id: 135
 wordpress_url: http://old.kevinyank.com/blog/archives/theatresports%e2%84%a2-review-in-the-age/
 date: '2006-11-15T14:54:22+1100'
 date_gmt: '2006-11-15 04:54:22 +1100'
-categories:
+tags:
 - personal
 - snippets
 - impro
-tags: []
 comments: []
 ---
 <p>Melbourne daily newspaper <a href="http://www.theage.com.au/">The Age</a> has <a href="http://www.theage.com.au/news/arts-reviews/theatresports/2006/11/13/1163266444583.html">reviewed</a> <a href="http://www.impromelbourne.com.au/">Impro Melbourne</a>'s Theatresports™, in which Jess and I are currently starring!</p>

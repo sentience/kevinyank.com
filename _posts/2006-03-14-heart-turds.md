@@ -10,10 +10,9 @@ wordpress_id: 56
 wordpress_url: http://old.kevinyank.com/blog/archives/heart-turds/
 date: '2006-03-14T13:44:50+1100'
 date_gmt: '2006-03-14 02:44:50 +1100'
-categories:
+tags:
 - cute
 - funny
-tags: []
 comments:
 - id: 6733
   author: Tia

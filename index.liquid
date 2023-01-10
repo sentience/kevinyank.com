@@ -1,165 +1,47 @@
 ---
 layout: default
-pagination:
-  data: collections.post
-  reverse: true
-  size: 5
-  alias: posts
-permalink: "{% if pagination.pageNumber > 0 %}/blog/page/{{ pagination.pageNumber | plus: 1 }}{% endif %}/"
+permalink: "/"
 ---
-{% if pagination.pageNumber == 0 %}
-  <script defer src="/assets/scripts/scroll-to-note.js"></script>
-  <div id="recent-notes" class="relative pbe-6">
-    <div
-      tabindex="0"
-      role="region"
-      aria-label="recent notes"
-      class="
-        page-inset-padding flex relative group
-        {% #arrow overlaps preceding margin %}
-        -mbs-6 pbs-2
-        {% #invisible horizontal scrollbar %}
-        overflow-x-scroll [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
-        {% #scroll snapping %}
-        snap-x snap-mandatory scroll-pl-4 sm:scroll-pl-12
-        {% #focus ring %}
-        focus-visible:bg-accent-200 focus-visible:outline-none dark:focus-visible:bg-accent-900
-      "
-    >
-      {% assign note_limit = 5 %}
-      {% for note in collections.note reversed limit: note_limit %}
-        <article
-          class="
-            scroll-to-note flex-none snap-start max-is-xs pie-4 pbe-4 border-be group-focus-visible:border-be-transparent last:pie-0 sm:max-is-lg
-            {% #arrow %}
-            before:sticky before:block before:border-transparent before:bs-0 before:is-0 before:mli-3 before:inline-start-6 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem] before:border-be-gray-200 group-focus-visible:before:border-be-gray-100 dark:before:border-be-gray-700 dark:group-focus-visible:before:border-be-gray-800
-          "
-        >
-          <div
-            class="              overflow-visible rounded-lg bg-gray-200 plb-2 pli-3 group-focus-visible:bg-gray-100 dark:bg-gray-700 dark:group-focus-visible:bg-gray-800"
-          >
-            {{ note.templateContent }}
-          </div>
-          <p class="text-xs text-gray-500 mbs-1">
-            <a href="{{ note.url }}" class="group-focus-visible:text-black dark:group-focus-visible:text-white"
-              ><time datetime="{{ note.date }}">{{ note.date | date: '%b %-d, %Y' }}</time></a
-            >
-            {%- if note.data.categories %}
-              • in categories:
-              {% for cat in note.data.categories -%}
-                <span class="p-category category">{{ cat }}</span>
-                {%- unless forloop.last %}, {% endunless -%}
-              {%- endfor -%}
-            {%- endif %}
-          </p>
-        </article>
-      {% endfor %}
-      {% assign nextNoteIndex = note_limit | times: -1 | minus: 1 %}
-      {% assign nextNote = collections.note[nextNoteIndex] %}
-      {% if nextNote %}
-        <div
-          class="scroll-to-note flex-none snap-start is-full plb-6 border-be"
-        >
-          → <a href="/notes#{{ nextNote.fileSlug }}">View more notes</a>
-        </div>
-      {% endif %}
-    </div>
-    <div class="absolute flex gap-2 block-end-0 inline-start-4 sm:inline-start-12">
-      <button
-        tabindex="-1"
-        class="scroll-to-note-previous text-accent-900 hover:text-accent-700 active:text-black dark:active:text-white"
-      >
-        <svg
-          viewBox="0 0 2 2"
-          version="1.1"
-          xmlns="https://www.w3.org/2000/svg"
-          xmlns:xlink="https://www.w3.org/1999/xlink"
-          class="bs-3 is-3"
-          fill="currentColor"
-        >
-          <title>scroll left</title>
-          <polygon points="2,0 0,1 2,2">
-        </svg>
-      </button>
-      <button
-        tabindex="-1"
-        class="scroll-to-note-next text-accent-900 hover:text-accent-700 active:text-black dark:active:text-white"
-      >
-        <svg
-          viewBox="0 0 2 2"
-          version="1.1"
-          xmlns="https://www.w3.org/2000/svg"
-          xmlns:xlink="https://www.w3.org/1999/xlink"
-          class="bs-3 is-3"
-          fill="currentColor"
-        >
-          <title>scroll right</title>
-          <polygon points="0,0 2,1 0,2">
-        </svg>
-      </button>
-    </div>
-  </div>
+<script defer src="/assets/scripts/scroll-region.js"></script>
+{% liquid
+  capture notes
+    render index/notes, notes: collections.note
+  endcapture
 
-  {% assign firstPost = pagination.items[0] %}
-  <div class="post page-inset-margin my-8">
-    <header class="post-header">
-      <h1>
-        <a class="post-link" href="{{ firstPost.url }}">{{ firstPost.data.title }}</a>
-      </h1>
-      <p class="meta">
-        <time datetime="{{ firstPost.date }}">{{ firstPost.date | date: '%b %-d, %Y' }}</time>
-        {%- if firstPost.data.author %} • {{ firstPost.data.author }}{% endif -%}
-        {%- if firstPost.data.categories %}
-          • in categories:
-          {% for cat in firstPost.data.categories -%}
-            <span class="p-category category">{{ cat }}</span>
-            {%- unless forloop.last %}, {% endunless -%}
-          {%- endfor -%}
-        {%- endif %}
-      </p>
-    </header>
+  render index/scroll-region, content: notes, extra_styles : '-mbs-6 pbs-2' # arrow overlaps preceding margin
+%}
 
-    <article class="post-content">
-      {{ firstPost.templateContent }}
-    </article>
-  </div>
-{% endif %}
+{% liquid
+  capture web-dev
+    assign tag = 'web development'
+    assign title = 'Build the Web'
+    assign tagLine = 'Make pixels change colour with code, to create beautiful,accessible experiences.'
+    assign blurb = 'As Director of Front End Engineering at <a href="https://www.cultureamp.com/">Culture Amp</a>, I lead a practice of ~50 engineers to build interfaces that help users create a better world of work. I love to learn and explore what is possible on the Web.'
+    render index/articles, title: title, tagLine: tagLine, blurb: blurb, articles: collections[tag], tag: tag
+  endcapture
 
-<h1 class="page-inset-margin my-8">
-  {% if pagination.pageNumber == 0 %}Other {% endif %}Recent Posts
-  {% if pagination.pageNumber > 0 -%}
-    (page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }})
-  {%- endif %}
-</h1>
+  render index/scroll-region, content: web-dev
+%}
 
-<ul class="posts page-inset-margin my-8">
-  {% for post in pagination.items %}
-    {% if post != firstPost %}
-      <li>
-        <span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>
-        <a class="post-link" href="{{ post.url }}">{{ post.data.title }}</a>
-        <p>
-          {% if post.data.excerpt %}
-            {{ post.data.excerpt | remove: '<p>' | remove: '</p>' }}
-          {% else %}
-            {{ post.templateContent | remove: '<p>' | remove: '</p>' }}
-          {% endif %}
-        </p>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% liquid
+  capture power-user
+    assign tag = 'tech'
+    assign title = 'Know your tools'
+    assign tagLine = 'Technology is a superpower. Make it work for you.'
+    assign blurb = 'One of the gifts of a career in software development is the ability to automate away your own problems with custom software. I love to explore the little-known features and extension points in the technology I use, particularly in the Apple ecosystem.'
+    render index/articles, title: title, tagLine: tagLine, blurb: blurb, articles: collections[tag], tag: tag
+  endcapture
 
-<div class="pagination page-inset-margin my-8">
-  {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}" class="previous">previous</a>
-  {% else %}
-    previous
-  {% endif %}
-  <span class="page_number">page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }}</span>
-  {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}" class="next">next</a>
-  {% else %}
-    next
-  {% endif %}
-</div>
+  render index/scroll-region, content: power-user
+%}
+
+{% liquid
+  capture otherPosts
+    assign collection = collections.post | whereExcludes: 'data.tags', 'web development' | whereExcludes: 'data.tags', 'tech'
+    assign title = 'Everything else'
+    assign tagLine = 'Personal stuff. Highs and lows.'
+    render index/articles, title: title, tagLine: tagLine, articles: collection
+  endcapture
+
+  render index/scroll-region, content: otherPosts
+%}

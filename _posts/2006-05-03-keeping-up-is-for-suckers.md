@@ -10,11 +10,10 @@ wordpress_id: 72
 wordpress_url: http://old.kevinyank.com/blog/archives/keeping-up-is-for-suckers/
 date: '2006-05-03T14:45:01+1000'
 date_gmt: '2006-05-03 04:45:01 +1000'
-categories:
+tags:
 - personal
 - geekdom
 - tech
-tags: []
 comments:
 - id: 45
   author: Bonnie

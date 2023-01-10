@@ -18,9 +18,8 @@ wordpress_id: 163
 wordpress_url: http://old.kevinyank.com/blog/archives/convent-cache-approved
 date: '2007-07-17T15:34:45+1000'
 date_gmt: '2007-07-17 05:34:45 +1000'
-categories:
+tags:
 - geocaching
-tags: []
 comments: []
 ---
 <p><a href="https://flickr.com/photos/edfladung/272839817/"><img width="240" height="160" border="0" align="right" alt="Shipping Container" src="/assets/wp-content/uploads/2007/07/272839817_773c71f827_m.jpg" /></a>Just in case you were wondering, the photo at right is <em>not</em> a geocache.</p>

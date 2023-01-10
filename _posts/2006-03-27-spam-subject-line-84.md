@@ -10,11 +10,10 @@ wordpress_id: 62
 wordpress_url: http://old.kevinyank.com/blog/archives/spam-subject-line-84/
 date: '2006-03-27T11:29:06+1100'
 date_gmt: '2006-03-27 00:29:06 +1100'
-categories:
+tags:
 - snippets
 - geekdom
 - funny
-tags: []
 comments: []
 ---
 <p>Actual spam subject line:</p>

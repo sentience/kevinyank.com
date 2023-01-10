@@ -10,9 +10,8 @@ wordpress_id: 61
 wordpress_url: http://old.kevinyank.com/blog/archives/stupid-travel-mistake-62/
 date: '2006-03-23T19:57:00+1100'
 date_gmt: '2006-03-23 08:57:00 +1100'
-categories:
+tags:
 - personal
-tags: []
 comments:
 - id: 19
   author: Cheryl

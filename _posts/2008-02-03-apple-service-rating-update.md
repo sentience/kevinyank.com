@@ -10,11 +10,10 @@ wordpress_id: 172
 wordpress_url: http://old.kevinyank.com/blog/archives/apple-service-rating-update
 date: '2008-02-03T10:50:38+1100'
 date_gmt: '2008-02-03 00:50:38 +1100'
-categories:
+tags:
 - rants
 - geekdom
 - tech
-tags: []
 comments:
 - id: 76180
   author: Apple Service Rating Harms Customer Service at Yes, I&#8217;m Canadian

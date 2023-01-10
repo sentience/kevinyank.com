@@ -16,10 +16,9 @@ wordpress_id: 102
 wordpress_url: http://old.kevinyank.com/blog/archives/post-tangential/
 date: '2006-07-20T12:26:17+1000'
 date_gmt: '2006-07-20 02:26:17 +1000'
-categories:
+tags:
 - personal
 - impro
-tags: []
 comments:
 - id: 683
   author: Simon Mackie

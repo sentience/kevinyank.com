@@ -14,11 +14,10 @@ wordpress_id: 21
 wordpress_url: http://old.kevinyank.com/blog/archives/chuck-norris-knows-the-facts/
 date: '2006-01-12T16:40:09+1100'
 date_gmt: '2006-01-12 05:40:09 +1100'
-categories:
+tags:
 - snippets
 - geekdom
 - funny
-tags: []
 comments:
 - id: 13
   author: JP

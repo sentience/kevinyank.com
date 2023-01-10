@@ -13,10 +13,8 @@ wordpress_id: 220
 wordpress_url: http://old.kevinyank.com/blog/?p=220
 date: '2012-03-08T22:26:31+1100'
 date_gmt: '2012-03-08 12:26:31 +1100'
-categories:
+tags:
 - personal
-- tech
-tags: []
 comments:
 - id: 495664
   author: Shayaa Dobson

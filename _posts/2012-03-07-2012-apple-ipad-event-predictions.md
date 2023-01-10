@@ -14,9 +14,8 @@ wordpress_id: 209
 wordpress_url: http://old.kevinyank.com/blog/?p=209
 date: '2012-03-07T20:18:47+1100'
 date_gmt: '2012-03-07 10:18:47 +1100'
-categories:
+tags:
 - tech
-tags: []
 comments: []
 ---
 <p>Like clockwork, Apple is hours away from announcing the third generation of its iPad device. I’m sure I won’t be the only Australia-based Apple watcher getting up at 5AM to take in the news.</p>

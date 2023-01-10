@@ -10,12 +10,11 @@ wordpress_id: 87
 wordpress_url: http://old.kevinyank.com/blog/archives/huge-google-earth-update/
 date: '2006-06-09T18:12:54+1000'
 date_gmt: '2006-06-09 08:12:54 +1000'
-categories:
+tags:
 - snippets
 - Australia
 - geekdom
 - tech
-tags: []
 comments:
 - id: 2786
   author: Isiah
