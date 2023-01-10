@@ -6,6 +6,7 @@ excerpt: I’ve missed producing video training since I left Learnable in 2012, 
 tags:
   - training
   - Screencast a Week
+  - tech
 ---
 
 I’ve missed producing video training since I left [Learnable][l] in 2012, and published my _[Up and Running with Sublime Text 2][lyndasublime]_ course in 2013. To scratch this itch, I’ve just launched **[Screencast a Week][saw]**, a series of short, weekly videos that show off power user tips and tricks for the Mac, iPhone, iPad, and whatever else I come up with.

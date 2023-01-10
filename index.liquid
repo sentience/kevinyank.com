@@ -13,8 +13,35 @@ permalink: "/"
 
 {% liquid
   capture web-dev
-    render index/articles, collections: collections, tag: 'web development'
+    assign tag = 'web development'
+    assign title = 'Build the Web'
+    assign tagLine = 'Make pixels change colour with code, to create beautiful,accessible experiences.'
+    assign blurb = 'As Director of Front End Engineering at <a href="https://www.cultureamp.com/">Culture Amp</a>, I lead a practice of ~50 engineers to build interfaces that help users create a better world of work. I love to learn and explore what is possible on the Web.'
+    render index/articles, title: title, tagLine: tagLine, blurb: blurb, articles: collections[tag], tag: tag
   endcapture
 
   render index/scroll-region, content: web-dev
+%}
+
+{% liquid
+  capture power-user
+    assign tag = 'tech'
+    assign title = 'Know your tools'
+    assign tagLine = 'Technology is a superpower. Make it work for you.'
+    assign blurb = 'One of the gifts of a career in software development is the ability to automate away your own problems with custom software. I love to explore the little-known features and extension points in the technology I use, particularly in the Apple ecosystem.'
+    render index/articles, title: title, tagLine: tagLine, blurb: blurb, articles: collections[tag], tag: tag
+  endcapture
+
+  render index/scroll-region, content: power-user
+%}
+
+{% liquid
+  capture otherPosts
+    assign collection = collections.post | whereExcludes: 'data.tags', 'web development' | whereExcludes: 'data.tags', 'tech'
+    assign title = 'Everything else'
+    assign tagLine = 'Personal stuff. Highs and lows.'
+    render index/articles, title: title, tagLine: tagLine, articles: collection
+  endcapture
+
+  render index/scroll-region, content: otherPosts
 %}

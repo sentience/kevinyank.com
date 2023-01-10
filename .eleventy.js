@@ -32,6 +32,16 @@ function setUpLiquid(eleventyConfig) {
   });
 
   eleventyConfig.addFilter(
+    "collapseWhitespace",
+    require("./lib/filters/collapse-whitespace.js").collapseWhitespace
+  );
+
+  eleventyConfig.addFilter(
+    "whereExcludes",
+    require("./lib/filters/where-excludes.js").whereExcludes
+  );
+
+  eleventyConfig.addFilter(
     "whereIncludes",
     require("./lib/filters/where-includes.js").whereIncludes
   );
@@ -142,9 +152,12 @@ function addPaginatedTagsCollection(eleventyConfig) {
 }
 
 function getFilteredCollection(collections, tag) {
+  return filterHiddenContent(collections.getFilteredByTag(tag));
+}
+
+function filterHiddenContent(collection) {
   return (
-    collections
-      .getFilteredByTag(tag)
+    collection
       // exclude deleted
       .filter((item) => !Boolean(item.data.deleted))
       // exclude draft in production

@@ -15,7 +15,6 @@ date: '2012-03-08T22:26:31+1100'
 date_gmt: '2012-03-08 12:26:31 +1100'
 tags:
 - personal
-- tech
 comments:
 - id: 495664
   author: Shayaa Dobson

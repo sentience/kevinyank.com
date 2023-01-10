@@ -15,7 +15,6 @@ date: '2012-04-27T20:54:09+1000'
 date_gmt: '2012-04-27 10:54:09 +1000'
 tags:
 - PHP
-- tech
 - web development
 comments:
 - id: 498209

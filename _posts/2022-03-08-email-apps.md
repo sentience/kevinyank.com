@@ -6,6 +6,9 @@ excerpt: I love a good deep-dive into competing software, so with the time I sav
 tags:
   - Apple
   - tech
+featured: true
+featureImg: /assets/images/blog/email-apps/spark-macos.png
+featureImgAlt: screenshot of Spark Mail for macOS
 ---
 
 I recently shifted to [Fastmail]
