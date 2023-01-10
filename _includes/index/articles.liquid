@@ -5,8 +5,8 @@
     bg-accent-700 dark:bg-accent-600 text-white dark:text-black
 
     {% #reversed links %}
-    [&_:any-link]:text-white hover:[&_:any-link]:bg-accent-500 hover:[&_:any-link]:text-white focus-visible:[&_:any-link]:text-white focus-visible:[&_:any-link]:ring-accent-200 focus-visible:[&_:any-link]:ring-offset-accent-700
-    dark:[&_:any-link]:text-black dark:hover:[&_:any-link]:bg-accent-400  dark:focus-visible:[&_:any-link]:text-white dark:focus-visible:[&_:any-link]:ring-accent-400 dark:focus-visible:[&_:any-link]:ring-offset-accent-600
+    [&_:any-link]:text-white hover:[&_:any-link]:bg-accent-500 hover:[&_:any-link]:text-white focus-visible:[&_:any-link]:bg-accent-500 focus-visible:[&_:any-link]:text-white focus-visible:[&_:any-link]:ring-accent-200 focus-visible:[&_:any-link]:ring-offset-accent-700
+    dark:[&_:any-link]:text-black dark:hover:[&_:any-link]:bg-accent-400 dark:focus-visible:[&_:any-link]:bg-accent-400 dark:focus-visible:[&_:any-link]:text-white dark:focus-visible:[&_:any-link]:ring-accent-200 dark:focus-visible:[&_:any-link]:ring-offset-accent-600
   "
 >
   <div class="flex flex-col bs-full">
@@ -51,7 +51,11 @@
         </span>
         <span
           >→
-          <span class="text-accent-700 underline group-visited/link:text-accent-900 group-hover/link:text-white group-focus-visible:text-black  group-focus-visible/link:text-white group-[&:has(+:hover)]/link:text-white dark:text-accent-500 dark:group-visited/link:text-accent-300 dark:group-hover/link:text-white dark:group-focus-visible:text-white"
+          <span
+            class="
+              text-accent-700 underline group-visited/link:text-accent-900 group-hover/link:text-white group-focus-visible:text-black  group-focus-visible/link:text-white group-[&:has(+:hover)]/link:text-white
+              dark:text-accent-500 dark:group-visited/link:text-accent-300 dark:group-hover/link:text-white dark:group-focus-visible/link:text-white
+            "
             >Read now</span
           ></span
         >
