@@ -25,7 +25,7 @@
 
 {% assign latestFeatured = articles | where: 'data.featured' | last %}
 {% if latestFeatured %}
-  <div class="flex flex-none -scroll-m-12 items-start gap-4 pli-12 border-be border-ie group-focus-visible:border-be-transparent sm:gap-10">
+  <div class="flex flex-none -scroll-m-12 items-start gap-4 pli-12 plb-2 border-be border-ie group-focus-visible:border-be-transparent sm:gap-10">
     <a
       href="{{ latestFeatured.url }}"
       class="scroll-region__item group/link block snap-start no-underline is-80 hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 sm:is-96 [&:any-link]:text-inherit"
@@ -45,7 +45,7 @@
       <p class="font-serif text-lg leading-tight mbs-4">
         {{ latestFeatured.data.excerpt | remove: '<p>' | remove: '</p>' }}
       </p>
-      <div class="flex justify-between border-black font-light mbe-4 mbs-4 border-bs group-hover/link:bg-accent-600 group-hover/link:text-white group-hover/link:-mli-1 group-hover/link:pli-1 group-focus-visible/link:bg-accent-600 group-focus-visible/link:text-white group-focus-visible/link:-mli-1 group-focus-visible/link:pli-1 group-[&:has(+:hover)]/link:bg-accent-600 group-[&:has(+:hover)]/link:text-white group-[&:has(+:hover)]/link:-mli-1 group-[&:has(+:hover)]/link:pli-1 dark:border-white">
+      <div class="flex justify-between border-black font-light mbs-4 border-bs group-hover/link:bg-accent-600 group-hover/link:text-white group-hover/link:-mli-1 group-hover/link:pli-1 group-focus-visible/link:bg-accent-600 group-focus-visible/link:text-white group-focus-visible/link:-mli-1 group-focus-visible/link:pli-1 group-[&:has(+:hover)]/link:bg-accent-600 group-[&:has(+:hover)]/link:text-white group-[&:has(+:hover)]/link:-mli-1 group-[&:has(+:hover)]/link:pli-1 dark:border-white">
         <span>
           {{- latestFeatured.templateContent | timeToRead -}}
         </span>
