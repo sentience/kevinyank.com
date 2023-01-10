@@ -12,8 +12,10 @@ permalink: "/"
 %}
 
 {% liquid
+  assign frontEnd = collections.post | whereIncludes: 'data.categories', 'front end engineering'
+
   capture web-dev
-    render index/articles, articles: collections.post
+    render index/articles, articles: frontEnd
   endcapture
 
   render index/scroll-region, content: web-dev

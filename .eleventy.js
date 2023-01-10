@@ -31,6 +31,11 @@ function setUpLiquid(eleventyConfig) {
     orderedFilterParameters: true,
   });
 
+  eleventyConfig.addFilter(
+    "whereIncludes",
+    require("./lib/filters/where-includes.js").whereIncludes
+  );
+
   // Implement Jekyll's post_url tag
   // Usage: {% post_url post-filename-without-extension %}
   eleventyConfig.addLiquidTag("post_url", function (liquidEngine) {
