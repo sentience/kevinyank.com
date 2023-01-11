@@ -1,5 +1,5 @@
 ---
-title: Horizontal scrolling
+title: Horizontal Scrolling
 author: Kevin Yank
 date: 2023-01-11T23:55+1100
 tags:
