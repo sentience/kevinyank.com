@@ -1,5 +1,6 @@
 <section class="scroll-region pbe-6">
   <div
+    id="scrollable-{{ id }}"
     tabindex="0"
     role="region"
     aria-label="scrollable region"
@@ -16,6 +17,22 @@
   >
     {{ content }}
   </div>
+  <script>
+    // Restore scroll position on page reload
+    (function () {
+      const scrollable = document.getElementById('scrollable-{{id}}');
+      const key = `scrollPosition.${document.location.pathname}.{{id}}`;
+      const scrollPosition = sessionStorage.getItem(key);
+      if (scrollPosition) {
+        scrollable.scrollLeft = scrollPosition;
+        sessionStorage.removeItem(key);
+      }
+      addEventListener('beforeunload', () => {
+        const scrollPosition = scrollable.scrollLeft;
+        sessionStorage.setItem(key, scrollPosition);
+      });
+    })();
+  </script>
   <div
     class="
       page-inset-padding flex gap-2 text-accent-700 bs-6 dark:text-accent-500 [&>:hover]:text-accent-500 dark:[&>:hover]:text-accent-300

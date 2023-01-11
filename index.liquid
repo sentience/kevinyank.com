@@ -8,7 +8,7 @@ permalink: "/"
     render index/notes, notes: collections.note
   endcapture
 
-  render index/scroll-region, content: notes, extra_styles : '-mbs-6 pbs-2' # arrow overlaps preceding margin
+  render index/scroll-region, id: 'notes', content: notes, extra_styles : '-mbs-6 pbs-2' # arrow overlaps preceding margin
 %}
 
 {% liquid
@@ -20,7 +20,7 @@ permalink: "/"
     render index/articles, title: title, tagLine: tagLine, blurb: blurb, articles: collections[tag], tag: tag
   endcapture
 
-  render index/scroll-region, content: web-dev
+  render index/scroll-region, id: 'web-dev', content: web-dev
 %}
 
 {% liquid
@@ -32,7 +32,7 @@ permalink: "/"
     render index/articles, title: title, tagLine: tagLine, blurb: blurb, articles: collections[tag], tag: tag
   endcapture
 
-  render index/scroll-region, content: power-user
+  render index/scroll-region, id: 'tech', content: power-user
 %}
 
 {% liquid
@@ -43,5 +43,5 @@ permalink: "/"
     render index/articles, title: title, tagLine: tagLine, articles: collection
   endcapture
 
-  render index/scroll-region, content: otherPosts
+  render index/scroll-region, id: 'other', content: otherPosts
 %}
