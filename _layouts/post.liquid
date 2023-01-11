@@ -11,12 +11,12 @@ layout: default
     </h1>
     <p class="meta">
       <a class="u-url" href="{{ page.url }}"
-        ><time itemprop="datePublished" class="dt-published published" datetime="{{ date }}">
-          {{- date | date: '%b %-d, %Y' -}}
+        ><time itemprop="datePublished" class="dt-published published" datetime="{{ page.date | toHTMLDatetime }}">
+          {{- page.date | date: '%b %-d, %Y' -}}
         </time></a
       >
       {%- if author %}
-        • <span class="p-author author">{{ author }}</span>
+        • by <span class="p-author author">{{ author }}</span>
       {%- endif -%}
       {% assign visibleTags = tags | exclude: 'post' %}
       {%- if visibleTags %}

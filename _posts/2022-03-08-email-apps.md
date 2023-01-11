@@ -36,23 +36,23 @@ These are the apps that made my shortlist:
 
 * **[Apple Mail]** (Mac, iPhone, iPad, Apple Watch) – AKA Mail.app. Despite a patchy record of quality in the past decade, which has included some almost unusably buggy releases, Apple's bundled app remains more of a robust all-rounder than almost any competitor (mostly just because of how long it's been around). The fact that it's included for free with Apple's operating systems is probably what makes it so hard for alternatives to make an honest buck, and why a cottage industry of add-ons and extensions exists for it.
 
-  {% include figure src="/assets/images/blog/email-apps/apple-mail-macos.png" alt="screenshot" caption="Apple Mail on macOS 12 Monterey" %}
+  {% render figure, src: "/assets/images/blog/email-apps/apple-mail-macos.png", alt: "screenshot", caption: "Apple Mail on macOS 12 Monterey" %}
 
 * **[Canary Mail]** (Mac, iPhone, iPad, Apple Watch) – Also for Android and Windows. A security- and privacy-forward choice, Canary Mail proves that securing your data needn't come at the expense of a polished user experience. Despite supporting almost every platform under the sun, Canary Mail ships native apps for all of them.
 
-  {% include figure src="/assets/images/blog/email-apps/canary-mail-macos.png" alt="screenshot" caption="Canary Mail for macOS" %}
+  {% render figure, src: "/assets/images/blog/email-apps/canary-mail-macos.png", alt: "screenshot", caption: "Canary Mail for macOS" %}
 
 * **[MailMate]** (Mac) – By the numbers, this artisanal [Mac-assed Mac app] built by a solo developer, positively festooned with low-level power user customisation features advertised as "experimental" or "proof-of-concept" in the [web-based manual][MailMate manual], should be right up my alley. But it's _really_ hard to get past the antiquated UI layout; in particular, there's no widescreen-friendly multi-line message list. Also worrying, the "recommended" version of the app to download has been a sporadically-updated beta for nearly two years now, which makes it hard to bet on as a daily driver, or justify its $50 price tag.
 
-  {% include figure src="/assets/images/blog/email-apps/mailmate.png" alt="screenshot" caption="MailMate, using its clever Distortion Mode to obscure my email contents" %}
+  {% render figure, src: "/assets/images/blog/email-apps/mailmate.png", alt: "screenshot", caption: "MailMate, using its clever Distortion Mode to obscure my email contents" %}
 
 * **[Newton]** (Mac, iPhone, iPad, Apple Watch) – Also for Android and Windows. Billed as "supercharged emailing", Newton is a true attempt to rethink the user experience of email to minimise distractions and promote productivity and focus, but in this I've found its reach sometimes exceeds its grasp. Newton has had two public brushes with death over the years, but has been [under new ownership][Newton under new ownership] since early 2020. At $50/year, the full feature set is not cheap but is one I'm happy to pay for if it delivers on its promise.
 
-  {% include figure src="/assets/images/blog/email-apps/newton-macos.png" alt="screenshot" caption="Newton's typically spartan message viewer" %}
+  {% render figure, src: "/assets/images/blog/email-apps/newton-macos.png", alt: "screenshot", caption: "Newton's typically spartan message viewer" %}
 
 * **[Spark]** (Mac, iPhone, iPad, Apple Watch) – Seemingly the most polished option, with plenty of custom UI touches and integrations with other popular apps in the Apple ecosystem, Spark is from [Readdle], purveyors of several attractively-designed productivity apps that I've happily paid for over the years before seeing them [sherlocked] by Apple's built-in features ([Documents], [Scanner Pro]) or overtaken by a more actively-developed competitor ([Calendars]). I worry that Spark's paid features are all for team-based email workflows. Is there really a big enough market for that?
 
-  {% include figure src="/assets/images/blog/email-apps/spark-macos.png" alt="screenshot" caption="Spark for macOS" %}
+  {% render figure, src: "/assets/images/blog/email-apps/spark-macos.png", alt: "screenshot", caption: "Spark for macOS" %}
 
 And here are a bunch more that I discarded after a first look:
 

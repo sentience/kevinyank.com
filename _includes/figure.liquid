@@ -1,4 +1,10 @@
 <figure>
-  <img src="{{ include.src }}" alt="{{ include.alt }}">
-  <figcaption>{{ include.caption }}</figcaption>
+  <img
+    src="{{ src }}"
+    alt="{{ alt }}"
+    {% if border -%}
+      class="border"
+    {%- endif -%}
+  >
+  <figcaption class="text-center text-sm font-light mbs-4">{{ caption }}</figcaption>
 </figure>

@@ -62,7 +62,7 @@ Michael created a testing environment that allowed him to trigger layout and pai
 
 There are also some shorthand values that combine behaviours: `contain: content` and `contain: strict`. `contain: content` usually provides the best combination of performance impact and usability.
 
-{% include figure src="/assets/images/blog/web-directions-hover-2022-day-2/contain-property-values.png" alt="table showing the values of the contain property and their characteristics: layout is easy to use, and has positive performance impact; paint is moderately difficult to use, and has some positive impact; size is hard to use, and has variable impact. The shorthand values: content is moderately difficult to use and has very positive impact on performance; string is hard to use and has variable impact on top of what you get with content." caption="values of the <code>contain</code> property and their characteristics" %}
+{% render figure, src: "/assets/images/blog/web-directions-hover-2022-day-2/contain-property-values.png", alt: "table showing the values of the contain property and their characteristics: layout is easy to use, and has positive performance impact; paint is moderately difficult to use, and has some positive impact; size is hard to use, and has variable impact. The shorthand values: content is moderately difficult to use and has very positive impact on performance; string is hard to use and has variable impact on top of what you get with content.", caption: "values of the <code>contain</code> property and their characteristics" %}
 
 `content-visibility: auto` (Chrome only) lets you skip rendering for elements that are not (yet) in the browser viewport. It even skips CSS property value recalculation for those nodes. You need to specify a static size for these elements (since the browser won’t do the layout to calculate it for you), to avoid scrollbar flickering. This has a dramatic impact on page rendering performance on really large pages, though!
 
@@ -147,7 +147,7 @@ Media queries are still useful as an escape hatch for more niche things:
 
 Subgrid is a feature designed to solve the problem you see here: nested grid cells that need to line up with each other.
 
-{% include figure src="/assets/images/blog/web-directions-hover-2022-day-2/subgrid-use-case.png" alt="A grid of cards, each with three sections that divide the card into title/body/footer sections. The sections of adjacent cards all line up with each other in a visually pleasing way, except for the second card which has more content in its footer, causing that footer to occupy more vertical space, pushing it out of alignment with the implicit grid that otherwise exist across cards" caption="The second card's footer content pushes it out of alignment with the visible grid" %}
+{% render figure, src: "/assets/images/blog/web-directions-hover-2022-day-2/subgrid-use-case.png", alt: "A grid of cards, each with three sections that divide the card into title/body/footer sections. The sections of adjacent cards all line up with each other in a visually pleasing way, except for the second card which has more content in its footer, causing that footer to occupy more vertical space, pushing it out of alignment with the implicit grid that otherwise exist across cards", caption: "The second card's footer content pushes it out of alignment with the visible grid" %}
 
 With basic CSS Grid, only direct children become grid items in a container with `display: grid`. Therefore nested elements can’t participate in the grid’s layout.
 

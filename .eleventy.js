@@ -51,6 +51,11 @@ function setUpLiquid(eleventyConfig) {
     require("./lib/filters/exclude.js").exclude
   );
 
+  eleventyConfig.addFilter(
+    "toHTMLDatetime",
+    require("./lib/filters/to-html-datetime.js").toHTMLDatetime
+  );
+
   // Implement Jekyll's post_url tag
   // Usage: {% post_url post-filename-without-extension %}
   eleventyConfig.addLiquidTag("post_url", function (liquidEngine) {

@@ -76,7 +76,7 @@ At any time, you can interrupt VoiceOver by tapping the **^** (Control) key or *
 
 Alternatively you can open VoiceOver Utility (in **System → Applications → Utilities**, or **^⌥F8** with VoiceOver running). Under **Verbosity → Hints**, you can disable **Speak instructions for using the item in the VoiceOver cursor.**
 
-{% include figure src="/assets/images/blog/test-screen-reader-accessibility-with-voiceover-on-mac/voiceover-utility.png" alt="screenshot of VoiceOver Utility" caption="Disable &quot;Speak instructions…&quot; to reduce VoiceOver chattiness" %}
+{% render figure, src: "/assets/images/blog/test-screen-reader-accessibility-with-voiceover-on-mac/voiceover-utility.png", alt: "screenshot of VoiceOver Utility", caption: "Disable &quot;Speak instructions…&quot; to reduce VoiceOver chattiness" %}
 
 **^⌥⇧N** immediately plays the hint for the current cursor position, which is handy once you’ve disabled playing them automatically.
 
