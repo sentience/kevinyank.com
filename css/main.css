@@ -3,23 +3,49 @@
 @tailwind utilities;
 
 @layer base {
+  .theme-blue {
+    --theme-50: theme("colors.blue.50");
+    --theme-100: theme("colors.blue.100");
+    --theme-200: theme("colors.blue.200");
+    --theme-300: theme("colors.blue.300");
+    --theme-400: theme("colors.blue.400");
+    --theme-500: theme("colors.blue.500");
+    --theme-600: theme("colors.blue.600");
+    --theme-700: theme("colors.blue.700");
+    --theme-800: theme("colors.blue.800");
+    --theme-900: theme("colors.blue.900");
+  }
+
+  .theme-green {
+    --theme-50: theme("colors.green.50");
+    --theme-100: theme("colors.green.100");
+    --theme-200: theme("colors.green.200");
+    --theme-300: theme("colors.green.300");
+    --theme-400: theme("colors.green.400");
+    --theme-500: theme("colors.green.500");
+    --theme-600: theme("colors.green.600");
+    --theme-700: theme("colors.green.700");
+    --theme-800: theme("colors.green.800");
+    --theme-900: theme("colors.green.900");
+  }
+
   button {
     cursor: default;
   }
-}
 
-@layer components {
   /* Default link styles */
   :any-link {
-    @apply rounded text-accent-700
-    underline decoration-from-font ring-offset-white visited:text-accent-900
-    hover:bg-accent-100 hover:text-black focus-visible:bg-accent-100 focus-visible:text-black
-    focus-visible:outline-none focus-visible:ring focus-visible:ring-accent-600 focus-visible:ring-offset-2
-    dark:text-accent-500 dark:ring-offset-gray-900 dark:visited:text-accent-300 dark:hover:bg-accent-900 dark:hover:text-white dark:focus-visible:bg-accent-900 dark:focus-visible:text-white;
+    @apply rounded text-theme-700
+    underline decoration-from-font ring-offset-white visited:text-theme-900
+    hover:bg-theme-100 hover:text-black focus-visible:bg-theme-100 focus-visible:text-black
+    focus-visible:outline-none focus-visible:ring focus-visible:ring-theme-600 focus-visible:ring-offset-2
+    dark:text-theme-500 dark:ring-offset-gray-900 dark:visited:text-theme-300 dark:hover:bg-theme-900 dark:hover:text-white dark:focus-visible:bg-theme-900 dark:focus-visible:text-white;
     /* Fix Safari box-shadow render artifacts: https://bugs.webkit.org/show_bug.cgi?id=250059 */
     @apply focus-visible:outline-8;
   }
+}
 
+@layer utilities {
   /* Page gutters */
   .page-inset-margin {
     @apply mli-4 sm:mli-12;

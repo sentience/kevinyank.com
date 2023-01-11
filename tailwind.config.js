@@ -7,7 +7,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        accent: colors.red,
+        theme: Object.keys(colors.red).reduce(
+          (obj, num) => ({
+            ...obj,
+            [num]: `var(--theme-${num}, ${colors.red[num]})`,
+          }),
+          {}
+        ),
       },
       minHeight: {
         14: defaultTheme.spacing["14"],

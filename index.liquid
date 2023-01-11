@@ -32,7 +32,7 @@ permalink: "/"
     render index/articles, title: title, tagLine: tagLine, blurb: blurb, articles: collections[tag], tag: tag
   endcapture
 
-  render index/scroll-region, id: 'tech', content: power-user
+  render index/scroll-region, id: 'tech', content: power-user, theme: 'theme-blue'
 %}
 
 {% liquid
@@ -43,5 +43,5 @@ permalink: "/"
     render index/articles, title: title, tagLine: tagLine, articles: collection
   endcapture
 
-  render index/scroll-region, id: 'other', content: otherPosts
+  render index/scroll-region, id: 'other', content: otherPosts, theme: 'theme-green'
 %}

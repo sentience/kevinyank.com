@@ -1,4 +1,4 @@
-<section class="scroll-region pbe-6">
+<section class="scroll-region pbe-6 {{ theme }}">
   <div
     id="scrollable-{{ id }}"
     tabindex="0"
@@ -12,7 +12,7 @@
       {% #scroll snapping %}
       snap-x snap-mandatory scroll-pl-4 sm:scroll-pl-12
       {% #focus ring %}
-      focus-visible:bg-accent-200 focus-visible:outline-none dark:focus-visible:bg-accent-900
+      focus-visible:bg-theme-200 focus-visible:outline-none dark:focus-visible:bg-theme-900
     "
   >
     {{ content }}
@@ -35,7 +35,7 @@
   </script>
   <div
     class="
-      page-inset-padding flex gap-2 text-accent-700 bs-6 dark:text-accent-500 [&>:hover]:text-accent-500 dark:[&>:hover]:text-accent-300
+      page-inset-padding flex gap-2 text-theme-700 bs-6 dark:text-theme-500 [&>:hover]:text-theme-500 dark:[&>:hover]:text-theme-300
       [&>:active]:text-black dark:[&>:active]:text-white
     "
   >
