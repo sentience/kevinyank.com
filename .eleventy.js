@@ -31,29 +31,10 @@ function setUpLiquid(eleventyConfig) {
     orderedFilterParameters: true,
   });
 
-  eleventyConfig.addFilter(
-    "collapseWhitespace",
-    require("./lib/filters/collapse-whitespace.js").collapseWhitespace
-  );
-
-  eleventyConfig.addFilter(
-    "whereExcludes",
-    require("./lib/filters/where-excludes.js").whereExcludes
-  );
-
-  eleventyConfig.addFilter(
-    "whereIncludes",
-    require("./lib/filters/where-includes.js").whereIncludes
-  );
-
-  eleventyConfig.addFilter(
-    "exclude",
-    require("./lib/filters/exclude.js").exclude
-  );
-
-  eleventyConfig.addFilter(
-    "toHTMLDatetime",
-    require("./lib/filters/to-html-datetime.js").toHTMLDatetime
+  // Import all filters in /lib/filters/index.js
+  const filters = require("./lib/filters");
+  Object.keys(filters).forEach((filter) =>
+    eleventyConfig.addFilter(filter, filters[filter])
   );
 
   // Implement Jekyll's post_url tag
@@ -80,12 +61,12 @@ function setUpLiquid(eleventyConfig) {
 }
 
 function setUpMarkdown(eleventyConfig) {
-  let markdownIt = require("markdown-it");
-  let options = {
+  let markdownIt = require("markdown-it")({
     html: true,
     typographer: true,
-  };
-  eleventyConfig.setLibrary("md", markdownIt(options));
+  });
+  markdownIt.disable("code"); // Don't trigger code blocks with indented HTML in Liquid partials (will be default in Eleventy 2.0): https://www.11ty.dev/docs/languages/markdown/#indented-code-blocks
+  eleventyConfig.setLibrary("md", markdownIt);
 }
 
 function setUpCollections(eleventyConfig) {

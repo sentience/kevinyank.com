@@ -73,6 +73,9 @@
       <img
         src="{{ latestFeatured.data.featureImg }}"
         alt="{{ latestFeatured.data.featureImgAlt }}"
+        {% if latestFeatured.data.featuredImgBorder %}
+          class="border"
+        {% endif %}
       >
     </a>
   </div>

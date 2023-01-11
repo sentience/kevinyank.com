@@ -10,7 +10,7 @@
       {% #invisible horizontal scrollbar %}
       overflow-x-scroll overflow-y-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
       {% #scroll snapping %}
-      snap-x snap-mandatory scroll-pl-4 sm:scroll-pl-12
+      snap-x snap-mandatory [scroll-padding-inline-start:1rem] sm:[scroll-padding-inline-start:3rem]
       {% #focus ring %}
       focus-visible:bg-theme-200 focus-visible:outline-none dark:focus-visible:bg-theme-900
     "
