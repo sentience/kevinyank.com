@@ -69,6 +69,7 @@ function setUpMarkdown(eleventyConfig) {
   markdownIt.disable("code"); // Don't trigger code blocks with indented HTML in Liquid partials (will be default in Eleventy 2.0): https://www.11ty.dev/docs/languages/markdown/#indented-code-blocks
   markdownIt.use(anchor, {
     permalink: anchor.permalink.linkAfterHeader({
+      class: "heading-anchor",
       style: "visually-hidden",
       assistiveText: (title) => `Permalink to
       ${title}`,
