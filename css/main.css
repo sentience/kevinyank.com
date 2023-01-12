@@ -61,6 +61,9 @@
   .heading-wrapper > :is(h1, h2, h3, h4, h5, h6) {
     @apply rounded ring-theme-600 ring-offset-2 ring-offset-white dark:ring-offset-gray-900;
   }
+  :is(h1, h2, h3, h4, h5, h6):target {
+    @apply outline-none;
+  }
   :is(h1, h2, h3, h4, h5, h6):has(+ .heading-anchor:focus-visible) {
     @apply bg-theme-100 ring dark:bg-theme-900;
   }
