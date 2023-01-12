@@ -50,6 +50,14 @@
   .heading-wrapper {
     @apply flex items-baseline -mis-5;
   }
+  .heading-wrapper.heading-wrapper + p {
+    /* top margin doesn't collapse with preceding paragraph because of flex */
+    margin-block-start: 0;
+  }
+  p:has(+ .heading-wrapper.heading-wrapper) {
+    /* bottom margin doesn't collapse with preceding paragraph because of flex */
+    margin-block-end: 0;
+  }
   .heading-wrapper > :is(h1, h2, h3, h4, h5, h6) {
     @apply rounded ring-theme-600 ring-offset-2 ring-offset-white dark:ring-offset-gray-900;
   }
