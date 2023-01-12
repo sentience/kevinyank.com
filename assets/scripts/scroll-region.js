@@ -12,6 +12,14 @@ class ScrollRegion {
     this.scrollNode = domNode.children[0];
     this.items = domNode.querySelectorAll(".scroll-region__item");
 
+    Array.from(this.items).forEach((itemNode) => {
+      itemNode.addEventListener(
+        "focus",
+        (event) => this.scrollToFocus(event),
+        true
+      );
+    });
+
     (this.scrollToNextButton = domNode.querySelector(
       ".scroll-region__next"
     )).addEventListener("click", () => this.scrollToNext());
@@ -19,6 +27,14 @@ class ScrollRegion {
     (this.scrollToPreviousButton = domNode.querySelector(
       ".scroll-region__previous"
     )).addEventListener("click", () => this.scrollToPrevious());
+  }
+
+  scrollToFocus({ currentTarget }) {
+    currentTarget.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "start",
+    });
   }
 
   scrollToNext() {
