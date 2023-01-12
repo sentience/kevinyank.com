@@ -16,7 +16,7 @@ class ScrollRegion {
       itemNode.addEventListener(
         "focus",
         (event) => this.scrollToFocus(event),
-        true
+        true // focus events don't bubble
       );
     });
 

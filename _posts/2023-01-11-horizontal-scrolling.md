@@ -14,6 +14,8 @@ featureImgAlt: Screenshot of horizontally-scrolling content sections
 featuredImgBorder: true
 ---
 
+<ins datetime="2023-01-12T18:20+1100">Update Jan 12, 2023:</ins> Added section "Scroll on focus".
+
 My new (and not-quite-complete) website design, gratefully inspired by [Alexander Obenauer's lovely UI research site](https://alexanderobenauer.com/), makes heavy use of horizontal scrolling on the home page, with scrollbars hidden. As [documented elsewhere](https://www.nngroup.com/articles/horizontal-scrolling/) (and [a softer take](https://www.experienceux.co.uk/ux-blog/a-ux-perspective-on-horizontal-scrolling/)), this is not a risk-free design decision. (TL;DR: many pointing devices don't have horizontal scrolling controls, and only Firefox automatically provides a tab stop for scrolling with the keyboard.) But…
 
 {%liquid
@@ -136,6 +138,37 @@ Then, tag each content block that you want to be a "scroll stop" with `scroll-sn
 This one change took the horizontal scrolling from something that looked nice but honestly was feeling like a somewhat annoying gimmick, to something I actually enjoyed using, at least as a trackpad user who can scroll horizontally with swipe gestures!
 
 One minor browser issue that I found confusing was that if you scroll vertically in Chrome before the horizontal scroll finishes its smooth "snap" into place, the vertical scroll will interrupt the horizontal scroll and leave the scrollable region in an "illegal" position. Neither Safari nor Firefox has this issue.
+
+## Scroll on focus
+
+With the scroll position neatly snapping to the content blocks in each scroll region, a minor usability issue became apparent: as a keyboard user, if you tabbed to a link in a content block that was only partially visible on the screen, the region would not auto-scroll to ensure the newly-focused link was visible in its entirety. Browsers will only scroll on focus if the item to be focused is completely off screen.
+
+Once again, a little JavaScript solves this neatly. The code for this is brief enough that it's easy to show here:
+
+```javascript
+const items = scrollRegion.querySelectorAll(".scroll-region__item");
+Array.from(this.items).forEach((itemNode) => {
+  itemNode.addEventListener(
+    "focus",
+    (event) => scrollToFocus(event),
+    true // focus events don't bubble
+  );
+});
+
+function scrollToFocus({ currentTarget }) {
+  currentTarget.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "start",
+  });
+}
+```
+
+The trickiest part of this is capturing `focus` events for elements inside each `.scroll-region__item`. For most DOM events, you can `addEventListener` on a parent or ancestor to respond to all events targeting elements they contain. But `focus` and `blur` events [don't "bubble" up](https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event) from the target element to trigger event listeners on containing elements the way most events (like `click`) do.
+
+To respond to `focus` events on all descendants of a content block, you need to call `addEventListener` with the third parameter (`useCapture`) set to `true`. This tells the browser to trigger the listener in the "capture" phase of event propagation (as the event makes its way from the root of the document down to the target element), instead of in the "bubble" phase (where the event propagates back up from the target element to the document root). This means that our containing-element listener will be triggered _before_ any listeners on the focused element itself, but that's OK in this case; in fact, it's actually kind of nice to imagine scrolling the block into view and _then_ moving keyboard focus to a link in that block.
+
+Thanks to [Stéphane Deschamps](https://nota-bene.org/) for making me aware of this issue so that I could solve it.
 
 ## Sticky positioning effects
 
