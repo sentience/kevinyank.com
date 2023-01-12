@@ -229,8 +229,8 @@ li.bio {
   margin: 20px 0;
 }
 
-.post pre,
-.post code {
+.post-content pre,
+.post-content code {
   border: 1px solid #d5d5e9;
   background-color: #eef;
   padding: 8px 12px;
@@ -238,91 +238,70 @@ li.bio {
   font-size: 15px;
 }
 
-.post code {
+.post-content code {
   padding: 1px 5px;
 }
 
-.post ul,
-.post ol {
+.post-content ul,
+.post-content ol {
   margin-left: 1.35em;
 }
 
-.post pre code {
+.post-content pre code {
   border: none;
 }
 
-.post img {
-  float: right;
-  margin-left: 2.35765%;
-  max-width: 33.33%;
-}
-
-.post figure {
-  text-align: center;
-}
-
-.post figure img {
-  float: none;
-  margin: 0;
-  max-width: 100%;
-}
-
-.post figcaption {
-  font-size: 80%;
-  line-height: 1.9;
-}
-
-.post table {
+.post-content table {
   border: 1px solid currentColor;
   border-collapse: separate;
   border-spacing: 0;
   caption-side: bottom;
 }
 
-.post table.scores td {
+.post-content table.scores td {
   text-align: center;
 }
 
-.post table.scores tbody th {
+.post-content table.scores tbody th {
   font-weight: normal;
   white-space: nowrap;
 }
 
-.post table.scores th:first-child {
+.post-content table.scores th:first-child {
   text-align: end;
 }
 
-.post .table-scroll {
+.post-content .table-scroll {
   position: relative;
   width: 100%;
   overflow: auto;
 }
 
-.post .table-scroll table {
+.post-content .table-scroll table {
   width: 100%;
 }
 
-.post .table-scroll tr *:first-child {
+.post-content .table-scroll tr *:first-child {
   position: sticky;
   left: 0;
 }
 
-.post td,
-.post th {
+.post-content td,
+.post-content th {
   background: #fff;
   border: 1px solid currentColor;
   padding: 0 0.2em;
 }
 
 /* terminal */
-.post pre.terminal {
+.post-content pre.terminal {
   border: 1px solid #000;
   background-color: #333;
   color: #fff;
   border-radius: 3px;
 }
 
-.post pre.terminal code {
+.post-content pre.terminal code {
   background-color: #333;
 }
 
