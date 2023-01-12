@@ -17,7 +17,7 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumb
 <ol class="page-inset-margin">
   {% for post in pagination.items %}
     <li class="my-8">
-      <span class="block text-sm text-gray-500">{{ post.date | date: '%b %-d, %Y' }}</span>
+      <span class="block text-sm text-gray-500 dark:text-gray-400">{{ post.date | date: '%b %-d, %Y' }}</span>
       <a class="post-link text-2xl leading-none tracking-tight" href="{{ post.url }}">{{ post.data.title }}</a>
       <p>
         {% if post.data.excerpt %}

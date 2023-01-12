@@ -27,7 +27,7 @@ My new (and not-quite-complete) website design, gratefully inspired by [Alexande
   caption: "Horizontally-scrolling content sections",
   border: true %}
 
-# Create a horizontally scrolling region
+## Create a horizontally scrolling region
 
 To make a region horizontally scrollable, wrap the content of the region in a block with `overflow-x: scroll`. Pair this with `overflow-y: hidden` to prevent a vertical scrollbar from showing up under some conditions (in my case, large text sometimes triggered this because the line box would overflow the top/bottom of the container):
 
@@ -51,7 +51,7 @@ Then, give that block some content that will exceed the width of the viewport. I
 }
 ```
 
-# Hide the scrollbar
+## Hide the scrollbar
 
 **Warning:** Much like focus outlines, scrollbars should not be hidden without some alternative plan for how _all_ your users will be able to scroll the region. More on this below.
 
@@ -69,7 +69,7 @@ The standard way to hide scrollbars is with `scrollbar-width: none`, but as of t
 }
 ```
 
-# Accessibility issues
+## Accessibility issues
 
 While horizontal scrolling is not intrinsically inaccessible, hiding the scrollbars with no alternative UI certainly is.
 
@@ -112,7 +112,7 @@ But per the feedback I'd received, keyboard scrolling – while necessary – wo
 
 I implemented this with a pair of arrow buttons just below the scrolling region. These buttons trigger JavaScript that checks the current scroll position to see what content is currently in view, and moves it along to the next/previous block of content. The details of this would be an article in themselves, but you can [read the source code](https://github.com/sentience/kevinyank.com/blob/655abefd86e0b57ff7af1ce6b6ddcca60c7d579a/assets/scripts/scroll-region.js) if you're interested.
 
-# Scroll snapping
+## Scroll snapping
 
 As I clicked my new scroll buttons and saw the browser smoothly animate the scroll position to the next chunk of content, I realised how satisfying it was to have the horizontal scroll position exactly line up the edge of a content block with the margin of my page design. I was reminded that [CSS Scroll Snap](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts) is a thing!
 
@@ -137,7 +137,7 @@ This one change took the horizontal scrolling from something that looked nice bu
 
 One minor browser issue that I found confusing was that if you scroll vertically in Chrome before the horizontal scroll finishes its smooth "snap" into place, the vertical scroll will interrupt the horizontal scroll and leave the scrollable region in an "illegal" position. Neither Safari nor Firefox has this issue.
 
-# Sticky positioning effects
+## Sticky positioning effects
 
 As I played with the scrollable regions, I was inspired to add a couple of nice visual effects with `position: sticky`, which tells the browser to keep an element pinned to the edge of a scrollable region (with an offset you specify) if it would normally scroll off the screen, as long as part of its parent block is still within the visible area of the region.
 
@@ -153,7 +153,7 @@ Secondly, I wanted some trace of the colourful header block at the start of each
   Screen recording demo of a scrollable region scrolling a bright red block off the left edge of the screen, leaving a thin strip of red on the edge of the screen as a design accent.
 </video>
 
-# Persist scroll positions
+## Persist scroll positions
 
 The final tweak honestly shocked me. As I worked on all of this, each time the page refreshed in Chrome, the scrollable regions reset to their start positions.
 
@@ -185,7 +185,7 @@ One of these scripts per scroll region (with a unique {% raw %}`{{id}}`{% endraw
 </script>
 ```
 
-# Worth it?
+## Worth it?
 
 If at some point in reading this article you threw your hands up in the air and decided to simply let the native scrollbars stay, I wouldn't blame you. Most modern browsers and operating systems can render a fairly attractive, invisible-until-used scrollbar out of the box.
 
