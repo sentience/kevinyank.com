@@ -154,8 +154,8 @@ const items = scrollRegion.querySelectorAll(".scroll-region__item");
 
 // Capture current scroll position before the browser has a chance to
 // auto-scroll on focus. Chrome auto-scrolls even before dispatching
-// the focus event, so we must do this on the keydown that triggers the
-// focus change to get ahead of it.
+// the focus event, so we must do this on the keydown that triggers
+// the focus change to get ahead of it.
 scrollRegion.addEventListener("keydown", () =>
   saveScrollPosition(scrollRegion)
 );
