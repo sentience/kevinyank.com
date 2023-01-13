@@ -7,7 +7,15 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy(".well-known");
   eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/highlight.js/styles/github.css":
+      "assets/styles/highlight.js/github.css",
+  });
+
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/highlight.js/styles/github-dark.css":
+      "assets/styles/highlight.js/github-dark.css",
+  });
 
   eleventyConfig.addPlugin(require("eleventy-plugin-postcss"));
   eleventyConfig.addPlugin(require("eleventy-plugin-time-to-read"));
@@ -61,11 +69,22 @@ function setUpLiquid(eleventyConfig) {
 }
 
 function setUpMarkdown(eleventyConfig) {
+  const anchor = require("markdown-it-anchor");
+  const hljs = require("highlight.js");
+
   let markdownIt = require("markdown-it")({
+    highlight: function (str, lang) {
+      if (lang && hljs.getLanguage(lang)) {
+        try {
+          return hljs.highlight(str, { language: lang }).value;
+        } catch (__) {}
+      }
+
+      return ""; // use external default escaping
+    },
     html: true,
     typographer: true,
   });
-  let anchor = require("markdown-it-anchor");
   markdownIt.disable("code"); // Don't trigger code blocks with indented HTML in Liquid partials (will be default in Eleventy 2.0): https://www.11ty.dev/docs/languages/markdown/#indented-code-blocks
   markdownIt.use(anchor, {
     permalink: anchor.permalink.linkAfterHeader({
