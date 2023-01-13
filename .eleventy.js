@@ -8,10 +8,17 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(".well-known");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy({
+    "node_modules/seamless-scroll-polyfill/lib/bundle.min.cjs":
+      "assets/scripts/seamless-scroll-polyfill/bundle.min.js",
+  });
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/seamless-scroll-polyfill/lib/bundle.min.cjs.map":
+      "assets/scripts/seamless-scroll-polyfill/bundle.min.cjs.map",
+  });
+  eleventyConfig.addPassthroughCopy({
     "node_modules/highlight.js/styles/github.css":
       "assets/styles/highlight.js/github.css",
   });
-
   eleventyConfig.addPassthroughCopy({
     "node_modules/highlight.js/styles/github-dark.css":
       "assets/styles/highlight.js/github-dark.css",

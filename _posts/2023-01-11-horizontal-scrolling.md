@@ -141,34 +141,65 @@ One minor browser issue that I found confusing was that if you scroll vertically
 
 ## Scroll on focus
 
+<ins datetime="2023-01-13T23:35+1100">Update Jan 13, 2023:</ins> Updated the following solution for compatibility with Safari.
+
 With the scroll position neatly snapping to the content blocks in each scroll region, a minor usability issue became apparent: as a keyboard user, if you tabbed to a link in a content block that was only partially visible on the screen, the region would not auto-scroll to ensure the newly-focused link was visible in its entirety. Browsers will only scroll on focus if the item to be focused is completely off screen.
 
-Once again, a little JavaScript solves this neatly. The code for this is brief enough that it's easy to show here:
+Once again, JavaScript can solve this, but overriding the automatic scroll-on-focus of all browsers turned out to be quite tricky, as the exact sequence of DOM events (`focus` and `focusin`) and the automatic scrolling seems to be different in Safari.
+
+The solution is to capture the current scroll position after each `keydown` event (we're especially concerned with the Tab key being pressed, but there's no harm to recording it on every key), which is reliably before any auto-scrolling in all browsers, and then to wait until an animation frame after the `focus` (and `focusin`) event, which is reliably after any auto-scrolling in all browsers, to reset the scroll position to the value we last stored. We can then trigger a smooth scroll of our own from the correct starting position.
 
 ```javascript
 const items = scrollRegion.querySelectorAll(".scroll-region__item");
-Array.from(this.items).forEach((itemNode) => {
+
+// Capture current scroll position before the browser has a chance to
+// auto-scroll on focus. Chrome auto-scrolls even before dispatching the
+// focus event, so we must do this on the keydown that triggers the focus
+// change to get ahead of it.
+scrollRegion.addEventListener("keydown", () =>
+  saveScrollPosition(scrollRegion)
+);
+
+Array.from(items).forEach((itemNode) => {
   itemNode.addEventListener(
     "focus",
-    (event) => scrollToFocus(event),
+    // Safari auto-scrolls after the focus (and focusin) event, so we must
+    // wait for the next animation frame to avoid our scrolling being
+    // clobbered by Safari's auto-scroll.
+    () => requestAnimationFrame(() => this.scrollToFocus(itemNode)),
     true // focus events don't bubble
   );
 });
 
-function scrollToFocus({ currentTarget }) {
-  currentTarget.scrollIntoView({
+function saveScrollPosition(scrollRegion) {
+  scrollRegion._savedScrollPosition = scrollRegion.scrollLeft;
+}
+
+scrollToFocus(itemNode) {
+  // Restore saved scroll position to pre-focus position before doing our
+  // own smooth-scrolling.
+  this.scrollNode.scrollLeft = this.scrollNode._savedScrollPosition;
+
+  const scrollPadding = parseInt(
+    getComputedStyle(this.scrollNode).paddingInlineStart
+  );
+  this.scrollNode.scrollTo({
+    left: itemNode.offsetLeft - scrollPadding,
+    top: 0,
     behavior: "smooth",
-    block: "nearest",
-    inline: "start",
   });
 }
 ```
 
-The trickiest part of this is capturing `focus` events for elements inside each `.scroll-region__item`. For most DOM events, you can `addEventListener` on a parent or ancestor to respond to all events targeting elements they contain. But `focus` and `blur` events [don't "bubble" up](https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event) from the target element to trigger event listeners on containing elements the way most events (like `click`) do.
+A couple of notes on this:
 
-To respond to `focus` events on all descendants of a content block, you need to call `addEventListener` with the third parameter (`useCapture`) set to `true`. This tells the browser to trigger the listener in the "capture" phase of event propagation (as the event makes its way from the root of the document down to the target element), instead of in the "bubble" phase (where the event propagates back up from the target element to the document root). This means that our containing-element listener will be triggered _before_ any listeners on the focused element itself, but that's OK in this case; in fact, it's actually kind of nice to imagine scrolling the block into view and _then_ moving keyboard focus to a link in that block.
+`focus` events are a little special. For most DOM events, you can `addEventListener` on a parent or ancestor to respond to all events targeting elements they contain. But `focus` and `blur` events [don't "bubble" up](https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event) from the target element to trigger event listeners on containing elements the way most events (like `click`) do. To respond to `focus` events on all descendants of a content block, therefore, you need to call `addEventListener` with the third parameter (`useCapture`) set to `true`. This tells the browser to trigger the listener in the "capture" phase of event propagation (as the event makes its way from the root of the document down to the target element), instead of in the "bubble" phase (where the event propagates back up from the target element to the document root). It's also worth noting that `focus` events don't have `target` or `currentTarget` properties, so you need to find some other way to get references to DOM nodes inside your listener function.
 
-Thanks to [Stéphane Deschamps](https://nota-bene.org/) for making me aware of this issue so that I could solve it.
+I could have worked around all of this by using the much more "normal" `focusin` event, but I got it working with `focus` first, so I decided to leave it that way.
+
+I also had to give up on `Element.scrollIntoView` for our custom scroll, because I couldn't get it to work reliably in Safari 16.2. It seems that this latest version of Safari made some changes to scrolling to support the CSS `scroll-behavior` property, and I suspect it has resulted in some subtle bugs with smooth scrolling. Luckily, `Element.scrollTo` does seem to work fine.
+
+The subtle inconsistencies and bugs around auto-scrolling on focus, and how to override it with a custom scroll, took me back to the "good old days" of DOM APIs being completely incompatible between browsers. On a personal project, this was a fun challenge to solve. If I'd run into this at work, it probably would have ruined my day! Thanks to [Stéphane Deschamps](https://nota-bene.org/) for making me aware of this issue so that I could solve it.
 
 ## Sticky positioning effects
 
