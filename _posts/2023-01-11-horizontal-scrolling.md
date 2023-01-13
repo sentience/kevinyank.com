@@ -14,7 +14,7 @@ featureImgAlt: Screenshot of horizontally-scrolling content sections
 featuredImgBorder: true
 ---
 
-<ins datetime="2023-01-12T18:20+1100">Update Jan 12, 2023:</ins> Added section "Scroll on focus".
+<ins datetime="2023-01-12T18:20+1100">Update Jan 12, 2023:</ins> Added section [Scroll on focus](#scroll-on-focus).
 
 My new (and not-quite-complete) website design, gratefully inspired by [Alexander Obenauer's lovely UI research site](https://alexanderobenauer.com/), makes heavy use of horizontal scrolling on the home page, with scrollbars hidden. As [documented elsewhere](https://www.nngroup.com/articles/horizontal-scrolling/) (and [a softer take](https://www.experienceux.co.uk/ux-blog/a-ux-perspective-on-horizontal-scrolling/)), this is not a risk-free design decision. (TL;DR: many pointing devices don't have horizontal scrolling controls, and only Firefox automatically provides a tab stop for scrolling with the keyboard.) But…
 
@@ -153,9 +153,9 @@ The solution is to capture the current scroll position after each `keydown` even
 const items = scrollRegion.querySelectorAll(".scroll-region__item");
 
 // Capture current scroll position before the browser has a chance to
-// auto-scroll on focus. Chrome auto-scrolls even before dispatching the
-// focus event, so we must do this on the keydown that triggers the focus
-// change to get ahead of it.
+// auto-scroll on focus. Chrome auto-scrolls even before dispatching
+// the focus event, so we must do this on the keydown that triggers the
+// focus change to get ahead of it.
 scrollRegion.addEventListener("keydown", () =>
   saveScrollPosition(scrollRegion)
 );
@@ -163,9 +163,9 @@ scrollRegion.addEventListener("keydown", () =>
 Array.from(items).forEach((itemNode) => {
   itemNode.addEventListener(
     "focus",
-    // Safari auto-scrolls after the focus (and focusin) event, so we must
-    // wait for the next animation frame to avoid our scrolling being
-    // clobbered by Safari's auto-scroll.
+    // Safari auto-scrolls after the focus (and focusin) event, so we
+    // must wait for the next animation frame to avoid our scrolling
+    // being clobbered by Safari's auto-scroll.
     () => requestAnimationFrame(() => this.scrollToFocus(itemNode)),
     true // focus events don't bubble
   );
@@ -176,8 +176,8 @@ function saveScrollPosition(scrollRegion) {
 }
 
 scrollToFocus(itemNode) {
-  // Restore saved scroll position to pre-focus position before doing our
-  // own smooth-scrolling.
+  // Restore saved scroll position to pre-focus position before doing
+  // our own smooth-scrolling.
   this.scrollNode.scrollLeft = this.scrollNode._savedScrollPosition;
 
   const scrollPadding = parseInt(
