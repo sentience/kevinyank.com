@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // {100: var(--theme-100, colors.red.100), …}
         theme: Object.keys(colors.red).reduce(
           (obj, num) => ({
             ...obj,
