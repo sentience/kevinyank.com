@@ -1,4 +1,5 @@
-module.exports = (eleventyConfig) => {
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+module.exports = function (eleventyConfig) {
   setUpLiquid(eleventyConfig);
   setUpMarkdown(eleventyConfig);
   setUpCollections(eleventyConfig);
