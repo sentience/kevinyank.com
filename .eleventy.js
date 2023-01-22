@@ -25,6 +25,7 @@ module.exports = function (eleventyConfig) {
       "assets/styles/highlight.js/github-dark.css",
   });
 
+  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
   eleventyConfig.addPlugin(require("eleventy-plugin-postcss"));
   eleventyConfig.addPlugin(require("eleventy-plugin-time-to-read"));
   eleventyConfig.addPlugin(require("eleventy-xml-plugin"));
