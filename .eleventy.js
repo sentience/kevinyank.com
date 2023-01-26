@@ -28,7 +28,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
   eleventyConfig.addPlugin(require("eleventy-plugin-postcss"));
   eleventyConfig.addPlugin(require("eleventy-plugin-time-to-read"));
-  eleventyConfig.addPlugin(require("eleventy-xml-plugin"));
   eleventyConfig.addPlugin(
     require("@mightyplow/eleventy-plugin-cache-buster")({})
   );
