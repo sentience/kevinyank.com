@@ -8,6 +8,13 @@ tags:
 
 Since macOS Monterey 12.6.1, including the current macOS Ventura 13.1, whenever I reboot, my Mac forgets some or all of the applications I've given permissions to in the Privacy & Security settings. This can include permissions for Accessibility (1Password, Bartender, Logi Options, etc.), Full Disk Access (iTerm, LaunchBar, Transmit, etc.) and Screen Recording (CleanShot, Keyboard Maestro, ScreenFlow). At different times, a series of escalating fixes is necessary to work around this until the next time that it happens.
 
+<ins datetime="2023-01-26T20:59:41+11:00">Update Jan 26, 2023:</ins>
+
+{%liquid
+  assign note = collections.note | findBySlug: 'ayqx3'
+  render embedded-note, note: note
+%}
+
 The bug seems to be a race condition of some kind, where applications request the access they've already been granted before macOS has finished bringing the necessary services online, so the app thinks it has lost its permissions. I believe this because the easiest way to resolve the issue, often, is to **quit and restart the app** that is complaining that it lacks permissions.
 
 That doesn't always do the trick, though. There seems to be a way that the database for an entire section of the Privacy & Security settings (most commonly Accessibility) can become corrupt, and all the apps that rely on it will be locked out. When this happens, the apps are still listed as approved in Privacy & Security, and toggling their permissions on and off doesn't help, nor does removing the apps from the list entirely and re-adding them.
