@@ -15,6 +15,10 @@ stylesheets:
         (draft)
       {% endif %}
     </h1>
+    {% assign photo = photo[0] %}
+    {% if photo %}
+      <img src="{{ photo.url }}" alt="{{ photo.alt }}">
+    {% endif %}
     <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
       <a class="u-url" href="{{ page.url }}"
         ><time itemprop="datePublished" class="dt-published published" datetime="{{ page.date | toHTMLDatetime }}">

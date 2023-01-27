@@ -1,0 +1,6 @@
+{
+  "author": "Kevin Yank",
+  "layout": "post",
+  "permalink": "photos/{{ page.fileSlug }}/",
+  "tags": "note"
+}

@@ -11,16 +11,34 @@ permalink: "{% if pagination.pageNumber > 0 %}/notes/page/{{ pagination.pageNumb
 
 <div class="page-inset-margin flex flex-wrap justify-items-stretch gap-4">
   {% for note in notes %}
-    <article id="{{ note.fileSlug }}" class="flex-auto min-is-[32ch] max-is-max pbe-4 [flex-basis:25%]">
+    <article
+      id="{{ note.fileSlug }}"
+      class="
+        flex-auto min-is-[32ch] max-is-max pbe-4 [flex-basis:25%]
+
+        {% #arrow %}
+        relative
+        before:absolute before:border-transparent before:inline-start-6 before:-block-start-4 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem] before:border-be-gray-200 dark:before:border-be-gray-700
+      "
+    >
       <div
         class="
-          bg-gray-200 dark:bg-gray-700 rounded-lg overflow-visible plb-2 pli-3
-          {% #arrow %}
-          relative
-          before:absolute before:border-transparent before:-block-start-4 before:border-be-[1rem] before:border-is-[0.25rem] before:border-ie-[0.5rem] before:border-be-gray-200 dark:before:border-be-gray-700
+          overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-700
+
+          {% #link focus ring background %}
+          focus-visible:[&_:any-link]:ring-offset-gray-200 dark:focus-visible:[&_:any-link]:ring-offset-gray-700
         "
+        {% assign photo = note.data.photo[0] %}
+        {% if photo %}
+          style="background: center/cover url('{{ photo.url }}')"
+        {% endif %}
       >
-        {{ note.templateContent }}
+        <div class="bg-gray-200/75 plb-2 pli-3 dark:bg-gray-700/75">
+          {{ note.templateContent }}
+        </div>
+        {% if photo %}
+          <img src="{{ photo.url }}" class="sr-only" alt="{{ photo.alt }}">
+        {% endif %}
       </div>
       <p class="text-xs text-gray-500 mbs-1">
         <a href="{{ note.url }}"

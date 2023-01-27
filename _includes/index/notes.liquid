@@ -9,13 +9,23 @@
   >
     <div
       class="
-        overflow-visible rounded-lg bg-gray-200 plb-2 pli-3 group-focus-visible:bg-gray-100 dark:bg-gray-700 dark:group-focus-visible:bg-gray-800
+        relative overflow-hidden rounded-lg bg-gray-200
+        group-focus-visible:bg-gray-100 dark:bg-gray-700 dark:group-focus-visible:bg-gray-800
 
-        {% #reversed links %}
-        dark:focus-visible:[&_:any-link]:ring-offset-gray-700
+        {% #link focus ring background %}
+        focus-visible:[&_:any-link]:ring-offset-gray-200 dark:focus-visible:[&_:any-link]:ring-offset-gray-700
       "
+      {% assign photo = note.data.photo[0] %}
+      {% if photo %}
+        style="background: center/cover url('{{ photo.url }}')"
+      {% endif %}
     >
-      {{ note.templateContent }}
+      <div class="bg-gray-200/75 plb-2 pli-3 dark:bg-gray-700/75">
+        {{ note.templateContent }}
+      </div>
+      {% if photo %}
+        <img src="{{ photo.url }}" class="sr-only" alt="{{ photo.alt }}">
+      {% endif %}
     </div>
     <p class="text-xs text-gray-500 mbs-1">
       <a href="{{ note.url }}" class="group-focus-visible:text-black dark:group-focus-visible:text-white"
