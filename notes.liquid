@@ -3,7 +3,7 @@ layout: default
 pagination:
   data: collections.note
   reverse: true
-  size: 25
+  size: 24
   alias: notes
 permalink: "{% if pagination.pageNumber > 0 %}/notes/page/{{ pagination.pageNumber | plus: 1 }}{%else%}/notes{% endif %}/"
 ---
@@ -33,7 +33,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/notes/page/{{ pagination.pageNumb
           style="background: center/cover url('{{ photo.url }}')"
         {% endif %}
       >
-        <div class="bg-gray-200/75 plb-2 pli-3 dark:bg-gray-700/75">
+        <div class="note__templateContent bg-gray-200/75 plb-2 pli-3 dark:bg-gray-700/75">
           {{ note.templateContent }}
         </div>
         {% if photo %}
