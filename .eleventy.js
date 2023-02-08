@@ -7,7 +7,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy(".well-known");
-  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("assets/files");
+  eleventyConfig.addPassthroughCopy("assets/images");
+  eleventyConfig.addPassthroughCopy("assets/scripts");
+  eleventyConfig.addPassthroughCopy("assets/videos");
+  eleventyConfig.addPassthroughCopy("assets/wp-content");
   eleventyConfig.addPassthroughCopy({
     "node_modules/seamless-scroll-polyfill/lib/bundle.min.cjs":
       "assets/scripts/seamless-scroll-polyfill/bundle.min.js",
