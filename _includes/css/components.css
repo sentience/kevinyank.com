@@ -4,7 +4,7 @@
       @apply mbs-2;
     }
     & :is(ul, ol) {
-      @apply mis-4;
+      @apply mis-5;
     }
     & ul {
       @apply list-disc;
