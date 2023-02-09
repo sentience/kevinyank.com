@@ -1,0 +1,137 @@
+@layer utilities {
+  .theme-blue {
+    --theme-50: theme("colors.blue.50");
+    --theme-100: theme("colors.blue.100");
+    --theme-200: theme("colors.blue.200");
+    --theme-300: theme("colors.blue.300");
+    --theme-400: theme("colors.blue.400");
+    --theme-500: theme("colors.blue.500");
+    --theme-600: theme("colors.blue.600");
+    --theme-700: theme("colors.blue.700");
+    --theme-800: theme("colors.blue.800");
+    --theme-900: theme("colors.blue.900");
+  }
+
+  .theme-green {
+    --theme-50: theme("colors.green.50");
+    --theme-100: theme("colors.green.100");
+    --theme-200: theme("colors.green.200");
+    --theme-300: theme("colors.green.300");
+    --theme-400: theme("colors.green.400");
+    --theme-500: theme("colors.green.500");
+    --theme-600: theme("colors.green.600");
+    --theme-700: theme("colors.green.700");
+    --theme-800: theme("colors.green.800");
+    --theme-900: theme("colors.green.900");
+  }
+
+  /* Page gutters */
+  .page-inset-margin {
+    @apply mli-4 sm:mli-12;
+  }
+  .page-inset-padding {
+    @apply pli-4 sm:pli-12;
+  }
+
+  /* Dark mode default border colour for all border classes */
+  .border,
+  .border-be,
+  .border-bs,
+  .border-ie,
+  .border-is,
+  .border-lb,
+  .border-li {
+    @apply dark:border-gray-600;
+  }
+}
+
+/* Post styles */
+/* ----------------------------------------------------------*/
+
+.post-content table {
+  border: 1px solid currentColor;
+  border-collapse: separate;
+  border-spacing: 0;
+  caption-side: bottom;
+}
+
+.post-content table.scores td {
+  text-align: center;
+}
+
+.post-content table.scores tbody th {
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.post-content table.scores th:first-child {
+  text-align: end;
+}
+
+.post-content .table-scroll {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+
+.post-content .table-scroll table {
+  width: 100%;
+}
+
+.post-content .table-scroll tr *:first-child {
+  position: sticky;
+  left: 0;
+}
+
+.post-content td,
+.post-content th {
+  background: #fff;
+  border: 1px solid currentColor;
+  padding: 0 0.2em;
+}
+
+/* terminal */
+.post-content pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.post-content pre.terminal code {
+  background-color: #333;
+}
+
+/* media queries */
+/* ----------------------------------------------------------*/
+
+@media screen and (max-width: 750px) {
+  .footer-col-1 {
+    width: 50%;
+  }
+
+  .footer-col-2 {
+    width: 45%; /*fallback*/
+    width: -webkit-calc(50% - 10px);
+    width: -moz-calc(50% - 10px);
+    width: -o-calc(50% - 10px);
+    width: calc(50% - 10px);
+    margin-right: 0;
+  }
+
+  .site-footer .column.footer-col-3 {
+    width: auto;
+    float: none;
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-footer .column {
+    float: none;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 15px;
+  }
+}
