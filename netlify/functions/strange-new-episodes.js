@@ -157,6 +157,14 @@ const SHOWS = [
     notifications: true,
   },
   {
+    name: "Star Trek: Picard",
+    current_season: 3,
+    season_json:
+      "https://www.paramountplus.com/shows/star-trek-picard/xhr/episodes/page/0/size/18/xs/0/season/3/",
+    redis_key: "picard-episodes",
+    notifications: true,
+  },
+  {
     name: "Star Trek: Prodigy",
     current_season: 1,
     season_json:
