@@ -129,7 +129,7 @@ function getSlackNotifier() {
             `:enterprise: *${show.name}*\n` +
             `${episodeNumber}: _${title}_ is now available\n` +
             `<${url}|Watch on Paramount+>`,
-          unfurl_links: true,
+          unfurl_links: false,
         })
         .then(() => {
           console.debug("Sent Slack notification");
