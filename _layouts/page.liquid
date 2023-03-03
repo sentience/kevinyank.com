@@ -3,8 +3,17 @@ layout: default
 ---
 <div class="page-inset-margin max-is-prose xl:mli-auto">
   <header class="post-header">
-    <h1>{{ title }}</h1>
+    <h1 class="text-4xl font-light tracking-tight sm:text-5xl">{{ title }}</h1>
   </header>
 
-  <main class="post-content">{{ content }}</main>
+  <main
+    class="
+      post-content
+
+      {% #content styles - TODO: convert these to @apply rules %}
+      text-lg [&>p]:mlb-4 [&>blockquote>p]:mlb-4 [&>blockquote]:font-light [&>blockquote]:italic [&>blockquote]:tracking-tight [&>blockquote]:text-gray-500 [&>blockquote]:pis-5 [&>blockquote]:border-is-4 dark:[&>blockquote]:text-gray-400 [&>pre]:overflow-auto [&>pre]:max-is-full [&_:is(h1,h2,h3,h4,h5,h6)]:font-light [&_:is(h1,h2,h3,h4,h5,h6)]:leading-none [&_:is(h1,h2,h3,h4,h5,h6)]:tracking-tight [&_:is(h1,h2,h3,h4,h5,h6)]:mbs-10 [&_:is(h1,h2,h3,h4,h5,h6)]:mbe-5 [&_h1]:text-4xl sm:[&_h1]:text-5xl [&_h2]:text-3xl [&_h3]:text-2xl [&_h4]:text-xl [&_:is(ul,ol)]:pis-5 sm:[&_:is(ul,ol)]:pis-0 [&_ul]:list-disc [&_ol]:list-decimal [&_ul>li]:marker:text-gray-400 [&_:is(ul,ol)>li>p]:mlb-2 sm:[&_:is(ul,ol)_:is(ul,ol)]:pis-5
+    "
+  >
+    {{ content }}
+  </main>
 </div>
