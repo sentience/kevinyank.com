@@ -7,14 +7,14 @@ pagination:
   alias: posts
 permalink: "/blog/{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
 ---
-<h1 class="page-inset-margin my-8">
+<h1 class="page-inset-margin my-8 max-is-prose xl:mli-auto">
   Recent articles
   {% if pagination.hrefs.length > 0 %}
     (page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }})
   {% endif %}
 </h1>
 
-<ol class="page-inset-margin">
+<ol class="page-inset-margin max-is-prose xl:mli-auto">
   {% for post in pagination.items %}
     <li class="my-8">
       <span class="block text-sm text-gray-500 dark:text-gray-400">{{ post.date | date: '%b %-d, %Y' }}</span>
@@ -30,7 +30,7 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumb
   {% endfor %}
 </ol>
 
-<div class="pagination page-inset-margin my-8">
+<div class="pagination page-inset-margin my-8 max-is-prose xl:mli-auto">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}" class="previous">previous</a>
   {% else %}
