@@ -3,6 +3,7 @@ title: Assume ChatGPT is Lying
 date: 2023-03-28T20:18:12+11:00
 tags:
   - tech
+  - impro
 excerpt: In an industry where expertise is currency, a tool that lets us all pretend to be experts to each other is very dangerous indeed.
 featured: true
 featureImg: /assets/images/blog/assume-chatgpt-is-lying/rock-n-roll-monkey-R4WCbazrD1g-unsplash-1152.jpg
