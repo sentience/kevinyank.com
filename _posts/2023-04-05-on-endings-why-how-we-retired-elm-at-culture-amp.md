@@ -1,11 +1,24 @@
 ---
 date: 2023-04-05T11:18:28.151Z
-title: Leaving Elm
-published: false
----
-# On Endings: Why & How We Retired Elm at Culture Amp
+title: "On Endings: Why & How We Retired Elm at Culture Amp"
+author: Kevin Yank
+tags:
+    - web development
+    - Culture Amp
+    - Elm
+excerpt:
+  From time to time someone will ask, "Does Culture Amp still use Elm?" I'll answer privately that no, we are no longer investing in Elm, and explain why. Invariably, they tell me my answer was super valuable, and that I should share it publicly. Until now, I haven't.
 
-> Beginnings are easy – endings are hard. — [Brian Eno](https://www.musicradar.com/news/brian-eno-fred-again-beginnings-endings)
+  This is the story of how, after four years of proudly advertising Elm as its preferred language for building web UIs, Culture Amp decided – I decided – to leave it behind.
+featured: true
+featureImg: /assets/images/blog/on-endings-why-how-we-retired-elm-at-culture-amp/elm-logo-fade@2x.png
+featureImgAlt: The Elm logo fading away
+featuredImgBorder: true
+---
+
+> Beginnings are easy – endings are hard.
+>
+>  — [Brian Eno](https://www.musicradar.com/news/brian-eno-fred-again-beginnings-endings)
 
 From time to time someone will ask, "Does Culture Amp still use Elm?" I'll answer privately that no, we are no longer investing in Elm, and explain why. Invariably, they tell me my answer was super valuable, and that I should share it publicly. Until now, I haven't.
 
@@ -159,41 +172,41 @@ The conversations felt good, and honest. Nobody quit over it (at least not right
 Once all those conversations were done, I sat down and wrote a request for feedback in our front end engineering practice channel:
 
 > Request for feedback: Elm at Culture Amp
-> 
+>
 > Hi @practice_front_end_eng! Over the past few weeks, I’ve had several conversations with the engineers who have most used and advocated for Elm as a part of our technology mix in front end engineering at Culture Amp, about whether or not we should continue to choose it for new projects.
-> 
+>
 > As a reminder of where we have stood on this question, see "How to choose between Elm and React" on Confluence. With few exceptions in recent build cycles (most notably in #team_ted, which has been doing great work in Elm outside of our monoliths lately), when trusted to make the right decision for them and for Culture Amp, most of our teams and camps have been selecting React in TypeScript for new projects.
-> 
+>
 > Given this trend, and the need to find ways to do “less but better”, I am close to a decision that would see Elm’s status on our Front End Technology List move from Adopt to Contain, which would mean that we would continue to maintain and add features to existing Elm codebases, but we would avoid selecting it for new projects in order to more efficiently pool our collective efforts to ensure the health and sustainability of our React/TypeScript codebases, and even create room to experiment with future emergent languages/frameworks.
-> 
+>
 > Before I finalise this decision, I want to give all engineers an opportunity to reach out to me with feedback. Do you enjoy working with Elm and want to have the freedom to continue to use it for new projects? Is Elm something you have yet to try, but would like to because you think it might improve the way your team builds user interfaces? Even if you don’t consider yourself a front end engineer, if you have feedback for me I’d like to hear it – let’s say by the end of this week (16 October).
-> 
+>
 > Thanks, Campers!
 
 A couple of engineers chimed in with their thoughts, one of them was a deep and thoughtful analysis of the benefits of Elm, and why we weren't feeling them at Culture Amp:
 
 > I think Elm is great. It’s the reason I became interested in Culture Amp — I first contacted @kevin over the Elm slack!
-> 
+>
 > I discovered Elm while I was working at a software agency, where the nature of the work involved lots of context switching. Projects would come and go — usually with a stack of initial work, then several rounds of changes, a maintenance contract, and sometimes new budget for further work. At any point in time, we would simultaneously be at different stages in this process with a handful of clients.
-> 
+>
 > We needed to be able to efficiently context switch. We had to drop new people onto older projects and have them quickly make changes, without worrying that things would fall over due to lack of familiarity with that codebase.
-> 
+>
 > We solved this in part by standardising on patterns and static analysis — for example, we adopted typescript, with very high strictness — and this got us a long way.
-> 
+>
 > However, we eventually encountered creeping “javascript fatigue”: the tools we were using to solve our maintenance burden were themselves creating a maintenance burden!
-> 
+>
 > Elm was able to solve this by enforcing all of those nice patterns and compiler goodness with a single dependency. I didn’t get to use it in anger before Culture Amp, but if I was starting again, I would still consider something like Elm for exactly the reasons above, and I don’t think that Culture Amp’s needs are so different…
-> 
+>
 > … except that Elm is really designed to be your whole front end stack.
-> 
+>
 > We have gotten around this fact by investing in tools (i.e. super cool hacks) which allow Elm to integrate with our blended stack. But there are some consequences to using Elm in this way:
-> 
+>
 > Firstly, we only have the confidence of Elm in some places, and whether or not you will end up in an Elm codebase can be a bit of a lucky dip (or unlucky, depending on how you feel about it).
-> 
+>
 > And secondly, we don’t get to use Elm as our single dependency — it is actually just one more (big) piece of complexity for the rest of our tools and code to consider.
-> 
+>
 > This means that we don’t see the benefits of Elm *either* as a low-maintenance front end stack, nor as a way to guarantee consistent low-cost context switching.
-> 
+>
 > Therefore, I’d support a decision to contain Elm. I have other reasons, but this is the crux of it!
 
 At the end of the day, there were no objections.
@@ -204,14 +217,16 @@ I updated Elm's status in our tech radar with this description:
 
 ## This is What Success (Sometimes) Looks Like
 
-Although we have often praised [Elm's pitch for gradual adoption](https://elm-lang.org/news/how-to-use-elm-at-work), I think what we learned from this experience is that if the momentum ever stalls and Elm no longer seems likely to fill the entire viewport, then you probably need to consider an exit strategy. The in-between place is not a sustainable one, unless you can afford a large investment in a design system team that is excited about maintaining parallel or framework-agnostic component implementations.
+Although we have often praised [Elm's pitch for gradual adoption](https://elm-lang.org/news/how-to-use-elm-at-work), one warning I would give to any teams looking to follow in our footsteps would be: if the momentum ever stalls and Elm no longer seems likely to fill the entire viewport, then you probably need to consider an exit strategy. The in-between place is not a sustainable one, unless you can afford a large investment in a design system team that is excited about maintaining parallel or framework-agnostic component implementations.
 
-But looking back, I'm still glad that we used Elm at Culture Amp. Sure, without Elm, some things might have been easier. For one, we wouldn't still have two large-ish web apps written in Elm, owned by teams that consider those codebases historical curiosities that will need a full rewrite someday.
+But looking back, I'm still glad that we used Elm at Culture Amp. Sure, without Elm, some things might have been easier. For one, we wouldn't still have two large-ish web apps written in Elm today, owned by teams that consider those codebases historical curiosities that will need a full rewrite someday.
 
-But some things would have been harder, too: Culture Amp built its second product, (Culture Amp Effectiveness)[https://www.cultureamp.com/resources/employee-experience/culture-amp-effectiveness] (a [360° review](https://www.cultureamp.com/blog/360-feedback-benefits) tool), entirely in Elm. With the tools available in the React ecosystem at the time, it would have taken longer to build that product, we would have shipped it with more bugs, and it would have cost us a lot more to maintain over the years.
+But some things would have been harder, too: Culture Amp built the UI for its second product, [Culture Amp Effectiveness](https://www.cultureamp.com/resources/employee-experience/culture-amp-effectiveness) (a [360° review](https://www.cultureamp.com/blog/360-feedback-benefits) tool), entirely in Elm. With the tools available in the React ecosystem at the time, it would have taken longer to build that product, we would have shipped it with more bugs, and it would have cost us a lot more to maintain over the years.
 
 And I can point to at least a dozen amazing engineers that we managed to hire, that it has been a highlight of my career to work with, that I probably never would have met had we not chosen a technology that helped us stand out from the crowd. There's something to be said for being "just weird enough".
 
-Just because a relationship ends doesn't make it a failure. At a certain point, success means learning to be just as good at ending things as you are at starting new ones. If you never let things go, you wind up stuck in the past.
+Just because a relationship ends doesn't make it a failure. Our time with Elm as a preferred technology has simply run its course. At a certain point, success means learning to be just as good at ending things as you are at starting new ones. If you never let things go, you wind up stuck in the past.
 
-> All Bette's stories have happy endings. That's because she knows where to stop. She's realized the real problem with stories — if you keep them going long enough, they always end in death. — [Neil Gaiman, Sandman #6: "24 Hours"](https://sandman.fandom.com/wiki/Sandman_06)
+> All Bette's stories have happy endings. That's because she knows where to stop. She's realized the real problem with stories — if you keep them going long enough, they always end in death.
+>
+> — [Neil Gaiman, Sandman #6: "24 Hours"](https://sandman.fandom.com/wiki/Sandman_06)
