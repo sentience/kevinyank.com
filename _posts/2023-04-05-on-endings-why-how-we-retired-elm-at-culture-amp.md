@@ -70,8 +70,8 @@ greeting =
 sayHello name =
     if name == "Kevin" then
         "Hi, Kev!"
-        else
-                "Hello, " ++ name ++ "."
+    else
+        "Hello, " ++ name ++ "."
 ```
 
 Elm has simpler syntax because it's a simpler language, with many fewer features than JavaScript. That simplicity is a feature: Elm is designed not to give you rope enough to hang yourself.
@@ -87,8 +87,8 @@ sayHello : String -> String
 sayHello name =
     if name == "Kevin" then
         "Hi, Kev!"
-        else
-                "Hello, " ++ name ++ "."
+    else
+        "Hello, " ++ name ++ "."
 ```
 
 Beyond this simple, functional, statically-typed language, Elm comes "batteries included" for building web apps, with virtual DOM rendering, managed state, effects, and subscriptions, and almost everything else you might need built in.
