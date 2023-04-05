@@ -50,7 +50,7 @@ A quick refresher on Elm, in case it's new to you: [Elm](https://elm-lang.org/) 
 
 Whereas JavaScript is full of parentheses and curly braces:
 
-```
+```javascript
 const greeting = sayHello("Kevin");
 
 function sayHello(name) {
@@ -63,7 +63,7 @@ function sayHello(name) {
 
 Elm is considerably less cluttered:
 
-```
+```elm
 greeting =
     sayHello "Kevin"
 
@@ -78,7 +78,7 @@ Elm has simpler syntax because it's a simpler language, with many fewer features
 
 One feature Elm *does* have is a static type system. In the code sample above, Elm will infer and enforce that `sayHello` must be called with a `String` argument. You can also (and should) declare your functions' types to help Elm catch your mistakes where you make them:
 
-```
+```elm
 greeting : String
 greeting =
     sayHello "Kevin"
