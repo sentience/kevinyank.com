@@ -193,7 +193,7 @@ Once all those conversations were done, I sat down and wrote a request for feedb
 >
 > Thanks, Campers!
 
-A couple of engineers chimed in with their thoughts, one of them was a deep and thoughtful analysis of the benefits of Elm, and why we weren't feeling them at Culture Amp:
+A couple of engineers chimed in with their thoughts. [Louis Quinnell](https://ziorobo.co) from our Front End Foundations team posted this deep and thoughtful analysis of the benefits of Elm, and why we weren't feeling them at Culture Amp:
 
 > I think Elm is great. It’s the reason I became interested in Culture Amp — I first contacted @kevin over the Elm slack!
 >
