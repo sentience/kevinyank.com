@@ -7,18 +7,18 @@ pagination:
   alias: tag
 permalink: "tags/{{ tag.tagName | slugify }}/{% if tag.pageNumber > 0 %}page/{{ tag.pageNumber | plus: 1 }}/{% endif %}"
 ---
-<h1 class="page-inset-margin my-8">
+<h1 class="page-inset-margin my-8 max-is-prose xl:mli-auto">
   Recent articles in {{ tag.tagName }}
   {% if tag.pageData.length > 0 %}
     (page {{ tag.pageNumber | plus: 1 }} of {{ tag.pageCount }})
   {% endif %}
 </h1>
 
-<ol class="posts page-inset-margin my-8">
+<ol class="page-inset-margin max-is-prose xl:mli-auto">
   {% for post in tag.pageData %}
-    <li>
-      <span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>
-      <a class="post-link" href="{{ post.url }}">{{ post.data.title }}</a>
+    <li class="my-8">
+      <span class="block text-sm text-gray-500 dark:text-gray-400">{{ post.date | date: '%b %-d, %Y' }}</span>
+      <a class="post-link text-2xl leading-none tracking-tight" href="{{ post.url }}">{{ post.data.title }}</a>
       <p>
         {% if post.data.excerpt %}
           {{ post.data.excerpt | remove: '<p>' | remove: '</p>' }}
@@ -30,7 +30,7 @@ permalink: "tags/{{ tag.tagName | slugify }}/{% if tag.pageNumber > 0 %}page/{{ 
   {% endfor %}
 </ol>
 
-<div class="pagination page-inset-margin my-8">
+<div class="pagination page-inset-margin my-8 max-is-prose xl:mli-auto">
   {% if tag.pageNumber > 0 %}
     {% assign previousPage = tag.pageNumber | minus: 1 %}
     <a
