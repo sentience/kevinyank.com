@@ -22,8 +22,6 @@ permalink: "tags/{{ tag.tagName | slugify }}/{% if tag.pageNumber > 0 %}page/{{ 
       <p>
         {% if post.data.excerpt %}
           {{ post.data.excerpt | remove: '<p>' | remove: '</p>' }}
-        {% else %}
-          {{ post.templateContent | remove: '<p>' | remove: '</p>' }}
         {% endif %}
       </p>
     </li>
