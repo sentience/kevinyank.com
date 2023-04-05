@@ -22,7 +22,15 @@ featuredImgBorder: true
 
 From time to time someone will ask, "Does Culture Amp still use Elm?" I'll answer privately that no, we are no longer investing in Elm, and explain why. Invariably, they tell me my answer was super valuable, and that I should share it publicly. Until now, I haven't.
 
-We began to use [Elm](https://elm-lang.org/) at [Culture Amp](https://www.cultureamp.com/) in 2016, first as a single-team experiment, then eventually as our preferred language for new front end code. I have told that story publicly in three conference talks: [Elm in Production: Surprises & Pain Points](https://www.youtube.com/watch?v=LZj_1qVURL0), [Developer Happiness on the Front End with Elm](https://www.youtube.com/watch?v=kuOCx0QeQ5c), and [Elm at Scale: More Surprises, More Pain Points](https://www.youtube.com/watch?v=uQjivmLan0E). I hosted and produced the [Elm Town Podcast](https://elmtown.simplecast.com/) for 20 episodes from mid-2018 to mid-2020, and helped organise the [Elm Melbourne](https://web.archive.org/web/20191007045331/https://www.meetup.com/Elm-Melbourne/) meetup at our office until it ended due to COVID-19.
+We began to use [Elm](https://elm-lang.org/) at [Culture Amp](https://www.cultureamp.com/) in 2016, first as a single-team experiment, then eventually as our preferred language for new front end code. I have told that story publicly in three conference talks: [Elm in Production: Surprises & Pain Points](https://www.youtube.com/watch?v=LZj_1qVURL0), [Developer Happiness on the Front End with Elm](https://www.youtube.com/watch?v=kuOCx0QeQ5c), and [Elm at Scale: More Surprises, More Pain Points](https://www.youtube.com/watch?v=uQjivmLan0E).
+
+{% include youtube video="LZj_1qVURL0" caption="Early 2017" %}
+
+{% include youtube video="kuOCx0QeQ5c" caption="Late 2017" %}
+
+{% include youtube video="uQjivmLan0E" caption="Early 2018" %}
+
+ I hosted and produced the [Elm Town Podcast](https://elmtown.simplecast.com/) for 20 episodes from mid-2018 to mid-2020, and helped organise the [Elm Melbourne](https://web.archive.org/web/20191007045331/https://www.meetup.com/Elm-Melbourne/) meetup at our office until it ended due to COVID-19.
 
 I've spoken a lot about Elm over the years. Why not speak about our move away from it?
 

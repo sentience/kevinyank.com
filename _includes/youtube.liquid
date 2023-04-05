@@ -1,4 +1,11 @@
-<figure>
-  <iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/{{ include.video }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  <figcaption>{{ include.caption }}</figcaption>
+<figure class="relative w-full mbe-12 pbe-[56.25%]">
+  <iframe
+    class="absolute inset-0 h-full w-full"
+    src="https://www.youtube-nocookie.com/embed/{{ include.video }}?rel=0&amp;showinfo=0"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
+  <figcaption class="absolute text-center text-sm font-light is-full pbs-4 block-start-full">
+    {{ include.caption }}
+  </figcaption>
 </figure>
