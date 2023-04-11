@@ -169,11 +169,11 @@ Internally, the writing was on the wall too. The breaking changes of Elm 0.18 �
 
 As I recognised the decision to be made, I made a list of the engineers I knew were most passionate about Elm in our company. They were the ones who joined us because they met us at an Elm meetup, or who volunteered to pair with engineers when they were stuck on an Elm problem. They were the tech leads of teams that still shipped new features in Elm every day. It was a list of about 6 people. I scheduled a 1-on-1 with each to them to talk about the challenge of making Elm successful at Culture Amp, and the feeling I had that it might be time to retire it as a choice for new projects.
 
-Culture Amp's engineering leadership maintains an internal "Tech Radar" that lists technologies in four categories: "adopt", "experiment", "contain", and "hold." Here's the definition we have for "contain" if you're curious:
+Culture Amp's engineering leadership maintains an internal "Tech Radar" that lists technologies in four categories: "adopt", "experiment", "contain", and "hold." I let these engineers know that I was thinking about moving Elm from "adopt" to "contain", I asked them what they thought, and I listened.
+
+Here's the definition we have for "contain" if you're curious:
 
 > Either this technology has been approved only for a very specific context or use case, or we believe there are better “adopt” choices for most new projects. Teams that own assets built using these technologies must still support them and may even need to extend them.
-
-I let these engineers know that I was thinking about moving Elm from "adopt" to "contain", I asked them what they thought, and I listened.
 
 Every single one of them said they understood and agreed with the decision. The ones who owned active Elm codebases offered constructive suggestions as to how we might mitigate the impact on them (for example, one suggested they could move all the Elm components from the design system into their repository, effectively creating a fork that they would maintain for the lifespan of their codebase).
 
