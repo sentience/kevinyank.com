@@ -1,6 +1,6 @@
 ---
 date: 2023-04-22T21:59:12+10:00
-title: "Subspace Radio #28: Surrender"
+title: "Subspace Radio #28: We Hardly Knew Ye"
 visibility: public
 tags:
   - Star Trek

@@ -1,6 +1,6 @@
 ---
 date: 2023-04-30T19:48:27+10:00
-title: "Subspace Radio #29: Võx"
+title: "Subspace Radio #29: DNA Shenanigans"
 visibility: public
 tags:
   - Star Trek
