@@ -75,7 +75,33 @@ async function notifyNewEpisodes(show, newEpisodes) {
 }
 
 function getNotifiers() {
-  return [getPushoverNotifier(), getSlackNotifier()].filter((item) => !!item);
+  return [getDiscordNotifier(), getPushoverNotifier()].filter((item) => !!item);
+}
+
+function getDiscordNotifier() {
+  if (!process.env.SNE_DISCORD_WEBHOOK_URL) return;
+
+  return (show, { episode, title, url, airdate }) => {
+    const episodeNumber = `S${show.current_season}E${episode.padStart(2, "0")}`;
+
+    return fetch(process.env.SNE_DISCORD_WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+      body: JSON.stringify({
+        content:
+          `## ${show.name}\n` +
+          `${episodeNumber}: _${title}_ is now available\n` +
+          `[Watch on Paramount+](${url})`,
+        thread_name: `${show.name} ${episodeNumber}: ${title}`,
+      }),
+    })
+      .then(() => {
+        console.debug("Sent Discord notification");
+      })
+      .catch((err) => {
+        console.error("Error sending Discord notification", err);
+      });
+  };
 }
 
 function getPushoverNotifier() {
