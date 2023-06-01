@@ -175,9 +175,9 @@ async function setKnownEpisodes(show, episodes) {
 const SHOWS = [
   {
     name: "Star Trek: Strange New Worlds",
-    current_season: 1,
+    current_season: 2,
     season_json:
-      "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/xhr/episodes/page/0/size/18/xs/0/season/1/",
+      "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/xhr/episodes/page/0/size/18/xs/0/season/2/",
     redis_key: "strange-new-episodes",
     notifications: true,
   },
@@ -195,7 +195,7 @@ const SHOWS = [
     season_json:
       "https://www.paramountplus.com/shows/star-trek-picard/xhr/episodes/page/0/size/18/xs/0/season/3/",
     redis_key: "picard-episodes",
-    notifications: true,
+    notifications: false,
   },
   {
     name: "Star Trek: Prodigy",
