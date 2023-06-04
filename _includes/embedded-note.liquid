@@ -1,6 +1,6 @@
-<div id="{{ note.fileSlug }}" class="relative is-fit max-is-max mlb-4 pis-20">
+<div id="{{ note.fileSlug }}" class="relative ps-20 is-fit max-is-max mlb-4">
   <img
-    class="absolute h-14 w-14 block-start-0 inline-start-0"
+    class="absolute start-0 h-14 w-14 block-start-0"
     src="/assets/images/avatar_320.jpg"
     alt="Quoted note:"
   >
@@ -9,7 +9,7 @@
       bg-gray-200 dark:bg-gray-700 rounded-lg overflow-visible plb-2 pli-3
       {% #arrow -%}
       relative
-      before:absolute before:border-transparent before:mbs-4 before:-inline-start-4 before:border-ie-[1rem] before:border-bs-[0.25rem] before:border-be-[0.5rem] before:border-ie-gray-200 dark:before:border-ie-gray-700
+      before:absolute before:-start-4 before:border-e-[1rem] before:border-transparent before:border-e-gray-200 before:mbs-4 before:border-be-[0.5rem] before:border-bs-[0.25rem] dark:before:border-e-gray-700
     "
   >
     {{- note.templateContent -}}

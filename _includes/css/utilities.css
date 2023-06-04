@@ -37,8 +37,8 @@
   .border,
   .border-be,
   .border-bs,
-  .border-ie,
-  .border-is,
+  .border-e,
+  .border-s,
   .border-lb,
   .border-li {
     @apply dark:border-gray-600;

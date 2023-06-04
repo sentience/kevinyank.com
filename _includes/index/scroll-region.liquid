@@ -10,7 +10,7 @@
       {% #invisible horizontal scrollbar %}
       overflow-x-scroll overflow-y-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
       {% #scroll snapping %}
-      snap-x snap-mandatory [scroll-padding-inline-start:1rem] sm:[scroll-padding-inline-start:3rem]
+      snap-x snap-mandatory scroll-ps-4 sm:scroll-ps-12
       {% #focus ring %}
       focus-visible:bg-theme-200 focus-visible:outline-none dark:focus-visible:bg-theme-900
     "
@@ -35,8 +35,8 @@
   </script>
   <div
     class="
-      page-inset-padding flex gap-2 text-theme-700 bs-6 dark:text-theme-500 [&>:hover]:text-theme-500 dark:[&>:hover]:text-theme-300
-      [&>:active]:text-black dark:[&>:active]:text-white
+      page-inset-padding flex gap-2 text-theme-700 bs-6 dark:text-theme-500 [&>:active]:text-black dark:[&>:active]:text-white
+      [&>:hover]:text-theme-500 dark:[&>:hover]:text-theme-300
     "
   >
     <button

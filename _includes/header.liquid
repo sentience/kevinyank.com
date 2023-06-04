@@ -1,6 +1,6 @@
 <header class="page-inset-margin relative flex items-start justify-between md:min-h-14 md:items-baseline">
   <div>
-    <h1 class="text-2xl font-extrabold mis-14 pis-2">
+    <h1 class="ms-14 ps-2 text-2xl font-extrabold">
       <a
         href="/"
         {% if page.url == '/' %}
@@ -12,11 +12,11 @@
       </a>
     </h1>
     <img
-      class="absolute h-14 w-14 block-start-0 inline-start-0"
+      class="absolute start-0 h-14 w-14 block-start-0"
       src="/assets/images/avatar_320.jpg"
       alt=""
     >
-    <ul class="flex gap-3 text-sm mis-14 pis-2">
+    <ul class="ms-14 flex gap-3 ps-2 text-sm">
       <li>
         <a href="mailto:hello@kevinyank.com">email</a>
       </li>
@@ -26,12 +26,12 @@
     </ul>
   </div>
 
-  <nav class="menu-button-links absolute z-10 rounded-md border border-gray-200 bg-white inline-end-0 dark:border-gray-700 dark:bg-gray-800 md:static md:border-0 md:bg-transparent">
+  <nav class="menu-button-links absolute end-0 z-10 rounded-md border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800 md:static md:border-0 md:bg-transparent">
     <button
       id="nav-menu-button"
       aria-haspopup="true"
       aria-controls="nav-menu"
-      class="flex h-9 w-9 items-center justify-center rounded-md text-center text-2xl no-underline ring-offset-white mis-auto mie-0 focus-visible:bg-theme-100 focus-visible:outline-none focus-visible:ring focus-visible:ring-theme-600 focus-visible:ring-offset-2 dark:ring-offset-gray-900 dark:focus-visible:bg-theme-900 md:hidden"
+      class="me-0 ms-auto flex h-9 w-9 items-center justify-center rounded-md text-center text-2xl no-underline ring-offset-white focus-visible:bg-theme-100 focus-visible:outline-none focus-visible:ring focus-visible:ring-theme-600 focus-visible:ring-offset-2 dark:ring-offset-gray-900 dark:focus-visible:bg-theme-900 md:hidden"
     >
       <svg
         class="h-4 w-[1.125rem]"
@@ -58,7 +58,7 @@
         <a
           role="menuitem"
           href="/notes/"
-          class="block px-2 text-end md:inline md:px-0 md:mis-10"
+          class="block px-2 text-end md:ms-10 md:inline md:px-0"
           >Notes</a
         >
       </li>
@@ -66,7 +66,7 @@
         <a
           role="menuitem"
           href="/blog/"
-          class="block px-2 text-end md:inline md:px-0 md:mis-10"
+          class="block px-2 text-end md:ms-10 md:inline md:px-0"
           >Articles</a
         >
       </li>
@@ -74,7 +74,7 @@
         <a
           role="menuitem"
           href="/about/"
-          class="block px-2 text-end md:inline md:px-0 md:mis-10"
+          class="block px-2 text-end md:ms-10 md:inline md:px-0"
           >About</a
         >
       </li>
