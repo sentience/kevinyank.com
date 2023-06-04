@@ -1,7 +1,7 @@
 <header
   class="
     scroll-region__item flex-none snap-start
-    is-80 sm:is-96 plb-2 pie-10 sm:pie-20 pis-2
+    is-80 sm:is-96 plb-2 pe-10 sm:pe-20 ps-2
     bg-theme-700 text-white
 
     {% #reversed links %}
@@ -9,22 +9,22 @@
   "
 >
   <div class="flex flex-col bs-full">
-    <h1 class="text-6xl font-black -mie-10">{{ title }}</h1>
+    <h1 class="-me-10 text-6xl font-black">{{ title }}</h1>
     <p class="font-serif text-lg italic leading-tight mbe-auto">
       {{ tagLine }}
     </p>
     {% if blurb %}
-      <p class="text-sm font-light mbs-8 mbe-0 before:block before:border-white before:bs-2 before:is-14 before:border-bs-2">
+      <p class="text-sm font-light mbe-0 mbs-8 before:block before:border-white before:bs-2 before:is-14 before:border-bs-2">
         {{ blurb }}
       </p>
     {% endif %}
   </div>
 </header>
-<div class="sticky flex-none bg-theme-700 is-2 -inline-start-4 sm:is-4 sm:-inline-start-12"></div>
+<div class="sticky -start-4 flex-none bg-theme-700 is-2 sm:-start-12 sm:is-4"></div>
 
 {% assign latestFeatured = articles | where: 'data.featured' | last %}
 {% if latestFeatured %}
-  <div class="flex flex-none -scroll-m-12 items-start gap-4 pli-12 plb-2 border-be border-ie group-focus-visible:border-be-transparent sm:gap-10">
+  <div class="flex flex-none -scroll-m-12 items-start gap-4 border-e plb-2 pli-12 border-be group-focus-visible:border-be-transparent sm:gap-10">
     <a
       href="{{ latestFeatured.url }}"
       class="scroll-region__item group/link block snap-start no-underline is-80 hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 sm:is-96 [&:any-link]:text-inherit"
@@ -37,7 +37,7 @@
       >
         Featured article
       </div>
-      <h1 class="inline text-2xl font-bold mie-1">
+      <h1 class="me-1 inline text-2xl font-bold">
         {{- latestFeatured.data.title -}}
       </h1>
       <time
@@ -57,7 +57,7 @@
           >→
           <span
             class="
-              text-theme-700 underline group-visited/link:text-theme-900 group-hover/link:text-white group-focus-visible:text-black  group-focus-visible/link:text-white group-[&:has(+:hover)]/link:text-white
+              text-theme-700 underline group-visited/link:text-theme-900 group-hover/link:text-white group-focus-visible/link:text-white  group-focus-visible:text-black group-[&:has(+:hover)]/link:text-white
               dark:text-theme-500 dark:group-visited/link:text-theme-300 dark:group-hover/link:text-white dark:group-focus-visible/link:text-white
             "
             >Read now</span
@@ -83,7 +83,7 @@
 <div
   class="
     scroll-region__item
-    box-content flex-none snap-start -scroll-m-4 max-is-full plb-2 pis-4 border-be group-focus-visible:border-be-transparent sm:-scroll-m-12 sm:max-is-xl sm:pis-12
+    box-content flex-none snap-start -scroll-m-4 ps-4 max-is-full plb-2 border-be group-focus-visible:border-be-transparent sm:-scroll-m-12 sm:ps-12 sm:max-is-xl
   "
 >
   <h1
@@ -98,7 +98,7 @@
     {% for article in articles reversed limit: 10 %}
       <li class="table-row">
         <time
-          class="table-cell whitespace-nowrap text-sm font-light text-end pie-2"
+          class="table-cell whitespace-nowrap pe-2 text-sm font-light text-end"
           datetime="{{ article.date }}"
         >
           {{- article.date | date: '%b %-d, %Y' -}}
