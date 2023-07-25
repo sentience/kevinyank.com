@@ -59,7 +59,7 @@ async function getKnownEpisodes(show) {
 function getNewEpisodes(current, known) {
   return current.filter(
     (currentEp) =>
-      !known.find((knownEp) => currentEp.episode === knownEp.episode)
+      !known.find((knownEp) => currentEp.episode === knownEp.episode),
   );
 }
 
@@ -69,8 +69,8 @@ async function notifyNewEpisodes(show, newEpisodes) {
   const notifiers = getNotifiers();
   return await Promise.allSettled(
     newEpisodes.flatMap((newEpisode) =>
-      notifiers.map((notifier) => notifier(show, newEpisode))
-    )
+      notifiers.map((notifier) => notifier(show, newEpisode)),
+    ),
   );
 }
 
@@ -114,7 +114,7 @@ function getPushoverNotifier() {
     return (show, { episode, title, url, airdate }) => {
       const episodeNumber = `S${show.current_season}E${episode.padStart(
         2,
-        "0"
+        "0",
       )}`;
       return new Promise(function (resolve, reject) {
         p.send(
@@ -127,7 +127,7 @@ function getPushoverNotifier() {
           (err, result) => {
             if (err) reject(err);
             else resolve(result);
-          }
+          },
         );
       })
         .then(() => {
@@ -147,7 +147,7 @@ function getSlackNotifier() {
     return (show, { episode, title, url, airdate }) => {
       const episodeNumber = `S${show.current_season}E${episode.padStart(
         2,
-        "0"
+        "0",
       )}`;
       return webhook
         .send({
