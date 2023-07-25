@@ -1,6 +1,6 @@
 @layer base {
   button {
-    cursor: default;
+    @apply cursor-default;
   }
 
   /* Default link styles */

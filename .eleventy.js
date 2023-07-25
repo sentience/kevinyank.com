@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   setUpMarkdown(eleventyConfig);
   setUpCollections(eleventyConfig);
 
+  eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
   eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy(".well-known");
@@ -12,6 +13,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/scripts");
   eleventyConfig.addPassthroughCopy("assets/videos");
   eleventyConfig.addPassthroughCopy("assets/wp-content");
+  eleventyConfig.addPassthroughCopy({
+    "_tmp/styles.css": "assets/styles/styles.css",
+  });
   eleventyConfig.addPassthroughCopy({
     "node_modules/seamless-scroll-polyfill/lib/bundle.min.cjs":
       "assets/scripts/seamless-scroll-polyfill/bundle.min.js",
@@ -30,11 +34,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
-  eleventyConfig.addPlugin(require("eleventy-plugin-postcss"));
   eleventyConfig.addPlugin(require("eleventy-plugin-time-to-read"));
-  eleventyConfig.addPlugin(
-    require("@mightyplow/eleventy-plugin-cache-buster")({})
-  );
 
   return {
     dir: {
