@@ -1,13 +1,12 @@
 ---
 # per https://www.11ty.dev/docs/quicktips/tag-pages/
-layout: default
 pagination:
   data: collections.tagPages
   size: 1
   alias: tag
 permalink: "tags/{{ tag.tagName | slugify }}/{% if tag.pageNumber > 0 %}page/{{ tag.pageNumber | plus: 1 }}/{% endif %}"
 ---
-<h1 class="page-inset-margin my-8 max-is-prose xl:mli-auto">
+<h1 class="page-inset-margin max-is-prose xl:mli-auto my-8">
   Recent articles in {{ tag.tagName }}
   {% if tag.pageData.length > 0 %}
     (page {{ tag.pageNumber | plus: 1 }} of {{ tag.pageCount }})
@@ -28,7 +27,7 @@ permalink: "tags/{{ tag.tagName | slugify }}/{% if tag.pageNumber > 0 %}page/{{ 
   {% endfor %}
 </ol>
 
-<div class="pagination page-inset-margin my-8 max-is-prose xl:mli-auto">
+<div class="pagination page-inset-margin max-is-prose xl:mli-auto my-8">
   {% if tag.pageNumber > 0 %}
     {% assign previousPage = tag.pageNumber | minus: 1 %}
     <a

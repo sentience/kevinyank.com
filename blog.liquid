@@ -1,5 +1,4 @@
 ---
-layout: default
 pagination:
   data: collections.post
   reverse: true
@@ -7,7 +6,7 @@ pagination:
   alias: posts
 permalink: "/blog/{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
 ---
-<h1 class="page-inset-margin my-8 max-is-prose xl:mli-auto">
+<h1 class="page-inset-margin max-is-prose xl:mli-auto my-8">
   Recent articles
   {% if pagination.hrefs.length > 0 %}
     (page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.hrefs.length }})
@@ -28,7 +27,7 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumb
   {% endfor %}
 </ol>
 
-<div class="pagination page-inset-margin my-8 max-is-prose xl:mli-auto">
+<div class="pagination page-inset-margin max-is-prose xl:mli-auto my-8">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}" class="previous">previous</a>
   {% else %}

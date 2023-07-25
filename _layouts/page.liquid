@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 <div class="page-inset-margin max-is-prose xl:mli-auto">
   <header class="post-header">
@@ -11,7 +10,7 @@ layout: default
       post-content
 
       {% #content styles - TODO: convert these to @apply rules %}
-      text-lg [&>blockquote>p]:mlb-4 [&>blockquote]:border-s-4 [&>blockquote]:ps-5 [&>blockquote]:font-light [&>blockquote]:italic [&>blockquote]:tracking-tight [&>blockquote]:text-gray-500 dark:[&>blockquote]:text-gray-400 [&>p]:mlb-4 [&>pre]:overflow-auto [&>pre]:max-is-full [&_:is(h1,h2,h3,h4,h5,h6)]:font-light [&_:is(h1,h2,h3,h4,h5,h6)]:leading-none [&_:is(h1,h2,h3,h4,h5,h6)]:tracking-tight [&_:is(h1,h2,h3,h4,h5,h6)]:mbe-5 [&_:is(h1,h2,h3,h4,h5,h6)]:mbs-10 [&_:is(ul,ol)>li>p]:mlb-2 [&_:is(ul,ol)]:ps-5 sm:[&_:is(ul,ol)]:ps-0 sm:[&_:is(ul,ol)_:is(ul,ol)]:ps-5 [&_h1]:text-4xl sm:[&_h1]:text-5xl [&_h2]:text-3xl [&_h3]:text-2xl [&_h4]:text-xl [&_ol]:list-decimal [&_ul>li]:marker:text-gray-400 [&_ul]:list-disc
+      [&>blockquote>p]:mlb-4 [&>p]:mlb-4 [&>pre]:max-is-full [&_:is(h1,h2,h3,h4,h5,h6)]:mbe-5 [&_:is(h1,h2,h3,h4,h5,h6)]:mbs-10 [&_:is(ul,ol)>li>p]:mlb-2 text-lg [&>blockquote]:border-s-4 [&>blockquote]:ps-5 [&>blockquote]:font-light [&>blockquote]:italic [&>blockquote]:tracking-tight [&>blockquote]:text-gray-500 dark:[&>blockquote]:text-gray-400 [&>pre]:overflow-auto [&_:is(h1,h2,h3,h4,h5,h6)]:font-light [&_:is(h1,h2,h3,h4,h5,h6)]:leading-none [&_:is(h1,h2,h3,h4,h5,h6)]:tracking-tight [&_:is(ul,ol)]:ps-5 sm:[&_:is(ul,ol)]:ps-0 sm:[&_:is(ul,ol)_:is(ul,ol)]:ps-5 [&_h1]:text-4xl sm:[&_h1]:text-5xl [&_h2]:text-3xl [&_h3]:text-2xl [&_h4]:text-xl [&_ol]:list-decimal [&_ul>li]:marker:text-gray-400 [&_ul]:list-disc
     "
   >
     {{ content }}
