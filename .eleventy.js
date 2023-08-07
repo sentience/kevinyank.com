@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   setUpCollections(eleventyConfig);
 
   eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+  eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy(".well-known");
@@ -54,7 +55,7 @@ function setUpLiquid(eleventyConfig) {
   // Import all filters in /lib/filters/index.js
   const filters = require("./lib/filters");
   Object.keys(filters).forEach((filter) =>
-    eleventyConfig.addFilter(filter, filters[filter])
+    eleventyConfig.addFilter(filter, filters[filter]),
   );
 
   // Implement Jekyll's post_url tag
@@ -68,7 +69,7 @@ function setUpLiquid(eleventyConfig) {
         const postFilenameWithoutExtension = `./_posts/${this.str}`;
         const posts = context.environments.collections.post;
         const post = posts.find((p) =>
-          p.inputPath.startsWith(postFilenameWithoutExtension)
+          p.inputPath.startsWith(postFilenameWithoutExtension),
         );
         if (post === undefined) {
           throw new Error(`${this.str} not found in posts collection.`);
@@ -191,7 +192,7 @@ function filterHiddenContent(collection) {
       .filter(
         (item) =>
           process.env.ELEVENTY_ENV !== "production" ||
-          (item.data.published !== false && !item.data.draft)
+          (item.data.published !== false && !item.data.draft),
       )
   );
 }
