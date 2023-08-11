@@ -185,9 +185,9 @@ const SHOWS = [
   {
     abbr: "LD",
     name: "Star Trek: Lower Decks",
-    current_season: 3,
+    current_season: 4,
     season_json:
-      "https://www.paramountplus.com/shows/star-trek-lower-decks/xhr/episodes/page/0/size/18/xs/0/season/3/",
+      "https://www.paramountplus.com/shows/star-trek-lower-decks/xhr/episodes/page/0/size/18/xs/0/season/4/",
     redis_key: "lower-decks-episodes",
     notifications: true,
   },
