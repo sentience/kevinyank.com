@@ -92,7 +92,7 @@ function getDiscordNotifier() {
           `## ${show.name}\n` +
           `${episodeNumber}: _${title}_ is now available\n` +
           `[Watch on Paramount+](${url})`,
-        thread_name: `${show.name} ${episodeNumber}: ${title}`,
+        thread_name: `${show.abbr} ${episodeNumber}: ${title}`,
       }),
     })
       .then(() => {
@@ -174,6 +174,7 @@ async function setKnownEpisodes(show, episodes) {
 
 const SHOWS = [
   {
+    abbr: "SNW",
     name: "Star Trek: Strange New Worlds",
     current_season: 2,
     season_json:
@@ -182,6 +183,7 @@ const SHOWS = [
     notifications: true,
   },
   {
+    abbr: "LD",
     name: "Star Trek: Lower Decks",
     current_season: 3,
     season_json:
