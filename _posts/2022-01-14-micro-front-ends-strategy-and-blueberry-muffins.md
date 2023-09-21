@@ -1,7 +1,7 @@
 ---
 title: Micro Front Ends, Strategy, and Blueberry Muffins
 author: Kevin Yank
-date: '2021-01-14T16:00:00+1000'
+date: '2022-01-14T16:00:00+1000'
 excerpt: As the director of Culture Amp's large-and-growing front end engineering practice, my biggest challenge in the past year was to communicate a coherent strategy that those 60+ engineers could understand and get behind. The solution was <strong>blueberry muffins</strong>. 🫐
 tags:
   - Culture Amp
