@@ -107,7 +107,7 @@ But if you need to pull together a lot of threads into something memorable, do l
 
 There are probably even some non-food-related metaphors to consider; I'm just a little hungry right now. Honestly, I started with chocolate chip cookies until I realised that those aren't baked in a tray of identical cups!
 
-{% render figure, alt="A Slack conversation between Kevin Yank and Louis Quinnell. Kevin writes &quot;Just realised chocolate chip cookies are baked on a flat sheet, not in cupcake-like tins I was imagining. FML. 😆&quot; The thread continues, considering images of muffins placed sideways in a baking tray. Louis suggests &quot;I that this represents the need for docs…&quot;" src: "/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/slack-thread.png", caption: "Working out the kinks with Louis Quinnell, the tech lead for frontend-ops" %}
+{% render figure, alt: "A Slack conversation between Kevin Yank and Louis Quinnell. Kevin writes &quot;Just realised chocolate chip cookies are baked on a flat sheet, not in cupcake-like tins I was imagining. FML. 😆&quot; The thread continues, considering images of muffins placed sideways in a baking tray. Louis suggests &quot;I that this represents the need for docs…&quot;" src: "/assets/images/blog/micro-front-ends-strategy-and-blueberry-muffins/slack-thread.png", caption: "Working out the kinks with Louis Quinnell, the tech lead for frontend-ops" %}
 
 This, like so many things, is an opportunity to create culture. Have some fun with it!
 
