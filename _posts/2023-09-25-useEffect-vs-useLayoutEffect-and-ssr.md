@@ -4,6 +4,7 @@ title: "useEffect vs useLayoutEffect and server-side rendering"
 author: Kevin Yank
 tags:
     - web development
+    - Culture Amp
     - react
 excerpt:
   Why React prints an ugly warning when you call useLayoutEffect on the server,
@@ -79,6 +80,36 @@ to be sent to the browser and shown to the user
 before the client-side app fires up and runs the `useLayoutEffect` to tweak it.
 So React is warning us that the user may see an ugly/broken version of the UI
 that we don't want them to see.
+
+## What's `useLayoutEffect` good for?
+
+When I shared this internally at Culture Amp, several people remarked that
+they couldn't think of any real use cases for `useLayoutEffect`.
+They are indeed rare – more so every year as CSS grows more and more capable –
+but here's a semi-contrived example:
+
+Let's say you wanted to let the browser lay out
+the "natural" height of a `div` based on its content,
+and then use JavaScript to animate it from zero to that "natural" height,
+so it appeared to grow vertically from its top edge,
+revealing its content as it went.
+
+You wouldn't want the user to see a "flash" of the full-height `div`
+before you set its height back to zero for the start of the animation.
+`useEffect` would display that flash,
+whereas `useLayoutEffect` would let you inspect the height of the rendered `div`
+and then adjust it before the user got to see it.
+
+In this case, the warning from React would be telling us that
+the user would see the flash,
+because the full-height `div` is getting rendered on the server,
+and the height tweak won't be applied by `useLayoutEffect`
+until the JavaScript starts up on the client –
+long after the user got to see the server-rendered version of the page.
+
+[The example given in the official docs](https://react.dev/reference/react/useLayoutEffect#measuring-layout-before-the-browser-repaints-the-screen)
+is also good: it involves calculating the position of a tooltip based on
+the rendered dimensions of the element to which it is attached.
 
 ## See also:
 
