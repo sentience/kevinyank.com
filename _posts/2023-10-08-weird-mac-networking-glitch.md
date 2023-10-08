@@ -10,7 +10,7 @@ excerpt: For months, I've been unable to get to the bottom of a networking issue
 
 For months, I've been unable to get to the bottom of a networking issue that only seems to affect my newest Mac, an M2 MacBook Pro. Immediately after connecting to my home network, it is unable to connect to my Synology NAS server … until suddenly it is.
 
-Here's what it looks like:
+I often notice this because macOS can't mount any SMB shares from the server, nor will Safari let me connect to its web UI. I'll then head to the terminal to try to troubleshoot the issue. Here's what that looks like:
 
 ```console
 > ping 192.168.0.40
