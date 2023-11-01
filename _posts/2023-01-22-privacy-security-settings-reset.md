@@ -53,3 +53,15 @@ Surprisingly, when I do this, after rebooting I find that all my previously-appr
 None of these solutions are permanent. I've steadily gotten used to a reboot of my Mac taking 30 minutes out of my day while I sort out broken macOS permissions. I really hope Apple fixes this (assuming it's their bug) soon!
 
 Are you seeing some version of this issue on your Mac? Please reach out and let me know. The biggest mystery about this for me is whether this is a side-effect of some peculiar aspect of my Mac's setup, or if this is an issue that is affecting everyone using apps that require Accessibility permissions on their Mac.
+
+<ins datetime="2023-11-02T09:46:25+11:00">Update Nov 2, 2023:</ins>
+
+## A clever work-around
+
+Reader Daniel Dornhardt wrote in with a solution that is apparently working for him.
+
+Daniel agrees with my theory that these disappearing permissions are a symptom of a race condition, where too many apps and background processes starting up at once might prevent the Privacy & Security permissions database from initialising correctly at startup. Given this, he wondered, might it be possible to resolve the issue by deferring the launch of some of those apps and background processes to give the permissions database more resources to get ready.
+
+Daniel has used the [Delay Start app](https://apps.apple.com/au/app/delay-start/id591620786), available for free in the Mac App Store, to wait 30 seconds before launching most of his apps that were previously set to open at login. He hasn't experienced the problem of disappearing permissions since doing this.
+
+I haven't tried this myself yet, but I probably will the next time macOS fails to load my permissions at startup. Thanks, Daniel!
