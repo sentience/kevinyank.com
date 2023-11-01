@@ -67,7 +67,7 @@ Are you seeing some version of this issue on your Mac? Please reach out and let 
 
 Reader Daniel Dornhardt wrote in with a solution that is apparently working for him.
 
-Daniel agrees with my theory that these disappearing permissions are a symptom of a race condition, where too many apps and background processes starting up at once might prevent the Privacy & Security permissions database from initialising correctly at startup. Given this, he wondered, might it be possible to resolve the issue by deferring the launch of some of those apps and background processes to give the permissions database more resources to get ready.
+Daniel agrees with my theory that these disappearing permissions are a symptom of a race condition, where too many apps and background processes starting up at once might prevent the Privacy & Security permissions database from initialising correctly at startup. Given this, he wondered, might it be possible to resolve the issue by deferring the launch of some of those apps and background processes to give the permissions database more resources to get ready?
 
 Daniel has used the [Delay Start app](https://apps.apple.com/au/app/delay-start/id591620786), available for free in the Mac App Store, to wait 30 seconds before launching most of his apps that were previously set to open at login. He hasn't experienced the problem of disappearing permissions since doing this.
 
