@@ -4,7 +4,7 @@ title: "Help! Storybook is eating all our tests!"
 author: Kevin Yank
 tags:
     - Culture Amp
-    - React
+    - react
     - speaking
     - web development
 excerpt:
