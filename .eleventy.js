@@ -5,7 +5,7 @@ import markdownItAnchor from "markdown-it-anchor";
 import MarkdownIt from "markdown-it";
 import filters from "./lib/filters.js";
 
-/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+/** @param { import("@11ty/eleventy/src/UserConfig.js") } eleventyConfig */
 export default function (eleventyConfig) {
   setUpLiquid(eleventyConfig);
   setUpMarkdown(eleventyConfig);
