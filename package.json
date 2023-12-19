@@ -42,7 +42,7 @@
     "tailwindcss-logical": "^3.0.1"
   },
   "dependencies": {
-    "@slack/webhook": "^6.1.0",
+    "@slack/webhook": "^7.0.1",
     "ioredis": "^5.3.2",
     "node-fetch": "^3.3.1",
     "pushover-notifications": "^1.2.2"
