@@ -1,5 +1,12 @@
+import eleventyPluginRSS from "@11ty/eleventy-plugin-rss";
+import eleventyPluginTimeToRead from "eleventy-plugin-time-to-read";
+import highlightJs from "highlight.js";
+import markdownItAnchor from "markdown-it-anchor";
+import MarkdownIt from "markdown-it";
+import filters from "./lib/filters.js";
+
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   setUpLiquid(eleventyConfig);
   setUpMarkdown(eleventyConfig);
   setUpCollections(eleventyConfig);
@@ -34,15 +41,15 @@ module.exports = function (eleventyConfig) {
       "assets/styles/highlight.js/github-dark.css",
   });
 
-  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
-  eleventyConfig.addPlugin(require("eleventy-plugin-time-to-read"));
+  eleventyConfig.addPlugin(eleventyPluginRSS);
+  eleventyConfig.addPlugin(eleventyPluginTimeToRead);
 
   return {
     dir: {
       layouts: "_layouts",
     },
   };
-};
+}
 
 function setUpLiquid(eleventyConfig) {
   // Support unquoted filenames and a=b arguments in include tags like Jekyll
@@ -53,7 +60,6 @@ function setUpLiquid(eleventyConfig) {
   });
 
   // Import all filters in /lib/filters/index.js
-  const filters = require("./lib/filters");
   Object.keys(filters).forEach((filter) =>
     eleventyConfig.addFilter(filter, filters[filter]),
   );
@@ -82,10 +88,10 @@ function setUpLiquid(eleventyConfig) {
 }
 
 function setUpMarkdown(eleventyConfig) {
-  const anchor = require("markdown-it-anchor");
-  const hljs = require("highlight.js");
+  const anchor = markdownItAnchor;
+  const hljs = highlightJs;
 
-  let markdownIt = require("markdown-it")({
+  let markdownIt = MarkdownIt({
     highlight: function (str, lang) {
       if (lang && hljs.getLanguage(lang)) {
         try {

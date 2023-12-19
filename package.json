@@ -2,6 +2,7 @@
   "name": "kevinyank.com",
   "version": "1.0.0",
   "description": "Kevin Yank's personal website",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:postcss && npm run build:eleventy",
@@ -23,7 +24,7 @@
   "license": "UNLICENSED",
   "homepage": "https://kevinyank.com/",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "3.0.0-alpha.2",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@netlify/functions": "^1.6.0",
     "@shopify/prettier-plugin-liquid": "^1.1.0",
