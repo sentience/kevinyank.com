@@ -1,3 +1,4 @@
+import { UserConfig } from "@11ty/eleventy";
 import eleventyPluginRSS from "@11ty/eleventy-plugin-rss";
 import eleventyPluginTimeToRead from "eleventy-plugin-time-to-read";
 import highlightJs from "highlight.js";
@@ -5,7 +6,7 @@ import markdownItAnchor from "markdown-it-anchor";
 import MarkdownIt from "markdown-it";
 import filters from "./lib/filters.js";
 
-/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+/** @param {UserConfig} eleventyConfig */
 export default function (eleventyConfig) {
   setUpLiquid(eleventyConfig);
   setUpMarkdown(eleventyConfig);
