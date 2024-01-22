@@ -1,21 +1,24 @@
 ---
-date: 2024-01-15T17:22:37+11:00
-title: "How I learned to stop worrying and love the Tailwind prefix option"
+date: 2024-01-22T13:22:54+11:00
+title: "Use TailwindCSS prefixes for shared design system components"
 author: Kevin Yank
 tags:
-    - Culture Amp
-    - design systems
-    - Tailwind
-    - web development
-excerpt:
-  Tailwind works by generating a minimal set of CSS rules for the styles needed by your app and its components. But what happens when you share a component library between multiple apps?
-
-  Tailwind's Prefix option is designed so solve this problem, but it's a somewhat ugly solution, so we did our best to avoid it. Here's what we learned.
+  - Culture Amp
+  - design systems
+  - Tailwind
+  - web development
+excerpt: Surprisingly little has been written about how to use Tailwind with design systems or shared components, when both those components and the app consuming them are styled with Tailwind. Tailwind's `prefix` option is specifically designed to allow for this, but it's a somewhat ugly solution that we did our best to avoid at Culture Amp until recently. Here's everything we learned, and why we're ultimately embracing `prefix`.
 featured: true
-featureImg: /assets/images/blog/help-storybook-is-eating-all-our-tests/godzilla.jpg
-featureImgAlt: Godzilla roars as helicopters and paratroopers float in the air around it
+featureImg: /assets/images/blog/use-tailwindcss-prefixes-for-shared-design-system-components/khamkeo-vilaysing-WtwSsqwYlA0-unsplash-1152.jpg
+featureImgAlt: A leafy tree is buffeted by a strong wind. In the foggy background of the windswept landscape, a second, nearly identical tree can barely be seen.
 featuredImgBorder: false
 ---
+
+{% render figure,
+  src: "/assets/images/blog/use-tailwindcss-prefixes-for-shared-design-system-components/khamkeo-vilaysing-WtwSsqwYlA0-unsplash.jpg",
+  alt: "A leafy tree is buffeted by a strong wind. In the foggy background of the windswept landscape, a second, nearly identical tree can barely be seen.",
+  caption: "Photo by <a href='https://unsplash.com/@mahkeo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Khamkéo Vilaysing</a> on <a href='https://unsplash.com/photos/trees-with-wind-photo-WtwSsqwYlA0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"
+%}
 
 Surprisingly little has been written about how to use Tailwind with design systems or shared components, when both those components and the app consuming them are styled with Tailwind. Tailwind's [`prefix` option](https://tailwindcss.com/docs/configuration#prefix) is specifically designed to allow for this, but it's a somewhat ugly solution that we did our best to avoid at Culture Amp until recently. Here's everything we learned, and why we're ultimately embracing `prefix`.
 
@@ -26,7 +29,7 @@ Surprisingly little has been written about how to use Tailwind with design syste
 Fundamentally, Tailwind scans your application's source code for class names like this:
 
 ```html
-<div class="m-0">
+<div class="m-0"></div>
 ```
 
 …and generates a stylesheet that contains only the necessary styles to match the classes you've used:
@@ -40,7 +43,7 @@ Fundamentally, Tailwind scans your application's source code for class names lik
 While at first glance this looks like it would have all the downsides of inline styles (the `style` attribute), Tailwind has designed a remarkably robust language of class names that can cover just about any selector, property, or value you need. Inline styles can't do pseudo-class selectors or media queries, but Tailwind can:
 
 ```html
-<div class="dark:hover:bg-sky-500/25">
+<div class="dark:hover:bg-sky-500/25"></div>
 ```
 
 ```css
@@ -72,6 +75,7 @@ At first, it would seem that it's safe to combine two Tailwind-built stylesheets
 ```html
 <div class="m-0">This is a shared component</div>
 ```
+
 ```css
 .m-0 {
   margin: 0px;
@@ -83,6 +87,7 @@ And then your application also uses `m-0`:
 ```html
 <div class="m-0">This is my application.</div>
 ```
+
 ```css
 .m-0 {
   margin: 0px;
@@ -95,6 +100,7 @@ When you use the shared component in your application, you get something like th
 <div class="m-0">This is my application.</div>
 <div class="m-0">This is a shared component</div>
 ```
+
 ```css
 /* shared component styles */
 .m-0 {
@@ -174,7 +180,7 @@ There's actually a more subtle (and fatal) issue lurking here: Tailwind is desig
 Let's consider again our zero-margin `div`:
 
 ```html
-<div class="m-0">
+<div class="m-0"></div>
 ```
 
 ```css
@@ -199,7 +205,7 @@ The order of the property declarations in the above is significant: if you swapp
 In Tailwind, you can likewise override a shorthand class like `m-0` with a specific class like `ms-4`:
 
 ```html
-<div class="m-0 ms-4">
+<div class="m-0 ms-4"></div>
 ```
 
 ```css
@@ -216,7 +222,7 @@ But the critical thing to observe here is that **the order of the class names in
 If we swapped the order of the class names in the HTML:
 
 ```html
-<div class="ms-4 m-0">
+<div class="m-0 ms-4"></div>
 ```
 
 …the left margin would still override the `m-0`, because Tailwind still generates the two CSS rules in the order that ensures the more fine-grained style (the left margin) is applied after the more coarse-grained style (the margin on all four sides):
@@ -236,6 +242,7 @@ Now, take this observation that the source order of rules generated by Tailwind 
 <div class="m-0">This is my application.</div>
 <div class="m-0 ms-4">This is a shared component</div>
 ```
+
 ```css
 /* shared component styles */
 .m-0 {
@@ -258,6 +265,7 @@ Once again, you can solve this specific instance by swapping the order of the tw
 <div class="m-0 ms-4">This is my application.</div>
 <div class="m-0">This is a shared component</div>
 ```
+
 ```css
 /* application styles */
 .m-0 {
@@ -278,6 +286,7 @@ If you're at all tempted to try doing without shorthand styles (e.g. avoid `m-0`
 <div class="m-0 md:m-4">This is my application</div>
 <div class="m-0">This is a shared component</div>
 ```
+
 ```css
 /* application styles */
 .m-0 {
@@ -320,6 +329,7 @@ First of all, `!important` is a very sharp knife, and is [best avoided](https://
 <div class="m-0">This is my application.</div>
 <div class="m-0 !ms-4">This is a shared component</div>
 ```
+
 ```css
 /* shared component styles */
 .m-0 {
@@ -342,6 +352,7 @@ What if we made _all_ our component styles important? Tailwind even offers [a co
 <div class="m-0">This is my application.</div>
 <div class="m-0 ms-4">This is a shared component</div>
 ```
+
 ```css
 /* shared component styles */
 .m-0 {
@@ -362,6 +373,7 @@ Well, this is just equivalent to putting our shared component styles at the end 
 <div class="m-0 ms-4">This is my application.</div>
 <div class="m-0">This is a shared component</div>
 ```
+
 ```css
 /* shared component styles */
 .m-0 {
@@ -384,6 +396,7 @@ Tailwind's `important` configuration option also lets you [specify a selector](h
 <div class="m-0">This is my application.</div>
 <div class="m-0 ms-4">This is a shared component</div>
 ```
+
 ```css
 /* shared component styles */
 body :is(.m-0) {
@@ -404,6 +417,7 @@ Here, setting `important` to `'body'` again appears to fix the problem because t
 <div class="m-0 ms-4">This is my application.</div>
 <div class="m-0">This is a shared component</div>
 ```
+
 ```css
 /* shared component styles */
 body :is(.m-0) {
@@ -426,6 +440,7 @@ A relatively new but now widely-supported addition to browsers, the [`@layer` CS
 <div class="m-0">This is my application.</div>
 <div class="m-0 ms-4">This is a shared component</div>
 ```
+
 ```css
 @layer application-styles, component-styles;
 
@@ -455,6 +470,7 @@ Remember [at the start of this article](#the-naive-approach) when we noted that 
 <div class="m-0">This is my application.</div>
 <div class="m-0 ms-4">This is a shared component</div>
 ```
+
 ```css
 /* shared component styles */
 .m-0 {
@@ -474,6 +490,7 @@ With a slightly tweaked example where the duplicate style is the fine-grained st
 <div class="m-2 ms-4">This is my application.</div>
 <div class="m-0 ms-4">This is a shared component</div>
 ```
+
 ```css
 /* shared component styles */
 .m-0 {
@@ -516,6 +533,7 @@ For example, we could configure our Kaizen component library with a Tailwind pre
 <div class="m-0">This is my application.</div>
 <div class="kz-m-0 kz-ms-4">This is a shared component</div>
 ```
+
 ```css
 /* shared component styles */
 .kz-m-0 {
