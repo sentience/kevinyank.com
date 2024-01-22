@@ -515,7 +515,7 @@ It's not as if the correct order for the rules is mysterious. It's implemented i
 
 So what if we wrote a PostCSS plug-in that would take the output of two Tailwind builds and merge them together, removing duplicate styles and sorting the remaining styles into the correct order?
 
-This seems like it could work, might even be a relatively straightforward project, and could even be worth Tailwind considering as a core feature. I'll open this as a suggestion on the Tailwind issue tracker soon.
+This seems like it could work, might even be a relatively straightforward project, and could even be worth Tailwind considering as a core feature. I've started [a discussion about this](https://github.com/tailwindlabs/tailwindcss/discussions/12801) on the TailwindCSS GitHub project.
 
 Even if we implemented this, we would still need to accept that our two Tailwind builds would need to have compatible versions and configurations for their merged outputs to work reliably.
 
