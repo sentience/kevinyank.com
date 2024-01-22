@@ -1,38 +1,38 @@
 <header
   class="
-    scroll-region__item flex-none snap-start
-    is-80 sm:is-96 plb-2 pe-10 sm:pe-20 ps-2
-    bg-theme-700 text-white
+    scroll-region__item is-80 sm:is-96
+    plb-2 bg-theme-700 flex-none snap-start pe-10 ps-2
+    text-white sm:pe-20
 
     {% #reversed links %}
-    [&_:any-link]:text-white hover:[&_:any-link]:bg-theme-500 hover:[&_:any-link]:text-white focus-visible:[&_:any-link]:bg-theme-500 focus-visible:[&_:any-link]:text-white focus-visible:[&_:any-link]:ring-theme-200 focus-visible:[&_:any-link]:ring-offset-theme-700
+    hover:[&_:any-link]:bg-theme-500 focus-visible:[&_:any-link]:bg-theme-500 focus-visible:[&_:any-link]:ring-theme-200 focus-visible:[&_:any-link]:ring-offset-theme-700 [&_:any-link]:text-white hover:[&_:any-link]:text-white focus-visible:[&_:any-link]:text-white
   "
 >
-  <div class="flex flex-col bs-full">
+  <div class="bs-full flex flex-col">
     <h1 class="-me-10 text-6xl font-black">{{ title }}</h1>
-    <p class="font-serif text-lg italic leading-tight mbe-auto">
+    <p class="mbe-auto font-serif text-lg italic leading-tight">
       {{ tagLine }}
     </p>
     {% if blurb %}
-      <p class="text-sm font-light mbe-0 mbs-8 before:block before:border-white before:bs-2 before:is-14 before:border-bs-2">
+      <p class="mbe-0 mbs-8 before:bs-2 before:is-14 before:border-bs-2 text-sm font-light before:block before:border-white">
         {{ blurb }}
       </p>
     {% endif %}
   </div>
 </header>
-<div class="sticky -start-4 flex-none bg-theme-700 is-2 sm:-start-12 sm:is-4"></div>
+<div class="bg-theme-700 is-2 sm:is-4 sticky -start-4 flex-none sm:-start-12"></div>
 
 {% assign latestFeatured = articles | where: 'data.featured' | last %}
 {% if latestFeatured %}
-  <div class="flex flex-none -scroll-m-12 items-start gap-4 border-e plb-2 pli-12 border-be group-focus-visible:border-be-transparent sm:gap-10">
+  <div class="plb-2 pli-12 border-be group-focus-visible:border-be-transparent flex flex-none -scroll-m-12 items-start gap-4 border-e sm:gap-10">
     <a
       href="{{ latestFeatured.url }}"
-      class="scroll-region__item group/link block snap-start no-underline is-80 hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 sm:is-96 [&:any-link]:text-inherit"
+      class="scroll-region__item group/link is-80 sm:is-96 block snap-start no-underline hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 [&:any-link]:text-inherit"
     >
       <div
         class="
-          text-sm font-light uppercase text-theme-700
-          dark:text-theme-500 dark:group-focus-visible:text-theme-300
+          text-theme-700 dark:text-theme-500 dark:group-focus-visible:text-theme-300 text-sm
+          font-light uppercase
         "
       >
         Featured article
@@ -41,15 +41,28 @@
         {{- latestFeatured.data.title -}}
       </h1>
       <time
-        class="whitespace-nowrap text-sm font-light text-theme-700 dark:text-theme-500 dark:group-focus-visible:text-theme-300"
+        class="text-theme-700 dark:text-theme-500 dark:group-focus-visible:text-theme-300 whitespace-nowrap text-sm font-light"
         datetime="{{ latestFeatured.date }}"
       >
         {{- latestFeatured.date | date: '%b %-d, %Y' -}}
       </time>
-      <p class="font-serif text-lg leading-tight mbs-4">
-        {{ latestFeatured.data.excerpt | remove: '<p>' | remove: '</p>' }}
+      <p
+        class="
+          mbs-4 font-serif text-lg leading-tight
+          {% #content styles - TODO: convert these to @apply rules %}
+          [&>p]:mlb-4 [&>blockquote>p]:mlb-4 [&>pre]:mlb-4 [&>pre]:max-is-full [&_:is(h1,h2,h3,h4,h5,h6)]:mbs-10 [&_:is(h1,h2,h3,h4,h5,h6)]:mbe-5 [&_:is(ul,ol)>li>p]:mlb-2 text-lg [&>blockquote]:border-s-4 [&>blockquote]:ps-5 [&>blockquote]:font-light [&>blockquote]:italic [&>blockquote]:tracking-tight [&>blockquote]:text-gray-500 dark:[&>blockquote]:text-gray-400 [&>pre]:overflow-auto [&_:is(h1,h2,h3,h4,h5,h6)]:font-light [&_:is(h1,h2,h3,h4,h5,h6)]:leading-none [&_:is(h1,h2,h3,h4,h5,h6)]:tracking-tight [&_:is(ul,ol)]:ps-5 sm:[&_:is(ul,ol)]:ps-0 sm:[&_:is(ul,ol)_:is(ul,ol)]:ps-5 [&_h1]:text-4xl sm:[&_h1]:text-5xl [&_h2]:text-3xl [&_h3]:text-2xl [&_h4]:text-xl [&_ol]:list-decimal [&_ul>li]:marker:text-gray-400 [&_ul]:list-disc
+          {% #code blocks & inline %}
+          [&_code]:plb-[0.0625rem] [&_code]:pli-1 [&_pre:has(>code)]:plb-2 [&_pre:has(>code)]:pli-3 [&_:is(pre,code)]:rounded [&_:is(pre,code)]:border [&_:is(pre,code)]:bg-gray-100 [&_:is(pre,code)]:text-sm dark:[&_:is(pre,code)]:bg-gray-800 [&_pre>code]:border-0 [&_pre>code]:p-0
+        "
+      >
+        {% capture excerpt %}
+          {% renderTemplate "liquid,md", latestFeatured %}
+            {{ data.excerpt }}
+          {% endrenderTemplate %}
+        {% endcapture %}
+        {{ excerpt | remove: '<p>' | remove: '</p>' }}
       </p>
-      <div class="flex justify-between border-black font-light mbs-4 border-bs group-hover/link:bg-theme-600 group-hover/link:text-white group-hover/link:-mli-1 group-hover/link:pli-1 group-focus-visible/link:bg-theme-600 group-focus-visible/link:text-white group-focus-visible/link:-mli-1 group-focus-visible/link:pli-1 group-[&:has(+:hover)]/link:bg-theme-600 group-[&:has(+:hover)]/link:text-white group-[&:has(+:hover)]/link:-mli-1 group-[&:has(+:hover)]/link:pli-1 dark:border-white">
+      <div class="mbs-4 border-bs group-hover/link:bg-theme-600 group-hover/link:-mli-1 group-hover/link:pli-1 group-focus-visible/link:bg-theme-600 group-focus-visible/link:-mli-1 group-focus-visible/link:pli-1 group-[&:has(+:hover)]/link:bg-theme-600 group-[&:has(+:hover)]/link:-mli-1 group-[&:has(+:hover)]/link:pli-1 flex justify-between border-black font-light group-hover/link:text-white group-focus-visible/link:text-white group-[&:has(+:hover)]/link:text-white dark:border-white">
         <span>
           {{- latestFeatured.templateContent | timeToRead -}}
         </span>
@@ -57,8 +70,8 @@
           >→
           <span
             class="
-              text-theme-700 underline group-visited/link:text-theme-900 group-hover/link:text-white group-focus-visible/link:text-white  group-focus-visible:text-black group-[&:has(+:hover)]/link:text-white
-              dark:text-theme-500 dark:group-visited/link:text-theme-300 dark:group-hover/link:text-white dark:group-focus-visible/link:text-white
+              text-theme-700 group-visited/link:text-theme-900 dark:text-theme-500 dark:group-visited/link:text-theme-300 underline  group-hover/link:text-white group-focus-visible/link:text-white
+              group-focus-visible:text-black group-[&:has(+:hover)]/link:text-white dark:group-hover/link:text-white dark:group-focus-visible/link:text-white
             "
             >Read now</span
           ></span
@@ -67,7 +80,7 @@
     </a>
     <a
       href="{{ latestFeatured.url }}"
-      class="scroll-region__item block flex-1 snap-start no-underline is-80 hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 sm:is-96"
+      class="scroll-region__item is-80 sm:is-96 block flex-1 snap-start no-underline hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0"
       tabindex="-1"
     >
       <img
@@ -83,13 +96,13 @@
 <div
   class="
     scroll-region__item
-    box-content flex-none snap-start -scroll-m-4 ps-4 max-is-full plb-2 border-be group-focus-visible:border-be-transparent sm:-scroll-m-12 sm:ps-12 sm:max-is-xl
+    max-is-full plb-2 border-be group-focus-visible:border-be-transparent sm:max-is-xl box-content flex-none snap-start -scroll-m-4 ps-4 sm:-scroll-m-12 sm:ps-12
   "
 >
   <h1
     class="
-      text-sm font-light uppercase text-theme-700
-      dark:text-theme-500 dark:group-focus-visible:text-theme-300
+      text-theme-700 dark:text-theme-500 dark:group-focus-visible:text-theme-300 text-sm
+      font-light uppercase
     "
   >
     Latest articles
@@ -98,7 +111,7 @@
     {% for article in articles reversed limit: 10 %}
       <li class="table-row">
         <time
-          class="table-cell whitespace-nowrap pe-2 text-sm font-light text-end"
+          class="table-cell whitespace-nowrap pe-2 text-end text-sm font-light"
           datetime="{{ article.date }}"
         >
           {{- article.date | date: '%b %-d, %Y' -}}

@@ -1,3 +1,4 @@
+import { EleventyRenderPlugin } from "@11ty/eleventy";
 import eleventyPluginRSS from "@11ty/eleventy-plugin-rss";
 import eleventyPluginTimeToRead from "eleventy-plugin-time-to-read";
 import highlightJs from "highlight.js";
@@ -43,6 +44,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyPluginRSS);
   eleventyConfig.addPlugin(eleventyPluginTimeToRead);
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   return {
     dir: {
