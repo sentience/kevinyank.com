@@ -1,6 +1,6 @@
 ---
 date: 2024-01-22T13:22:54+11:00
-title: "Use TailwindCSS prefixes for shared design system components"
+title: "Use Tailwind CSS prefixes for shared design system components"
 author: Kevin Yank
 tags:
   - Culture Amp
@@ -24,7 +24,7 @@ Surprisingly little has been written about how to use Tailwind with design syste
 
 ## A very brief intro to Tailwind
 
-[TailwindCSS][] (Tailwind for short) is a not-uncontroversial choice of tool for projects where hand-crafting CSS selectors that apply to semantically meaningful patterns of HTML elements is not beneficial. We have decided to use it at Culture Amp, the reasons for which deserve an article of their own. At the risk of oversimplifying: if the structure of your UI matches the structure of your codebase (i.e. visual blocks tend to correspond to software components rather than sections of a document), you might save time and effort by applying styles to your elements directly in those components, rather than by writing CSS selectors that are tightly coupled to those components' implementation. Again, there's a lot more to say here, and I'll try to write it up soon. Let me know if you're keen to read it.
+[Tailwind CSS][] (Tailwind for short) is a not-uncontroversial choice of tool for projects where hand-crafting CSS selectors that apply to semantically meaningful patterns of HTML elements is not beneficial. We have decided to use it at Culture Amp, the reasons for which deserve an article of their own. At the risk of oversimplifying: if the structure of your UI matches the structure of your codebase (i.e. visual blocks tend to correspond to software components rather than sections of a document), you might save time and effort by applying styles to your elements directly in those components, rather than by writing CSS selectors that are tightly coupled to those components' implementation. Again, there's a lot more to say here, and I'll try to write it up soon. Let me know if you're keen to read it.
 
 Fundamentally, Tailwind scans your application's source code for class names like this:
 
@@ -515,7 +515,7 @@ It's not as if the correct order for the rules is mysterious. It's implemented i
 
 So what if we wrote a PostCSS plug-in that would take the output of two Tailwind builds and merge them together, removing duplicate styles and sorting the remaining styles into the correct order?
 
-This seems like it could work, might even be a relatively straightforward project, and could even be worth Tailwind considering as a core feature. I've started [a discussion about this](https://github.com/tailwindlabs/tailwindcss/discussions/12801) on the TailwindCSS GitHub project.
+This seems like it could work, might even be a relatively straightforward project, and could even be worth Tailwind considering as a core feature. I've started [a discussion about this](https://github.com/tailwindlabs/tailwindcss/discussions/12801) on the Tailwind CSS GitHub project.
 
 Even if we implemented this, we would still need to accept that our two Tailwind builds would need to have compatible versions and configurations for their merged outputs to work reliably.
 
@@ -558,5 +558,5 @@ So if you tell an engineer who loves Tailwind that they need to remember to add 
 
 But this really is the cleanest solution to the problem of enabling different Tailwind builds/versions/configurations to coexist in a single web page, and at Culture Amp we've only just learned to accept that.
 
-[TailwindCSS]: https://tailwindcss.com/
+[Tailwind CSS]: https://tailwindcss.com/
 [postcss-discard-duplicates]: https://www.npmjs.com/package/postcss-discard-duplicates
