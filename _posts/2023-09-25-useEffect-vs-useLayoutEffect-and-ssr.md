@@ -3,9 +3,9 @@ date: 2023-09-25T10:58:34+10:00
 title: "useEffect vs useLayoutEffect and server-side rendering"
 author: Kevin Yank
 tags:
-    - web development
-    - Culture Amp
-    - react
+  - web development
+  - Culture Amp
+  - react
 excerpt:
   Why React prints an ugly warning when you call useLayoutEffect on the server,
   and what to do about it.
@@ -16,15 +16,25 @@ the difference between [`useEffect`][useEffect] and [`useLayoutEffect`][useLayou
 and why the second one prints an ugly warning during server-side rendering.
 
 ```js
-useEffect(() => {
-  /* non-paint-blocking effect */
-}, [ /* dependencies */ ])
+useEffect(
+  () => {
+    /* non-paint-blocking effect */
+  },
+  [
+    /* dependencies */
+  ],
+);
 ```
 
 ```js
-useLayoutEffect(() => {
-  /* paint-blocking effect */
-}, [ /* dependencies */ ])
+useLayoutEffect(
+  () => {
+    /* paint-blocking effect */
+  },
+  [
+    /* dependencies */
+  ],
+);
 ```
 
 `useEffect` and `useLayoutEffect` are basically
@@ -41,30 +51,29 @@ until after the body of `useLayoutEffect` runs
 
 Until today we were using `useLayoutEffect` to perform a redirect in a new app:
 
-
 ```jsx
-import { routes } from "routes"
-import { useCurrentUser } from "src/context"
-import { useLayoutEffect } from "react"
-import { useRouter } from "next/router"
+import { routes } from "routes";
+import { useCurrentUser } from "src/context";
+import { useLayoutEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function Redirect() {
-  const user = useCurrentUser()
-  const router = useRouter()
+  const user = useCurrentUser();
+  const router = useRouter();
 
   useLayoutEffect(() => {
     if (!user) {
-      return
+      return;
     }
-    router.replace(routes.index({ accountId: user?.account_id.toString() }))
-  }, [user, router])
+    router.replace(routes.index({ accountId: user?.account_id.toString() }));
+  }, [user, router]);
 }
 ```
 
 Since we're going to redirect the browser anyway,
 it makes sense to save it the trouble of
 painting the initial render to the screen, right?
-Not when we there is server-side rendering in the mix!
+Not when there is server-side rendering in the mix!
 When a `useLayoutEffect` is encountered by React running on the server, it displays an ugly warning:
 
 > Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format.
@@ -113,8 +122,8 @@ the rendered dimensions of the element to which it is attached.
 
 ## See also:
 
-* [A good short video](https://www.youtube.com/watch?v=pHxQtHwcT-s) demonstrating the difference between useEffect and useLayoutEffect.
-* [A good gist](https://gist.github.com/gaearon/e7d97cdf38a2907924ea12e4ebdf3c85) that explains the SSR issue and two available workarounds.
+- [A good short video](https://www.youtube.com/watch?v=pHxQtHwcT-s) demonstrating the difference between useEffect and useLayoutEffect.
+- [A good gist](https://gist.github.com/gaearon/e7d97cdf38a2907924ea12e4ebdf3c85) that explains the SSR issue and two available workarounds.
 
 [useEffect]: https://react.dev/reference/react/useEffect
 [useLayoutEffect]: https://react.dev/reference/react/useLayoutEffect
