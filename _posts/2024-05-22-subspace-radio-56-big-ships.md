@@ -7,6 +7,6 @@ tags:
   - podcast
 ---
 
-In [Subspace Radio #56](https://www.subspace.fm/episodes/episode-56-big-ships-dis-5x07-erigah), we whistle our way through the "fun run" on Halem’no as we discuss "Whistlespeak", but are wise enough not to step into the rain-making machine at the finish line. Instead, we revisit past instances of primitive cultures unknowingly blended with advanced technology, including "The Apple" (TOS), "For the World is Hollow and I Have Touched the Sky" (TOS), and "Caretaker" (VOY).
+In [Subspace Radio #56](https://www.subspace.fm/episodes/episode-56-big-ships-dis-5x07-erigah), Rob and I were actually standing on the bridge of Federation HQ in "Erigah"; you just couldn't see us for all the Breen! While we were there, we debated whether or not the Breen Dreadnought was the biggest starship we've seen to date. Other big ships we discussed: the Fesarius (TOS), the Narada (Star Trek 2009), the Romulan Warbird (TNG), the Jem'Hadar Battleship (DS9), the Enterprise-J (ENT), the Borg cube (TNG) and the USS Vengeance (Star Trek Into Darkness).
 
 <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/ec0b810a"></iframe>
