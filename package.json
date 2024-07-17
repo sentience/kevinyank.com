@@ -24,7 +24,7 @@
   "license": "UNLICENSED",
   "homepage": "https://kevinyank.com/",
   "devDependencies": {
-    "@11ty/eleventy": "3.0.0-alpha.6",
+    "@11ty/eleventy": "3.0.0-alpha.17",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@netlify/functions": "^2.8.1",
     "@shopify/prettier-plugin-liquid": "^1.5.0",
