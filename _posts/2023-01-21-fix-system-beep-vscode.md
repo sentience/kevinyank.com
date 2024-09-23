@@ -1,9 +1,12 @@
 ---
 date: 2023-01-21T11:51:13.068Z
+updated: 2024-09-24T00:18:09+10:00
 title: Fix System Beep on Move Editor into Next Group in VS Code
 tags:
   - web development
 ---
+
+<ins datetime="2023-01-13T23:35+1100">Update Sep 24, 2024:</ins> Updated the solution below for compatibility with macOS Sonoma 14.4 or later. Thanks to Danny Beloved for his email with the updated fix!
 
 In Visual Studio Code, I frequently want to split the window into two panes to view one file alongside another. The quickest way to do this without my hands leaving the keyboard is to use **View: Move Editor into Next Group** with the keyboard shortcut ^⌘→ (ctrl-cmd-right arrow).
 
@@ -23,11 +26,13 @@ This should be a text file with these contents:
 
 ```
 {
-  "^@\UF701" = "noop";
-  "^@\UF702" = "noop";
-  "^@\UF703" = "noop";
+  "^@\UF701" = "noop:";
+  "^@\UF702" = "noop:";
+  "^@\UF703" = "noop:";
 }
 ```
+
+**Note:** Prior to macOS Sonoma 14.4, each of the three values needed to be set to `"noop"` instead for some reason. If this fix stopped working for you at some point along the way, you probably need to add the colon at the end of each `"noop:"`!
 
 `^` means Ctrl, `@` means Command, and `\UF701`, `\UF702`, and `\UF703` are the codes for the three arrow keys. There's a nice reference Gist for this file's syntax [here](https://gist.github.com/trusktr/1e5e516df4e8032cbc3d). You can download a copy of this file if that's easier (but you'll need to extract it from the ZIP archive):
 
