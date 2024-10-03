@@ -1,7 +1,6 @@
 node_modules/
 _site/
 _tmp/
-
-# Local Netlify folder
+.envrc
 .netlify
 dump.rdb
