@@ -1,4 +1,7 @@
-import { EleventyRenderPlugin } from "@11ty/eleventy";
+import {
+  EleventyRenderPlugin,
+  InputPathToUrlTransformPlugin,
+} from "@11ty/eleventy";
 import eleventyPluginRSS from "@11ty/eleventy-plugin-rss";
 import eleventyPluginTimeToRead from "eleventy-plugin-time-to-read";
 import highlightJs from "highlight.js";
@@ -11,6 +14,13 @@ export default function (eleventyConfig) {
   setUpLiquid(eleventyConfig);
   setUpMarkdown(eleventyConfig);
   setUpCollections(eleventyConfig);
+
+  eleventyConfig.addPreprocessor("drafts", "njk,md,liquid", (data, content) => {
+    if (data.draft) {
+      // Ignore this file
+      return false;
+    }
+  });
 
   eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
   eleventyConfig.addPassthroughCopy("robots.txt");
@@ -45,6 +55,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyPluginRSS);
   eleventyConfig.addPlugin(eleventyPluginTimeToRead);
   eleventyConfig.addPlugin(EleventyRenderPlugin);
+  eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
   return {
     dir: {
@@ -65,28 +76,6 @@ function setUpLiquid(eleventyConfig) {
   Object.keys(filters).forEach((filter) =>
     eleventyConfig.addFilter(filter, filters[filter]),
   );
-
-  // Implement Jekyll's post_url tag
-  // Usage: {% post_url post-filename-without-extension %}
-  eleventyConfig.addLiquidTag("post_url", function (liquidEngine) {
-    return {
-      parse: function (tagToken, remainingTokens) {
-        this.str = tagToken.args; // post-filename-without-extension
-      },
-      render: async function (context) {
-        const postFilenameWithoutExtension = `./_posts/${this.str}`;
-        const posts = context.environments.collections.post;
-        const post = posts.find((p) =>
-          p.inputPath.startsWith(postFilenameWithoutExtension),
-        );
-        if (post === undefined) {
-          throw new Error(`${this.str} not found in posts collection.`);
-        } else {
-          return post.url;
-        }
-      },
-    };
-  });
 }
 
 function setUpMarkdown(eleventyConfig) {
@@ -120,8 +109,6 @@ function setUpMarkdown(eleventyConfig) {
 }
 
 function setUpCollections(eleventyConfig) {
-  addFilteredCollection(eleventyConfig, "post");
-  addFilteredCollection(eleventyConfig, "note");
   addPaginatedTagsCollection(eleventyConfig);
 }
 
