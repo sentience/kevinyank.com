@@ -10,7 +10,7 @@ tags:
 
 These are the live notes I took from Day 2 of the [Web Directions Hover 2022](https://webdirections.org/hover/) conference for our team internally at Culture Amp.
 
-See also: [Web Directions Hover 2022 Day 1 notes]({% post_url 2022-05-02-web-directions-hover-2022-day-1 %}).
+See also: [Web Directions Hover 2022 Day 1 notes](2022-05-02-web-directions-hover-2022-day-1.md).
 
 ## Adrian Bece: “Effective CSS refactoring”
 
@@ -18,12 +18,13 @@ CSS is a simple language, which leaves the door open for many antipatterns. Code
 
 Netlify [refactored their codebases](https://www.netlify.com/blog/2021/03/23/from-semantic-css-to-tailwind-refactoring-the-netlify-ui-codebase/) last year (semantic CSS → Tailwind). This article lists all the forms of unwanted complexity that creep into a CSS codebase.
 
-* Good CSS auditing tool: [cssstats.com](https://cssstats.com)
-* [Wallace CLI](https://github.com/projectwallace/wallace-cli): can run in CI
+- Good CSS auditing tool: [cssstats.com](https://cssstats.com)
+- [Wallace CLI](https://github.com/projectwallace/wallace-cli): can run in CI
 
 Refactoring is best done at quiet times in a codebase that you know will be actively modified going forward. Work with leadership to set aside time for this kind of housekeeping. Do it in a way that doesn’t block feature development. Try to keep tasks small (see: [Refactoring Tunnels](https://csswizardry.com/2017/06/refactoring-tunnels/)).
 
 Refactoring strategy (example: legacy card CSS + global CSS):
+
 1. Select lowest-scope component (in this case, the card rather than the grid in which it is contained)
 2. Develop styles for the component in isolation (e.g. develop it in CodePen, or prefix class names for this component)
 3. Merge & fix issues: Replace the markup and add the new CSS; leave the legacy styles for now. If the new styles clash or are broken by old styles, implement temporary fixes in a separate file, that you will delete later.
@@ -46,9 +47,10 @@ Chrome’s rendering pipeline has 12 steps! `contain` and `content-visibility` l
 6. **Composite** merges all the layers into one image.
 
 Elements have:
-* border-box: determines the layout dimensions for an element
-* visible boundary: determines the area that needs painting
-* screen viewport: determines what elements are actually visible
+
+- border-box: determines the layout dimensions for an element
+- visible boundary: determines the area that needs painting
+- screen viewport: determines what elements are actually visible
 
 Michael created a testing environment that allowed him to trigger layout and painting.
 
@@ -111,6 +113,7 @@ Grid hit full browser support in 2017. Flexbox in 2013. Many developers are uncl
 Grid can `repeat` columns or rows automatically, and offers `auto-fit` to specify column size constraints and have their sizes (and wrapping when necessary) calculated automatically.
 
 Resources:
+
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Grid By Example](https://gridbyexample.com/)
 - [frame.scss in the Kendo demo app](https://github.com/kathryngraysonnanz/kendo-demo/blob/main/src/app/frame/frame.scss) – a great real-world example of a complex grid to learn from
@@ -118,6 +121,7 @@ Resources:
 Flexbox is for laying out items in a single dimension (row or column), with the option to wrap. If you need things to align in two dimensions, you need Grid.
 
 Resources:
+
 - [Flexbox Froggy](https://flexboxfroggy.com/): a game for learning Flexbox!
 - [FLEX visual cheatsheet](https://flexbox.malven.co/)
 
@@ -134,11 +138,13 @@ Resources:
 `min` and `max`: Basically `clamp` with a single limit.
 
 Responsive units lets the browser do the work for us. Use them whenever you can!
+
 - `vh` and `vw` are percentages of viewport sizes.
 - `rem` and `em`
 - combining them for responsive font sizes with limits
 
 Media queries are still useful as an escape hatch for more niche things:
+
 - Accessibility preferences (`prefers-reduced-motion`)
 - Completely changing the layout/styles of a component
 - Print stylesheets
@@ -197,6 +203,7 @@ Demo of a nav bar with container queries for the overall bar, and also for the m
 WCAG “reflow” requirement is for site content to reflow to a single column at 400% zoom (320px equivalent on a 1280px-wide display). Container queries can help with meeting this requirement.
 
 Future features:
+
 - Container queries based on the styles applied to a container (e.g. its `font-size`).
 - Nicer range syntax (`@container (width >= 250px)`).
 

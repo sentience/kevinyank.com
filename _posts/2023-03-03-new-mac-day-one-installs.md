@@ -5,8 +5,7 @@ visibility: public
 tags:
   - Apple
   - tech
-excerpt:
-  I just picked up a new MacBook Pro 14" for personal use. Here's what I've installed on my first day with it. In other words, these are my "essential items" for a comfortable macOS environment.
+excerpt: I just picked up a new MacBook Pro 14" for personal use. Here's what I've installed on my first day with it. In other words, these are my "essential items" for a comfortable macOS environment.
 ---
 
 I just picked up a new MacBook Pro 14" for personal use. Here's what I've installed on my first day with it. In other words, these are my "essential items" for a comfortable macOS environment.
@@ -32,7 +31,7 @@ I just picked up a new MacBook Pro 14" for personal use. Here's what I've instal
 - [Pocket Casts](https://support.pocketcasts.com/article/desktopother-app/) to listen to podcasts
 - [Reeder](https://reederapp.com) to read feeds
 - [Rewind](https://www.rewind.ai) to never forget anything I see, hear, or say
-- [Spark Desktop](https://sparkmailapp.com/) to read email ([see my review]({% post_url 2022-03-08-email-apps %}))
+- [Spark Desktop](https://sparkmailapp.com/) to read email ([see my review](2022-03-08-email-apps.md))
 - [Things](https://culturedcode.com/things/), my to-do list
 - [Unsplash Wallpapers](https://apps.apple.com/us/app/unsplash-wallpapers/id1284863847?mt=12) to keep my desktop background fresh
 - [Visual Studio Code](https://code.visualstudio.com) to write code

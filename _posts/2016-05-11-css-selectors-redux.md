@@ -1,7 +1,7 @@
 ---
 title: CSS Selectors Redux
 author: Kevin Yank
-date: '2016-05-17T00:05:00+1100'
+date: "2016-05-17T00:05:00+1100"
 excerpt: "Last month in Sydney and Melbourne I was honoured to speak at Respond 2016, the third Web Directions conference at which I’ve had the privilege of speaking after Web Essentials 2006 and Web Directions South 2009. John Allsopp assigned me a great topic that would never have occurred to me otherwise: CSS selectors."
 tags:
   - development
@@ -10,7 +10,7 @@ tags:
 featured: true
 ---
 
-Last month in Sydney and Melbourne I was honoured to speak at [Respond 2016][respond16], the third Web Directions conference at which I’ve had the privilege of speaking after [Web Essentials 2006]({% post_url 2006-09-30-many-directions %}) and [Web Directions South 2010][web-directions-south-2009]. John Allsopp assigned me a great topic that would never have occurred to me otherwise: CSS selectors.
+Last month in Sydney and Melbourne I was honoured to speak at [Respond 2016][respond16], the third Web Directions conference at which I’ve had the privilege of speaking after [Web Essentials 2006](2006-09-30-many-directions.md) and [Web Directions South 2010][web-directions-south-2009]. John Allsopp assigned me a great topic that would never have occurred to me otherwise: CSS selectors.
 
 Here’s what I came up with:
 
@@ -26,7 +26,7 @@ They’re the things in pink. Selectors are the part of CSS that lets us point a
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.005.png", alt: "slide: what’s new; why there’s nothing new; how to be MacGyver", caption: "What we’ll be covering" %}
 
-In this talk, I’ll be covering what’s new in CSS selectors. I’ll then move swiftly along to *why* there’s nothing new in CSS selectors. And then we’ll finish strong with how to be MacGyver.
+In this talk, I’ll be covering what’s new in CSS selectors. I’ll then move swiftly along to _why_ there’s nothing new in CSS selectors. And then we’ll finish strong with how to be MacGyver.
 
 ## What’s New
 
@@ -62,7 +62,7 @@ These child-selecting pseudo-classes will come in handy in some surprising ways 
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.019.png", alt: "slide: :empty Example: .errors { border: 1px solid red; } .errors:empty { display: none; }", caption: "Style an element differently if it has no content" %}
 
-`:empty` can be handy if, say, your page contains a `div` into which your JavaScript might insert form validation errors, but if there *are* no errors, then you probably don’t want to display that `div` at all.
+`:empty` can be handy if, say, your page contains a `div` into which your JavaScript might insert form validation errors, but if there _are_ no errors, then you probably don’t want to display that `div` at all.
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.020.png", alt: "slide: :empty doesn’t apply to a div with a line break between the opening and closing tags", caption: ":empty can be finnicky" %}
 
@@ -100,13 +100,13 @@ Most of you are probably familiar with `+`, the adjacent sibling selector. It le
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.031.png", alt: "slide: .trigger ~ * matches all of the sibling elements following the one with the trigger class applied", caption: "…but the general sibling selector is new and shiny!" %}
 
-Well now we have `~`, the general sibling selector. It lets you look for matches among *all* of an element’s following siblings.
+Well now we have `~`, the general sibling selector. It lets you look for matches among _all_ of an element’s following siblings.
 
 This is another selector that has some surprising uses, as we’ll see in a bit.
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.032.png", alt: "slide: “that’s old news!”", caption: "" %}
 
-Now you might be thinking all these new selectors have been around for years, and you’d be right; they have. So let’s look at some *really* new selectors.
+Now you might be thinking all these new selectors have been around for years, and you’d be right; they have. So let’s look at some _really_ new selectors.
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.033.png", alt: "slide: [attribute=value] [attribute~=value] [attribute|=value] [attribute^=value] [attribute$=value] [attribute*=value]", caption: "These attribute selectors have been around for awhile…" %}
 
@@ -144,7 +144,7 @@ Let me be clear, we’ve adopted CSS Modules at [Culture Amp][cultureamp] and th
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.043.png", alt: "slide: We are abandoning HTML semantics", caption: "When we use selectors like these, we are abandoning HTML semantics when it comes to our styles" %}
 
-In other words, we are no longer styling elements because of what they actually *are*, but because of what we have demanded they look like, using classes.
+In other words, we are no longer styling elements because of what they actually _are_, but because of what we have demanded they look like, using classes.
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.045.png", alt: "slide: Not a button: &lt;span class=&quot;button&quot;&gt; Click me! &lt;/span&gt;", caption: "…and that can lead to disconnects between the appearance and the behaviour of elements like this one" %}
 
@@ -160,7 +160,7 @@ We show up, we want to make our page “all pretty”, so we put classes on thin
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.049.png", alt: "slide: prescriptive vs axiomatic, unintelligent vs intelligent", caption: "" %}
 
-[Heydon Pickering][heydonworks], to whom I’m indebted for several of the techniques in this talk, has proposed that we write selectors that respond to things like the *relationships* between elements, rather than prescribing the styles of individual elements, one at a time. These ‘axiomatic’ or intelligent styles can give rise to useful, emergent behaviour. I don’t have a lot of time to go into this, but if you’re interested please do check out his talk, [Effortless Style][effortless-style]. The video is online for free and it’s worth your time.
+[Heydon Pickering][heydonworks], to whom I’m indebted for several of the techniques in this talk, has proposed that we write selectors that respond to things like the _relationships_ between elements, rather than prescribing the styles of individual elements, one at a time. These ‘axiomatic’ or intelligent styles can give rise to useful, emergent behaviour. I don’t have a lot of time to go into this, but if you’re interested please do check out his talk, [Effortless Style][effortless-style]. The video is online for free and it’s worth your time.
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.050.png", alt: "slide: CSS Selectors Level 4 Working Draft", caption: "Our over-use of class selectors is having a profound impact on the future of CSS" %}
 
@@ -172,7 +172,7 @@ Now this would be really useful; I would totally use this! But there’s no supp
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.053.png", alt: "slide: Reference Combinator Example: label:hover /for/ input", caption: "When the user hovers over the label, the input field is styled because the label’s for attribute references the input’s ID" %}
 
-If you’ve heard of the [CSS checkbox hack][checkbox-hack], well this creates all *sorts* possibilities for interactive styles. This would be amazing. But there’s no support for it in browsers and no sign of it coming.
+If you’ve heard of the [CSS checkbox hack][checkbox-hack], well this creates all _sorts_ possibilities for interactive styles. This would be amazing. But there’s no support for it in browsers and no sign of it coming.
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.055.png", alt: "slide: Selectors Level 4 Editor’s Draft, 22 March 2016. “Removed the ‘:local-link’ and reference combinator for lack of interest.”", caption: "In fact, both of these features have just been removed from the Selectors Level 4 Editor’s Draft due to “lack of interest”" %}
 
@@ -184,13 +184,13 @@ Here’s a feature that’s still in the Editor’s Draft:
 
 I’ve been wanting this for years. In the first example, `a[href]:has(> img)` matches any link that contains an image as its immediate child. Right now you could match that image, but if you wanted to style the link, you’d need to add a class to it.
 
-The second example, `section:not(:has(h1, h2, h3))` matches any `section` that does *not* contain any headings. It’d take a gnarly bit of template logic to get your CMS to add a class for this to the right `section`s automatically.
+The second example, `section:not(:has(h1, h2, h3))` matches any `section` that does _not_ contain any headings. It’d take a gnarly bit of template logic to get your CMS to add a class for this to the right `section`s automatically.
 
 But as with many things in life, you need to read the fine print:
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.059.png", alt: "slide: Dynamic profile: “…appropriate in any context, including dynamic browser CSS selector matching. Includes every selector … except for: the :has() pseudo-class” Static profile: “…appropriate for contexts which aren’t extremely performance sensitive [such as] a static document tree. For example, the querySelector() method.”", caption: "The :has() pseudo-class is the only selector relegated to the ‘static profile’" %}
 
-Elsewhere in the CSS Selectors Level 4 draft, the concept of the ‘dynamic’ and ‘static’ profiles is introduced, and unlike *every* other selector in the spec, the `:has()` pseudo-class is restricted to the static profile, which means you can only use it in JavaScript, not in your CSS stylesheets.
+Elsewhere in the CSS Selectors Level 4 draft, the concept of the ‘dynamic’ and ‘static’ profiles is introduced, and unlike _every_ other selector in the spec, the `:has()` pseudo-class is restricted to the static profile, which means you can only use it in JavaScript, not in your CSS stylesheets.
 
 Browser vendors say it has to be this way, because it’s impossible to apply selectors that contain `:has()` dynamically, as a page is progressively rendered and then modified.
 
@@ -222,17 +222,17 @@ So if all we have are paper clips and rubber bands, let’s see if we can make a
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.067.png", alt: "slide: Lobotomized Owl * + * { margin-top: 1.5em; }", caption: "The Lobotomized Owl selector (* + *) makes it really easy to create consistent block spacing" %}
 
-[Invented by Heydon Pickering][lobotomized-owl], this selector combines two universal selectors (`*`) with the adjacent sibling selector (`+`). It matches the second of *any* two adjacent elements, but by applying a top margin, which only affects block elements, you’re only styling adjacent blocks.
+[Invented by Heydon Pickering][lobotomized-owl], this selector combines two universal selectors (`*`) with the adjacent sibling selector (`+`). It matches the second of _any_ two adjacent elements, but by applying a top margin, which only affects block elements, you’re only styling adjacent blocks.
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.068.png", alt: "", caption: "It works well with nested blocks, too" %}
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.069.png", alt: "slide: :not(:first-child)", caption: "Isn’t this equivalent?" %}
 
-If you know your selectors, you might be thinking that `* + *` could be more clearly written as `:not(:first-child)`. Well, I’d tell you that you were *almost* right. First, it would need to be `:not(:first-child):not(:root)` so that it didn’t match the `body` element.
+If you know your selectors, you might be thinking that `* + *` could be more clearly written as `:not(:first-child)`. Well, I’d tell you that you were _almost_ right. First, it would need to be `:not(:first-child):not(:root)` so that it didn’t match the `body` element.
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.071.png", alt: "slide: :not(:first-child):not(:root) IE9+, high specificity", caption: "This alternative form requires Internet Explorer 9 or later, and has surprisingly high specificity" %}
 
-With two pseudo-class selectors in this alternative form, you’d have a selector with relatively high specificty, that was difficult to override with other selectors. `* + *`, on the other hand, has a specificity of zero. *Any* selector will override it!
+With two pseudo-class selectors in this alternative form, you’d have a selector with relatively high specificty, that was difficult to override with other selectors. `* + *`, on the other hand, has a specificity of zero. _Any_ selector will override it!
 
 For example:
 
@@ -252,7 +252,7 @@ Since I’m presenting this at [Respond][respond16], I don’t need to tell you 
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.080.png", alt: "display: block;", caption: "And on phone-sized devices, we could stack them vertically as blocks" %}
 
-But what if we could write styles that responded to the *content* of the page the same way media queries let us respond to the size of the browser window?
+But what if we could write styles that responded to the _content_ of the page the same way media queries let us respond to the size of the browser window?
 
 Let’s say we have the same nav bar.
 
@@ -280,7 +280,7 @@ Okay, that was too easy. Let’s try a bigger challenge:
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.090.png", alt: "slide: li:nth-last-child(6):first-child", caption: "This selector targets the first child, when there are exactly 6 children" %}
 
-`:nth-last-child(6)` matches the sixth-to-last child, and `:first-child` matches the first child. For one element to be both the sixth-to-last child *and* the first child, there must be exactly six children!
+`:nth-last-child(6)` matches the sixth-to-last child, and `:first-child` matches the first child. For one element to be both the sixth-to-last child _and_ the first child, there must be exactly six children!
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.091.png", alt: "slide: li:nth-last-child(6):first-child ~ li", caption: "This selector uses the same trick, and targets the rest of the children" %}
 
@@ -288,7 +288,7 @@ Earlier we saw `~`, the general sibling selector, which matches all of the follo
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.092.png", alt: "slide: li:nth-last-child(6):first-child, li:nth-last-child(6):first-child ~ li", caption: "We can now combine these two selectors to achieve the desired effect" %}
 
-Not bad! But the challenge before us is to write a selector that matches *n or more* children.
+Not bad! But the challenge before us is to write a selector that matches _n or more_ children.
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.093.png", alt: "slide: n or more elements", caption: "We’d like our alternative styles to apply if there are six or more children" %}
 
@@ -304,7 +304,7 @@ And there you have it:
 
 These two selectors combined will match all of the children, but only if there are six or more of them!
 
-We can also invert the logic, and write a selector that matches all of the children, but only if there are *n or fewer* of them:
+We can also invert the logic, and write a selector that matches all of the children, but only if there are _n or fewer_ of them:
 
 {% render figure, src: "/assets/images/blog/css-selectors-redux/slide.098.png", alt: "slide: n or fewer elements li:nth-last-child(-n+5):first-child, li:nth-last-child(-n+5):first-child ~ li", caption: "See if you can explain to yourself how this works" %}
 
