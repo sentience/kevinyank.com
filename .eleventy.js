@@ -15,12 +15,8 @@ export default function (eleventyConfig) {
   setUpMarkdown(eleventyConfig);
   setUpCollections(eleventyConfig);
 
-  eleventyConfig.addPreprocessor("drafts", "njk,md,liquid", (data, content) => {
-    if (data.draft) {
-      // Ignore this file
-      return false;
-    }
-  });
+  ignoreDeleted(eleventyConfig);
+  ignoreDrafts(eleventyConfig);
 
   eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
   eleventyConfig.addPassthroughCopy("robots.txt");
@@ -112,12 +108,6 @@ function setUpCollections(eleventyConfig) {
   addPaginatedTagsCollection(eleventyConfig);
 }
 
-function addFilteredCollection(eleventyConfig, tag) {
-  eleventyConfig.addCollection(tag, (collections) => {
-    return getFilteredCollection(collections, tag);
-  });
-}
-
 // Based on https://github.com/11ty/eleventy/issues/332#issuecomment-445236776
 function addPaginatedTagsCollection(eleventyConfig) {
   eleventyConfig.addCollection("tagPages", function (collections) {
@@ -135,7 +125,7 @@ function addPaginatedTagsCollection(eleventyConfig) {
     let tagMap = [];
     let tagArray = [...allTags];
     for (let tagName of tagArray) {
-      let tagItems = getFilteredCollection(collections, tagName).reverse();
+      let tagItems = collections.getFilteredByTag(tagName).reverse();
       let pagedItems = chunkArray(tagItems, paginationSize);
       for (
         let pageNumber = 0, max = pagedItems.length;
@@ -174,21 +164,28 @@ function addPaginatedTagsCollection(eleventyConfig) {
   });
 }
 
-function getFilteredCollection(collections, tag) {
-  return filterHiddenContent(collections.getFilteredByTag(tag));
+function ignoreDrafts(eleventyConfig) {
+  eleventyConfig.addPreprocessor("drafts", "njk,md,liquid", (data, content) => {
+    if (
+      process.env.ELEVENTY_ENV === "production" &&
+      (data.draft === true || data.published === false)
+    ) {
+      // Ignore this file
+      return false;
+    }
+  });
 }
 
-function filterHiddenContent(collection) {
-  return (
-    collection
-      // exclude deleted
-      .filter((item) => !Boolean(item.data.deleted))
-      // exclude draft in production
-      .filter(
-        (item) =>
-          process.env.ELEVENTY_ENV !== "production" ||
-          (item.data.published !== false && !item.data.draft),
-      )
+function ignoreDeleted(eleventyConfig) {
+  eleventyConfig.addPreprocessor(
+    "deleted",
+    "njk,md,liquid",
+    (data, content) => {
+      if (data.deleted) {
+        // Ignore this file
+        return false;
+      }
+    },
   );
 }
 
