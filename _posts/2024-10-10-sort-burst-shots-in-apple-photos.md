@@ -1,6 +1,6 @@
 ---
 date: 2024-10-10T22:00:38+11:00
-title: "Sorting Burst Shots in Apple Photos"
+title: "Sort Burst Shots in Apple Photos"
 author: Kevin Yank
 tags:
   - Apple
