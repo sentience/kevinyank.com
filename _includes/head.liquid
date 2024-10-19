@@ -16,7 +16,9 @@
       <script src="{{ script.src }}"></script>
     {% endif %}
     {% if script.inline %}
-      {% raw %}<script>{% endraw %}{{ script.inline }}</script>
+      {% raw %}<script>{% endraw %}
+      {{- script.inline }}
+      </script>
     {% endif %}
   {% endfor %}
 
@@ -43,4 +45,9 @@
   <link rel="micropub" href="https://indiekit.kevinyank.com/micropub">
 
   <script defer src="/assets/scripts/nav-menu.js"></script>
+  <script
+    defer
+    src="https://umami.kevinyank.com/script.js"
+    data-website-id="cea8cc5b-c92e-418a-a2ff-3c2e89d243fa"
+  ></script>
 </head>
