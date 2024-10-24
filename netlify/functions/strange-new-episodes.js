@@ -174,21 +174,12 @@ async function setKnownEpisodes(show, episodes) {
 
 const SHOWS = [
   {
-    abbr: "DIS",
-    name: "Star Trek: Discovery",
-    current_season: 5,
-    season_json:
-      "https://www.paramountplus.com/shows/star-trek-discovery/xhr/episodes/page/0/size/18/xs/0/season/5/",
-    redis_key: "discovery-episodes",
-    notifications: true,
-  },
-  {
     abbr: "SNW",
     name: "Star Trek: Strange New Worlds",
     current_season: 3,
     season_json:
       "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/xhr/episodes/page/0/size/18/xs/0/season/3/",
-    redis_key: "strange-new-episodes",
+    redis_key: "strange-new-episodes-3",
     notifications: true,
   },
   {
@@ -197,7 +188,7 @@ const SHOWS = [
     current_season: 5,
     season_json:
       "https://www.paramountplus.com/shows/star-trek-lower-decks/xhr/episodes/page/0/size/18/xs/0/season/5/",
-    redis_key: "lower-decks-episodes",
+    redis_key: "lower-decks-episodes-5",
     notifications: true,
   },
 ];
