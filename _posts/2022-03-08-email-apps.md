@@ -11,6 +11,8 @@ featureImg: /assets/images/blog/email-apps/spark-macos.png
 featureImgAlt: screenshot of Spark Mail for macOS
 ---
 
+<ins datetime="2025-02-23T23:33:11+11:00">Update Feb 23, 2025:</ins> Since I wrote this article, Spark for Mac has gotten steadily more laggy, glitchy and unreliable for me. I have therefore switched back to Apple Mail on all of my devices (Mac, iPhone, iPad and Apple Watch). I'm still really hoping [Mimestream] gets support for non-Gmail email accounts someday.
+
 I recently shifted to [Fastmail]
 after Google announced it was [shutting down][G Suite Legacy Free shutdown]
 the free version of G Suite that I've used for over a decade.
@@ -34,45 +36,45 @@ email clients for my Apple-ecosystem devices. If you're in a hurry, feel free to
 
 These are the apps that made my shortlist:
 
-* **[Apple Mail]** (Mac, iPhone, iPad, Apple Watch) – AKA Mail.app. Despite a patchy record of quality in the past decade, which has included some almost unusably buggy releases, Apple's bundled app remains more of a robust all-rounder than almost any competitor (mostly just because of how long it's been around). The fact that it's included for free with Apple's operating systems is probably what makes it so hard for alternatives to make an honest buck, and why a cottage industry of add-ons and extensions exists for it.
+- **[Apple Mail]** (Mac, iPhone, iPad, Apple Watch) – AKA Mail.app. Despite a patchy record of quality in the past decade, which has included some almost unusably buggy releases, Apple's bundled app remains more of a robust all-rounder than almost any competitor (mostly just because of how long it's been around). The fact that it's included for free with Apple's operating systems is probably what makes it so hard for alternatives to make an honest buck, and why a cottage industry of add-ons and extensions exists for it.
 
   {% render figure, src: "/assets/images/blog/email-apps/apple-mail-macos.png", alt: "screenshot", caption: "Apple Mail on macOS 12 Monterey" %}
 
-* **[Canary Mail]** (Mac, iPhone, iPad, Apple Watch) – Also for Android and Windows. A security- and privacy-forward choice, Canary Mail proves that securing your data needn't come at the expense of a polished user experience. Despite supporting almost every platform under the sun, Canary Mail ships native apps for all of them.
+- **[Canary Mail]** (Mac, iPhone, iPad, Apple Watch) – Also for Android and Windows. A security- and privacy-forward choice, Canary Mail proves that securing your data needn't come at the expense of a polished user experience. Despite supporting almost every platform under the sun, Canary Mail ships native apps for all of them.
 
   {% render figure, src: "/assets/images/blog/email-apps/canary-mail-macos.png", alt: "screenshot", caption: "Canary Mail for macOS" %}
 
-* **[MailMate]** (Mac) – By the numbers, this artisanal [Mac-assed Mac app] built by a solo developer, positively festooned with low-level power user customisation features advertised as "experimental" or "proof-of-concept" in the [web-based manual][MailMate manual], should be right up my alley. But it's _really_ hard to get past the antiquated UI layout; in particular, there's no widescreen-friendly multi-line message list. Also worrying, the "recommended" version of the app to download has been a sporadically-updated beta for nearly two years now, which makes it hard to bet on as a daily driver, or justify its $50 price tag.
+- **[MailMate]** (Mac) – By the numbers, this artisanal [Mac-assed Mac app] built by a solo developer, positively festooned with low-level power user customisation features advertised as "experimental" or "proof-of-concept" in the [web-based manual][MailMate manual], should be right up my alley. But it's _really_ hard to get past the antiquated UI layout; in particular, there's no widescreen-friendly multi-line message list. Also worrying, the "recommended" version of the app to download has been a sporadically-updated beta for nearly two years now, which makes it hard to bet on as a daily driver, or justify its $50 price tag.
 
   {% render figure, src: "/assets/images/blog/email-apps/mailmate.png", alt: "screenshot", caption: "MailMate, using its clever Distortion Mode to obscure my email contents" %}
 
-* **[Newton]** (Mac, iPhone, iPad, Apple Watch) – Also for Android and Windows. Billed as "supercharged emailing", Newton is a true attempt to rethink the user experience of email to minimise distractions and promote productivity and focus, but in this I've found its reach sometimes exceeds its grasp. Newton has had two public brushes with death over the years, but has been [under new ownership][Newton under new ownership] since early 2020. At $50/year, the full feature set is not cheap but is one I'm happy to pay for if it delivers on its promise.
+- **[Newton]** (Mac, iPhone, iPad, Apple Watch) – Also for Android and Windows. Billed as "supercharged emailing", Newton is a true attempt to rethink the user experience of email to minimise distractions and promote productivity and focus, but in this I've found its reach sometimes exceeds its grasp. Newton has had two public brushes with death over the years, but has been [under new ownership][Newton under new ownership] since early 2020. At $50/year, the full feature set is not cheap but is one I'm happy to pay for if it delivers on its promise.
 
   {% render figure, src: "/assets/images/blog/email-apps/newton-macos.png", alt: "screenshot", caption: "Newton's typically spartan message viewer" %}
 
-* **[Spark]** (Mac, iPhone, iPad, Apple Watch) – Seemingly the most polished option, with plenty of custom UI touches and integrations with other popular apps in the Apple ecosystem, Spark is from [Readdle], purveyors of several attractively-designed productivity apps that I've happily paid for over the years before seeing them [sherlocked] by Apple's built-in features ([Documents], [Scanner Pro]) or overtaken by a more actively-developed competitor ([Calendars]). I worry that Spark's paid features are all for team-based email workflows. Is there really a big enough market for that?
+- **[Spark]** (Mac, iPhone, iPad, Apple Watch) – Seemingly the most polished option, with plenty of custom UI touches and integrations with other popular apps in the Apple ecosystem, Spark is from [Readdle], purveyors of several attractively-designed productivity apps that I've happily paid for over the years before seeing them [sherlocked] by Apple's built-in features ([Documents], [Scanner Pro]) or overtaken by a more actively-developed competitor ([Calendars]). I worry that Spark's paid features are all for team-based email workflows. Is there really a big enough market for that?
 
   {% render figure, src: "/assets/images/blog/email-apps/spark-macos.png", alt: "screenshot", caption: "Spark for macOS" %}
 
 And here are a bunch more that I discarded after a first look:
 
-* **[Airmail]** (Mac, iPhone, iPad, Apple Watch) – Ambitiously feature-rich, Airmail _tries_ to be my ideal email client, but the handful of times I've trialled it over the years have always left me disappointed. Many of its marquee features (like its "smart inbox") feel like barely-functional prototypes with little practical value in real-world use. So many reviews praise Airmail for its design, but on macOS it looks to me like a rusting, oddly-arranged pile of features floating in unevenly-spaced UIs. The iOS version seems to have a greater focus on quality than the desktop app, but so much of Airmail's promise is in how it will sync your configuration across devices, so I find myself judging it as an ecosystem.
+- **[Airmail]** (Mac, iPhone, iPad, Apple Watch) – Ambitiously feature-rich, Airmail _tries_ to be my ideal email client, but the handful of times I've trialled it over the years have always left me disappointed. Many of its marquee features (like its "smart inbox") feel like barely-functional prototypes with little practical value in real-world use. So many reviews praise Airmail for its design, but on macOS it looks to me like a rusting, oddly-arranged pile of features floating in unevenly-spaced UIs. The iOS version seems to have a greater focus on quality than the desktop app, but so much of Airmail's promise is in how it will sync your configuration across devices, so I find myself judging it as an ecosystem.
 
-* **[Chuck]** (iPhone, iPad) – Chuck is gorgeous, reliable and polished in every detail. It delights me every time I use it, and I recommend it frequently. The only problem is that it's designed not as a daily email app, but for a specific purpose: inbox cleanup. It's the forklift I reach for whenever my email gets a little out of hand, and I need to process a month or more of inbox items all at once to catch up. For that task, it is second to none! And though it's resonably fully-featured, I don't want to use it every day as my primary means of processing incoming email one by one. Some of the ergonomics are just wrong for this use case (e.g. there is no way to archive the current message and view the next with a single tap). Chuck is such a lovely app, I wish I had a reason to spend money on the Pro version, but for the once or twice a year I need to clean out my overflowing inboxes, the free version offers all I need.
+- **[Chuck]** (iPhone, iPad) – Chuck is gorgeous, reliable and polished in every detail. It delights me every time I use it, and I recommend it frequently. The only problem is that it's designed not as a daily email app, but for a specific purpose: inbox cleanup. It's the forklift I reach for whenever my email gets a little out of hand, and I need to process a month or more of inbox items all at once to catch up. For that task, it is second to none! And though it's resonably fully-featured, I don't want to use it every day as my primary means of processing incoming email one by one. Some of the ergonomics are just wrong for this use case (e.g. there is no way to archive the current message and view the next with a single tap). Chuck is such a lovely app, I wish I had a reason to spend money on the Pro version, but for the once or twice a year I need to clean out my overflowing inboxes, the free version offers all I need.
 
-* **[Edison Mail]** (Mac, iPhone, iPad) – Also for Android, Edison's only standout feature is that it's free to use. Edison makes its money mining your email headers for e-commerce trend data that it aggregates and sells in the form of [market research]. Unfortunately this app that sells itself as "the fastest email app available" on its website feels sluggish to use, in part due to gratuitous animations (right-click menus don't need to bounce open), and while its feature set is surprisingly deep and flexible, its user interface design isn't.
+- **[Edison Mail]** (Mac, iPhone, iPad) – Also for Android, Edison's only standout feature is that it's free to use. Edison makes its money mining your email headers for e-commerce trend data that it aggregates and sells in the form of [market research]. Unfortunately this app that sells itself as "the fastest email app available" on its website feels sluggish to use, in part due to gratuitous animations (right-click menus don't need to bounce open), and while its feature set is surprisingly deep and flexible, its user interface design isn't.
 
-* **[Hey]** (Mac, iPhone, iPad) – Also for Android, Windows and Linux. The audacious reinvention of email from the server up is tempting, and I may yet circle back to this one. I was honestly put off by _how_ big of a departure this service is: to use it, you must adopt Hey as not just your email client, but your email _server_. And [the glimpse we all got into Basecamp's company culture last year](https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy) makes me think twice about being their customer, let alone entrusting them with all my email.
+- **[Hey]** (Mac, iPhone, iPad) – Also for Android, Windows and Linux. The audacious reinvention of email from the server up is tempting, and I may yet circle back to this one. I was honestly put off by _how_ big of a departure this service is: to use it, you must adopt Hey as not just your email client, but your email _server_. And [the glimpse we all got into Basecamp's company culture last year](https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy) makes me think twice about being their customer, let alone entrusting them with all my email.
 
-* **[Mailspring]** (Mac) – Also for Windows and Linux. Open source and cross-platform desktop-only mail app built on web technology (Electron). Looks a little half-baked at a glance, and releases seem to have slowed down significantly in 2021. The community around it seems to be much more focused on Linux than on macOS. Though it finally upgraded in February 2022 to a version of Electron that supports Apple Silicon natively, two months later the project has [yet to release a download][Mailspring for M1] for M1 Macs!
+- **[Mailspring]** (Mac) – Also for Windows and Linux. Open source and cross-platform desktop-only mail app built on web technology (Electron). Looks a little half-baked at a glance, and releases seem to have slowed down significantly in 2021. The community around it seems to be much more focused on Linux than on macOS. Though it finally upgraded in February 2022 to a version of Electron that supports Apple Silicon natively, two months later the project has [yet to release a download][Mailspring for M1] for M1 Macs!
 
-* **[Missive]** (Mac, iPhone, iPad) – Also for Android, Windows, and the Web. Looks attractively designed at a glance, but seems designed around team-based email marketing and customer relationship management (CRM) use cases that aren't really relevant for me as an individual user. Not for me.
+- **[Missive]** (Mac, iPhone, iPad) – Also for Android, Windows, and the Web. Looks attractively designed at a glance, but seems designed around team-based email marketing and customer relationship management (CRM) use cases that aren't really relevant for me as an individual user. Not for me.
 
-* **[Polymail]** (Mac, iPhone, iPad) – Like Missive, seems designed for team-based business/marketing/sales email workflows. For $10/month, I want something built for users like me.
+- **[Polymail]** (Mac, iPhone, iPad) – Like Missive, seems designed for team-based business/marketing/sales email workflows. For $10/month, I want something built for users like me.
 
-* **[Postbox]** (Mac) – Also for Windows. A commercial evolution of [Mozilla Thunderbird]. Its UI looks like a modern desktop app at first glance, but it has that clunky not-quite-native feel of Mozilla apps that bothers me. While something like Newton also feels extremely non-native, at least its novel design justifies this somewhat. Postbox is aggressively “normal”, but without the benefits of native UI. Attractively designed and feature-rich, its feature set sadly left me cold.
+- **[Postbox]** (Mac) – Also for Windows. A commercial evolution of [Mozilla Thunderbird]. Its UI looks like a modern desktop app at first glance, but it has that clunky not-quite-native feel of Mozilla apps that bothers me. While something like Newton also feels extremely non-native, at least its novel design justifies this somewhat. Postbox is aggressively “normal”, but without the benefits of native UI. Attractively designed and feature-rich, its feature set sadly left me cold.
 
-* **[Spike]** (Mac, iPhone, iPad) – Also for Android, Windows, and the Web, Spike is the answer to the question, "Why can't email be more like Slack?" I'm honestly impressed by how well Spike succeeds in turning email into a chat app experience akin to iMessage. Unfortunately, because they support every platform under the sun, the app feels native to none of them. Not only does the user experience feel completely foreign on the Mac, but it's completely uncustomisable.
+- **[Spike]** (Mac, iPhone, iPad) – Also for Android, Windows, and the Web, Spike is the answer to the question, "Why can't email be more like Slack?" I'm honestly impressed by how well Spike succeeds in turning email into a chat app experience akin to iMessage. Unfortunately, because they support every platform under the sun, the app feels native to none of them. Not only does the user experience feel completely foreign on the Mac, but it's completely uncustomisable.
 
 Before we dive into the details, an honourable mention: [Mimestream].
 While not _actually_ an email app
@@ -160,11 +162,11 @@ As for triggering app integrations I use during triage, like creating a task in 
 
 #### Rapid triage score
 
-* Apple Mail: **Good**
-* Canary Mail: **OK**
-* MailMate: **Excellent**
-* Newton: **OK**
-* Spark: **Excellent**
+- Apple Mail: **Good**
+- Canary Mail: **OK**
+- MailMate: **Excellent**
+- Newton: **OK**
+- Spark: **Excellent**
 
 ### 2. <a name="section-keyboard-navigation">Keyboard navigation</a>
 
@@ -182,11 +184,11 @@ As for Spark, I was all ready to damn it with the faint praise that it _does_ su
 
 #### Keyboard navigation score
 
-* Apple Mail: **Good**
-* Canary Mail: **Bad**
-* MailMate: **Good**
-* Newton: **OK**
-* Spark: **OK**
+- Apple Mail: **Good**
+- Canary Mail: **Bad**
+- MailMate: **Good**
+- Newton: **OK**
+- Spark: **OK**
 
 ### 3. <a name="section-deep-integrations">Deep integrations</a>
 
@@ -216,11 +218,11 @@ For my money, MailMate comes out on top here. Its integrations are custom-built,
 
 #### Deep integrations score
 
-* Apple Mail: **Good**
-* Canary Mail: **OK**
-* MailMate: **Excellent**
-* Newton: **Bad**
-* Spark: **Good**
+- Apple Mail: **Good**
+- Canary Mail: **OK**
+- MailMate: **Excellent**
+- Newton: **Bad**
+- Spark: **Good**
 
 ### 4. <a name="section-beautiful-native-ui">Beautiful native UI</a>
 
@@ -256,11 +258,11 @@ With all those little gripes on the table, I still have to hand it to Spark: it 
 
 #### Beautiful native UI score
 
-* Apple Mail: **Good**
-* Canary Mail: **Good**
-* MailMate: **Bad**
-* Newton: **Bad**
-* Spark: **Excellent**
+- Apple Mail: **Good**
+- Canary Mail: **Good**
+- MailMate: **Bad**
+- Newton: **Bad**
+- Spark: **Excellent**
 
 ### 5. <a name="section-privacy-and-security">Privacy and security</a>
 
@@ -282,11 +284,11 @@ Spark offers some of the same server-dependent features as Newton, notably the "
 
 #### Privacy and security score
 
-* Apple Mail: **Good**
-* Canary Mail: **Excellent**
-* MailMate: **Excellent**
-* Newton: **Bad**
-* Spark: **OK**
+- Apple Mail: **Good**
+- Canary Mail: **Excellent**
+- MailMate: **Excellent**
+- Newton: **Bad**
+- Spark: **OK**
 
 ## <a name="section-the-end">The best email app(s) for me</a>
 
