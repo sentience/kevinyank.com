@@ -3,9 +3,9 @@ date: 2023-04-05T11:18:28.151Z
 title: "On Endings: Why & How We Retired Elm at Culture Amp"
 author: Kevin Yank
 tags:
-    - web development
-    - Culture Amp
-    - Elm
+  - web development
+  - Culture Amp
+  - Elm
 excerpt:
   From time to time someone will ask, "Does Culture Amp still use Elm?" I'll answer privately that no, we are no longer investing in Elm, and explain why. Invariably, they tell me my answer was super valuable, and that I should share it publicly. Until now, I haven't.
 
@@ -18,7 +18,7 @@ featuredImgBorder: true
 
 > Beginnings are easy – endings are hard.
 >
->  — [Brian Eno](https://www.musicradar.com/news/brian-eno-fred-again-beginnings-endings)
+> — [Brian Eno](https://www.musicradar.com/news/brian-eno-fred-again-beginnings-endings)
 
 From time to time someone will ask, "Does Culture Amp still use Elm?" I'll answer privately that no, we are no longer investing in Elm, and explain why. Invariably, they tell me my answer was super valuable, and that I should share it publicly. Until now, I haven't.
 
@@ -30,19 +30,19 @@ We began to use [Elm](https://elm-lang.org/) at [Culture Amp](https://www.cultur
 
 {% include youtube video="uQjivmLan0E" caption="Early 2018" %}
 
- I hosted and produced the [Elm Town Podcast](https://elmtown.simplecast.com/) for 20 episodes from mid-2018 to mid-2020, and helped organise the [Elm Melbourne](https://web.archive.org/web/20191007045331/https://www.meetup.com/Elm-Melbourne/) meetup at our office until it ended due to COVID-19.
+I hosted and produced the [Elm Town Podcast](https://elmtown.simplecast.com/) for 20 episodes from mid-2018 to mid-2020, and helped organise the [Elm Melbourne](https://web.archive.org/web/20191007045331/https://www.meetup.com/Elm-Melbourne/) meetup at our office until it ended due to COVID-19.
 
 I've spoken a lot about Elm over the years. Why not speak about our move away from it?
 
-I tell myself no one is interested in the decision *not* to do something, that the story is a boring one. Conference talks and viral posts are made of beginnings, of novelties. Endings are relatively mundane. Except that as a technology leader, telling your team they should stop using a beloved tool is a terrifying thing to do.
+I tell myself no one is interested in the decision _not_ to do something, that the story is a boring one. Conference talks and viral posts are made of beginnings, of novelties. Endings are relatively mundane. Except that as a technology leader, telling your team they should stop using a beloved tool is a terrifying thing to do.
 
 I tell myself that it would be rude and ungrateful to the Elm community for me to publicly declare Culture Amp's departure from the fold, implying that Elm suffers from some fatal flaw or mistake by its maintainers. Except that no technology is perfect, and every tooling decision is a tradeoff. A really sharp knife is no less worthy of admiration for the fact that it is a poor choice to spread peanut butter.
 
 And yes, deep down, my ego worries that people will interpret this story as a confession, that I was wrong to adopt Elm at Culture Amp, that they were right not to consider it themselves. To that, I say ["judge not"](https://idioms.thefreedictionary.com/Judge+not%2c+lest+ye+be+judged).
 
-Perhaps the greatest challenge for engineers as they reach more senior levels in their career is to make decisions that balance the moment-to-moment joy (or frustration) that a given tool affords them, and the costs (or benefits) that same tool might create for their team, company or client over time and at scale. These stories *are* worth telling, especially by those of us in privileged positions in the industry. The sharp tools left behind will continue to be used for other things.
+Perhaps the greatest challenge for engineers as they reach more senior levels in their career is to make decisions that balance the moment-to-moment joy (or frustration) that a given tool affords them, and the costs (or benefits) that same tool might create for their team, company or client over time and at scale. These stories _are_ worth telling, especially by those of us in privileged positions in the industry. The sharp tools left behind will continue to be used for other things.
 
-This is the story of how, after four years of proudly advertising [Elm](https://elm-lang.org/) as its preferred language for building web UIs, [Culture Amp](https://www.cultureamp.com/) decided – *I* decided – to leave it behind.
+This is the story of how, after four years of proudly advertising [Elm](https://elm-lang.org/) as its preferred language for building web UIs, [Culture Amp](https://www.cultureamp.com/) decided – _I_ decided – to leave it behind.
 
 ## An Extremely Brief Introduction to Elm
 
@@ -55,7 +55,7 @@ const greeting = sayHello("Kevin");
 
 function sayHello(name) {
   if (name == "Kevin") {
-      return "Hi, Kev!";
+    return "Hi, Kev!";
   }
   return `Hello, ${name}.`;
 }
@@ -76,7 +76,7 @@ sayHello name =
 
 Elm has simpler syntax because it's a simpler language, with many fewer features than JavaScript. That simplicity is a feature: Elm is designed not to give you rope enough to hang yourself.
 
-One feature Elm *does* have is a static type system. In the code sample above, Elm will infer and enforce that `sayHello` must be called with a `String` argument. You can also (and should) declare your functions' types to help Elm catch your mistakes where you make them:
+One feature Elm _does_ have is a static type system. In the code sample above, Elm will infer and enforce that `sayHello` must be called with a `String` argument. You can also (and should) declare your functions' types to help Elm catch your mistakes where you make them:
 
 ```elm
 greeting : String
@@ -95,9 +95,9 @@ Beyond this simple, functional, statically-typed language, Elm comes "batteries 
 
 Elm is also famous for three things:
 
-*   Extremely helpful error messages in development.
-*   No errors at runtime.
-*   Very small JavaScript bundles.
+- Extremely helpful error messages in development.
+- No errors at runtime.
+- Very small JavaScript bundles.
 
 Elm was invented by [Evan Czaplicki](https://twitter.com/evancz), and is the product of [10 years of his work](https://www.youtube.com/watch?v=Vexdf-Rd-AE), with occasional collaborators from the community, and sponsorship from companies like [NoRedInk](https://blog.noredink.com/post/136615783598/welcome-evan).
 
@@ -143,11 +143,11 @@ It was during this experiment that I wrote the [Elm Output Target for Stencil](h
 
 Title Block was already implemented in both React and Elm, but the design system engineer who was given the job to port it to Stencil took over a month to deliver an almost-feature-complete version, and no one was particularly happy with the API.
 
-Because they need to be usable as static HTML tags, Web Components support a more limited API format than JavaScript view frameworks. Both our Elm and React engineers were used to passing rich data types into components, like records/objects as configuration, or functions as [render props](https://reactjs.org/docs/render-props.html). Web Components mostly confine you to passing components HTML attributes (text strings) and wiring up functions as event listeners. You *can* call methods and set JavaScript properties on a Web Component's DOM node once it has mounted in the document, but wiring up essential component configuration after an initial render (and possible re-rendering of the DOM tree) is quite messy in both React and Elm.
+Because they need to be usable as static HTML tags, Web Components support a more limited API format than JavaScript view frameworks. Both our Elm and React engineers were used to passing rich data types into components, like records/objects as configuration, or functions as [render props](https://reactjs.org/docs/render-props.html). Web Components mostly confine you to passing components HTML attributes (text strings) and wiring up functions as event listeners. You _can_ call methods and set JavaScript properties on a Web Component's DOM node once it has mounted in the document, but wiring up essential component configuration after an initial render (and possible re-rendering of the DOM tree) is quite messy in both React and Elm.
 
 If you choose to use [Shadow DOM](https://stenciljs.com/docs/styling#shadow-dom) (and at first glance this seems like a very attractive prospect: enforced DOM and style encapsulation at the component level – awesome!), that pretty much means you're going to have to adopt whatever CSS solution your web components framework (like Stencil) provides. You can't just use your favourite CSS tooling to contribute component styles to your application's CSS bundle, because those "light DOM" styles won't apply to components rendered inside the shadow DOM. For example, in our Title Block component that rendered a number of Button and Menu components, the styles for Button and Menu won't reach those rendered child components unless your framework is mounting the stylesheet for each component inside its shadow DOM (which is hiding inside Title Block's shadow DOM). Frameworks like Stencil have nice CSS support that handles all this per-component stylesheet loading for you, but it's one more way this would pull our engineers away from their familiar tooling when building design system components.
 
-In the end, our experiment revealed Web Components (even with a nice framework around them) to be different enough from both React and Elm that using them meant effectively adding a *third* view framework to our tech stack, with its own foibles, limitations, learning curve and maintenance burden. Far from reducing the barrier to teams contributing to our design system, Web Components would increase it. This would likely compound the challenge we wanted to solve: that teams were beginning to assume that only the engineers in the small Design System team could make changes to our shared components, which put that team on the critical path of almost every UI project in the company.
+In the end, our experiment revealed Web Components (even with a nice framework around them) to be different enough from both React and Elm that using them meant effectively adding a _third_ view framework to our tech stack, with its own foibles, limitations, learning curve and maintenance burden. Far from reducing the barrier to teams contributing to our design system, Web Components would increase it. This would likely compound the challenge we wanted to solve: that teams were beginning to assume that only the engineers in the small Design System team could make changes to our shared components, which put that team on the critical path of almost every UI project in the company.
 
 Ultimately we decided that, based on what we learned from this experiment, we preferred not to move forward with Stencil and Web Components.
 
@@ -215,7 +215,7 @@ A couple of engineers chimed in with their thoughts. [Louis Quinnell](https://zi
 >
 > And secondly, we don’t get to use Elm as our single dependency — it is actually just one more (big) piece of complexity for the rest of our tools and code to consider.
 >
-> This means that we don’t see the benefits of Elm *either* as a low-maintenance front end stack, nor as a way to guarantee consistent low-cost context switching.
+> This means that we don’t see the benefits of Elm _either_ as a low-maintenance front end stack, nor as a way to guarantee consistent low-cost context switching.
 >
 > Therefore, I’d support a decision to contain Elm. I have other reasons, but this is the crux of it!
 
@@ -237,6 +237,4 @@ And I can point to at least a dozen amazing engineers that we managed to hire, t
 
 Just because a relationship ends doesn't make it a failure. Our time with Elm as a preferred technology has simply run its course. At a certain point, success means learning to be just as good at ending things as you are at starting new ones. If you never let things go, you wind up stuck in the past.
 
-> All Bette's stories have happy endings. That's because she knows where to stop. She's realized the real problem with stories — if you keep them going long enough, they always end in death.
->
-> — [Neil Gaiman, Sandman #6: "24 Hours"](https://sandman.fandom.com/wiki/Sandman_06)
+<ins datetime="2025-02-27T16:20:10+11:00">Update Feb 27, 2025:</ins> Removed Neil Gaiman quote on endings.
