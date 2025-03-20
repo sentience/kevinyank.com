@@ -85,7 +85,7 @@
     >
       <img
         src="{{ latestFeatured.data.featureImg }}"
-        alt="{{ latestFeatured.data.featureImgAlt }}"
+        alt="{{ latestFeatured.data.featureImgAlt | escape }}"
         {% if latestFeatured.data.featuredImgBorder %}
           class="border"
         {% endif %}
