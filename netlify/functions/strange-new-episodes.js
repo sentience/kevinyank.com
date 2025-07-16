@@ -182,15 +182,6 @@ const SHOWS = [
     redis_key: "strange-new-episodes-3",
     notifications: true,
   },
-  {
-    abbr: "LD",
-    name: "Star Trek: Lower Decks",
-    current_season: 5,
-    season_json:
-      "https://www.paramountplus.com/shows/star-trek-lower-decks/xhr/episodes/page/0/size/18/xs/0/season/5/",
-    redis_key: "lower-decks-episodes-5",
-    notifications: true,
-  },
 ];
 
 const redis = new Redis(process.env.SNE_REDIS_URL);
