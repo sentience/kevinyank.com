@@ -260,7 +260,7 @@ It creates that conversation list, sends it to the LLM, receives the response, a
 
 I'll ask it to suggest some nicknames for me. Just a little risky. Let's see what it comes up with. All right. There we go. Uh, Captain K, that's a new one. No one has ever called me Captain K. Okay. Um, yeah. Interesting.
 
-Ket's, uh, move on from that very swiftly.
+Let's, uh, move on from that very swiftly.
 
 {% render figure, src: "/assets/images/blog/how-to-build-an-agent-in-javascript/How to Build an Agent in JavaScript - MelbJS 13 August 2025.021.png", alt: "a quote from the original blog post", caption: "" %}
 
