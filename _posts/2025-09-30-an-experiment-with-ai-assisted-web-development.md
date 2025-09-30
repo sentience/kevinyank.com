@@ -8,6 +8,7 @@ tags:
 excerpt: By forcing it to take small steps forward, reading every line of code, and acting as the "expert guardrails", I was able to make rapid progress towards a complete implementation of the app with many nice details that I hadn't considered.
 featured: true
 featureImg: /assets/images/blog/an-experiment-with-ai-assisted-web-development/feature.png
+featuredImgBorder: true
 featureImgAlt: A screenshot of a web user interface
 ---
 
