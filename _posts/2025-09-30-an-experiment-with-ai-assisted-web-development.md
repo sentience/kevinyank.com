@@ -7,8 +7,8 @@ tags:
   - react
 excerpt: By forcing it to take small steps forward, reading every line of code, and acting as the "expert guardrails", I was able to make rapid progress towards a complete implementation of the app with many nice details that I hadn't considered.
 featured: true
-featureImg: /assets/images/blog/assume-chatgpt-is-lying/rock-n-roll-monkey-R4WCbazrD1g-unsplash-1152.jpg
-featureImgAlt: A confused-looking toy robot
+featureImg: /assets/images/blog/an-experiment-with-ai-assisted-web-development/feature.png
+featureImgAlt: A screenshot of a web user interface
 ---
 
 As a productive learning exercise, I spent the last couple of evenings taking [Cursor](https://cursor.com/home) (the desktop code editor that is a fork of [VS Code](https://code.visualstudio.com)) for a spin to build a new web app I needed for a side project – a system to manage charity raffle tickets at the 2025 [Melbourne Pen & Stationery Show](https://melbpenshow.com.au/) I am helping to run soon.
