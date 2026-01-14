@@ -182,6 +182,15 @@ const SHOWS = [
     redis_key: "strange-new-episodes-3",
     notifications: true,
   },
+  {
+    abbr: "SA",
+    name: "Star Trek: Starfleet Academy",
+    current_season: 1,
+    season_json:
+      "https://www.paramountplus.com/shows/star-trek-starfleet-academy/xhr/episodes/page/0/size/18/xs/0/season/1/",
+    redis_key: "strange-new-episodes-sfa",
+    notifications: true,
+  },
 ];
 
 const redis = new Redis(process.env.SNE_REDIS_URL);
