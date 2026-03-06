@@ -5,10 +5,10 @@ visibility: public
 tags:
   - Apple
   - tech
-excerpt: I find myself feeling about the Studio Display XDR the same way I do about the Vision Pro. It's a high-priced product on the leading edge of what is possible with mass-market consumer electronics. I am directly in the target market. This feels made for me. But the fact that its value is limited by strict "walled garden" constraints imposed Apple makes me not able to justify the purchase.
+excerpt: I find myself feeling about the Studio Display XDR the same way I do about the Vision Pro. It's a high-priced product on the leading edge of what is possible with mass-market consumer electronics. I am directly in the target market. This feels made for me. But the fact that its value is limited by strict "walled garden" constraints imposed by Apple makes me not able to justify the purchase.
 ---
 
-I find myself feeling about the Studio Display XDR the same way I do about the Vision Pro. It's a high-priced product on the leading edge of what is possible with mass-market consumer electronics. I am directly in the target market. This feels made for me. But the fact that its value is limited by strict "walled garden" constraints imposed Apple makes me not able to justify the purchase.
+I find myself feeling about the Studio Display XDR the same way I do about the Vision Pro. It's a high-priced product on the leading edge of what is possible with mass-market consumer electronics. I am directly in the target market. This feels made for me. But the fact that its value is limited by strict "walled garden" constraints imposed by Apple makes me not able to justify the purchase.
 
 Five years ago I made a risky bet on my desktop display – a 4K OLED TV. The downsides of that decision have been a daily impediment to my work for about half that time, while I waited patiently for Apple's next premium display to replace it. Apple's new Studio Display XDR _should_ be the monitor I've been waiting for. Instead, my money is going elsewhere.
 
