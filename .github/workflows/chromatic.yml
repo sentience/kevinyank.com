@@ -25,6 +25,7 @@ jobs:
       - run: npm run build
         env:
           ELEVENTY_ENV: production
+          TZ: Australia/Melbourne
 
       - run: npx playwright install chromium
 
