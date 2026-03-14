@@ -58,6 +58,7 @@ function setUpLiquid(eleventyConfig) {
     dynamicPartials: false,
     jekyllInclude: true,
     orderedFilterParameters: true,
+    locale: "en-AU",
   });
 
   // Import all filters in /lib/filters/index.js
