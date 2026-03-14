@@ -27,10 +27,10 @@
     @apply ring-theme-600 rounded ring-offset-2 ring-offset-white dark:ring-offset-gray-900;
   }
   :is(h1, h2, h3, h4, h5, h6):target {
-    @apply outline-none;
+    @apply outline-hidden;
   }
   :is(h1, h2, h3, h4, h5, h6):has(+ .heading-anchor:focus-visible) {
-    @apply bg-theme-100 dark:bg-theme-900 ring;
+    @apply bg-theme-100 dark:bg-theme-900 ring-3;
   }
   .heading-anchor {
     @apply sm:is-5 text-2xl font-bold no-underline opacity-10 focus-visible:ring-0 sm:order-first;

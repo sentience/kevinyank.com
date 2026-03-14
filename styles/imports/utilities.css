@@ -1,28 +1,28 @@
 @layer utilities {
   .theme-blue {
-    --theme-50: theme("colors.blue.50");
-    --theme-100: theme("colors.blue.100");
-    --theme-200: theme("colors.blue.200");
-    --theme-300: theme("colors.blue.300");
-    --theme-400: theme("colors.blue.400");
-    --theme-500: theme("colors.blue.500");
-    --theme-600: theme("colors.blue.600");
-    --theme-700: theme("colors.blue.700");
-    --theme-800: theme("colors.blue.800");
-    --theme-900: theme("colors.blue.900");
+    --theme-50: var(--color-blue-50);
+    --theme-100: var(--color-blue-100);
+    --theme-200: var(--color-blue-200);
+    --theme-300: var(--color-blue-300);
+    --theme-400: var(--color-blue-400);
+    --theme-500: var(--color-blue-500);
+    --theme-600: var(--color-blue-600);
+    --theme-700: var(--color-blue-700);
+    --theme-800: var(--color-blue-800);
+    --theme-900: var(--color-blue-900);
   }
 
   .theme-green {
-    --theme-50: theme("colors.green.50");
-    --theme-100: theme("colors.green.100");
-    --theme-200: theme("colors.green.200");
-    --theme-300: theme("colors.green.300");
-    --theme-400: theme("colors.green.400");
-    --theme-500: theme("colors.green.500");
-    --theme-600: theme("colors.green.600");
-    --theme-700: theme("colors.green.700");
-    --theme-800: theme("colors.green.800");
-    --theme-900: theme("colors.green.900");
+    --theme-50: var(--color-green-50);
+    --theme-100: var(--color-green-100);
+    --theme-200: var(--color-green-200);
+    --theme-300: var(--color-green-300);
+    --theme-400: var(--color-green-400);
+    --theme-500: var(--color-green-500);
+    --theme-600: var(--color-green-600);
+    --theme-700: var(--color-green-700);
+    --theme-800: var(--color-green-800);
+    --theme-900: var(--color-green-900);
   }
 
   /* Page gutters */
