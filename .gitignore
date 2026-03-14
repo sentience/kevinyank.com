@@ -1,6 +1,9 @@
 node_modules/
+test-results/
 _site/
 _tmp/
 .envrc
 .netlify
 dump.rdb
+.claude/settings.local.json
+build-archive.log
