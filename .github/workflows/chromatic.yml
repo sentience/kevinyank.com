@@ -40,7 +40,4 @@ jobs:
           CI: true
 
       - name: Run Chromatic
-        uses: chromaui/action@latest
-        with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          exitOnceUploaded: true
+        run: npx chromatic --playwright -t=${{ secrets.CHROMATIC_PROJECT_TOKEN }} --exit-once-uploaded
