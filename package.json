@@ -24,7 +24,7 @@
   "license": "UNLICENSED",
   "homepage": "https://kevinyank.com/",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@chromatic-com/playwright": "^0.12.8",
     "@netlify/functions": "^2.8.2",
