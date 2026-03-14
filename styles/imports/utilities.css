@@ -33,16 +33,6 @@
     @apply pli-4 sm:pli-12;
   }
 
-  /* Dark mode default border colour for all border classes */
-  .border,
-  .border-be,
-  .border-bs,
-  .border-e,
-  .border-s,
-  .border-lb,
-  .border-li {
-    @apply dark:border-gray-600;
-  }
 }
 
 /* Post styles */
