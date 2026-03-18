@@ -69,5 +69,6 @@ jobs:
           playwright: true
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           autoAcceptChanges: "main"
+          exitOnceUploaded: true
         env:
           CHROMATIC_ARCHIVE_LOCATION: ./test-results
