@@ -30,9 +30,19 @@ for (const { name, url } of exemplarPages) {
       await page.goto(url);
     });
 
+    test(`${name} — desktop (dark)`, async ({ page }) => {
+      await page.setViewportSize({ width: 1280, height: 800 });
+      await page.goto(url + "?theme=dark");
+    });
+
     test(`${name} — mobile`, async ({ page }) => {
       await page.setViewportSize({ width: 390, height: 844 });
       await page.goto(url);
+    });
+
+    test(`${name} — mobile (dark)`, async ({ page }) => {
+      await page.setViewportSize({ width: 390, height: 844 });
+      await page.goto(url + "?theme=dark");
     });
   });
 }
