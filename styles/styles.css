@@ -7,6 +7,17 @@
 @source "../{_includes,_layouts}/**/*.{html,liquid}";
 @source "../*.{html,liquid}";
 
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:not([data-theme] *)) {
+      @slot;
+    }
+  }
+}
+
 @theme {
   --color-theme-50: var(--color-red-50);
   --color-theme-100: var(--color-red-100);
