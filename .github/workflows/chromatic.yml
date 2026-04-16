@@ -72,3 +72,12 @@ jobs:
           exitOnceUploaded: true
         env:
           CHROMATIC_ARCHIVE_LOCATION: ./test-results
+
+      - name: Upload Chromatic diagnostics
+        if: ${{ failure() || cancelled() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: chromatic-diagnostics
+          path: ./build-archive.log
+          if-no-files-found: warn
+          retention-days: 30
