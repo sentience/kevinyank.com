@@ -44,7 +44,7 @@
     "tailwindcss-logical": "^4.2.0"
   },
   "dependencies": {
-    "@slack/webhook": "^7.0.8",
+    "@slack/webhook": "^7.0.9",
     "ioredis": "^5.10.1",
     "netlify-cli": "^24.10.0",
     "node-fetch": "^3.3.2",
