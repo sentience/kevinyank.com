@@ -69,21 +69,33 @@ jobs:
           name: test-results
           path: ./test-results
 
-      - name: Run Chromatic
-        uses: chromaui/action@latest
-        with:
-          playwright: true
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          autoAcceptChanges: "main"
-          exitOnceUploaded: true
+      # Temporary workaround while chromaui/chromatic-cli#1312 is under review.
+      # Build the archive explicitly and upload the resulting static directory
+      # instead of using Chromatic's broken npm-based E2E auto-build path.
+      - name: Build Chromatic Storybook archive
+        run: |
+          npm exec -- build-archive-storybook -- --output-dir=./storybook-static 2>&1 | tee build-archive.log
         env:
           CHROMATIC_ARCHIVE_LOCATION: ./test-results
+
+      - name: Run Chromatic
+        run: |
+          npx chromatic \
+            --project-token=${{ secrets.CHROMATIC_PROJECT_TOKEN }} \
+            --storybook-build-dir=./storybook-static \
+            --auto-accept-changes=main \
+            --exit-once-uploaded \
+            --diagnostics-file=chromatic-diagnostics.json \
+            --log-file=chromatic.log
 
       - name: Upload Chromatic diagnostics
         if: ${{ failure() || cancelled() }}
         uses: actions/upload-artifact@v7
         with:
           name: chromatic-diagnostics
-          path: ./build-archive.log
+          path: |
+            ./build-archive.log
+            ./chromatic.log
+            ./chromatic-diagnostics.json
           if-no-files-found: warn
           retention-days: 30
