@@ -74,7 +74,7 @@ jobs:
       # instead of using Chromatic's broken npm-based E2E auto-build path.
       - name: Build Chromatic Storybook archive
         run: |
-          npm exec -- build-archive-storybook -- --output-dir=./storybook-static 2>&1 | tee build-archive.log
+          npm exec -- build-archive-storybook --output-dir=./storybook-static 2>&1 | tee build-archive.log
         env:
           CHROMATIC_ARCHIVE_LOCATION: ./test-results
 
