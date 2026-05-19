@@ -27,7 +27,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
-    "@chromatic-com/playwright": "^0.13.3",
+    "@chromatic-com/playwright": "^0.14.0",
     "@netlify/functions": "^5.2.0",
     "@playwright/test": "^1.60.0",
     "@shopify/prettier-plugin-liquid": "^1.10.2",
