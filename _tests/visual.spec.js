@@ -9,10 +9,19 @@ const exemplarPages = [
     name: "Blog post with feature image and code blocks",
     url: "/posts/on-endings-why-how-we-retired-elm-at-culture-amp/",
     waitFor: [
-      (page) => page.locator("iframe[src*='LZj_1qVURL0']").contentFrame().getByText("Elm in Production: Surprises & Pain Points"),
-      (page) => page.locator("iframe[src*='kuOCx0QeQ5c']").contentFrame().getByText("Developer Happiness on the Front End with Elm"),
-      (page) => page.locator("iframe[src*='uQjivmLan0E']").contentFrame().getByText("Elm at Scale: More Surprises, More Pain Points"),
-    ]
+      (page) =>
+        page
+          .frameLocator("iframe[src*='LZj_1qVURL0']")
+          .getByText("Elm in Production: Surprises & Pain Points"),
+      (page) =>
+        page
+          .frameLocator("iframe[src*='kuOCx0QeQ5c']")
+          .getByText("Developer Happiness on the Front End with Elm"),
+      (page) =>
+        page
+          .frameLocator("iframe[src*='uQjivmLan0E']")
+          .getByText("Elm at Scale: More Surprises, More Pain Points"),
+    ],
   },
   {
     name: "Blog list",
