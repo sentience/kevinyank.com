@@ -14,7 +14,8 @@
     "start": "npm run start:eleventy & npm run start:postcss",
     "start:eleventy": "eleventy --serve --incremental",
     "start:postcss": "postcss styles/styles.css --dir _tmp --watch --verbose",
-    "test": "node --test _tests/*.test.mjs"
+    "test": "node --test _tests/*.test.mjs",
+    "test:visual": "playwright test"
   },
   "repository": {
     "type": "git",
