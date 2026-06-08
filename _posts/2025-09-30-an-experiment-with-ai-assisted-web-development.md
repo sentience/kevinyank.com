@@ -93,7 +93,7 @@ For each participant:
 
 - Node.js (v22 or higher)
 - npm package manager
-- PostgreSQL (v17 or late)
+- PostgreSQL (v17 or later)
 
 These dependencies can be installed in a contained environment by devbox
 ([installation instructions](https://www.jetify.com/docs/devbox/installing_devbox/)).
