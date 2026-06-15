@@ -6,8 +6,6 @@ jobs:
   playwright:
     name: Build and capture visual snapshots
     runs-on: ubuntu-latest
-    container:
-      image: mcr.microsoft.com/playwright:v1.61.0-noble
     steps:
       - uses: actions/checkout@v5
         with:
@@ -24,6 +22,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
       - name: Build site
         run: npm run build
         env:
@@ -34,7 +35,6 @@ jobs:
         run: npx playwright test
         env:
           CI: true
-          HOME: /root
 
       - uses: actions/upload-artifact@v7
         if: always()
