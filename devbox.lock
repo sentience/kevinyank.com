@@ -5,7 +5,7 @@
       "last_modified": "2026-03-11T12:14:37Z",
       "resolved": "github:NixOS/nixpkgs/75690239f08f885ca9b0267580101f60d10fbe62?lastModified=1773231277&narHash=sha256-Xy3WEpUAbpsz8ydgvVAQAGGB%2FWB%2B8cNA5cshiL0McTI%3D"
     },
-    "nodejs@22": {
+    "nodejs@22.22.0": {
       "last_modified": "2026-02-23T15:40:43Z",
       "plugin_version": "0.0.2",
       "resolved": "github:NixOS/nixpkgs/80d901ec0377e19ac3f7bb8c035201e2e098cc97#nodejs_22",

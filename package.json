@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Kevin Yank's personal website",
   "type": "module",
-  "packageManager": "npm@10.9.4",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:postcss && npm run build:eleventy",

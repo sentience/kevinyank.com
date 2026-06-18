@@ -2,6 +2,8 @@
 
 ## Node.js / npm via devbox
 
-Node.js is managed through [devbox](https://www.jetify.com/devbox). All Node and npm commands must be prefixed with `devbox run --` or run in a persistent terminal session after running `eval "$(devbox generate direnv --print-envrc)"` to create the Node.js environment.
+Node.js is managed through [devbox](https://www.jetify.com/devbox). Before running `node`, `npm`, `npx`, or any other Node-based tool in a shell session, load the devbox environment from the repository root with:
 
-This applies to all shell commands involving `node`, `npm`, `npx`, and any other Node-based tools.
+`eval "$(devbox shellenv)"`
+
+After that, run Node-based commands directly in that same shell session.
