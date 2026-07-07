@@ -39,7 +39,7 @@
     "markdown-it-anchor": "^9.2.0",
     "postcss": "^8.5.16",
     "postcss-cli": "^11.0.1",
-    "prettier": "^3.9.3",
+    "prettier": "^3.9.4",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4.3.0",
     "tailwindcss-logical": "^4.2.0"
