@@ -47,7 +47,7 @@
   "dependencies": {
     "@slack/webhook": "^7.1.0",
     "ioredis": "^5.11.1",
-    "netlify-cli": "^26.1.0",
+    "netlify-cli": "^26.2.0",
     "node-fetch": "^3.3.2",
     "pushover-notifications": "^1.2.3"
   }
