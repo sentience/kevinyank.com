@@ -31,6 +31,14 @@
   --color-theme-900: var(--color-red-900);
 }
 
+/* Preserve the site's existing typography across Tailwind's default-stack changes. */
+:root {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 @import "./imports/base.css";
 @import "./imports/components.css";
 @import "./imports/utilities.css";
