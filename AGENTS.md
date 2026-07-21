@@ -21,3 +21,12 @@ prefer one of these approaches instead:
 - run `npm install --package-lock-only` with the normal resolver
 - stop and explain the peer conflict rather than writing a lockfile that needs
   non-default npm flags
+
+## Dependabot automation
+
+- Use the global `dependabot-autotriage` skill for the workflow, thread
+  lifecycle, title format, monitoring rules, and report format.
+- For this repo, treat a Dependabot PR as green only when both the combined
+  commit status and all relevant workflow runs on the PR head SHA are green.
+- For this repo, required checks include push-triggered Chromatic runs on the
+  same head SHA, not just pull-request checks.
