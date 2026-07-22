@@ -176,19 +176,19 @@ const SHOWS = [
   {
     abbr: "SNW",
     name: "Star Trek: Strange New Worlds",
-    current_season: 3,
+    current_season: 4,
     season_json:
-      "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/xhr/episodes/page/0/size/18/xs/0/season/3/",
-    redis_key: "strange-new-episodes-3",
+      "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/xhr/episodes/page/0/size/18/xs/0/season/4/",
+    redis_key: "strange-new-episodes-4",
     notifications: true,
   },
   {
     abbr: "SA",
     name: "Star Trek: Starfleet Academy",
-    current_season: 1,
+    current_season: 2,
     season_json:
-      "https://www.paramountplus.com/shows/star-trek-starfleet-academy/xhr/episodes/page/0/size/18/xs/0/season/1/",
-    redis_key: "strange-new-episodes-sfa",
+      "https://www.paramountplus.com/shows/star-trek-starfleet-academy/xhr/episodes/page/0/size/18/xs/0/season/2/",
+    redis_key: "strange-new-episodes-sfa-2",
     notifications: true,
   },
 ];
