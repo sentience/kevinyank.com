@@ -6,7 +6,7 @@ const Push = require("pushover-notifications");
 const { isDeepStrictEqual } = require("util");
 
 // https://crontab.guru/#*_1-7_*_*_THU (UTC) = 9PM WED – 3AM THU (US EST)
-export const handler = schedule("* 1-12 * * THU", handlerImpl);
+export const handler = schedule("* 1-9 * * THU", handlerImpl);
 
 async function handlerImpl(event, context) {
   await Promise.all(SHOWS.map(processShow));
