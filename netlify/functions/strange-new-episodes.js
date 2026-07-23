@@ -30,14 +30,47 @@ async function processShow(show) {
 }
 
 async function getCurrentEpisodes(show) {
-  const json = await (
-    await fetch(show.season_json, {
+  const response = await fetch(show.season_json, {
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15",
+    },
+  });
+  const body = await response.text();
+
+  console.debug(
+    "Episode endpoint response metadata:",
+    JSON.stringify({
+      request_url: show.season_json,
+      response_url: response.url,
+      status: response.status,
+      status_text: response.statusText,
       headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15",
+        "content-type": response.headers.get("content-type"),
+        "content-length": response.headers.get("content-length"),
+        "cache-control": response.headers.get("cache-control"),
+        age: response.headers.get("age"),
+        date: response.headers.get("date"),
+        server: response.headers.get("server"),
+        via: response.headers.get("via"),
+        "x-backend": response.headers.get("x-backend"),
+        "x-real-server": response.headers.get("x-real-server"),
+        "x-cdn-cache": response.headers.get("x-cdn-cache"),
+        "x-cdn-cache-hits": response.headers.get("x-cdn-cache-hits"),
+        "x-cdn-served-by": response.headers.get("x-cdn-served-by"),
+        "x-origin-cache": response.headers.get("x-origin-cache"),
       },
-    })
-  ).json();
+    }),
+  );
+  console.debug("Episode endpoint response body:", body);
+
+  if (!response.ok) {
+    throw new Error(
+      `Episode endpoint returned ${response.status} ${response.statusText}`,
+    );
+  }
+
+  const json = JSON.parse(body);
   const episodes = json.result.data
     .filter(({ type }) => type === "Full Episode")
     .map(({ episode_number, label, url, airdate }) => ({
@@ -180,15 +213,6 @@ const SHOWS = [
     season_json:
       "https://www.paramountplus.com/shows/star-trek-strange-new-worlds/xhr/episodes/page/0/size/18/xs/0/season/4/",
     redis_key: "strange-new-episodes-4",
-    notifications: true,
-  },
-  {
-    abbr: "SA",
-    name: "Star Trek: Starfleet Academy",
-    current_season: 2,
-    season_json:
-      "https://www.paramountplus.com/shows/star-trek-starfleet-academy/xhr/episodes/page/0/size/18/xs/0/season/2/",
-    redis_key: "strange-new-episodes-sfa-2",
     notifications: true,
   },
 ];
