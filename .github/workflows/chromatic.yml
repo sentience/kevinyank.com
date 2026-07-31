@@ -3,9 +3,30 @@ name: Chromatic
 on: push
 
 jobs:
+  prepare:
+    name: Resolve Playwright version
+    runs-on: ubuntu-latest
+    outputs:
+      playwright_version: ${{ steps.playwright_version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Read Playwright version
+        id: playwright_version
+        run: |
+          version=$(node -p "require('./package-lock.json').packages['node_modules/@playwright/test'].version")
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
   playwright:
     name: Build and capture visual snapshots
+    needs: prepare
     runs-on: ubuntu-latest
+    container:
+      image: ${{ format('mcr.microsoft.com/playwright:v{0}-noble', needs.prepare.outputs.playwright_version) }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -22,9 +43,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright browser
-        run: npx playwright install --with-deps chromium
-
       - name: Build site
         run: npm run build
         env:
@@ -35,6 +53,7 @@ jobs:
         run: npx playwright test
         env:
           CI: true
+          HOME: /root
 
       - uses: actions/upload-artifact@v7
         if: always()
