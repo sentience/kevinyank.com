@@ -37,7 +37,7 @@
     "fast-xml-parser": "^5.10.1",
     "highlight.js": "^11.11.1",
     "markdown-it-anchor": "^9.2.1",
-    "postcss": "^8.5.25",
+    "postcss": "^8.5.26",
     "postcss-cli": "^11.0.1",
     "prettier": "^3.9.6",
     "prettier-plugin-tailwindcss": "^0.8.1",
@@ -47,7 +47,7 @@
   "dependencies": {
     "@slack/webhook": "^8.0.0",
     "ioredis": "^6.0.0",
-    "netlify-cli": "^27.1.0",
+    "netlify-cli": "^27.1.1",
     "node-fetch": "^3.3.2",
     "pushover-notifications": "^1.2.3"
   }
